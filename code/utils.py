@@ -12,7 +12,7 @@ from datetime import datetime
 
 def json_file_to_dict(file_path):
     data = {}
-    with open(os.path.join(file_path), 'r') as fp:
+    with open(os.path.join(file_path), 'r', encoding='utf-8') as fp:
         data = json.load(fp)
     fp.close()
     return data
