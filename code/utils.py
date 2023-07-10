@@ -8,6 +8,7 @@ from secrets import github_token
 from datetime import datetime, timezone
 from git import Repo
 from datetime import datetime
+import shutil
 
 
 def json_file_to_dict(file_path):
@@ -131,5 +132,16 @@ def get_first_commit_before_date(repo_path, date_str, master_branch):
     else:
         return None
 
+
+def copy_folder_contents(source_folder, destination_folder):
+    if not os.path.isdir(source_folder):
+        print(f"Source folder '{source_folder}' does not exist.")
+        return False
+    try:
+        shutil.copytree(source_folder, destination_folder)
+        return True
+    except Exception as e:
+        print(f"An error occurred while copying folder contents: {str(e)}")
+        return False
 
 
