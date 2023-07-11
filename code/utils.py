@@ -145,3 +145,14 @@ def copy_folder_contents(source_folder, destination_folder):
         return False
 
 
+def remove_non_utf8_characters(file_path):
+    with open(file_path, 'rb') as file:
+        filedata = file.read()
+    # Decode UTF-8 while ignoring errors
+    filedata = filedata.decode("utf-8", errors="ignore")
+    # Remove non-ASCII characters
+    filedata = re.sub(r'[^\x00-\x7F]+', ' ', filedata)
+    # Write the file out again
+    with open(file_path, 'w', encoding="utf8") as file:
+        file.write(filedata)
+
