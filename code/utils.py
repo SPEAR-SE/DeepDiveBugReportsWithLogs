@@ -145,6 +145,17 @@ def copy_folder_contents(source_folder, destination_folder):
         return False
 
 
+def copy_specific_files(file_names, source_folder, destination_folder):
+    if not os.path.exists(destination_folder):
+        os.makedirs(destination_folder)
+
+    for file_name in file_names:
+        source_path = os.path.join(source_folder, file_name)
+        destination_path = os.path.join(destination_folder, file_name)
+        shutil.copy2(source_path, destination_path)
+
+
+
 def remove_non_utf8_characters(file_path):
     with open(file_path, 'rb') as file:
         filedata = file.read()
