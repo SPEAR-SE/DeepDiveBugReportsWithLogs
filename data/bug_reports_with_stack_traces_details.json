@@ -928,20 +928,6 @@
                 "java.lang.ArrayIndexOutOfBoundsException: 8666\n    at org.jsoup.parser.CharacterReader.nextIndexOf(CharacterReader.java:92)\n    at org.jsoup.parser.CharacterReader.consumeTo(CharacterReader.java:112)\n    at org.jsoup.parser.TokeniserState$67.read(TokeniserState.java:1789)\n    at org.jsoup.parser.Tokeniser.read(Tokeniser.java:42)\n    at org.jsoup.parser.TreeBuilder.runParser(TreeBuilder.java:47)\n    at org.jsoup.parser.TreeBuilder.parse(TreeBuilder.java:41)\n    at org.jsoup.parser.HtmlTreeBuilder.parse(HtmlTreeBuilder.java:37)\n    at org.jsoup.parser.Parser.parse(Parser.java:90)\n    at org.jsoup.Jsoup.parse(Jsoup.java:58)"
             ]
         },
-        "5": {
-            "bug_report_commit_hash": "b25eb522372fa07fdc59f908fdd8e819b83898d0",
-            "bug_report_creation_date": "2010-08-11T17:11:01Z",
-            "bug_report_id": "32",
-            "bug_report_url": "https://github.com/jhy/jsoup/issues/32",
-            "bugfix_commit": "62afbdf6a85fec75fde38d327928a180bc5bccb3",
-            "buggy_commit": "5e52f1b266173593fab32fe9d8a4963066b2f2fe",
-            "defects4j_trigger_tests": [
-                "org.jsoup.parser.ParserTest::parsesQuiteRoughAttributes"
-            ],
-            "stack_traces": [
-                "java.lang.StringIndexOutOfBoundsException: String index out of range: 13\nat java.lang.String.charAt(String.java:686)\nat org.jsoup.parser.TokenQueue.consume(TokenQueue.java:130)\nat org.jsoup.parser.Parser.parseAttribute(Parser.java:207)\nat org.jsoup.parser.Parser.parseStartTag(Parser.java:142)\nat org.jsoup.parser.Parser.parse(Parser.java:91)\nat org.jsoup.parser.Parser.parseBodyFragment(Parser.java:64)\nat org.jsoup.Jsoup.parseBodyFragment(Jsoup.java:99)\nat org.jsoup.Jsoup.isValid(Jsoup.java:155)"
-            ]
-        },
         "54": {
             "bug_report_commit_hash": "ec75e400f6ec713a20c709eef9db46d78b24ab1b",
             "bug_report_creation_date": "2016-06-22T09:07:12Z",
@@ -954,21 +940,6 @@
             ],
             "stack_traces": [
                 "Exception in thread \"main\" org.w3c.dom.DOMException: INVALID_CHARACTER_ERR: An invalid or illegal XML character is specified. \n    at org.apache.xerces.dom.CoreDocumentImpl.createAttribute(Unknown Source)\n    at org.apache.xerces.dom.ElementImpl.setAttribute(Unknown Source)\n    at org.jsoup.helper.W3CDom$W3CBuilder.copyAttributes(W3CDom.java:124)\n    at org.jsoup.helper.W3CDom$W3CBuilder.head(W3CDom.java:92)\n    at org.jsoup.select.NodeTraversor.traverse(NodeTraversor.java:31)\n    at org.jsoup.helper.W3CDom.convert(W3CDom.java:66)\n    at org.jsoup.helper.W3CDom.fromJsoup(W3CDom.java:46)"
-            ]
-        },
-        "6": {
-            "bug_report_commit_hash": "b25eb522372fa07fdc59f908fdd8e819b83898d0",
-            "bug_report_creation_date": "2010-08-31T13:07:30Z",
-            "bug_report_id": "34",
-            "bug_report_url": "https://github.com/jhy/jsoup/issues/34",
-            "bugfix_commit": "20ed24cefb5df53c48021459af98bef83c55f241",
-            "buggy_commit": "0b56f3e5e012e689af8dda0e96d6e0c9f31853b6",
-            "defects4j_trigger_tests": [
-                "org.jsoup.integration.ParseTest::testYahooArticle",
-                "org.jsoup.nodes.EntitiesTest::quoteReplacements"
-            ],
-            "stack_traces": [
-                "java.lang.StringIndexOutOfBoundsException: String index out of range: 1\nat java.lang.String.charAt(String.java:686)\nat java.util.regex.Matcher.appendReplacement(Matcher.java:711)\nat org.jsoup.nodes.Entities.unescape(Entities.java:69)\nat org.jsoup.nodes.TextNode.createFromEncoded(TextNode.java:95)\nat org.jsoup.parser.Parser.parseTextNode(Parser.java:222)\nat org.jsoup.parser.Parser.parse(Parser.java:94)\nat org.jsoup.parser.Parser.parse(Parser.java:54)\nat org.jsoup.Jsoup.parse(Jsoup.java:30)"
             ]
         },
         "78": {
