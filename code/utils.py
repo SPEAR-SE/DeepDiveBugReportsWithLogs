@@ -155,7 +155,6 @@ def copy_specific_files(file_names, source_folder, destination_folder):
         shutil.copy2(source_path, destination_path)
 
 
-
 def remove_non_utf8_characters(file_path):
     with open(file_path, 'rb') as file:
         filedata = file.read()
@@ -166,4 +165,58 @@ def remove_non_utf8_characters(file_path):
     # Write the file out again
     with open(file_path, 'w', encoding="utf8") as file:
         file.write(filedata)
+
+
+def create_file(file_path, content):
+    dir = os.path.dirname(file_path)
+    if dir and not os.path.exists(dir):
+        os.makedirs(dir)
+
+    with open(file_path, 'w') as file:
+        file.write(content)
+
+
+def comment_matching_lines(filename, line_content):
+    # Read the file
+    with open(filename, 'r') as file:
+        lines = file.readlines()
+
+    # Comment matching lines
+    lines = ['//' + line if line.strip() == line_content else line for line in lines]
+
+    # Write the file
+    with open(filename, 'w') as file:
+        file.writelines(lines)
+
+
+def comment_java_test(filename, method_name):
+    with open(filename, 'r') as file:
+        lines = file.readlines()
+
+    in_method = False
+    brace_count = 0
+    for i, line in enumerate(lines):
+        # If line above method declaration contains "@Test"
+        if i > 0 and "@Test" in lines[i-1]:
+            lines[i-1] = '//' + lines[i-1]
+        if re.search(r'(public|protected|private|static|\s) +[\w\<\>\[\]]+\s+%s\(' % re.escape(method_name), line):
+            in_method = True
+            found_first_open_brace = False
+            lines[i] = '/*' + line
+        if in_method:
+            if not found_first_open_brace:
+                if line.count('{') > 0:
+                    found_first_open_brace = True
+            brace_count += line.count('{')
+            brace_count -= line.count('}')
+            if brace_count == 0 and found_first_open_brace:
+                lines[i] = line.strip() + '*/\n'
+                break
+    with open(filename, 'w') as file:
+        file.writelines(lines)
+
+
+def create_java_file(folder, filename, content):
+    with open(f"{folder}/{filename}.java", 'w') as f:
+        f.write(content)
 
