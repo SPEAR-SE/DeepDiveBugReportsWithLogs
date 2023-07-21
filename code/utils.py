@@ -220,3 +220,49 @@ def create_java_file(folder, filename, content):
     with open(f"{folder}/{filename}.java", 'w') as f:
         f.write(content)
 
+
+def replace_string_in_file(file_path, string_to_replace, replacement_string):
+    # Open the file in binary read mode
+    with open(file_path, 'rb') as file:
+        file_content = file.read()
+        file.close()
+
+    # Decode the file content and replace all occurrences of the string
+    modified_content = file_content.decode('utf-8').replace(string_to_replace, replacement_string)
+
+    # Encode the modified content back into bytes
+    modified_content = modified_content.encode('utf-8')
+
+    # Write the modified content back into the file in binary write mode
+    with open(file_path, 'wb') as file:
+        file.write(modified_content)
+        file.flush()  # ensure all internal buffers associated with file are emptied
+        os.fsync(file.fileno())  # ensure file is written to disk
+        file.close()
+
+
+def update_version_in_file(file_path, artifact_id, old_version, new_version):
+    # Use 'rb' and 'wb' (read and write binary) to avoid problems with line endings
+    with open(file_path, 'rb') as file:
+        lines = file.readlines()
+        file.close()
+
+    # Convert the lines from bytes to string using the correct encoding
+    lines = [line.decode('utf-8') for line in lines]
+
+    for i in range(len(lines)):
+        if artifact_id in lines[i] and old_version in lines[i + 1]:
+            lines[i + 1] = lines[i + 1].replace(old_version, new_version)
+
+    # Convert the lines from string back to bytes using the correct encoding
+    lines = [line.encode('utf-8') for line in lines]
+
+    with open(file_path, 'wb') as file:
+        file.writelines(lines)
+        file.flush()  # ensure all internal buffers associated with file are emptied
+        os.fsync(file.fileno())  # ensure file is written to disk
+        file.close()
+
+
+
+
