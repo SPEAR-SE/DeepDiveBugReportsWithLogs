@@ -9,6 +9,7 @@ from datetime import datetime, timezone
 from git import Repo
 from datetime import datetime
 import shutil
+import csv
 
 
 def json_file_to_dict(file_path):
@@ -264,5 +265,32 @@ def update_version_in_file(file_path, artifact_id, old_version, new_version):
         file.close()
 
 
+def read_tests_file(file_path):
+    tests = {
+        "passing_tests": [],
+        "failing_tests": [],
+        "compilation_problems": []
+    }
+    first_row = True
+    with open(os.path.join(file_path, "tests.csv"), 'r') as file:
+        content = file.read().replace('\0', '')
+        csv_reader = csv.reader(content.splitlines())
+        for row in csv_reader:
+            if first_row:
+                first_row = False
+                continue
+            test_name = row[0]
+            if row[1] == "PASS":
+                tests["passing_tests"].append(test_name)
+            else:
+                if "compilation problem" in row[3].strip():
+                    tests["compilation_problems"].append(test_name)
+                else:
+                    tests["failing_tests"].append(test_name)
+    return tests
 
 
+
+
+
+#%%
