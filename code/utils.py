@@ -198,8 +198,8 @@ def comment_java_test(filename, method_name):
     brace_count = 0
     for i, line in enumerate(lines):
         # If line above method declaration contains "@Test"
-        if i > 0 and "@Test" in lines[i-1]:
-            lines[i-1] = '//' + lines[i-1]
+        if i > 0 and "@Test" in lines[i - 1]:
+            lines[i - 1] = '//' + lines[i - 1]
         if re.search(r'(public|protected|private|static|\s) +[\w\<\>\[\]]+\s+%s\(' % re.escape(method_name), line):
             in_method = True
             found_first_open_brace = False
@@ -299,5 +299,57 @@ def bug_belongs_to_file(file_path, project, bug_id):
     return True
 
 
+def get_modified_line_numbers_github_lib(patch):
+    added_line_numbers = []
+    deleted_line_numbers = []
+    lines = patch.split('\n')
+    current_line_number = None
+    current_removed_line_number = None
 
-#%%
+    for line in lines:
+        if line.startswith("@@"):
+            current_line_number = int(line.split(' ')[2].split(',')[0][1:])
+            current_removed_line_number = int(line.split(' ')[1].split(',')[0][1:])
+        elif line.startswith('+') and not line.startswith('+++'):
+            added_line_numbers.append(current_line_number)
+            current_line_number += 1
+        elif line.startswith('-') and not line.startswith('---'):
+            deleted_line_numbers.append(current_removed_line_number)
+            current_removed_line_number += 1
+        elif line.startswith(' '):
+            current_line_number += 1
+            current_removed_line_number += 1
+
+    return added_line_numbers, deleted_line_numbers
+
+
+def get_modified_line_numbers_git_cli(lines):
+    file_line_numbers = {}
+    current_file = None
+    current_line_number = None
+    current_removed_line_number = None
+
+    for line in lines:
+        if line.startswith("diff --git"):
+            current_file = line.split(" ")[-1].strip()
+            file_line_numbers[current_file] = {"added": [], "deleted": []}
+        elif line.startswith("@@"):
+            current_line_number = int(line.split(' ')[2].split(',')[0][1:])
+            current_removed_line_number = int(line.split(' ')[1].split(',')[0][1:])
+        elif line.startswith('+') and not line.startswith('+++'):
+            if not line.lstrip('+').lstrip().isspace() and line.lstrip('+').lstrip() != '':
+                file_line_numbers[current_file]["added"].append(current_line_number)
+            if current_line_number is not None:
+                current_line_number += 1
+        elif line.startswith('-') and not line.startswith('---'):
+            if not line.lstrip('-').lstrip().isspace() and line.lstrip('-').lstrip() != '':
+                file_line_numbers[current_file]["deleted"].append(current_removed_line_number)
+            if current_removed_line_number is not None:
+                current_removed_line_number += 1
+        elif line.startswith(' '):
+            if current_line_number is not None:
+                current_line_number += 1
+            if current_removed_line_number is not None:
+                current_removed_line_number += 1
+
+    return file_line_numbers
