@@ -290,6 +290,13 @@ def read_tests_file(file_path):
     return tests
 
 
+def bug_belongs_to_file(file_path, project, bug_id):
+    data = json_file_to_dict(file_path)
+    if project not in data.keys():
+        return False
+    if bug_id not in data[project].keys():
+        return False
+    return True
 
 
 
