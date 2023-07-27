@@ -353,3 +353,17 @@ def get_modified_line_numbers_git_cli(lines):
                 current_removed_line_number += 1
 
     return file_line_numbers
+
+
+def extract_file_method_and_line_from_a_stack_trace_entry(stack_trace_entry):
+    file_name = None
+    method_name = None
+    file_line = -1
+
+    match = re.search(r'\s*at\s+([\w.$<>]+)\(([^:]*\.java):(\d+)\)', stack_trace_entry)
+    if match:
+        method_name = match.group(1)
+        file_name = match.group(2)
+        file_line = int(match.group(3))
+
+    return file_name, method_name, file_line
