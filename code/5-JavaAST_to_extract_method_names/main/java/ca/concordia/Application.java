@@ -25,8 +25,8 @@ public class Application {
 
 
     static Map<String, String> projectsList = new HashMap<>() {{
-        put("Lang", Paths.get(basePath, "defects4j", "project_repos", "commons-lang.git").toString());
-        put("Math", Paths.get(basePath, "defects4j", "project_repos", "commons-math.git").toString());
+        put("Lang", Paths.get(basePath, "open_source_repos_being_studied", "commons-lang").toString());
+        put("Math", Paths.get(basePath, "open_source_repos_being_studied", "commons-math").toString());
         put("Cli", Paths.get(basePath, "open_source_repos_being_studied", "commons-cli").toString());
         put("Closure", Paths.get(basePath, "open_source_repos_being_studied", "closure-compiler").toString());
         put("Codec", Paths.get(basePath, "open_source_repos_being_studied", "commons-codec").toString());
@@ -59,10 +59,6 @@ public class Application {
 
             // Access data from the object
             for (String project : data.keySet()) {
-                if (project.equals("Lang") || project.equals("Math")){ //Skipping them for now since I can not run git checkout
-                    System.out.println("Skipping the project "+ project);
-                    continue;
-                }
                 System.out.println(project);
                 String path_to_repo = projectsList.get(project);
                 Map<String, Object> bugs = data.get(project);
@@ -82,10 +78,13 @@ public class Application {
                     Map<String, Map<String, Object>> modifiedCode = (Map<String, Map<String, Object>>) bug.get("modified_code");
                     for (String filePath : modifiedCode.keySet()) {
                         String filePathFixed = filePath;
+                        System.out.println(filePath);
                         if (filePath.startsWith("b/")) {
                             filePathFixed = filePath.substring(2);
                         }
-                        String absolute_file_path = Paths.get(path_to_repo , filePath).toString();
+                        System.out.println(filePathFixed);
+                        String absolute_file_path = Paths.get(path_to_repo , filePathFixed).toString();
+                        System.out.println(absolute_file_path);
                         Map<String, Object> fileInfo = modifiedCode.get(filePath);
                         List<Double> deletedLinesDouble = (List<Double>) fileInfo.get("deleted_lines");
                         deletedLinesMethods = get_touched_methods(buggyCommit, path_to_repo,deletedLinesDouble, absolute_file_path, filePathFixed, false);
@@ -138,7 +137,7 @@ public class Application {
                         if (filePath.startsWith("b/")) {
                             filePathFixed = filePath.substring(2);
                         }
-                        String absolute_file_path = Paths.get(path_to_repo , filePath).toString();
+                        String absolute_file_path = Paths.get(path_to_repo , filePathFixed).toString();
                         Map<String, Object> fileInfo = modifiedTests.get(filePath);
                         String previousFilePath = "";
                         if(fileInfo.containsKey("previous_filename")) {
