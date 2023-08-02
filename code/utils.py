@@ -4,12 +4,15 @@ import json
 import fnmatch
 import requests
 from urllib.parse import urlparse, quote
-from secrets import github_token
-from datetime import datetime, timezone
+from datetime import timezone
 from git import Repo
 from datetime import datetime
 import shutil
 import csv
+import sys
+
+sys.path.append('../DeepDiveBugReportsWithLogs')
+from my_secrets import github_token
 
 
 def json_file_to_dict(file_path):

@@ -1,4 +1,4 @@
-secrets.py
+my_secrets.py
 /data/gzoltar_files/*.txt
 /data/gzoltar_files/*.csv
 ./idea/*
