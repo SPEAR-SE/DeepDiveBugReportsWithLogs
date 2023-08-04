@@ -268,31 +268,6 @@ def update_version_in_file(file_path, artifact_id, old_version, new_version):
         file.close()
 
 
-def read_tests_file(file_path):
-    tests = {
-        "passing_tests": [],
-        "failing_tests": [],
-        "compilation_problems": []
-    }
-    first_row = True
-    with open(os.path.join(file_path, "tests.csv"), 'r') as file:
-        content = file.read().replace('\0', '')
-        csv_reader = csv.reader(content.splitlines())
-        for row in csv_reader:
-            if first_row:
-                first_row = False
-                continue
-            test_name = row[0]
-            if row[1] == "PASS":
-                tests["passing_tests"].append(test_name)
-            else:
-                if "compilation problem" in row[3].strip():
-                    tests["compilation_problems"].append(test_name)
-                else:
-                    tests["failing_tests"].append(test_name)
-    return tests
-
-
 def bug_belongs_to_file(file_path, project, bug_id):
     data = json_file_to_dict(file_path)
     if project not in data.keys():
@@ -370,3 +345,89 @@ def extract_file_method_and_line_from_a_stack_trace_entry(stack_trace_entry):
         file_line = int(match.group(3))
 
     return file_name, method_name, file_line
+
+
+def read_matrix_file(file_path):
+    statements_covered_per_test = []
+    test_passed = []
+
+    with open(os.path.join(file_path, "matrix.txt"), 'r') as f:
+        for line in f:
+            row = [int(num) for num in line.strip()[:-1].split()]
+            sign = line.strip()[-1]
+            statements_covered_per_test.append(row)
+    return statements_covered_per_test
+
+
+def read_spectra_file(file_path):
+    lines_of_code_obj_list = []
+    pattern = r'^(.*?)#(.*?)\((.*?)\):(\d+)$'
+    with open(os.path.join(file_path, "spectra.csv"), 'r') as file:
+        first_line = True
+        for line in file:
+            # Skip the first line
+            if first_line:
+                first_line = False
+                continue
+            composed_str = line
+            match = re.search(pattern, composed_str)
+            if match is None:
+                print("match not found")
+                print(composed_str)
+                continue
+            class_name = match.group(1)
+            method_name = match.group(2)
+            method_parameters = match.group(3)
+            line_number = int(match.group(4))
+            lines_of_code_obj_list.append({
+                "class_name": class_name,
+                "method_name": method_name,
+                "method_parameters": method_parameters,
+                "line_number": line_number,
+            })
+    return lines_of_code_obj_list
+
+
+def read_tests_file_and_classify_per_status(file_path):
+    tests = {
+        "passing_tests": [],
+        "failing_tests": [],
+        "compilation_problems": []
+    }
+    first_row = True
+    with open(os.path.join(file_path, "tests.csv"), 'r') as file:
+        content = file.read().replace('\0', '')
+        csv_reader = csv.reader(content.splitlines())
+        for row in csv_reader:
+            if first_row:
+                first_row = False
+                continue
+            test_name = row[0]
+            if row[1] == "PASS":
+                tests["passing_tests"].append(test_name)
+            else:
+                if "compilation problem" in row[3].strip():
+                    tests["compilation_problems"].append(test_name)
+                else:
+                    tests["failing_tests"].append(test_name)
+    return tests
+
+
+def read_tests_file(file_path):
+    test_names = []
+    test_results = []
+    first_row = True
+    with open(os.path.join(file_path, "tests.csv"), 'r') as file:
+        content = file.read().replace('\0', '')
+        csv_reader = csv.reader(content.splitlines())
+        for row in csv_reader:
+            if first_row:
+                first_row = False
+                continue
+            test_name = row[0]
+            test_result = False
+            if row[1] == "PASS":
+                test_result = True
+            test_names.append(test_name)
+            test_results.append(test_result)
+    return test_names, test_results

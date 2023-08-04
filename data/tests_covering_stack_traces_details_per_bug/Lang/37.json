@@ -1,0 +1,34 @@
+{
+    "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/commons-lang/src/java/org/apache/commons/lang3/ArrayUtils.java": {
+        "addAll": {
+            "tests_covering_the_method": {
+                "org.apache.commons.lang3.ArrayUtilsAddTest#testAddObjectArrayToObjectArray": [
+                    2954,
+                    2955,
+                    2956,
+                    2957,
+                    2959,
+                    2961,
+                    2962,
+                    2963
+                ],
+                "org.apache.commons.lang3.ValidateTest#testNoNullElementsCollection1": [
+                    2954,
+                    2956,
+                    2959,
+                    2961,
+                    2962,
+                    2963
+                ],
+                "org.apache.commons.lang3.ValidateTest#testNoNullElementsCollection2": [
+                    2954,
+                    2956,
+                    2959,
+                    2961,
+                    2962,
+                    2963
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,71 @@
+{
+    "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/gson/gson/src/main/java/com/google/gson/internal/bind/JsonTreeReader.java": {
+        "skipValue": {
+            "tests_covering_the_method": {
+                "com.google.gson.functional.CustomDeserializerTest#testJsonTypeFieldBasedDeserialization": [
+                    257,
+                    261,
+                    262,
+                    264,
+                    265
+                ],
+                "com.google.gson.functional.ExclusionStrategyFunctionalTest#testExclusionStrategyDeserialization": [
+                    257,
+                    261,
+                    262,
+                    264,
+                    265
+                ],
+                "com.google.gson.functional.ExclusionStrategyFunctionalTest#testExclusionStrategyWithMode": [
+                    257,
+                    261,
+                    262,
+                    264,
+                    265
+                ],
+                "com.google.gson.functional.JsonParserTest#testBadFieldTypeForDeserializingCustomTree": [
+                    257,
+                    261,
+                    262,
+                    264,
+                    265
+                ],
+                "com.google.gson.internal.bind.JsonElementReaderTest#testSkipValue": [
+                    257,
+                    261,
+                    262,
+                    264,
+                    265
+                ],
+                "com.google.gson.stream.JsonReaderPathTest#skipArrayElements[OBJECT_READER]": [
+                    257,
+                    261,
+                    262,
+                    264,
+                    265
+                ],
+                "com.google.gson.stream.JsonReaderPathTest#skipNestedStructures[OBJECT_READER]": [
+                    257,
+                    261,
+                    262,
+                    264,
+                    265
+                ],
+                "com.google.gson.stream.JsonReaderPathTest#skipObjectNames[OBJECT_READER]": [
+                    257,
+                    258,
+                    259,
+                    264,
+                    265
+                ],
+                "com.google.gson.stream.JsonReaderPathTest#skipObjectValues[OBJECT_READER]": [
+                    257,
+                    261,
+                    262,
+                    264,
+                    265
+                ]
+            }
+        }
+    }
+}

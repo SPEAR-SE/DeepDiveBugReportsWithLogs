@@ -1,0 +1,2888 @@
+{
+    "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/gson/extras/src/main/java/com/google/gson/typeadapters/UtcDateTypeAdapter.java": {
+        "parse": {
+            "tests_covering_the_method": {}
+        },
+        "read": {
+            "tests_covering_the_method": {}
+        }
+    },
+    "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/gson/gson/src/main/java/com/google/gson/DefaultDateTypeAdapter.java": {
+        "deserialize": {
+            "tests_covering_the_method": {
+                "com.google.gson.DefaultDateTypeAdapterTest#testDateDeserializationISO8601": [
+                    81,
+                    84,
+                    85,
+                    86,
+                    81,
+                    84,
+                    85,
+                    86
+                ],
+                "com.google.gson.DefaultDateTypeAdapterTest#testFormatUsesDefaultTimezone": [
+                    81,
+                    84,
+                    85,
+                    86,
+                    81,
+                    84,
+                    85,
+                    86
+                ],
+                "com.google.gson.DefaultDateTypeAdapterTest#testParsingDatesFormattedWithSystemLocale": [
+                    81,
+                    84,
+                    85,
+                    86,
+                    81,
+                    84,
+                    85,
+                    86
+                ],
+                "com.google.gson.DefaultDateTypeAdapterTest#testParsingDatesFormattedWithUsLocale": [
+                    81,
+                    84,
+                    85,
+                    86,
+                    81,
+                    84,
+                    85,
+                    86
+                ],
+                "com.google.gson.functional.DefaultTypeAdaptersTest#testDateDeserializationWithPattern": [
+                    81,
+                    84,
+                    85,
+                    86,
+                    81,
+                    84,
+                    85,
+                    86
+                ],
+                "com.google.gson.functional.DefaultTypeAdaptersTest#testDateSerializationInCollection": [
+                    81,
+                    84,
+                    85,
+                    86,
+                    81,
+                    84,
+                    85,
+                    86
+                ],
+                "com.google.gson.functional.DefaultTypeAdaptersTest#testSqlDateSerialization": [
+                    81,
+                    84,
+                    85,
+                    87,
+                    89,
+                    90,
+                    81,
+                    84,
+                    85,
+                    87,
+                    89,
+                    90
+                ],
+                "com.google.gson.functional.DefaultTypeAdaptersTest#testTimestampSerialization": [
+                    81,
+                    84,
+                    85,
+                    87,
+                    88,
+                    81,
+                    84,
+                    85,
+                    87,
+                    88
+                ]
+            }
+        },
+        "deserializeToDate": {
+            "tests_covering_the_method": {
+                "com.google.gson.DefaultDateTypeAdapterTest#testDateDeserializationISO8601": [
+                    97,
+                    99,
+                    100,
+                    102,
+                    103,
+                    105,
+                    97,
+                    99,
+                    100,
+                    102,
+                    103,
+                    105
+                ],
+                "com.google.gson.DefaultDateTypeAdapterTest#testFormatUsesDefaultTimezone": [
+                    97,
+                    99,
+                    100,
+                    102,
+                    103,
+                    105,
+                    97,
+                    99,
+                    100,
+                    102,
+                    103,
+                    105
+                ],
+                "com.google.gson.DefaultDateTypeAdapterTest#testParsingDatesFormattedWithSystemLocale": [
+                    97,
+                    99,
+                    100,
+                    102,
+                    103,
+                    105,
+                    97,
+                    99,
+                    100,
+                    102,
+                    103,
+                    105
+                ],
+                "com.google.gson.DefaultDateTypeAdapterTest#testParsingDatesFormattedWithUsLocale": [
+                    97,
+                    99,
+                    100,
+                    102,
+                    103,
+                    105,
+                    97,
+                    99,
+                    100,
+                    102,
+                    103,
+                    105
+                ],
+                "com.google.gson.functional.DefaultTypeAdaptersTest#testDateDeserializationWithPattern": [
+                    97,
+                    99,
+                    97,
+                    99
+                ],
+                "com.google.gson.functional.DefaultTypeAdaptersTest#testDateSerializationInCollection": [
+                    97,
+                    99,
+                    97,
+                    99
+                ],
+                "com.google.gson.functional.DefaultTypeAdaptersTest#testSqlDateSerialization": [
+                    97,
+                    99,
+                    97,
+                    99
+                ],
+                "com.google.gson.functional.DefaultTypeAdaptersTest#testTimestampSerialization": [
+                    97,
+                    99,
+                    97,
+                    99
+                ]
+            }
+        }
+    },
+    "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/gson/gson/src/main/java/com/google/gson/Gson.java": {
+        "fromJson": {
+            "tests_covering_the_method": {
+                "com.google.gson.DefaultInetAddressTypeAdapterTest#testInetAddressSerializationAndDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.GsonTypeAdapterTest#testDefaultTypeAdapterThrowsParseException": [
+                    765,
+                    765
+                ],
+                "com.google.gson.GsonTypeAdapterTest#testTypeAdapterDoesNotAffectNonAdaptedTypes": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.GsonTypeAdapterTest#testTypeAdapterProperlyConvertsTypes": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.GsonTypeAdapterTest#testTypeAdapterThrowsException": [
+                    765,
+                    765
+                ],
+                "com.google.gson.OverrideCoreTypeAdaptersTest#testOverridePrimitiveBooleanAdapter": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.OverrideCoreTypeAdaptersTest#testOverrideStringAdapter": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.OverrideCoreTypeAdaptersTest#testOverrideWrapperBooleanAdapter": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.ArrayTest#testArrayOfNullDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.ArrayTest#testArrayOfPrimitivesAsObjectsDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.ArrayTest#testArrayOfStringsDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.ArrayTest#testEmptyArrayDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.ArrayTest#testInvalidArrayDeserialization": [
+                    765,
+                    765
+                ],
+                "com.google.gson.functional.ArrayTest#testMultidimenstionalArraysDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.ArrayTest#testNullsInArrayDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.ArrayTest#testSingleNullInArrayDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.ArrayTest#testSingleStringArrayDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.ArrayTest#testTopLevelArrayOfIntsDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.CircularReferenceTest#testDirectedAcyclicGraphDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.CollectionTest#testFieldIsArrayList": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.CollectionTest#testRawCollectionDeserializationNotAlllowed": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.CollectionTest#testRawCollectionOfBagOfPrimitivesNotAllowed": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.CollectionTest#testWildcardCollectionField": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.ConcurrencyTest#testMultiThreadDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.ConcurrencyTest#testSingleThreadDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.CustomDeserializerTest#testCustomDeserializerReturnsNull": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.CustomDeserializerTest#testCustomDeserializerReturnsNullForArrayElements": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.CustomDeserializerTest#testCustomDeserializerReturnsNullForArrayElementsForArrayField": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.CustomDeserializerTest#testCustomDeserializerReturnsNullForTopLevelObject": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.CustomDeserializerTest#testDefaultConstructorNotCalledOnField": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.CustomDeserializerTest#testDefaultConstructorNotCalledOnObject": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.CustomDeserializerTest#testJsonTypeFieldBasedDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.CustomTypeAdaptersTest#testCustomByteArrayDeserializerAndInstanceCreator": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.CustomTypeAdaptersTest#testCustomDeserializerInvokedForPrimitives": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.CustomTypeAdaptersTest#testCustomDeserializers": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.CustomTypeAdaptersTest#testCustomNestedDeserializers": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.CustomTypeAdaptersTest#testEnsureCustomDeserializerNotInvokedForNullValues": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.CustomTypeAdaptersTest#testRegisterHierarchyAdapterForDate": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.DefaultTypeAdaptersTest#testBadValueForBigDecimalDeserialization": [
+                    765,
+                    765
+                ],
+                "com.google.gson.functional.DefaultTypeAdaptersTest#testBigDecimalFieldDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.DefaultTypeAdaptersTest#testBigIntegerFieldDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.DefaultTypeAdaptersTest#testBitSetDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.DefaultTypeAdaptersTest#testClassDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.DefaultTypeAdaptersTest#testDateDeserializationWithPattern": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.DefaultTypeAdaptersTest#testDefaultCalendarDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.DefaultTypeAdaptersTest#testDefaultDateDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.DefaultTypeAdaptersTest#testDefaultDateDeserializationUsingBuilder": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.DefaultTypeAdaptersTest#testDefaultGregorianCalendarDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.DefaultTypeAdaptersTest#testDefaultJavaSqlDateDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.DefaultTypeAdaptersTest#testDefaultJavaSqlTimeDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.DefaultTypeAdaptersTest#testDefaultJavaSqlTimestampDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.DefaultTypeAdaptersTest#testJsonArrayDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.DefaultTypeAdaptersTest#testJsonElementTypeMismatch": [
+                    765,
+                    765
+                ],
+                "com.google.gson.functional.DefaultTypeAdaptersTest#testJsonNullDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.DefaultTypeAdaptersTest#testJsonObjectDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.DefaultTypeAdaptersTest#testJsonPrimitiveDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.DefaultTypeAdaptersTest#testLocaleDeserializationWithLanguage": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.DefaultTypeAdaptersTest#testLocaleDeserializationWithLanguageCountry": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.DefaultTypeAdaptersTest#testLocaleDeserializationWithLanguageCountryVariant": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.DefaultTypeAdaptersTest#testNullSerialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.DefaultTypeAdaptersTest#testOverrideBigDecimalTypeAdapter": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.DefaultTypeAdaptersTest#testOverrideBigIntegerTypeAdapter": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.DefaultTypeAdaptersTest#testPropertiesDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.DefaultTypeAdaptersTest#testSqlDateSerialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.DefaultTypeAdaptersTest#testStringBufferDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.DefaultTypeAdaptersTest#testStringBuilderDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.DefaultTypeAdaptersTest#testTimestampSerialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.DefaultTypeAdaptersTest#testUriDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.DefaultTypeAdaptersTest#testUrlDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.DefaultTypeAdaptersTest#testUrlNullDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.DefaultTypeAdaptersTest#testUuidDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.DelegateTypeAdapterTest#testDelegateInvokedOnStrings": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.EnumTest#testClassWithEnumFieldDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.EnumTest#testEnumCaseMapping": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.EnumTest#testEnumSubclass": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.EnumTest#testEnumSubclassWithRegisteredTypeAdapter": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.EnumTest#testTopLevelEnumDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.EscapingTest#testEscapingObjectFields": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.EscapingTest#testEscapingQuotesInStringArray": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.EscapingTest#testGsonAcceptsEscapedAndNonEscapedJsonDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.EscapingTest#testGsonDoubleDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.ExclusionStrategyFunctionalTest#testExcludeTopLevelClassDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.ExclusionStrategyFunctionalTest#testExcludeTopLevelClassSerializationDoesNotImpactDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.ExclusionStrategyFunctionalTest#testExclusionStrategySerializationDoesNotImpactDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.ExposeFieldsTest#testExposeAnnotationDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.ExposeFieldsTest#testExposedInterfaceFieldDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.ExposeFieldsTest#testNoExposedFieldDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.InheritanceTest#testSubClassDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.InheritanceTest#testSubInterfacesOfCollectionDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.InstanceCreatorTest#testInstanceCreatorForParametrizedType": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.InstanceCreatorTest#testInstanceCreatorReturnsBaseType": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.InstanceCreatorTest#testInstanceCreatorReturnsSubTypeForField": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.InstanceCreatorTest#testInstanceCreatorReturnsSubTypeForTopLevelObject": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.InternationalizationTest#testStringsWithRawChineseCharactersDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.InternationalizationTest#testStringsWithUnicodeChineseCharactersDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.InternationalizationTest#testStringsWithUnicodeChineseCharactersEscapedDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.JavaUtilConcurrentAtomicTest#testAtomicBoolean": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.JavaUtilConcurrentAtomicTest#testAtomicInteger": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.JavaUtilConcurrentAtomicTest#testAtomicIntegerArray": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.JavaUtilConcurrentAtomicTest#testAtomicLong": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.JavaUtilConcurrentAtomicTest#testAtomicLongArray": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.JavaUtilConcurrentAtomicTest#testAtomicLongArrayWithStringSerializationPolicy": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.JavaUtilConcurrentAtomicTest#testAtomicLongWithStringSerializationPolicy": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.JavaUtilTest#testCurrency": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.JavaUtilTest#testProperties": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.JsonAdapterAnnotationOnClassesTest#testJsonAdapterFactoryInvoked": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.JsonAdapterAnnotationOnClassesTest#testJsonAdapterInvoked": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.JsonAdapterAnnotationOnClassesTest#testNullSafeObjectFromJson": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.JsonAdapterAnnotationOnClassesTest#testRegisteredDeserializerOverridesJsonAdapter": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.JsonAdapterAnnotationOnClassesTest#testRegisteredSerializerOverridesJsonAdapter": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.JsonAdapterAnnotationOnFieldsTest#testClassAnnotationAdapterFactoryTakesPrecedenceOverDefault": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.JsonAdapterAnnotationOnFieldsTest#testClassAnnotationAdapterTakesPrecedenceOverDefault": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.JsonAdapterAnnotationOnFieldsTest#testFieldAnnotationTakesPrecedenceOverClassAnnotation": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.JsonAdapterAnnotationOnFieldsTest#testFieldAnnotationTakesPrecedenceOverRegisteredTypeAdapter": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.JsonAdapterAnnotationOnFieldsTest#testJsonAdapterInvokedOnlyForAnnotatedFields": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.JsonAdapterAnnotationOnFieldsTest#testJsonAdapterWrappedInNullSafeAsRequested": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.JsonAdapterAnnotationOnFieldsTest#testRegisteredTypeAdapterTakesPrecedenceOverClassAnnotationAdapter": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.JsonParserTest#testParseInvalidJson": [
+                    765,
+                    765
+                ],
+                "com.google.gson.functional.MapTest#testMapSubclassDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.NamingPolicyTest#testComplexFieldNameStrategy": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.NamingPolicyTest#testGsonWithLowerCaseDashPolicyDeserialiation": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.NamingPolicyTest#testGsonWithLowerCaseUnderscorePolicyDeserialiation": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.NamingPolicyTest#testGsonWithNonDefaultFieldNamingPolicyDeserialiation": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.NamingPolicyTest#testGsonWithSerializedNameFieldNamingPolicyDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.NamingPolicyTest#testGsonWithUpperCamelCaseSpacesPolicyDeserialiation": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.NullObjectAndFieldTest#testAbsentJsonElementsAreSetToNull": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.NullObjectAndFieldTest#testCustomTypeAdapterPassesNullDesrialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.NullObjectAndFieldTest#testExplicitDeserializationOfNulls": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.NullObjectAndFieldTest#testExplicitNullSetsFieldToNullDuringDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.NullObjectAndFieldTest#testNullWrappedPrimitiveMemberDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.NullObjectAndFieldTest#testTopLevelNullObjectDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.ObjectTest#testArrayOfArraysDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.ObjectTest#testArrayOfObjectsDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.ObjectTest#testBagOfPrimitiveWrappersDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.ObjectTest#testBagOfPrimitivesDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.ObjectTest#testClassWithNoFieldsDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.ObjectTest#testClassWithTransientFieldsDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.ObjectTest#testClassWithTransientFieldsDeserializationTransientFieldsPassedInJsonAreIgnored": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.ObjectTest#testEmptyCollectionInAnObjectDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.ObjectTest#testEmptyStringDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.ObjectTest#testInnerClassDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.ObjectTest#testJsonInMixedQuotesDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.ObjectTest#testJsonInSingleQuotesDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.ObjectTest#testNestedDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.ObjectTest#testNullArraysDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.ObjectTest#testNullDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.ObjectTest#testNullFieldsDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.ObjectTest#testNullObjectFieldsDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.ObjectTest#testNullPrimitiveFieldsDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.ObjectTest#testObjectFieldNamesWithoutQuotesDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.ObjectTest#testPrimitiveArrayInAnObjectDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.ObjectTest#testPrivateNoArgConstructorDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.ObjectTest#testSingletonLists": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.ObjectTest#testStringFieldWithEmptyValueDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.ObjectTest#testStringFieldWithNumberValueDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.PrimitiveCharacterTest#testPrimitiveCharacterAutoboxedDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.PrimitiveTest#testBadValueForBigIntegerDeserialization": [
+                    765,
+                    765
+                ],
+                "com.google.gson.functional.PrimitiveTest#testBigDecimalAsStringRepresentationDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.PrimitiveTest#testBigDecimalDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.PrimitiveTest#testBigDecimalInfinityDeserializationNotSupported": [
+                    765,
+                    765
+                ],
+                "com.google.gson.functional.PrimitiveTest#testBigDecimalNaNDeserializationNotSupported": [
+                    765,
+                    765
+                ],
+                "com.google.gson.functional.PrimitiveTest#testBigDecimalNegativeInfinityDeserializationNotSupported": [
+                    765,
+                    765
+                ],
+                "com.google.gson.functional.PrimitiveTest#testBigDecimalNoFractAsStringRepresentationDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.PrimitiveTest#testBigDecimalPreservePrecisionDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.PrimitiveTest#testBigIntegerDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.PrimitiveTest#testBooleanDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.PrimitiveTest#testByteDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.PrimitiveTest#testDeserializeJsonArrayAsBigDecimal": [
+                    765,
+                    765
+                ],
+                "com.google.gson.functional.PrimitiveTest#testDeserializeJsonArrayAsBigInteger": [
+                    765,
+                    765
+                ],
+                "com.google.gson.functional.PrimitiveTest#testDeserializeJsonArrayAsBooleanWrapper": [
+                    765,
+                    765
+                ],
+                "com.google.gson.functional.PrimitiveTest#testDeserializeJsonArrayAsByteWrapper": [
+                    765,
+                    765
+                ],
+                "com.google.gson.functional.PrimitiveTest#testDeserializeJsonArrayAsDoublePrimitive": [
+                    765,
+                    765
+                ],
+                "com.google.gson.functional.PrimitiveTest#testDeserializeJsonArrayAsFloatWrapper": [
+                    765,
+                    765
+                ],
+                "com.google.gson.functional.PrimitiveTest#testDeserializeJsonArrayAsInt": [
+                    765,
+                    765
+                ],
+                "com.google.gson.functional.PrimitiveTest#testDeserializeJsonArrayAsLongWrapper": [
+                    765,
+                    765
+                ],
+                "com.google.gson.functional.PrimitiveTest#testDeserializeJsonArrayAsNumber": [
+                    765,
+                    765
+                ],
+                "com.google.gson.functional.PrimitiveTest#testDeserializeJsonArrayAsShortWrapper": [
+                    765,
+                    765
+                ],
+                "com.google.gson.functional.PrimitiveTest#testDeserializeJsonObjectAsBigDecimal": [
+                    765,
+                    765
+                ],
+                "com.google.gson.functional.PrimitiveTest#testDeserializeJsonObjectAsBigInteger": [
+                    765,
+                    765
+                ],
+                "com.google.gson.functional.PrimitiveTest#testDeserializeJsonObjectAsBooleanPrimitive": [
+                    765,
+                    765
+                ],
+                "com.google.gson.functional.PrimitiveTest#testDeserializeJsonObjectAsBytePrimitive": [
+                    765,
+                    765
+                ],
+                "com.google.gson.functional.PrimitiveTest#testDeserializeJsonObjectAsDoubleWrapper": [
+                    765,
+                    765
+                ],
+                "com.google.gson.functional.PrimitiveTest#testDeserializeJsonObjectAsFloatPrimitive": [
+                    765,
+                    765
+                ],
+                "com.google.gson.functional.PrimitiveTest#testDeserializeJsonObjectAsInteger": [
+                    765,
+                    765
+                ],
+                "com.google.gson.functional.PrimitiveTest#testDeserializeJsonObjectAsLongPrimitive": [
+                    765,
+                    765
+                ],
+                "com.google.gson.functional.PrimitiveTest#testDeserializeJsonObjectAsNumber": [
+                    765,
+                    765
+                ],
+                "com.google.gson.functional.PrimitiveTest#testDeserializeJsonObjectAsShortPrimitive": [
+                    765,
+                    765
+                ],
+                "com.google.gson.functional.PrimitiveTest#testDeserializePrimitiveWrapperAsObjectField": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.PrimitiveTest#testDeserializingBigDecimalAsBigIntegerFails": [
+                    765,
+                    765
+                ],
+                "com.google.gson.functional.PrimitiveTest#testDeserializingBigDecimalAsDouble": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.PrimitiveTest#testDeserializingBigDecimalAsFloat": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.PrimitiveTest#testDeserializingBigDecimalAsIntegerFails": [
+                    765,
+                    765
+                ],
+                "com.google.gson.functional.PrimitiveTest#testDeserializingBigIntegerAsBigDecimal": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.PrimitiveTest#testDeserializingBigIntegerAsInteger": [
+                    765,
+                    765
+                ],
+                "com.google.gson.functional.PrimitiveTest#testDeserializingBigIntegerAsLong": [
+                    765,
+                    765
+                ],
+                "com.google.gson.functional.PrimitiveTest#testDeserializingDecimalPointValueZeroSucceeds": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.PrimitiveTest#testDeserializingNonZeroDecimalPointValuesAsIntegerFails": [
+                    765,
+                    765
+                ],
+                "com.google.gson.functional.PrimitiveTest#testDoubleArrayDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.PrimitiveTest#testDoubleAsStringRepresentationDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.PrimitiveTest#testDoubleInfinityDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.PrimitiveTest#testDoubleNaNDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.PrimitiveTest#testDoubleNoFractAsStringRepresentationDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.PrimitiveTest#testFloatInfinityDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.PrimitiveTest#testFloatNaNDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.PrimitiveTest#testLargeDoubleDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.PrimitiveTest#testLongAsStringDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.PrimitiveTest#testNegativeInfinityDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.PrimitiveTest#testNegativeInfinityFloatDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.PrimitiveTest#testNumberDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.PrimitiveTest#testPrimitiveClassLiteral": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.PrimitiveTest#testPrimitiveDoubleAutoboxedDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.PrimitiveTest#testPrimitiveIntegerAutoboxedDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.PrimitiveTest#testPrimitiveLongAutoboxedDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.PrimitiveTest#testQuotedStringSerializationAndDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.PrimitiveTest#testReallyLongValuesDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.PrimitiveTest#testSmallValueForBigDecimalDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.PrimitiveTest#testSmallValueForBigIntegerDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.PrimitiveTest#testUnquotedStringDeserializationFails": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.PrimitiveTest#testValueVeryCloseToZeroIsZero": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.RuntimeTypeAdapterFactoryFunctionalTest#testSubclassesAutomaticallySerialzed": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.SecurityTest#testJsonWithNonExectuableTokenWithConfiguredGsonDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.SecurityTest#testJsonWithNonExectuableTokenWithRegularGsonDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.SecurityTest#testNonExecutableJsonDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.SerializedNameTest#testMultipleNamesDeserializedCorrectly": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.SerializedNameTest#testMultipleNamesInTheSameString": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.StreamingTypeAdaptersTest#testNullSafe": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.StringTest#testAssignmentCharDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.StringTest#testEscapedBackslashInStringDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.StringTest#testEscapedCtrlNInStringDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.StringTest#testEscapedCtrlRInStringDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.StringTest#testEscapingQuotesInStringDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.StringTest#testEscapingQuotesInStringSerialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.StringTest#testJavascriptKeywordsInStringDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.StringTest#testSingleQuoteInStringDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.StringTest#testSingleQuoteInStringSerialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.StringTest#testStringValueDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.StringTest#testStringWithEscapedSlashDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.ThrowableFunctionalTest#testErrorWithoutCause": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.ThrowableFunctionalTest#testErrornWithCause": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.ThrowableFunctionalTest#testExceptionWithCause": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.ThrowableFunctionalTest#testExceptionWithoutCause": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.TypeAdapterPrecedenceTest#testNonstreamingFollowedByNonstreaming": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.TypeAdapterPrecedenceTest#testNonstreamingHierarchicalFollowedByNonstreaming": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.TypeAdapterPrecedenceTest#testSerializeNonstreamingTypeAdapterFollowedByStreamingTypeAdapter": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.TypeAdapterPrecedenceTest#testStreamingFollowedByNonstreaming": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.TypeAdapterPrecedenceTest#testStreamingFollowedByNonstreamingHierarchical": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.TypeAdapterPrecedenceTest#testStreamingFollowedByStreaming": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.TypeAdapterPrecedenceTest#testStreamingHierarchicalFollowedByNonstreaming": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.TypeAdapterPrecedenceTest#testStreamingHierarchicalFollowedByNonstreamingHierarchical": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.TypeHierarchyAdapterTest#testRegisterSuperTypeFirst": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.TypeHierarchyAdapterTest#testTypeHierarchy": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.TypeVariableTest#testAdvancedTypeVariables": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.TypeVariableTest#testBasicTypeVariables": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.UncategorizedTest#testGsonInstanceReusableForSerializationAndDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.UncategorizedTest#testInvalidJsonDeserializationFails": [
+                    765,
+                    765
+                ],
+                "com.google.gson.functional.UncategorizedTest#testReturningDerivedClassesDuringDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.VersioningTest#testIgnoreLaterVersionClassDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.VersioningTest#testVersionedClassesDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.VersioningTest#testVersionedGsonMixingSinceAndUntilDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.VersioningTest#testVersionedGsonWithUnversionedClassesDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.functional.VersioningTest#testVersionedUntilDeserialization": [
+                    765,
+                    766,
+                    765,
+                    766
+                ],
+                "com.google.gson.regression.JsonAdapterNullSafeTest#testTypeAdapterFactoryNullSafeBug": [
+                    765,
+                    766,
+                    765,
+                    766
+                ]
+            }
+        }
+    },
+    "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/gson/gson/src/main/java/com/google/gson/TreeTypeAdapter.java": {
+        "read": {
+            "tests_covering_the_method": {
+                "com.google.gson.GsonTypeAdapterTest#testTypeAdapterProperlyConvertsTypes": [
+                    51,
+                    54,
+                    55,
+                    58,
+                    51,
+                    54,
+                    55,
+                    58
+                ],
+                "com.google.gson.GsonTypeAdapterTest#testTypeAdapterThrowsException": [
+                    51,
+                    54,
+                    55,
+                    58,
+                    51,
+                    54,
+                    55,
+                    58
+                ],
+                "com.google.gson.functional.CustomDeserializerTest#testCustomDeserializerReturnsNull": [
+                    51,
+                    54,
+                    55,
+                    58,
+                    51,
+                    54,
+                    55,
+                    58
+                ],
+                "com.google.gson.functional.CustomDeserializerTest#testCustomDeserializerReturnsNullForArrayElements": [
+                    51,
+                    54,
+                    55,
+                    58,
+                    51,
+                    54,
+                    55,
+                    58
+                ],
+                "com.google.gson.functional.CustomDeserializerTest#testCustomDeserializerReturnsNullForArrayElementsForArrayField": [
+                    51,
+                    54,
+                    55,
+                    58,
+                    51,
+                    54,
+                    55,
+                    58
+                ],
+                "com.google.gson.functional.CustomDeserializerTest#testCustomDeserializerReturnsNullForTopLevelObject": [
+                    51,
+                    54,
+                    55,
+                    58,
+                    51,
+                    54,
+                    55,
+                    58
+                ],
+                "com.google.gson.functional.CustomDeserializerTest#testDefaultConstructorNotCalledOnField": [
+                    51,
+                    54,
+                    55,
+                    58,
+                    51,
+                    54,
+                    55,
+                    58
+                ],
+                "com.google.gson.functional.CustomDeserializerTest#testDefaultConstructorNotCalledOnObject": [
+                    51,
+                    54,
+                    55,
+                    58,
+                    51,
+                    54,
+                    55,
+                    58
+                ],
+                "com.google.gson.functional.CustomDeserializerTest#testJsonTypeFieldBasedDeserialization": [
+                    51,
+                    54,
+                    55,
+                    58,
+                    51,
+                    54,
+                    55,
+                    58
+                ],
+                "com.google.gson.functional.CustomTypeAdaptersTest#testCustomAdapterInvokedForCollectionElementDeserialization": [
+                    51,
+                    54,
+                    55,
+                    58,
+                    51,
+                    54,
+                    55,
+                    58
+                ],
+                "com.google.gson.functional.CustomTypeAdaptersTest#testCustomAdapterInvokedForMapElementDeserialization": [
+                    51,
+                    54,
+                    55,
+                    58,
+                    51,
+                    54,
+                    55,
+                    58
+                ],
+                "com.google.gson.functional.CustomTypeAdaptersTest#testCustomByteArrayDeserializerAndInstanceCreator": [
+                    51,
+                    54,
+                    55,
+                    58,
+                    51,
+                    54,
+                    55,
+                    58
+                ],
+                "com.google.gson.functional.CustomTypeAdaptersTest#testCustomDeserializerInvokedForPrimitives": [
+                    51,
+                    54,
+                    55,
+                    58,
+                    51,
+                    54,
+                    55,
+                    58
+                ],
+                "com.google.gson.functional.CustomTypeAdaptersTest#testCustomDeserializers": [
+                    51,
+                    54,
+                    55,
+                    58,
+                    51,
+                    54,
+                    55,
+                    58
+                ],
+                "com.google.gson.functional.CustomTypeAdaptersTest#testCustomNestedDeserializers": [
+                    51,
+                    54,
+                    55,
+                    58,
+                    51,
+                    54,
+                    55,
+                    58
+                ],
+                "com.google.gson.functional.CustomTypeAdaptersTest#testEnsureCustomDeserializerNotInvokedForNullValues": [
+                    51,
+                    54,
+                    55,
+                    56,
+                    51,
+                    54,
+                    55,
+                    56
+                ],
+                "com.google.gson.functional.CustomTypeAdaptersTest#testRegisterHierarchyAdapterForDate": [
+                    51,
+                    54,
+                    55,
+                    58,
+                    51,
+                    54,
+                    55,
+                    58
+                ],
+                "com.google.gson.functional.DefaultTypeAdaptersTest#testDateDeserializationWithPattern": [
+                    51,
+                    54,
+                    55,
+                    58,
+                    51,
+                    54,
+                    55,
+                    58
+                ],
+                "com.google.gson.functional.DefaultTypeAdaptersTest#testDateSerializationInCollection": [
+                    51,
+                    54,
+                    55,
+                    58,
+                    51,
+                    54,
+                    55,
+                    58
+                ],
+                "com.google.gson.functional.DefaultTypeAdaptersTest#testSqlDateSerialization": [
+                    51,
+                    54,
+                    55,
+                    58,
+                    51,
+                    54,
+                    55,
+                    58
+                ],
+                "com.google.gson.functional.DefaultTypeAdaptersTest#testTimestampSerialization": [
+                    51,
+                    54,
+                    55,
+                    58,
+                    51,
+                    54,
+                    55,
+                    58
+                ],
+                "com.google.gson.functional.EnumTest#testEnumSubclassWithRegisteredTypeAdapter": [
+                    51,
+                    54,
+                    55,
+                    58,
+                    51,
+                    54,
+                    55,
+                    58
+                ],
+                "com.google.gson.functional.JsonAdapterAnnotationOnClassesTest#testRegisteredDeserializerOverridesJsonAdapter": [
+                    51,
+                    54,
+                    55,
+                    58,
+                    51,
+                    54,
+                    55,
+                    58
+                ],
+                "com.google.gson.functional.JsonAdapterAnnotationOnClassesTest#testRegisteredSerializerOverridesJsonAdapter": [
+                    51,
+                    52,
+                    51,
+                    52
+                ],
+                "com.google.gson.functional.NullObjectAndFieldTest#testCustomTypeAdapterPassesNullDesrialization": [
+                    51,
+                    54,
+                    55,
+                    58,
+                    51,
+                    54,
+                    55,
+                    58
+                ],
+                "com.google.gson.functional.ParameterizedTypesTest#testParameterizedTypesWithCustomDeserializer": [
+                    51,
+                    54,
+                    55,
+                    58,
+                    51,
+                    54,
+                    55,
+                    58
+                ],
+                "com.google.gson.functional.TreeTypeAdaptersTest#testDeserializeId": [
+                    51,
+                    54,
+                    55,
+                    58,
+                    51,
+                    54,
+                    55,
+                    58
+                ],
+                "com.google.gson.functional.TypeAdapterPrecedenceTest#testNonstreamingFollowedByNonstreaming": [
+                    51,
+                    54,
+                    55,
+                    58,
+                    51,
+                    54,
+                    55,
+                    58
+                ],
+                "com.google.gson.functional.TypeAdapterPrecedenceTest#testNonstreamingHierarchicalFollowedByNonstreaming": [
+                    51,
+                    54,
+                    55,
+                    58,
+                    51,
+                    54,
+                    55,
+                    58
+                ],
+                "com.google.gson.functional.TypeAdapterPrecedenceTest#testStreamingFollowedByNonstreaming": [
+                    51,
+                    54,
+                    55,
+                    58,
+                    51,
+                    54,
+                    55,
+                    58
+                ],
+                "com.google.gson.functional.TypeAdapterPrecedenceTest#testStreamingHierarchicalFollowedByNonstreaming": [
+                    51,
+                    54,
+                    55,
+                    58,
+                    51,
+                    54,
+                    55,
+                    58
+                ],
+                "com.google.gson.functional.TypeHierarchyAdapterTest#testRegisterSuperTypeFirst": [
+                    51,
+                    54,
+                    55,
+                    58,
+                    51,
+                    54,
+                    55,
+                    58
+                ],
+                "com.google.gson.functional.TypeHierarchyAdapterTest#testTypeHierarchy": [
+                    51,
+                    54,
+                    55,
+                    58,
+                    51,
+                    54,
+                    55,
+                    58
+                ],
+                "com.google.gson.functional.UncategorizedTest#testReturningDerivedClassesDuringDeserialization": [
+                    51,
+                    54,
+                    55,
+                    58,
+                    51,
+                    54,
+                    55,
+                    58
+                ]
+            }
+        }
+    },
+    "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/gson/gson/src/main/java/com/google/gson/internal/bind/CollectionTypeAdapterFactory.java": {
+        "read": {
+            "tests_covering_the_method": {}
+        }
+    },
+    "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/gson/gson/src/main/java/com/google/gson/internal/bind/ReflectiveTypeAdapterFactory.java": {
+        "read": {
+            "tests_covering_the_method": {}
+        }
+    },
+    "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/gson/gson/src/main/java/com/google/gson/internal/bind/TypeAdapterRuntimeTypeWrapper.java": {
+        "read": {
+            "tests_covering_the_method": {
+                "com.google.gson.CommentsTest#testParseComments": [
+                    40,
+                    40
+                ],
+                "com.google.gson.JavaSerializationTest#testListIsSerializable": [
+                    40,
+                    40
+                ],
+                "com.google.gson.JavaSerializationTest#testMapIsSerializable": [
+                    40,
+                    40
+                ],
+                "com.google.gson.JavaSerializationTest#testNumberIsSerializable": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.ArrayTest#testArrayOfCollectionDeserialization": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.ArrayTest#testArrayOfNullDeserialization": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.ArrayTest#testArrayOfPrimitivesAsObjectsDeserialization": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.ArrayTest#testArrayOfStringsDeserialization": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.ArrayTest#testInvalidArrayDeserialization": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.ArrayTest#testMultidimenstionalArraysDeserialization": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.ArrayTest#testNullsInArrayDeserialization": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.ArrayTest#testSingleNullInArrayDeserialization": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.ArrayTest#testSingleStringArrayDeserialization": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.ArrayTest#testTopLevelArrayOfIntsDeserialization": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.CircularReferenceTest#testDirectedAcyclicGraphDeserialization": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.CollectionTest#testCollectionOfStringsDeserialization": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.CollectionTest#testFieldIsArrayList": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.CollectionTest#testLinkedListDeserialization": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.CollectionTest#testNullsInListDeserialization": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.CollectionTest#testPriorityQueue": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.CollectionTest#testQueueDeserialization": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.CollectionTest#testRawCollectionDeserializationNotAlllowed": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.CollectionTest#testRawCollectionOfBagOfPrimitivesNotAllowed": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.CollectionTest#testSetDeserialization": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.CollectionTest#testStack": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.CollectionTest#testTopLevelCollectionOfIntegersDeserialization": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.CollectionTest#testTopLevelListOfIntegerCollectionsDeserialization": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.CollectionTest#testVector": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.CollectionTest#testWildcardCollectionField": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.CollectionTest#testWildcardPrimitiveCollectionDeserilaization": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.CustomDeserializerTest#testCustomDeserializerReturnsNullForArrayElements": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.CustomDeserializerTest#testCustomDeserializerReturnsNullForArrayElementsForArrayField": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.CustomTypeAdaptersTest#testCustomAdapterInvokedForCollectionElementDeserialization": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.CustomTypeAdaptersTest#testCustomAdapterInvokedForMapElementDeserialization": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.DefaultTypeAdaptersTest#testDateSerializationInCollection": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.DefaultTypeAdaptersTest#testPropertiesDeserialization": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.DefaultTypeAdaptersTest#testTreeSetDeserialization": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.DelegateTypeAdapterTest#testDelegateInvoked": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.DelegateTypeAdapterTest#testDelegateInvokedOnStrings": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.EnumTest#testCollectionOfEnumsDeserialization": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.EnumTest#testEnumSet": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.EnumTest#testEnumSubclass": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.EnumTest#testEnumSubclassAsParameterizedType": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.EnumTest#testEnumSubclassWithRegisteredTypeAdapter": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.EscapingTest#testEscapingQuotesInStringArray": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.InheritanceTest#testSubInterfacesOfCollectionDeserialization": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.InstanceCreatorTest#testInstanceCreatorForCollectionType": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.InstanceCreatorTest#testInstanceCreatorForParametrizedType": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.JavaUtilTest#testProperties": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.JsonParserTest#testExtraCommasInArrays": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.JsonParserTest#testExtraCommasInMaps": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.JsonParserTest#testParseInvalidJson": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.LeniencyTest#testLenientFromJson": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.MapAsArrayTypeAdapterTest#testMapWithTypeVariableDeserialization": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.MapAsArrayTypeAdapterTest#testMultipleEnableComplexKeyRegistrationHasNoEffect": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.MapAsArrayTypeAdapterTest#testSerializeComplexMapWithTypeAdapter": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.MapAsArrayTypeAdapterTest#testTwoTypesCollapseToOneDeserialize": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.MapTest#testBooleanKeyDeserialization": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.MapTest#testComplexKeysDeserialization": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.MapTest#testConcurrentHashMap": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.MapTest#testConcurrentMap": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.MapTest#testConcurrentNavigableMap": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.MapTest#testConcurrentSkipListMap": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.MapTest#testDeerializeMapOfMaps": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.MapTest#testHashMapDeserialization": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.MapTest#testMapDeserialization": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.MapTest#testMapDeserializationWithDuplicateKeys": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.MapTest#testMapDeserializationWithIntegerKeys": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.MapTest#testMapDeserializationWithNullKey": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.MapTest#testMapDeserializationWithNullValue": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.MapTest#testMapDeserializationWithWildcardValues": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.MapTest#testMapNamePromotionWithJsonElementReader": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.MapTest#testMapOfMapDeserialization": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.MapTest#testMapStandardSubclassDeserialization": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.MapTest#testMapSubclassDeserialization": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.MapTest#testNumberKeyDeserialization": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.MapTest#testReadMapsWithEmptyStringKey": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.MapTest#testSortedMap": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.MapTest#testStringKeyDeserialization": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.NullObjectAndFieldTest#testAbsentJsonElementsAreSetToNull": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.ObjectTest#testArrayOfArraysDeserialization": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.ObjectTest#testArrayOfObjectsDeserialization": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.ObjectTest#testClassWithTransientFieldsDeserialization": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.ObjectTest#testClassWithTransientFieldsDeserializationTransientFieldsPassedInJsonAreIgnored": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.ObjectTest#testPrimitiveArrayInAnObjectDeserialization": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.ObjectTest#testSingletonLists": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.ObjectTest#testTruncatedDeserialization": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.ParameterizedTypesTest#testParameterizedTypeGenericArraysDeserialization": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.ParameterizedTypesTest#testParameterizedTypeWithVariableTypeDeserialization": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.ParameterizedTypesTest#testVariableTypeArrayDeserialization": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.ParameterizedTypesTest#testVariableTypeFieldsAndGenericArraysDeserialization": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.PrimitiveTest#testDoubleArrayDeserialization": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.PrimitiveTest#testStringsAsBooleans": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.StreamingTypeAdaptersTest#testDeserialize": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.StreamingTypeAdaptersTest#testDeserialize1dArray": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.StreamingTypeAdaptersTest#testDeserialize2dArray": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.StreamingTypeAdaptersTest#testDeserializeMap": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.StreamingTypeAdaptersTest#testDeserializeNullObject": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.StreamingTypeAdaptersTest#testDeserializeWithCustomTypeAdapter": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.StreamingTypeAdaptersTest#testFromJsonTree": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.StreamingTypeAdaptersTest#testNullSafe": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.TreeTypeAdaptersTest#testDeserializeId": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.TypeHierarchyAdapterTest#testTypeHierarchy": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.TypeVariableTest#testAdvancedTypeVariables": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.TypeVariableTest#testTypeVariablesViaTypeParameter": [
+                    40,
+                    40
+                ],
+                "com.google.gson.functional.UncategorizedTest#testTrailingWhitespace": [
+                    40,
+                    40
+                ]
+            }
+        }
+    },
+    "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/gson/gson/src/main/java/com/google/gson/internal/bind/util/ISO8601Utils.java": {
+        "parse": {
+            "tests_covering_the_method": {
+                "com.google.gson.DefaultDateTypeAdapterTest#testDateDeserializationISO8601": [
+                    124,
+                    126,
+                    129,
+                    130,
+                    131,
+                    135,
+                    136,
+                    137,
+                    141,
+                    143,
+                    144,
+                    145,
+                    146,
+                    149,
+                    151,
+                    158,
+                    161,
+                    162,
+                    163,
+                    166,
+                    167,
+                    168,
+                    171,
+                    172,
+                    173,
+                    174,
+                    175,
+                    177,
+                    178,
+                    179,
+                    180,
+                    181,
+                    183,
+                    191,
+                    193,
+                    200,
+                    204,
+                    205,
+                    207,
+                    208,
+                    209,
+                    210,
+                    211,
+                    214,
+                    216,
+                    218,
+                    219,
+                    225,
+                    228,
+                    230,
+                    231,
+                    237,
+                    238,
+                    244,
+                    248,
+                    249,
+                    250,
+                    251,
+                    252,
+                    253,
+                    254,
+                    255,
+                    256,
+                    258,
+                    259,
+                    124,
+                    126,
+                    129,
+                    130,
+                    131,
+                    135,
+                    136,
+                    137,
+                    141,
+                    143,
+                    144,
+                    145,
+                    146,
+                    149,
+                    151,
+                    158,
+                    161,
+                    162,
+                    163,
+                    166,
+                    167,
+                    168,
+                    171,
+                    172,
+                    173,
+                    174,
+                    175,
+                    177,
+                    178,
+                    179,
+                    180,
+                    181,
+                    183,
+                    191,
+                    193,
+                    200,
+                    204,
+                    205,
+                    207,
+                    208,
+                    209,
+                    210,
+                    211,
+                    214,
+                    216,
+                    218,
+                    219,
+                    225,
+                    228,
+                    230,
+                    231,
+                    237,
+                    238,
+                    244,
+                    248,
+                    249,
+                    250,
+                    251,
+                    252,
+                    253,
+                    254,
+                    255,
+                    256,
+                    258,
+                    259
+                ],
+                "com.google.gson.DefaultDateTypeAdapterTest#testFormatUsesDefaultTimezone": [
+                    124,
+                    126,
+                    129,
+                    130,
+                    131,
+                    135,
+                    136,
+                    137,
+                    141,
+                    143,
+                    144,
+                    145,
+                    146,
+                    149,
+                    151,
+                    158,
+                    161,
+                    162,
+                    163,
+                    166,
+                    167,
+                    168,
+                    171,
+                    172,
+                    173,
+                    174,
+                    175,
+                    177,
+                    200,
+                    204,
+                    205,
+                    207,
+                    208,
+                    209,
+                    248,
+                    249,
+                    250,
+                    251,
+                    252,
+                    253,
+                    254,
+                    255,
+                    256,
+                    258,
+                    259,
+                    124,
+                    126,
+                    129,
+                    130,
+                    131,
+                    135,
+                    136,
+                    137,
+                    141,
+                    143,
+                    144,
+                    145,
+                    146,
+                    149,
+                    151,
+                    158,
+                    161,
+                    162,
+                    163,
+                    166,
+                    167,
+                    168,
+                    171,
+                    172,
+                    173,
+                    174,
+                    175,
+                    177,
+                    200,
+                    204,
+                    205,
+                    207,
+                    208,
+                    209,
+                    248,
+                    249,
+                    250,
+                    251,
+                    252,
+                    253,
+                    254,
+                    255,
+                    256,
+                    258,
+                    259
+                ],
+                "com.google.gson.DefaultDateTypeAdapterTest#testParsingDatesFormattedWithSystemLocale": [
+                    124,
+                    126,
+                    129,
+                    130,
+                    131,
+                    135,
+                    136,
+                    137,
+                    141,
+                    143,
+                    144,
+                    145,
+                    146,
+                    149,
+                    151,
+                    158,
+                    161,
+                    162,
+                    163,
+                    166,
+                    167,
+                    168,
+                    171,
+                    172,
+                    173,
+                    174,
+                    175,
+                    177,
+                    200,
+                    204,
+                    205,
+                    207,
+                    208,
+                    209,
+                    248,
+                    249,
+                    250,
+                    251,
+                    252,
+                    253,
+                    254,
+                    255,
+                    256,
+                    258,
+                    259,
+                    124,
+                    126,
+                    129,
+                    130,
+                    131,
+                    135,
+                    136,
+                    137,
+                    141,
+                    143,
+                    144,
+                    145,
+                    146,
+                    149,
+                    151,
+                    158,
+                    161,
+                    162,
+                    163,
+                    166,
+                    167,
+                    168,
+                    171,
+                    172,
+                    173,
+                    174,
+                    175,
+                    177,
+                    200,
+                    204,
+                    205,
+                    207,
+                    208,
+                    209,
+                    248,
+                    249,
+                    250,
+                    251,
+                    252,
+                    253,
+                    254,
+                    255,
+                    256,
+                    258,
+                    259
+                ],
+                "com.google.gson.DefaultDateTypeAdapterTest#testParsingDatesFormattedWithUsLocale": [
+                    124,
+                    126,
+                    129,
+                    130,
+                    131,
+                    135,
+                    136,
+                    137,
+                    141,
+                    143,
+                    144,
+                    145,
+                    146,
+                    149,
+                    151,
+                    158,
+                    161,
+                    162,
+                    163,
+                    166,
+                    167,
+                    168,
+                    171,
+                    172,
+                    173,
+                    174,
+                    175,
+                    177,
+                    200,
+                    204,
+                    205,
+                    207,
+                    208,
+                    209,
+                    248,
+                    249,
+                    250,
+                    251,
+                    252,
+                    253,
+                    254,
+                    255,
+                    256,
+                    258,
+                    259,
+                    124,
+                    126,
+                    129,
+                    130,
+                    131,
+                    135,
+                    136,
+                    137,
+                    141,
+                    143,
+                    144,
+                    145,
+                    146,
+                    149,
+                    151,
+                    158,
+                    161,
+                    162,
+                    163,
+                    166,
+                    167,
+                    168,
+                    171,
+                    172,
+                    173,
+                    174,
+                    175,
+                    177,
+                    200,
+                    204,
+                    205,
+                    207,
+                    208,
+                    209,
+                    248,
+                    249,
+                    250,
+                    251,
+                    252,
+                    253,
+                    254,
+                    255,
+                    256,
+                    258,
+                    259
+                ]
+            }
+        }
+    }
+}

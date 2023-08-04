@@ -1,0 +1,1686 @@
+{
+    "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/mockito/src/org/mockito/Mockito.java": {
+        "verifyZeroInteractions": {
+            "tests_covering_the_method": {
+                "org.concurrentmockito.ThreadsRunAllTestsHalfManualTest#shouldRunInMultipleThreads": [
+                    1674,
+                    1675
+                ],
+                "org.mockito.MockitoTest#shouldValidateMockWhenVerifyingZeroInteractions": [
+                    1674
+                ],
+                "org.mockito.internal.InvalidStateDetectionTest#shouldDetectMisplacedArgumentMatcher": [
+                    1674
+                ],
+                "org.mockito.internal.InvalidStateDetectionTest#shouldDetectUnfinishedDoAnswerStubbing": [
+                    1674
+                ],
+                "org.mockito.internal.InvalidStateDetectionTest#shouldDetectUnfinishedStubbing": [
+                    1674
+                ],
+                "org.mockito.internal.InvalidStateDetectionTest#shouldDetectUnfinishedStubbingVoid": [
+                    1674
+                ],
+                "org.mockito.internal.InvalidStateDetectionTest#shouldDetectUnfinishedVerification": [
+                    1674
+                ],
+                "org.mockitousage.basicapi.ResetTest#shouldRemoveAllInteractions": [
+                    1674,
+                    1675
+                ],
+                "org.mockitousage.basicapi.ResetTest#shouldStubbingNotBeTreatedAsInteraction": [
+                    1674,
+                    1675
+                ],
+                "org.mockitousage.misuse.InvalidUsageTest#shouldNotMockObjectMethodsOnInterface": [
+                    1674,
+                    1675
+                ],
+                "org.mockitousage.misuse.InvalidUsageTest#shouldRequireArgumentsWhenVerifyingZeroInteractions": [
+                    1674
+                ],
+                "org.mockitousage.stacktrace.StackTraceFilteringTest#shouldFilterStackTraceOnVerifyZeroInteractions": [
+                    1674
+                ],
+                "org.mockitousage.stubbing.BasicStubbingTest#should_stubbing_not_be_treated_as_interaction": [
+                    1674,
+                    1675
+                ],
+                "org.mockitousage.stubbing.BasicStubbingTest#unfinished_stubbing_cleans_up_the_state": [
+                    1674,
+                    1675
+                ],
+                "org.mockitousage.stubbing.DeprecatedStubbingTest#shouldStubbingNotBeTreatedAsInteraction": [
+                    1674,
+                    1675
+                ],
+                "org.mockitousage.stubbing.StubbingWithThrowablesTest#shouldStubbingWithThrowableFailVerification": [
+                    1674,
+                    1675
+                ],
+                "org.mockitousage.verification.BasicVerificationInOrderTest#shouldFailOnVerifyZeroInteractions": [
+                    1674
+                ],
+                "org.mockitousage.verification.DescriptiveMessagesWhenVerificationFailsTest#should_print_first_unexpected_invocation_when_verifying_zero_interactions": [
+                    1674
+                ],
+                "org.mockitousage.verification.NoMoreInteractionsVerificationTest#shouldFailZeroInteractionsVerification": [
+                    1674
+                ],
+                "org.mockitousage.verification.NoMoreInteractionsVerificationTest#shouldVerifyNoInteractionsAsManyTimesAsYouWant": [
+                    1674,
+                    1675
+                ],
+                "org.mockitousage.verification.NoMoreInteractionsVerificationTest#shouldVerifyOneMockButFailOnOther": [
+                    1674
+                ],
+                "org.mockitousage.verification.VerificationOnMultipleMocksUsingMatchersTest#shouldVerifyMultipleMocks": [
+                    1674,
+                    1675
+                ]
+            }
+        }
+    },
+    "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/mockito/src/org/mockito/exceptions/Reporter.java": {
+        "noMoreInteractionsWanted": {
+            "tests_covering_the_method": {
+                "org.concurrentmockito.ThreadsRunAllTestsHalfManualTest#shouldRunInMultipleThreads": [
+                    417,
+                    418,
+                    420,
+                    423,
+                    424
+                ],
+                "org.mockito.internal.verification.NoMoreInteractionsTest#noMoreInteractionsExceptionMessageShouldDescribeMock": [
+                    417,
+                    418,
+                    420,
+                    423,
+                    424
+                ],
+                "org.mockitousage.basicapi.UsingVarargsTest#shouldVerifyObjectVarargs": [
+                    417,
+                    418,
+                    420,
+                    423,
+                    424
+                ],
+                "org.mockitousage.bugs.AtLeastMarksAllInvocationsVerified#shouldFailBecauseDisallowedMethodWasCalled": [
+                    417,
+                    418,
+                    420,
+                    423,
+                    424
+                ],
+                "org.mockitousage.spies.SpyingOnRealObjectsTest#shouldVerifyNoMoreInteractionsAndFail": [
+                    417,
+                    418,
+                    420,
+                    423,
+                    424
+                ],
+                "org.mockitousage.stacktrace.StackTraceFilteringTest#shouldFilterStackTraceOnVerifyNoMoreInteractions": [
+                    417,
+                    418,
+                    420,
+                    423,
+                    424
+                ],
+                "org.mockitousage.stacktrace.StackTraceFilteringTest#shouldFilterStackTraceOnVerifyZeroInteractions": [
+                    417,
+                    418,
+                    420,
+                    423,
+                    424
+                ],
+                "org.mockitousage.stubbing.BasicStubbingTest#should_stubbing_be_treated_as_interaction": [
+                    417,
+                    418,
+                    420,
+                    423,
+                    424
+                ],
+                "org.mockitousage.stubbing.DeprecatedStubbingTest#shouldStubbingBeTreatedAsInteraction": [
+                    417,
+                    418,
+                    420,
+                    423,
+                    424
+                ],
+                "org.mockitousage.stubbing.StubbingUsingDoReturnTest#shouldStubbingBeTreatedAsInteraction": [
+                    417,
+                    418,
+                    420,
+                    423,
+                    424
+                ],
+                "org.mockitousage.stubbing.StubbingWithThrowablesTest#shouldStubbingWithThrowableFailVerification": [
+                    417,
+                    418,
+                    420,
+                    423,
+                    424
+                ],
+                "org.mockitousage.verification.AtMostXVerificationTest#shouldDetectUnverifiedInMarkInteractionsAsVerified": [
+                    417,
+                    418,
+                    420,
+                    423,
+                    424
+                ],
+                "org.mockitousage.verification.BasicVerificationInOrderTest#shouldFailOnVerifyNoMoreInteractions": [
+                    417,
+                    418,
+                    420,
+                    423,
+                    424
+                ],
+                "org.mockitousage.verification.BasicVerificationInOrderTest#shouldFailOnVerifyZeroInteractions": [
+                    417,
+                    418,
+                    420,
+                    423,
+                    424
+                ],
+                "org.mockitousage.verification.BasicVerificationTest#shouldDetectRedundantInvocation": [
+                    417,
+                    418,
+                    420,
+                    423,
+                    424
+                ],
+                "org.mockitousage.verification.DescriptiveMessagesWhenVerificationFailsTest#should_print_first_unexpected_invocation": [
+                    417,
+                    418,
+                    420,
+                    423,
+                    424
+                ],
+                "org.mockitousage.verification.DescriptiveMessagesWhenVerificationFailsTest#should_print_first_unexpected_invocation_when_verifying_zero_interactions": [
+                    417,
+                    418,
+                    420,
+                    423,
+                    424
+                ],
+                "org.mockitousage.verification.NoMoreInteractionsVerificationTest#shouldFailNoMoreInteractionsVerification": [
+                    417,
+                    418,
+                    420,
+                    423,
+                    424
+                ],
+                "org.mockitousage.verification.NoMoreInteractionsVerificationTest#shouldFailZeroInteractionsVerification": [
+                    417,
+                    418,
+                    420,
+                    423,
+                    424
+                ],
+                "org.mockitousage.verification.NoMoreInteractionsVerificationTest#shouldNotContainAllInvocationsWhenSingleUnwantedFound": [
+                    417,
+                    418,
+                    420,
+                    423,
+                    424
+                ],
+                "org.mockitousage.verification.NoMoreInteractionsVerificationTest#shouldPrintAllInvocationsWhenVerifyingNoMoreInvocations": [
+                    417,
+                    418,
+                    420,
+                    423,
+                    424
+                ],
+                "org.mockitousage.verification.NoMoreInteractionsVerificationTest#shouldVerifyOneMockButFailOnOther": [
+                    417,
+                    418,
+                    420,
+                    423,
+                    424
+                ],
+                "org.mockitousage.verification.OnlyVerificationTest#shouldFailIfExtraMethodWithDifferentArgsFound": [
+                    417,
+                    418,
+                    420,
+                    423,
+                    424
+                ],
+                "org.mockitousage.verification.OnlyVerificationTest#shouldFailIfMethodWasInvokedMoreThanOnce": [
+                    417,
+                    418,
+                    420,
+                    423,
+                    424
+                ],
+                "org.mockitousage.verification.RelaxedVerificationInOrderTest#shouldAllowFirstChunkBeforeLastInvocation": [
+                    417,
+                    418,
+                    420,
+                    423,
+                    424
+                ],
+                "org.mockitousage.verification.RelaxedVerificationInOrderTest#shouldVerifyDetectFirstChunkOfInvocationThatExistInManyChunks": [
+                    417,
+                    418,
+                    420,
+                    423,
+                    424
+                ],
+                "org.mockitousage.verification.RelaxedVerificationInOrderTest#shouldVerifyInteractionsFromFirstChunk": [
+                    417,
+                    418,
+                    420,
+                    423,
+                    424
+                ],
+                "org.mockitousage.verification.SelectedMocksInOrderVerificationTest#shouldAllowTwoTimesOnMockTwo": [
+                    417,
+                    418,
+                    420,
+                    423,
+                    424
+                ],
+                "org.mockitousage.verification.VerificationExcludingStubsTest#shouldAllowToExcludeStubsForVerification": [
+                    417,
+                    418,
+                    420,
+                    423,
+                    424
+                ],
+                "org.mockitousage.verification.VerificationInOrderMixedWithOrdiraryVerificationTest#shouldFailOnNoMoreInteractions": [
+                    417,
+                    418,
+                    420,
+                    423,
+                    424
+                ],
+                "org.mockitousage.verification.VerificationInOrderMixedWithOrdiraryVerificationTest#shouldFailOnNoMoreInteractionsOnMockVerifiedInOrder": [
+                    417,
+                    418,
+                    420,
+                    423,
+                    424
+                ],
+                "org.mockitousage.verification.VerificationInOrderWithCallsTest#shouldNotVerifySkippedCallsWhenFewerCallsForDifferentMethods": [
+                    417,
+                    418,
+                    420,
+                    423,
+                    424
+                ],
+                "org.mockitousage.verification.VerificationInOrderWithCallsTest#shouldNotVerifySkippedCallsWhenFewerCallsForMethodsOnDifferentMocks": [
+                    417,
+                    418,
+                    420,
+                    423,
+                    424
+                ],
+                "org.mockitousage.verification.VerificationInOrderWithCallsTest#shouldNotVerifySkippedCallsWhenFewerCallsForSingleMethod": [
+                    417,
+                    418,
+                    420,
+                    423,
+                    424
+                ],
+                "org.mockitousage.verification.VerificationWithTimeoutTest#shouldAllowMixingOnlyWithTimeoutAndFail": [
+                    417,
+                    418,
+                    420,
+                    423,
+                    424
+                ]
+            }
+        }
+    },
+    "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/mockito/src/org/mockito/internal/MockitoCore.java": {
+        "verifyNoMoreInteractions": {
+            "tests_covering_the_method": {
+                "org.concurrentmockito.ThreadsRunAllTestsHalfManualTest#shouldRunInMultipleThreads": [
+                    104,
+                    105,
+                    106,
+                    108,
+                    111,
+                    112,
+                    113,
+                    116,
+                    114,
+                    115,
+                    118
+                ],
+                "org.mockito.MockitoTest#shouldValidateMockWhenVerifyingNoMoreInteractions": [
+                    104,
+                    105,
+                    106,
+                    108,
+                    111,
+                    114,
+                    115
+                ],
+                "org.mockito.MockitoTest#shouldValidateMockWhenVerifyingZeroInteractions": [
+                    104,
+                    105,
+                    106,
+                    108,
+                    111,
+                    114,
+                    115
+                ],
+                "org.mockito.internal.InvalidStateDetectionTest#shouldDetectMisplacedArgumentMatcher": [
+                    104,
+                    105
+                ],
+                "org.mockito.internal.InvalidStateDetectionTest#shouldDetectUnfinishedDoAnswerStubbing": [
+                    104,
+                    105
+                ],
+                "org.mockito.internal.InvalidStateDetectionTest#shouldDetectUnfinishedStubbing": [
+                    104,
+                    105
+                ],
+                "org.mockito.internal.InvalidStateDetectionTest#shouldDetectUnfinishedStubbingVoid": [
+                    104,
+                    105
+                ],
+                "org.mockito.internal.InvalidStateDetectionTest#shouldDetectUnfinishedVerification": [
+                    104,
+                    105
+                ],
+                "org.mockitousage.basicapi.ResetTest#shouldRemoveAllInteractions": [
+                    104,
+                    105,
+                    106,
+                    108,
+                    111,
+                    112,
+                    113,
+                    116,
+                    118
+                ],
+                "org.mockitousage.basicapi.ResetTest#shouldResetMultipleMocks": [
+                    104,
+                    105,
+                    106,
+                    108,
+                    111,
+                    112,
+                    113,
+                    116,
+                    118
+                ],
+                "org.mockitousage.basicapi.ResetTest#shouldStubbingNotBeTreatedAsInteraction": [
+                    104,
+                    105,
+                    106,
+                    108,
+                    111,
+                    112,
+                    113,
+                    116,
+                    118
+                ],
+                "org.mockitousage.basicapi.UsingVarargsTest#shouldVerifyObjectVarargs": [
+                    104,
+                    105,
+                    106,
+                    108,
+                    111,
+                    112,
+                    113
+                ],
+                "org.mockitousage.bugs.AtLeastMarksAllInvocationsVerified#shouldFailBecauseDisallowedMethodWasCalled": [
+                    104,
+                    105,
+                    106,
+                    108,
+                    111,
+                    112,
+                    113
+                ],
+                "org.mockitousage.bugs.ConcurrentModificationExceptionOnMultiThreadedVerificationTest#shouldSuccessfullyVerifyConcurrentInvocationsWithTimeout": [
+                    104,
+                    105,
+                    106,
+                    108,
+                    111,
+                    112,
+                    113,
+                    116,
+                    118
+                ],
+                "org.mockitousage.matchers.VerificationAndStubbingUsingMatchersTest#shouldVerifyUsingMatchers": [
+                    104,
+                    105,
+                    106,
+                    108,
+                    111,
+                    112,
+                    113,
+                    116,
+                    118
+                ],
+                "org.mockitousage.misuse.DescriptiveMessagesOnMisuseTest#shouldScreamWhenNotMockPassedToVerifyNoMoreInteractions": [
+                    104,
+                    105,
+                    106,
+                    108,
+                    109
+                ],
+                "org.mockitousage.misuse.DescriptiveMessagesOnMisuseTest#shouldScreamWhenNullPassedToVerifyNoMoreInteractions": [
+                    104
+                ],
+                "org.mockitousage.misuse.DescriptiveMessagesOnMisuseTest#shouldScreamWhenWholeMethodPassedToVerifyNoMoreInteractions": [
+                    104,
+                    105,
+                    106,
+                    108,
+                    111,
+                    114,
+                    115
+                ],
+                "org.mockitousage.misuse.InvalidUsageTest#shouldNotMockObjectMethodsOnInterface": [
+                    104,
+                    105,
+                    106,
+                    108,
+                    111,
+                    112,
+                    113,
+                    116,
+                    118
+                ],
+                "org.mockitousage.misuse.InvalidUsageTest#shouldRequireArgumentsWhenVerifyingNoMoreInteractions": [
+                    104
+                ],
+                "org.mockitousage.misuse.InvalidUsageTest#shouldRequireArgumentsWhenVerifyingZeroInteractions": [
+                    104
+                ],
+                "org.mockitousage.spies.SpyingOnRealObjectsTest#shouldStubWithDoReturnAndVerify": [
+                    104,
+                    105,
+                    106,
+                    108,
+                    111,
+                    112,
+                    113,
+                    116,
+                    118
+                ],
+                "org.mockitousage.spies.SpyingOnRealObjectsTest#shouldVerifyInOrder": [
+                    104,
+                    105,
+                    106,
+                    108,
+                    111,
+                    112,
+                    113,
+                    116,
+                    118
+                ],
+                "org.mockitousage.spies.SpyingOnRealObjectsTest#shouldVerifyNoMoreInteractionsAndFail": [
+                    104,
+                    105,
+                    106,
+                    108,
+                    111,
+                    112,
+                    113
+                ],
+                "org.mockitousage.spies.SpyingOnRealObjectsTest#shouldVerifyNumberOfTimes": [
+                    104,
+                    105,
+                    106,
+                    108,
+                    111,
+                    112,
+                    113,
+                    116,
+                    118
+                ],
+                "org.mockitousage.stacktrace.StackTraceFilteringTest#shouldFilterStackTraceOnVerifyNoMoreInteractions": [
+                    104,
+                    105,
+                    106,
+                    108,
+                    111,
+                    112,
+                    113
+                ],
+                "org.mockitousage.stacktrace.StackTraceFilteringTest#shouldFilterStackTraceOnVerifyZeroInteractions": [
+                    104,
+                    105,
+                    106,
+                    108,
+                    111,
+                    112,
+                    113
+                ],
+                "org.mockitousage.stubbing.BasicStubbingTest#should_stubbing_be_treated_as_interaction": [
+                    104,
+                    105,
+                    106,
+                    108,
+                    111,
+                    112,
+                    113
+                ],
+                "org.mockitousage.stubbing.BasicStubbingTest#should_stubbing_not_be_treated_as_interaction": [
+                    104,
+                    105,
+                    106,
+                    108,
+                    111,
+                    112,
+                    113,
+                    116,
+                    118
+                ],
+                "org.mockitousage.stubbing.BasicStubbingTest#unfinished_stubbing_cleans_up_the_state": [
+                    104,
+                    105,
+                    106,
+                    108,
+                    111,
+                    112,
+                    113,
+                    116,
+                    118
+                ],
+                "org.mockitousage.stubbing.DeprecatedStubbingTest#shouldStubbingBeTreatedAsInteraction": [
+                    104,
+                    105,
+                    106,
+                    108,
+                    111,
+                    112,
+                    113
+                ],
+                "org.mockitousage.stubbing.DeprecatedStubbingTest#shouldStubbingNotBeTreatedAsInteraction": [
+                    104,
+                    105,
+                    106,
+                    108,
+                    111,
+                    112,
+                    113,
+                    116,
+                    118
+                ],
+                "org.mockitousage.stubbing.StubbingUsingDoReturnTest#shouldStubbingBeTreatedAsInteraction": [
+                    104,
+                    105,
+                    106,
+                    108,
+                    111,
+                    112,
+                    113
+                ],
+                "org.mockitousage.stubbing.StubbingUsingDoReturnTest#shouldVerifyStubbedCall": [
+                    104,
+                    105,
+                    106,
+                    108,
+                    111,
+                    112,
+                    113,
+                    116,
+                    118
+                ],
+                "org.mockitousage.stubbing.StubbingWithThrowablesTest#shouldStubbingWithThrowableBeVerifiable": [
+                    104,
+                    105,
+                    106,
+                    108,
+                    111,
+                    112,
+                    113,
+                    116,
+                    118
+                ],
+                "org.mockitousage.stubbing.StubbingWithThrowablesTest#shouldStubbingWithThrowableFailVerification": [
+                    104,
+                    105,
+                    106,
+                    108,
+                    111,
+                    112,
+                    113,
+                    116,
+                    118
+                ],
+                "org.mockitousage.verification.AtLeastXVerificationTest#shouldAllowAtLeastZeroForTheSakeOfVerifyNoMoreInteractionsSometimes": [
+                    104,
+                    105,
+                    106,
+                    108,
+                    111,
+                    112,
+                    113,
+                    116,
+                    118
+                ],
+                "org.mockitousage.verification.AtMostXVerificationTest#shouldDetectUnverifiedInMarkInteractionsAsVerified": [
+                    104,
+                    105,
+                    106,
+                    108,
+                    111,
+                    112,
+                    113
+                ],
+                "org.mockitousage.verification.AtMostXVerificationTest#shouldMarkInteractionsAsVerified": [
+                    104,
+                    105,
+                    106,
+                    108,
+                    111,
+                    112,
+                    113,
+                    116,
+                    118
+                ],
+                "org.mockitousage.verification.BasicVerificationInOrderTest#shouldFailOnVerifyNoMoreInteractions": [
+                    104,
+                    105,
+                    106,
+                    108,
+                    111,
+                    112,
+                    113
+                ],
+                "org.mockitousage.verification.BasicVerificationInOrderTest#shouldFailOnVerifyZeroInteractions": [
+                    104,
+                    105,
+                    106,
+                    108,
+                    111,
+                    112,
+                    113
+                ],
+                "org.mockitousage.verification.BasicVerificationInOrderTest#shouldVerifyInOrder": [
+                    104,
+                    105,
+                    106,
+                    108,
+                    111,
+                    112,
+                    113,
+                    116,
+                    118
+                ],
+                "org.mockitousage.verification.BasicVerificationInOrderTest#shouldVerifyInOrderUsingAtLeastOnce": [
+                    104,
+                    105,
+                    106,
+                    108,
+                    111,
+                    112,
+                    113,
+                    116,
+                    118
+                ],
+                "org.mockitousage.verification.BasicVerificationInOrderTest#shouldVerifyInOrderWhenExpectingSomeInvocationsToBeCalledZeroTimes": [
+                    104,
+                    105,
+                    106,
+                    108,
+                    111,
+                    112,
+                    113,
+                    116,
+                    118
+                ],
+                "org.mockitousage.verification.BasicVerificationTest#shouldDetectRedundantInvocation": [
+                    104,
+                    105,
+                    106,
+                    108,
+                    111,
+                    112,
+                    113
+                ],
+                "org.mockitousage.verification.BasicVerificationTest#shouldVerify": [
+                    104,
+                    105,
+                    106,
+                    108,
+                    111,
+                    112,
+                    113,
+                    116,
+                    118
+                ],
+                "org.mockitousage.verification.DescriptiveMessagesWhenVerificationFailsTest#should_print_first_unexpected_invocation": [
+                    104,
+                    105,
+                    106,
+                    108,
+                    111,
+                    112,
+                    113
+                ],
+                "org.mockitousage.verification.DescriptiveMessagesWhenVerificationFailsTest#should_print_first_unexpected_invocation_when_verifying_zero_interactions": [
+                    104,
+                    105,
+                    106,
+                    108,
+                    111,
+                    112,
+                    113
+                ],
+                "org.mockitousage.verification.NoMoreInteractionsVerificationTest#shouldFailNoMoreInteractionsVerification": [
+                    104,
+                    105,
+                    106,
+                    108,
+                    111,
+                    112,
+                    113
+                ],
+                "org.mockitousage.verification.NoMoreInteractionsVerificationTest#shouldFailZeroInteractionsVerification": [
+                    104,
+                    105,
+                    106,
+                    108,
+                    111,
+                    112,
+                    113
+                ],
+                "org.mockitousage.verification.NoMoreInteractionsVerificationTest#shouldNotContainAllInvocationsWhenSingleUnwantedFound": [
+                    104,
+                    105,
+                    106,
+                    108,
+                    111,
+                    112,
+                    113
+                ],
+                "org.mockitousage.verification.NoMoreInteractionsVerificationTest#shouldPrintAllInvocationsWhenVerifyingNoMoreInvocations": [
+                    104,
+                    105,
+                    106,
+                    108,
+                    111,
+                    112,
+                    113
+                ],
+                "org.mockitousage.verification.NoMoreInteractionsVerificationTest#shouldStubbingNotRegisterRedundantInteractions": [
+                    104,
+                    105,
+                    106,
+                    108,
+                    111,
+                    112,
+                    113,
+                    116,
+                    118
+                ],
+                "org.mockitousage.verification.NoMoreInteractionsVerificationTest#shouldVerifyNoInteractionsAsManyTimesAsYouWant": [
+                    104,
+                    105,
+                    106,
+                    108,
+                    111,
+                    112,
+                    113,
+                    116,
+                    118
+                ],
+                "org.mockitousage.verification.NoMoreInteractionsVerificationTest#shouldVerifyOneMockButFailOnOther": [
+                    104,
+                    105,
+                    106,
+                    108,
+                    111,
+                    112,
+                    113,
+                    116,
+                    118
+                ],
+                "org.mockitousage.verification.NoMoreInteractionsVerificationTest#shouldVerifyWhenWantedNumberOfInvocationsUsed": [
+                    104,
+                    105,
+                    106,
+                    108,
+                    111,
+                    112,
+                    113,
+                    116,
+                    118
+                ],
+                "org.mockitousage.verification.NoMoreInteractionsVerificationTest#verifyNoMoreInteractionsShouldScreamWhenNullPassed": [
+                    104
+                ],
+                "org.mockitousage.verification.RelaxedVerificationInOrderTest#shouldAllowAllChunksBeforeLastInvocation": [
+                    104,
+                    105,
+                    106,
+                    108,
+                    111,
+                    112,
+                    113,
+                    116,
+                    118
+                ],
+                "org.mockitousage.verification.RelaxedVerificationInOrderTest#shouldAllowFirstChunkBeforeLastInvocation": [
+                    104,
+                    105,
+                    106,
+                    108,
+                    111,
+                    112,
+                    113
+                ],
+                "org.mockitousage.verification.RelaxedVerificationInOrderTest#shouldPassOnCombinationOfTimesAndAtLeastOnce": [
+                    104,
+                    105,
+                    106,
+                    108,
+                    111,
+                    112,
+                    113,
+                    116,
+                    118
+                ],
+                "org.mockitousage.verification.RelaxedVerificationInOrderTest#shouldPassOnEdgyCombinationOfTimesAndAtLeastOnce": [
+                    104,
+                    105,
+                    106,
+                    108,
+                    111,
+                    112,
+                    113,
+                    116,
+                    118
+                ],
+                "org.mockitousage.verification.RelaxedVerificationInOrderTest#shouldVerifyDetectAllChunksOfInvocationThatExistInManyChunks": [
+                    104,
+                    105,
+                    106,
+                    108,
+                    111,
+                    112,
+                    113,
+                    116,
+                    118
+                ],
+                "org.mockitousage.verification.RelaxedVerificationInOrderTest#shouldVerifyDetectFirstChunkOfInvocationThatExistInManyChunks": [
+                    104,
+                    105,
+                    106,
+                    108,
+                    111,
+                    112,
+                    113
+                ],
+                "org.mockitousage.verification.RelaxedVerificationInOrderTest#shouldVerifyInOrderAllInvocations": [
+                    104,
+                    105,
+                    106,
+                    108,
+                    111,
+                    112,
+                    113,
+                    116,
+                    118
+                ],
+                "org.mockitousage.verification.RelaxedVerificationInOrderTest#shouldVerifyInOrderAndBeRelaxed": [
+                    104,
+                    105,
+                    106,
+                    108,
+                    111,
+                    112,
+                    113,
+                    116,
+                    118
+                ],
+                "org.mockitousage.verification.RelaxedVerificationInOrderTest#shouldVerifyInOrderMockOneAndThree": [
+                    104,
+                    105,
+                    106,
+                    108,
+                    111,
+                    112,
+                    113,
+                    116,
+                    118
+                ],
+                "org.mockitousage.verification.RelaxedVerificationInOrderTest#shouldVerifyInOrderMockTwoAndThree": [
+                    104,
+                    105,
+                    106,
+                    108,
+                    111,
+                    112,
+                    113,
+                    116,
+                    118
+                ],
+                "org.mockitousage.verification.RelaxedVerificationInOrderTest#shouldVerifyInOrderOnlyMockTwo": [
+                    104,
+                    105,
+                    106,
+                    108,
+                    111,
+                    112,
+                    113,
+                    116,
+                    118
+                ],
+                "org.mockitousage.verification.RelaxedVerificationInOrderTest#shouldVerifyInteractionsFromAllChunksWhenAtLeastOnceMode": [
+                    104,
+                    105,
+                    106,
+                    108,
+                    111,
+                    112,
+                    113,
+                    116,
+                    118
+                ],
+                "org.mockitousage.verification.RelaxedVerificationInOrderTest#shouldVerifyInteractionsFromFirstChunk": [
+                    104,
+                    105,
+                    106,
+                    108,
+                    111,
+                    112,
+                    113
+                ],
+                "org.mockitousage.verification.SelectedMocksInOrderVerificationTest#shouldAllowThreeTimesOnMockTwo": [
+                    104,
+                    105,
+                    106,
+                    108,
+                    111,
+                    112,
+                    113,
+                    116,
+                    118
+                ],
+                "org.mockitousage.verification.SelectedMocksInOrderVerificationTest#shouldAllowTwoTimesOnMockTwo": [
+                    104,
+                    105,
+                    106,
+                    108,
+                    111,
+                    112,
+                    113
+                ],
+                "org.mockitousage.verification.SelectedMocksInOrderVerificationTest#shouldVerifyAllInvocationsInOrder": [
+                    104,
+                    105,
+                    106,
+                    108,
+                    111,
+                    112,
+                    113,
+                    116,
+                    118
+                ],
+                "org.mockitousage.verification.SelectedMocksInOrderVerificationTest#shouldVerifyInOrderMockOneAndThree": [
+                    104,
+                    105,
+                    106,
+                    108,
+                    111,
+                    112,
+                    113,
+                    116,
+                    118
+                ],
+                "org.mockitousage.verification.SelectedMocksInOrderVerificationTest#shouldVerifyInOrderMockTwoAndThree": [
+                    104,
+                    105,
+                    106,
+                    108,
+                    111,
+                    112,
+                    113,
+                    116,
+                    118
+                ],
+                "org.mockitousage.verification.SelectedMocksInOrderVerificationTest#shouldVerifyMockOneInOrder": [
+                    104,
+                    105,
+                    106,
+                    108,
+                    111,
+                    112,
+                    113,
+                    116,
+                    118
+                ],
+                "org.mockitousage.verification.SelectedMocksInOrderVerificationTest#shouldVerifyMockTwo": [
+                    104,
+                    105,
+                    106,
+                    108,
+                    111,
+                    112,
+                    113,
+                    116,
+                    118
+                ],
+                "org.mockitousage.verification.SelectedMocksInOrderVerificationTest#shouldVerifyMockTwoCompletely": [
+                    104,
+                    105,
+                    106,
+                    108,
+                    111,
+                    112,
+                    113,
+                    116,
+                    118
+                ],
+                "org.mockitousage.verification.SelectedMocksInOrderVerificationTest#shouldVerifyMockTwoWhenThreeTimesUsed": [
+                    104,
+                    105,
+                    106,
+                    108,
+                    111,
+                    112,
+                    113,
+                    116,
+                    118
+                ],
+                "org.mockitousage.verification.VerificationExcludingStubsTest#shouldAllowToExcludeStubsForVerification": [
+                    104,
+                    105,
+                    106,
+                    108,
+                    111,
+                    112,
+                    113,
+                    116,
+                    118
+                ],
+                "org.mockitousage.verification.VerificationExcludingStubsTest#shouldExcludeFromVerificationInOrder": [
+                    104,
+                    105,
+                    106,
+                    108,
+                    111,
+                    112,
+                    113,
+                    116,
+                    118
+                ],
+                "org.mockitousage.verification.VerificationInOrderMixedWithOrdiraryVerificationTest#shouldAllowOrdinarilyVerifyingMockPassedToInOrderObject": [
+                    104,
+                    105,
+                    106,
+                    108,
+                    111,
+                    112,
+                    113,
+                    116,
+                    118
+                ],
+                "org.mockitousage.verification.VerificationInOrderMixedWithOrdiraryVerificationTest#shouldAllowRedundantVerifications": [
+                    104,
+                    105,
+                    106,
+                    108,
+                    111,
+                    112,
+                    113,
+                    116,
+                    118
+                ],
+                "org.mockitousage.verification.VerificationInOrderMixedWithOrdiraryVerificationTest#shouldFailOnNoMoreInteractions": [
+                    104,
+                    105,
+                    106,
+                    108,
+                    111,
+                    112,
+                    113,
+                    116
+                ],
+                "org.mockitousage.verification.VerificationInOrderMixedWithOrdiraryVerificationTest#shouldFailOnNoMoreInteractionsOnMockVerifiedInOrder": [
+                    104,
+                    105,
+                    106,
+                    108,
+                    111,
+                    112,
+                    113,
+                    116
+                ],
+                "org.mockitousage.verification.VerificationInOrderMixedWithOrdiraryVerificationTest#shouldMixVerificationInOrderAndOrdinaryVerification": [
+                    104,
+                    105,
+                    106,
+                    108,
+                    111,
+                    112,
+                    113,
+                    116,
+                    118
+                ],
+                "org.mockitousage.verification.VerificationInOrderWithCallsTest#shouldAllowSequentialCallsToCallsForDifferentMethods": [
+                    104,
+                    105,
+                    106,
+                    108,
+                    111,
+                    112,
+                    113,
+                    116,
+                    118
+                ],
+                "org.mockitousage.verification.VerificationInOrderWithCallsTest#shouldAllowSequentialCallsToCallsForMethodsOnDifferentMocks": [
+                    104,
+                    105,
+                    106,
+                    108,
+                    111,
+                    112,
+                    113,
+                    116,
+                    118
+                ],
+                "org.mockitousage.verification.VerificationInOrderWithCallsTest#shouldAllowSequentialCallsToCallsForSingleMethod": [
+                    104,
+                    105,
+                    106,
+                    108,
+                    111,
+                    112,
+                    113,
+                    116,
+                    118
+                ],
+                "org.mockitousage.verification.VerificationInOrderWithCallsTest#shouldNotVerifySkippedCallsWhenFewerCallsForDifferentMethods": [
+                    104,
+                    105,
+                    106,
+                    108,
+                    111,
+                    112,
+                    113
+                ],
+                "org.mockitousage.verification.VerificationInOrderWithCallsTest#shouldNotVerifySkippedCallsWhenFewerCallsForMethodsOnDifferentMocks": [
+                    104,
+                    105,
+                    106,
+                    108,
+                    111,
+                    112,
+                    113
+                ],
+                "org.mockitousage.verification.VerificationInOrderWithCallsTest#shouldNotVerifySkippedCallsWhenFewerCallsForSingleMethod": [
+                    104,
+                    105,
+                    106,
+                    108,
+                    111,
+                    112,
+                    113
+                ],
+                "org.mockitousage.verification.VerificationOnMultipleMocksUsingMatchersTest#shouldVerifyMultipleMocks": [
+                    104,
+                    105,
+                    106,
+                    108,
+                    111,
+                    112,
+                    113,
+                    116,
+                    118
+                ],
+                "org.mockitousage.verification.VerificationOnMultipleMocksUsingMatchersTest#shouldVerifyUsingMatchers": [
+                    104,
+                    105,
+                    106,
+                    108,
+                    111,
+                    112,
+                    113,
+                    116,
+                    118
+                ],
+                "org.mockitousage.verification.VerificationWithTimeoutTest#shouldAllowMixingOtherModesWithTimeout": [
+                    104,
+                    105,
+                    106,
+                    108,
+                    111,
+                    112,
+                    113,
+                    116,
+                    118
+                ]
+            }
+        }
+    },
+    "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/mockito/src/org/mockito/internal/verification/NoMoreInteractions.java": {
+        "verify": {
+            "tests_covering_the_method": {
+                "org.concurrentmockito.ThreadsRunAllTestsHalfManualTest#shouldRunInMultipleThreads": [
+                    22,
+                    23,
+                    24,
+                    26
+                ],
+                "org.mockito.internal.verification.NoMoreInteractionsTest#noMoreInteractionsExceptionMessageShouldDescribeMock": [
+                    22,
+                    23,
+                    24
+                ],
+                "org.mockitousage.basicapi.ResetTest#shouldRemoveAllInteractions": [
+                    22,
+                    23,
+                    26
+                ],
+                "org.mockitousage.basicapi.ResetTest#shouldResetMultipleMocks": [
+                    22,
+                    23,
+                    26
+                ],
+                "org.mockitousage.basicapi.ResetTest#shouldStubbingNotBeTreatedAsInteraction": [
+                    22,
+                    23,
+                    26
+                ],
+                "org.mockitousage.basicapi.UsingVarargsTest#shouldVerifyObjectVarargs": [
+                    22,
+                    23,
+                    24
+                ],
+                "org.mockitousage.bugs.AtLeastMarksAllInvocationsVerified#shouldFailBecauseDisallowedMethodWasCalled": [
+                    22,
+                    23,
+                    24
+                ],
+                "org.mockitousage.bugs.ConcurrentModificationExceptionOnMultiThreadedVerificationTest#shouldSuccessfullyVerifyConcurrentInvocationsWithTimeout": [
+                    22,
+                    23,
+                    26
+                ],
+                "org.mockitousage.matchers.VerificationAndStubbingUsingMatchersTest#shouldVerifyUsingMatchers": [
+                    22,
+                    23,
+                    26
+                ],
+                "org.mockitousage.misuse.InvalidUsageTest#shouldNotMockObjectMethodsOnInterface": [
+                    22,
+                    23,
+                    26
+                ],
+                "org.mockitousage.spies.SpyingOnRealObjectsTest#shouldStubWithDoReturnAndVerify": [
+                    22,
+                    23,
+                    26
+                ],
+                "org.mockitousage.spies.SpyingOnRealObjectsTest#shouldVerifyInOrder": [
+                    22,
+                    23,
+                    26
+                ],
+                "org.mockitousage.spies.SpyingOnRealObjectsTest#shouldVerifyNoMoreInteractionsAndFail": [
+                    22,
+                    23,
+                    24
+                ],
+                "org.mockitousage.spies.SpyingOnRealObjectsTest#shouldVerifyNumberOfTimes": [
+                    22,
+                    23,
+                    26
+                ],
+                "org.mockitousage.stacktrace.StackTraceFilteringTest#shouldFilterStackTraceOnVerifyNoMoreInteractions": [
+                    22,
+                    23,
+                    24
+                ],
+                "org.mockitousage.stacktrace.StackTraceFilteringTest#shouldFilterStackTraceOnVerifyZeroInteractions": [
+                    22,
+                    23,
+                    24
+                ],
+                "org.mockitousage.stubbing.BasicStubbingTest#should_stubbing_be_treated_as_interaction": [
+                    22,
+                    23,
+                    24
+                ],
+                "org.mockitousage.stubbing.BasicStubbingTest#should_stubbing_not_be_treated_as_interaction": [
+                    22,
+                    23,
+                    26
+                ],
+                "org.mockitousage.stubbing.BasicStubbingTest#unfinished_stubbing_cleans_up_the_state": [
+                    22,
+                    23,
+                    26
+                ],
+                "org.mockitousage.stubbing.DeprecatedStubbingTest#shouldStubbingBeTreatedAsInteraction": [
+                    22,
+                    23,
+                    24
+                ],
+                "org.mockitousage.stubbing.DeprecatedStubbingTest#shouldStubbingNotBeTreatedAsInteraction": [
+                    22,
+                    23,
+                    26
+                ],
+                "org.mockitousage.stubbing.StubbingUsingDoReturnTest#shouldStubbingBeTreatedAsInteraction": [
+                    22,
+                    23,
+                    24
+                ],
+                "org.mockitousage.stubbing.StubbingUsingDoReturnTest#shouldVerifyStubbedCall": [
+                    22,
+                    23,
+                    26
+                ],
+                "org.mockitousage.stubbing.StubbingWithThrowablesTest#shouldStubbingWithThrowableBeVerifiable": [
+                    22,
+                    23,
+                    26
+                ],
+                "org.mockitousage.stubbing.StubbingWithThrowablesTest#shouldStubbingWithThrowableFailVerification": [
+                    22,
+                    23,
+                    24,
+                    26
+                ],
+                "org.mockitousage.verification.AtLeastXVerificationTest#shouldAllowAtLeastZeroForTheSakeOfVerifyNoMoreInteractionsSometimes": [
+                    22,
+                    23,
+                    26
+                ],
+                "org.mockitousage.verification.AtMostXVerificationTest#shouldDetectUnverifiedInMarkInteractionsAsVerified": [
+                    22,
+                    23,
+                    24
+                ],
+                "org.mockitousage.verification.AtMostXVerificationTest#shouldMarkInteractionsAsVerified": [
+                    22,
+                    23,
+                    26
+                ],
+                "org.mockitousage.verification.BasicVerificationInOrderTest#shouldFailOnVerifyNoMoreInteractions": [
+                    22,
+                    23,
+                    24
+                ],
+                "org.mockitousage.verification.BasicVerificationInOrderTest#shouldFailOnVerifyZeroInteractions": [
+                    22,
+                    23,
+                    24
+                ],
+                "org.mockitousage.verification.BasicVerificationInOrderTest#shouldVerifyInOrder": [
+                    22,
+                    23,
+                    26
+                ],
+                "org.mockitousage.verification.BasicVerificationInOrderTest#shouldVerifyInOrderUsingAtLeastOnce": [
+                    22,
+                    23,
+                    26
+                ],
+                "org.mockitousage.verification.BasicVerificationInOrderTest#shouldVerifyInOrderWhenExpectingSomeInvocationsToBeCalledZeroTimes": [
+                    22,
+                    23,
+                    26
+                ],
+                "org.mockitousage.verification.BasicVerificationTest#shouldDetectRedundantInvocation": [
+                    22,
+                    23,
+                    24
+                ],
+                "org.mockitousage.verification.BasicVerificationTest#shouldVerify": [
+                    22,
+                    23,
+                    26
+                ],
+                "org.mockitousage.verification.DescriptiveMessagesWhenVerificationFailsTest#should_print_first_unexpected_invocation": [
+                    22,
+                    23,
+                    24
+                ],
+                "org.mockitousage.verification.DescriptiveMessagesWhenVerificationFailsTest#should_print_first_unexpected_invocation_when_verifying_zero_interactions": [
+                    22,
+                    23,
+                    24
+                ],
+                "org.mockitousage.verification.NoMoreInteractionsVerificationTest#shouldFailNoMoreInteractionsVerification": [
+                    22,
+                    23,
+                    24
+                ],
+                "org.mockitousage.verification.NoMoreInteractionsVerificationTest#shouldFailZeroInteractionsVerification": [
+                    22,
+                    23,
+                    24
+                ],
+                "org.mockitousage.verification.NoMoreInteractionsVerificationTest#shouldNotContainAllInvocationsWhenSingleUnwantedFound": [
+                    22,
+                    23,
+                    24
+                ],
+                "org.mockitousage.verification.NoMoreInteractionsVerificationTest#shouldPrintAllInvocationsWhenVerifyingNoMoreInvocations": [
+                    22,
+                    23,
+                    24
+                ],
+                "org.mockitousage.verification.NoMoreInteractionsVerificationTest#shouldStubbingNotRegisterRedundantInteractions": [
+                    22,
+                    23,
+                    26
+                ],
+                "org.mockitousage.verification.NoMoreInteractionsVerificationTest#shouldVerifyNoInteractionsAsManyTimesAsYouWant": [
+                    22,
+                    23,
+                    26
+                ],
+                "org.mockitousage.verification.NoMoreInteractionsVerificationTest#shouldVerifyOneMockButFailOnOther": [
+                    22,
+                    23,
+                    24,
+                    26
+                ],
+                "org.mockitousage.verification.NoMoreInteractionsVerificationTest#shouldVerifyWhenWantedNumberOfInvocationsUsed": [
+                    22,
+                    23,
+                    26
+                ],
+                "org.mockitousage.verification.RelaxedVerificationInOrderTest#shouldAllowAllChunksBeforeLastInvocation": [
+                    22,
+                    23,
+                    26
+                ],
+                "org.mockitousage.verification.RelaxedVerificationInOrderTest#shouldAllowFirstChunkBeforeLastInvocation": [
+                    22,
+                    23,
+                    24
+                ],
+                "org.mockitousage.verification.RelaxedVerificationInOrderTest#shouldPassOnCombinationOfTimesAndAtLeastOnce": [
+                    22,
+                    23,
+                    26
+                ],
+                "org.mockitousage.verification.RelaxedVerificationInOrderTest#shouldPassOnEdgyCombinationOfTimesAndAtLeastOnce": [
+                    22,
+                    23,
+                    26
+                ],
+                "org.mockitousage.verification.RelaxedVerificationInOrderTest#shouldVerifyDetectAllChunksOfInvocationThatExistInManyChunks": [
+                    22,
+                    23,
+                    26
+                ],
+                "org.mockitousage.verification.RelaxedVerificationInOrderTest#shouldVerifyDetectFirstChunkOfInvocationThatExistInManyChunks": [
+                    22,
+                    23,
+                    24
+                ],
+                "org.mockitousage.verification.RelaxedVerificationInOrderTest#shouldVerifyInOrderAllInvocations": [
+                    22,
+                    23,
+                    26
+                ],
+                "org.mockitousage.verification.RelaxedVerificationInOrderTest#shouldVerifyInOrderAndBeRelaxed": [
+                    22,
+                    23,
+                    26
+                ],
+                "org.mockitousage.verification.RelaxedVerificationInOrderTest#shouldVerifyInOrderMockOneAndThree": [
+                    22,
+                    23,
+                    26
+                ],
+                "org.mockitousage.verification.RelaxedVerificationInOrderTest#shouldVerifyInOrderMockTwoAndThree": [
+                    22,
+                    23,
+                    26
+                ],
+                "org.mockitousage.verification.RelaxedVerificationInOrderTest#shouldVerifyInOrderOnlyMockTwo": [
+                    22,
+                    23,
+                    26
+                ],
+                "org.mockitousage.verification.RelaxedVerificationInOrderTest#shouldVerifyInteractionsFromAllChunksWhenAtLeastOnceMode": [
+                    22,
+                    23,
+                    26
+                ],
+                "org.mockitousage.verification.RelaxedVerificationInOrderTest#shouldVerifyInteractionsFromFirstChunk": [
+                    22,
+                    23,
+                    24
+                ],
+                "org.mockitousage.verification.SelectedMocksInOrderVerificationTest#shouldAllowThreeTimesOnMockTwo": [
+                    22,
+                    23,
+                    26
+                ],
+                "org.mockitousage.verification.SelectedMocksInOrderVerificationTest#shouldAllowTwoTimesOnMockTwo": [
+                    22,
+                    23,
+                    24
+                ],
+                "org.mockitousage.verification.SelectedMocksInOrderVerificationTest#shouldVerifyAllInvocationsInOrder": [
+                    22,
+                    23,
+                    26
+                ],
+                "org.mockitousage.verification.SelectedMocksInOrderVerificationTest#shouldVerifyInOrderMockOneAndThree": [
+                    22,
+                    23,
+                    26
+                ],
+                "org.mockitousage.verification.SelectedMocksInOrderVerificationTest#shouldVerifyInOrderMockTwoAndThree": [
+                    22,
+                    23,
+                    26
+                ],
+                "org.mockitousage.verification.SelectedMocksInOrderVerificationTest#shouldVerifyMockOneInOrder": [
+                    22,
+                    23,
+                    26
+                ],
+                "org.mockitousage.verification.SelectedMocksInOrderVerificationTest#shouldVerifyMockTwo": [
+                    22,
+                    23,
+                    26
+                ],
+                "org.mockitousage.verification.SelectedMocksInOrderVerificationTest#shouldVerifyMockTwoCompletely": [
+                    22,
+                    23,
+                    26
+                ],
+                "org.mockitousage.verification.SelectedMocksInOrderVerificationTest#shouldVerifyMockTwoWhenThreeTimesUsed": [
+                    22,
+                    23,
+                    26
+                ],
+                "org.mockitousage.verification.VerificationExcludingStubsTest#shouldAllowToExcludeStubsForVerification": [
+                    22,
+                    23,
+                    24,
+                    26
+                ],
+                "org.mockitousage.verification.VerificationExcludingStubsTest#shouldExcludeFromVerificationInOrder": [
+                    22,
+                    23,
+                    26
+                ],
+                "org.mockitousage.verification.VerificationInOrderMixedWithOrdiraryVerificationTest#shouldAllowOrdinarilyVerifyingMockPassedToInOrderObject": [
+                    22,
+                    23,
+                    26
+                ],
+                "org.mockitousage.verification.VerificationInOrderMixedWithOrdiraryVerificationTest#shouldAllowRedundantVerifications": [
+                    22,
+                    23,
+                    26
+                ],
+                "org.mockitousage.verification.VerificationInOrderMixedWithOrdiraryVerificationTest#shouldFailOnNoMoreInteractions": [
+                    22,
+                    23,
+                    24,
+                    26
+                ],
+                "org.mockitousage.verification.VerificationInOrderMixedWithOrdiraryVerificationTest#shouldFailOnNoMoreInteractionsOnMockVerifiedInOrder": [
+                    22,
+                    23,
+                    24,
+                    26
+                ],
+                "org.mockitousage.verification.VerificationInOrderMixedWithOrdiraryVerificationTest#shouldMixVerificationInOrderAndOrdinaryVerification": [
+                    22,
+                    23,
+                    26
+                ],
+                "org.mockitousage.verification.VerificationInOrderWithCallsTest#shouldAllowSequentialCallsToCallsForDifferentMethods": [
+                    22,
+                    23,
+                    26
+                ],
+                "org.mockitousage.verification.VerificationInOrderWithCallsTest#shouldAllowSequentialCallsToCallsForMethodsOnDifferentMocks": [
+                    22,
+                    23,
+                    26
+                ],
+                "org.mockitousage.verification.VerificationInOrderWithCallsTest#shouldAllowSequentialCallsToCallsForSingleMethod": [
+                    22,
+                    23,
+                    26
+                ],
+                "org.mockitousage.verification.VerificationInOrderWithCallsTest#shouldNotVerifySkippedCallsWhenFewerCallsForDifferentMethods": [
+                    22,
+                    23,
+                    24
+                ],
+                "org.mockitousage.verification.VerificationInOrderWithCallsTest#shouldNotVerifySkippedCallsWhenFewerCallsForMethodsOnDifferentMocks": [
+                    22,
+                    23,
+                    24
+                ],
+                "org.mockitousage.verification.VerificationInOrderWithCallsTest#shouldNotVerifySkippedCallsWhenFewerCallsForSingleMethod": [
+                    22,
+                    23,
+                    24
+                ],
+                "org.mockitousage.verification.VerificationOnMultipleMocksUsingMatchersTest#shouldVerifyMultipleMocks": [
+                    22,
+                    23,
+                    26
+                ],
+                "org.mockitousage.verification.VerificationOnMultipleMocksUsingMatchersTest#shouldVerifyUsingMatchers": [
+                    22,
+                    23,
+                    26
+                ],
+                "org.mockitousage.verification.VerificationWithTimeoutTest#shouldAllowMixingOtherModesWithTimeout": [
+                    22,
+                    23,
+                    26
+                ]
+            }
+        }
+    }
+}

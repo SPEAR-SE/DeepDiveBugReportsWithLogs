@@ -1,0 +1,444 @@
+{
+    "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/commons-lang/src/java/org/apache/commons/lang/text/StrBuilder.java": {
+        "deleteAll": {
+            "tests_covering_the_method": {
+                "org.apache.commons.lang.text.StrBuilderTest#testDeleteAll_String": [
+                    1184,
+                    1185,
+                    1186,
+                    1187,
+                    1188,
+                    1189,
+                    1192
+                ]
+            }
+        },
+        "deleteImpl": {
+            "tests_covering_the_method": {
+                "org.apache.commons.lang.text.StrBuilderTest#testDeleteAll_String": [
+                    1114,
+                    1115,
+                    1116
+                ],
+                "org.apache.commons.lang.text.StrBuilderTest#testDeleteAll_char": [
+                    1114,
+                    1115,
+                    1116
+                ],
+                "org.apache.commons.lang.text.StrBuilderTest#testDeleteCharAt": [
+                    1114,
+                    1115,
+                    1116
+                ],
+                "org.apache.commons.lang.text.StrBuilderTest#testDeleteFirst_String": [
+                    1114,
+                    1115,
+                    1116
+                ],
+                "org.apache.commons.lang.text.StrBuilderTest#testDeleteFirst_char": [
+                    1114,
+                    1115,
+                    1116
+                ],
+                "org.apache.commons.lang.text.StrBuilderTest#testDeleteIntInt": [
+                    1114,
+                    1115,
+                    1116
+                ],
+                "org.apache.commons.lang.text.StrBuilderTest#testTrim": [
+                    1114,
+                    1115,
+                    1116
+                ],
+                "org.apache.commons.lang.text.StrSubstitutorTest#testConstructorMapFull": [
+                    1114,
+                    1115,
+                    1116
+                ],
+                "org.apache.commons.lang.text.StrSubstitutorTest#testConstructorMapPrefixSuffix": [
+                    1114,
+                    1115,
+                    1116
+                ],
+                "org.apache.commons.lang.text.StrSubstitutorTest#testReplaceComplexEscaping": [
+                    1114,
+                    1115,
+                    1116
+                ],
+                "org.apache.commons.lang.text.StrSubstitutorTest#testReplaceEscaping": [
+                    1114,
+                    1115,
+                    1116
+                ],
+                "org.apache.commons.lang.text.StrSubstitutorTest#testReplaceSoloEscaping": [
+                    1114,
+                    1115,
+                    1116
+                ],
+                "org.apache.commons.lang.text.StrSubstitutorTest#testReplaceToIdentical": [
+                    1114,
+                    1115,
+                    1116
+                ]
+            }
+        },
+        "replaceAll": {
+            "tests_covering_the_method": {
+                "org.apache.commons.lang.text.StrBuilderTest#testReplaceAll_String_String": [
+                    1331,
+                    1332,
+                    1333,
+                    1334,
+                    1335,
+                    1336,
+                    1337,
+                    1340
+                ]
+            }
+        },
+        "replaceImpl": {
+            "tests_covering_the_method": {
+                "org.apache.commons.lang.text.StrBuilderTest#testDeleteAll_StrMatcher": [
+                    1253,
+                    1254,
+                    1255,
+                    1256,
+                    1257,
+                    1259,
+                    1262
+                ],
+                "org.apache.commons.lang.text.StrBuilderTest#testDeleteFirst_StrMatcher": [
+                    1253,
+                    1254,
+                    1255,
+                    1256,
+                    1257,
+                    1259,
+                    1262
+                ],
+                "org.apache.commons.lang.text.StrBuilderTest#testReplaceAll_StrMatcher_String": [
+                    1253,
+                    1254,
+                    1255,
+                    1256,
+                    1257,
+                    1259,
+                    1260,
+                    1262
+                ],
+                "org.apache.commons.lang.text.StrBuilderTest#testReplaceAll_String_String": [
+                    1253,
+                    1254,
+                    1255,
+                    1256,
+                    1257,
+                    1259,
+                    1260,
+                    1262
+                ],
+                "org.apache.commons.lang.text.StrBuilderTest#testReplaceFirst_StrMatcher_String": [
+                    1253,
+                    1254,
+                    1255,
+                    1256,
+                    1257,
+                    1259,
+                    1260,
+                    1262
+                ],
+                "org.apache.commons.lang.text.StrBuilderTest#testReplaceFirst_String_String": [
+                    1253,
+                    1254,
+                    1255,
+                    1256,
+                    1257,
+                    1259,
+                    1260,
+                    1262
+                ],
+                "org.apache.commons.lang.text.StrBuilderTest#testReplace_StrMatcher_String_int_int_int_VaryCount": [
+                    1253,
+                    1254,
+                    1255,
+                    1256,
+                    1257,
+                    1259,
+                    1260,
+                    1262
+                ],
+                "org.apache.commons.lang.text.StrBuilderTest#testReplace_StrMatcher_String_int_int_int_VaryEndIndex": [
+                    1253,
+                    1254,
+                    1255,
+                    1256,
+                    1257,
+                    1259,
+                    1260,
+                    1262
+                ],
+                "org.apache.commons.lang.text.StrBuilderTest#testReplace_StrMatcher_String_int_int_int_VaryMatcher": [
+                    1253,
+                    1254,
+                    1255,
+                    1256,
+                    1257,
+                    1259,
+                    1260,
+                    1262
+                ],
+                "org.apache.commons.lang.text.StrBuilderTest#testReplace_StrMatcher_String_int_int_int_VaryReplace": [
+                    1253,
+                    1254,
+                    1255,
+                    1256,
+                    1257,
+                    1259,
+                    1260,
+                    1262
+                ],
+                "org.apache.commons.lang.text.StrBuilderTest#testReplace_StrMatcher_String_int_int_int_VaryStartIndex": [
+                    1253,
+                    1254,
+                    1255,
+                    1256,
+                    1257,
+                    1259,
+                    1260,
+                    1262
+                ],
+                "org.apache.commons.lang.text.StrBuilderTest#testReplace_int_int_String": [
+                    1253,
+                    1254,
+                    1255,
+                    1256,
+                    1257,
+                    1259,
+                    1260,
+                    1262
+                ],
+                "org.apache.commons.lang.text.StrSubstitutorTest#testConstructorMapFull": [
+                    1253,
+                    1254,
+                    1255,
+                    1256,
+                    1257,
+                    1259,
+                    1260,
+                    1262
+                ],
+                "org.apache.commons.lang.text.StrSubstitutorTest#testConstructorMapPrefixSuffix": [
+                    1253,
+                    1254,
+                    1255,
+                    1256,
+                    1257,
+                    1259,
+                    1260,
+                    1262
+                ],
+                "org.apache.commons.lang.text.StrSubstitutorTest#testCyclicReplacement": [
+                    1253,
+                    1254,
+                    1255,
+                    1256,
+                    1257,
+                    1259,
+                    1260,
+                    1262
+                ],
+                "org.apache.commons.lang.text.StrSubstitutorTest#testReplaceAdjacentAtEnd": [
+                    1253,
+                    1254,
+                    1255,
+                    1256,
+                    1257,
+                    1259,
+                    1260,
+                    1262
+                ],
+                "org.apache.commons.lang.text.StrSubstitutorTest#testReplaceAdjacentAtStart": [
+                    1253,
+                    1254,
+                    1255,
+                    1256,
+                    1257,
+                    1259,
+                    1260,
+                    1262
+                ],
+                "org.apache.commons.lang.text.StrSubstitutorTest#testReplaceChangedMap": [
+                    1253,
+                    1254,
+                    1255,
+                    1256,
+                    1257,
+                    1259,
+                    1260,
+                    1262
+                ],
+                "org.apache.commons.lang.text.StrSubstitutorTest#testReplaceComplexEscaping": [
+                    1253,
+                    1254,
+                    1255,
+                    1256,
+                    1257,
+                    1259,
+                    1260,
+                    1262
+                ],
+                "org.apache.commons.lang.text.StrSubstitutorTest#testReplaceEmptyKeys": [
+                    1253,
+                    1254,
+                    1255,
+                    1256,
+                    1257,
+                    1259,
+                    1260,
+                    1262
+                ],
+                "org.apache.commons.lang.text.StrSubstitutorTest#testReplaceEscaping": [
+                    1253,
+                    1254,
+                    1255,
+                    1256,
+                    1257,
+                    1259,
+                    1260,
+                    1262
+                ],
+                "org.apache.commons.lang.text.StrSubstitutorTest#testReplaceIncompletePefix": [
+                    1253,
+                    1254,
+                    1255,
+                    1256,
+                    1257,
+                    1259,
+                    1260,
+                    1262
+                ],
+                "org.apache.commons.lang.text.StrSubstitutorTest#testReplaceNoPefixNoSuffix": [
+                    1253,
+                    1254,
+                    1255,
+                    1256,
+                    1257,
+                    1259,
+                    1260,
+                    1262
+                ],
+                "org.apache.commons.lang.text.StrSubstitutorTest#testReplaceNoPrefixSuffix": [
+                    1253,
+                    1254,
+                    1255,
+                    1256,
+                    1257,
+                    1259,
+                    1260,
+                    1262
+                ],
+                "org.apache.commons.lang.text.StrSubstitutorTest#testReplacePrefixNoSuffix": [
+                    1253,
+                    1254,
+                    1255,
+                    1256,
+                    1257,
+                    1259,
+                    1260,
+                    1262
+                ],
+                "org.apache.commons.lang.text.StrSubstitutorTest#testReplaceRecursive": [
+                    1253,
+                    1254,
+                    1255,
+                    1256,
+                    1257,
+                    1259,
+                    1260,
+                    1262
+                ],
+                "org.apache.commons.lang.text.StrSubstitutorTest#testReplaceSimple": [
+                    1253,
+                    1254,
+                    1255,
+                    1256,
+                    1257,
+                    1259,
+                    1260,
+                    1262
+                ],
+                "org.apache.commons.lang.text.StrSubstitutorTest#testReplaceSolo": [
+                    1253,
+                    1254,
+                    1255,
+                    1256,
+                    1257,
+                    1259,
+                    1260,
+                    1262
+                ],
+                "org.apache.commons.lang.text.StrSubstitutorTest#testReplaceToIdentical": [
+                    1253,
+                    1254,
+                    1255,
+                    1256,
+                    1257,
+                    1259,
+                    1260,
+                    1262
+                ],
+                "org.apache.commons.lang.text.StrSubstitutorTest#testReplaceUnknownKey": [
+                    1253,
+                    1254,
+                    1255,
+                    1256,
+                    1257,
+                    1259,
+                    1260,
+                    1262
+                ],
+                "org.apache.commons.lang.text.StrSubstitutorTest#testResolveVariable": [
+                    1253,
+                    1254,
+                    1259,
+                    1260,
+                    1262
+                ],
+                "org.apache.commons.lang.text.StrSubstitutorTest#testStaticReplace": [
+                    1253,
+                    1254,
+                    1259,
+                    1260,
+                    1262
+                ],
+                "org.apache.commons.lang.text.StrSubstitutorTest#testStaticReplacePrefixSuffix": [
+                    1253,
+                    1254,
+                    1255,
+                    1256,
+                    1257,
+                    1259,
+                    1260,
+                    1262
+                ],
+                "org.apache.commons.lang.text.StrSubstitutorTest#testStaticReplaceSystemProperties": [
+                    1253,
+                    1254,
+                    1255,
+                    1256,
+                    1257,
+                    1259,
+                    1260,
+                    1262
+                ]
+            }
+        }
+    },
+    "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/commons-lang/src/test/org/apache/commons/lang/text/StrBuilderTest.java": {
+        "testDeleteAll_String": {
+            "tests_covering_the_method": {}
+        },
+        "testReplaceAll_String_String": {
+            "tests_covering_the_method": {}
+        }
+    }
+}

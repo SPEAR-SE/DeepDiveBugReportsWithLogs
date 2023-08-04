@@ -1,0 +1,124 @@
+{
+    "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jsoup/src/main/java/org/jsoup/helper/HttpConnection.java": {
+        "addHeader": {
+            "tests_covering_the_method": {}
+        },
+        "execute": {
+            "tests_covering_the_method": {
+                "org.jsoup.helper.HttpConnectionTest#noUrlThrowsValidationError": [
+                    295
+                ],
+                "org.jsoup.integration.ConnectTest#bodyAfterParseThrowsValidationError": [
+                    295,
+                    296
+                ],
+                "org.jsoup.integration.ConnectTest#bodyAndBytesAvailableBeforeParse": [
+                    295,
+                    296
+                ],
+                "org.jsoup.integration.ConnectTest#canConnectToLocalServer": [
+                    295,
+                    296
+                ],
+                "org.jsoup.integration.ConnectTest#doesGet": [
+                    295,
+                    296
+                ],
+                "org.jsoup.integration.ConnectTest#doesNotPostFor302": [
+                    295,
+                    296
+                ],
+                "org.jsoup.integration.ConnectTest#doesPost": [
+                    295,
+                    296
+                ],
+                "org.jsoup.integration.ConnectTest#doesPostFor307": [
+                    295,
+                    296
+                ],
+                "org.jsoup.integration.ConnectTest#doesPostMultipartWithoutInputstream": [
+                    295,
+                    296
+                ],
+                "org.jsoup.integration.ConnectTest#doesPut": [
+                    295,
+                    296
+                ],
+                "org.jsoup.integration.ConnectTest#exceptOnUnsupportedProtocol": [
+                    295
+                ],
+                "org.jsoup.integration.ConnectTest#fetchURIWithWihtespace": [
+                    295,
+                    296
+                ],
+                "org.jsoup.integration.ConnectTest#fetchURl": [
+                    295,
+                    296
+                ],
+                "org.jsoup.integration.ConnectTest#handlesEmptyRedirect": [
+                    295
+                ],
+                "org.jsoup.integration.ConnectTest#handlesEmptyStreamDuringParseRead": [
+                    295,
+                    296
+                ],
+                "org.jsoup.integration.ConnectTest#handlesEmtpyStreamDuringBufferdRead": [
+                    295,
+                    296
+                ],
+                "org.jsoup.integration.ConnectTest#handlesRedirect": [
+                    295,
+                    296
+                ],
+                "org.jsoup.integration.ConnectTest#multiCookieSet": [
+                    295,
+                    296
+                ],
+                "org.jsoup.integration.ConnectTest#multipleParsesOkAfterBufferUp": [
+                    295,
+                    296
+                ],
+                "org.jsoup.integration.ConnectTest#parseParseThrowsValidates": [
+                    295,
+                    296
+                ],
+                "org.jsoup.integration.ConnectTest#postFiles": [
+                    295,
+                    296
+                ],
+                "org.jsoup.integration.ConnectTest#sendsRequestBody": [
+                    295,
+                    296
+                ],
+                "org.jsoup.integration.ConnectTest#sendsRequestBodyJsonWithData": [
+                    295,
+                    296
+                ],
+                "org.jsoup.integration.ConnectTest#sendsRequestBodyJsonWithoutData": [
+                    295,
+                    296
+                ],
+                "org.jsoup.integration.ConnectTest#sendsRequestBodyWithUrlParams": [
+                    295,
+                    296
+                ],
+                "org.jsoup.integration.ConnectTest#supportsDeflate": [
+                    295,
+                    296
+                ]
+            }
+        },
+        "fixHeaderEncoding": {
+            "tests_covering_the_method": {}
+        },
+        "looksLikeUtf8": {
+            "tests_covering_the_method": {}
+        },
+        "processResponseHeaders": {
+            "tests_covering_the_method": {}
+        },
+        "setupFromConnection": {
+            "tests_covering_the_method": {}
+        }
+    }
+}

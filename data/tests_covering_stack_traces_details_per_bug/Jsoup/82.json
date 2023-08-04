@@ -1,0 +1,2605 @@
+{
+    "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jsoup/src/main/java/org/jsoup/nodes/Document.java": {
+        "outerHtml": {
+            "tests_covering_the_method": {}
+        },
+        "prepareEncoder": {
+            "tests_covering_the_method": {}
+        }
+    },
+    "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jsoup/src/main/java/org/jsoup/nodes/Element.java": {
+        "html": {
+            "tests_covering_the_method": {
+                "org.jsoup.helper.DataUtilTest#wrongMetaCharsetFallback": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.nodes.DocumentTest#DocumentsWithSameContentAreVerifialbe": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.nodes.DocumentTest#testClone": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.nodes.DocumentTest#testClonesDeclarations": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.nodes.DocumentTest#testHtmlAndXmlSyntax": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.nodes.DocumentTest#testMetaCharsetUpdateCleanup": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.nodes.DocumentTest#testMetaCharsetUpdateDisabled": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.nodes.DocumentTest#testMetaCharsetUpdateDisabledNoChanges": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.nodes.DocumentTest#testMetaCharsetUpdateIso8859": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.nodes.DocumentTest#testMetaCharsetUpdateNoCharset": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.nodes.DocumentTest#testMetaCharsetUpdateUtf8": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.nodes.DocumentTest#testMetaCharsetUpdateXmlDisabled": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.nodes.DocumentTest#testMetaCharsetUpdateXmlDisabledNoChanges": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.nodes.DocumentTest#testMetaCharsetUpdateXmlIso8859": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.nodes.DocumentTest#testMetaCharsetUpdateXmlNoCharset": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.nodes.DocumentTest#testMetaCharsetUpdateXmlUtf8": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.nodes.DocumentTest#testNormalisesStructure": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.nodes.DocumentTest#testOutputEncoding": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.nodes.DocumentTest#testShiftJisRoundtrip": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.nodes.DocumentTest#testXhtmlReferences": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.nodes.ElementTest#after": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.nodes.ElementTest#appendMustCorrectlyMoveChildrenInsideOneParentElement": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.nodes.ElementTest#before": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.nodes.ElementTest#insertChildrenAsCopy": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.nodes.ElementTest#moveByAppend": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.nodes.ElementTest#testAddNewElement": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.nodes.ElementTest#testAddNewHtml": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.nodes.ElementTest#testAddNewText": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.nodes.ElementTest#testAppendRowToTable": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.nodes.ElementTest#testAppendTo": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.nodes.ElementTest#testClone": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.nodes.ElementTest#testClonesClassnames": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.nodes.ElementTest#testContainerOutput": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.nodes.ElementTest#testFormatHtml": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.nodes.ElementTest#testFormatOutline": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.nodes.ElementTest#testHtmlContainsOuter": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.nodes.ElementTest#testInnerHtml": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.nodes.ElementTest#testKeepsPreTextAtDepth": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.nodes.ElementTest#testKeepsPreTextInCode": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.nodes.ElementTest#testLoopedRemoveAttributes": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.nodes.ElementTest#testNoIndentOnScriptAndStyle": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.nodes.ElementTest#testNotPretty": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.nodes.ElementTest#testOuterHtml": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.nodes.ElementTest#testPrependNewHtml": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.nodes.ElementTest#testPrependRowToTable": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.nodes.ElementTest#testPrependText": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.nodes.ElementTest#testRemovingEmptyClassAttributeWhenLastClassRemoved": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.nodes.ElementTest#testSetHtml": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.nodes.ElementTest#testSetHtmlTitle": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.nodes.ElementTest#testSetIndent": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.nodes.ElementTest#testShadowElementsAreUpdated": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.nodes.ElementTest#testTagNameSet": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.nodes.ElementTest#testWrap": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.nodes.ElementTest#testWrapWithRemainder": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.nodes.EntitiesTest#letterDigitEntities": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.nodes.NodeTest#after": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.nodes.NodeTest#before": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.nodes.NodeTest#childNodesCopy": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.nodes.NodeTest#testRemove": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.nodes.NodeTest#testReplace": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.nodes.NodeTest#unwrap": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.nodes.NodeTest#unwrapNoChildren": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.nodes.TextNodeTest#testSplitAnEmbolden": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.nodes.TextNodeTest#testTextBean": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.parser.AttributeParseTest#dropsSlashFromAttributeName": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.parser.HtmlParserTest#associatedFormControlsWithDisjointForms": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.parser.HtmlParserTest#canPreserveAttributeCase": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.parser.HtmlParserTest#canPreserveBothCase": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.parser.HtmlParserTest#canPreserveTagCase": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.parser.HtmlParserTest#caseInsensitiveParseTree": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.parser.HtmlParserTest#caseSensitiveParseTree": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.parser.HtmlParserTest#commentBeforeHtml": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.parser.HtmlParserTest#convertsImageToImg": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.parser.HtmlParserTest#discardsNakedTds": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.parser.HtmlParserTest#doesNotFindShortestMatchingEntity": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.parser.HtmlParserTest#emptyTdTag": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.parser.HtmlParserTest#handles0CharacterAsText": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.parser.HtmlParserTest#handlesBlocksInDefinitions": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.parser.HtmlParserTest#handlesCommentsInTable": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.parser.HtmlParserTest#handlesControlCodeInAttributeName": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.parser.HtmlParserTest#handlesFrames": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.parser.HtmlParserTest#handlesImplicitCaptionClose": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.parser.HtmlParserTest#handlesInvalidDoctypes": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.parser.HtmlParserTest#handlesKnownEmptyBlocks": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.parser.HtmlParserTest#handlesKnownEmptyIframe": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.parser.HtmlParserTest#handlesKnownEmptyNoFrames": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.parser.HtmlParserTest#handlesKnownEmptyStyle": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.parser.HtmlParserTest#handlesKnownEmptyTitle": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.parser.HtmlParserTest#handlesMisnestedTagsBI": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.parser.HtmlParserTest#handlesMisnestedTagsBP": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.parser.HtmlParserTest#handlesNestedImplicitTable": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.parser.HtmlParserTest#handlesNewlinesAndWhitespaceInTag": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.parser.HtmlParserTest#handlesNullInComments": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.parser.HtmlParserTest#handlesNullInData": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.parser.HtmlParserTest#handlesQuotesInCommentsInScripts": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.parser.HtmlParserTest#handlesSolidusAtAttributeEnd": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.parser.HtmlParserTest#handlesTagsInTextarea": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.parser.HtmlParserTest#handlesTbodyTable": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.parser.HtmlParserTest#handlesTextAfterData": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.parser.HtmlParserTest#handlesUnclosedAnchors": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.parser.HtmlParserTest#handlesUnclosedFormattingElements": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.parser.HtmlParserTest#handlesUnclosedTitle": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.parser.HtmlParserTest#handlesUnexpectedMarkupInTables": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.parser.HtmlParserTest#handlesUnknownInlineTags": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.parser.HtmlParserTest#handlesUnknownNamespaceTags": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.parser.HtmlParserTest#handlesWhatWgExpensesTableExample": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.parser.HtmlParserTest#handlesXmlDeclarationAsBogusComment": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.parser.HtmlParserTest#ignoresContentAfterFrameset": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.parser.HtmlParserTest#ignoresDupeEndTrTag": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.parser.HtmlParserTest#noImplicitFormForTextAreas": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.parser.HtmlParserTest#noTableDirectInTable": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.parser.HtmlParserTest#normalisedBodyAfterContent": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.parser.HtmlParserTest#normalisesDocument": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.parser.HtmlParserTest#normalisesEmptyDocument": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.parser.HtmlParserTest#normalisesHeadlessBody": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.parser.HtmlParserTest#normalizesDiscordantTags": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.parser.HtmlParserTest#parsesQuiteRoughAttributes": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.parser.HtmlParserTest#preservesSpaceInScript": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.parser.HtmlParserTest#preservesSpaceInTextArea": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.parser.HtmlParserTest#reconstructFormattingElements": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.parser.HtmlParserTest#reconstructFormattingElementsInTable": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.parser.HtmlParserTest#relaxedBaseEntityMatchAndStrictExtendedMatch": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.parser.HtmlParserTest#selfClosingOnNonvoidIsError": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.parser.HtmlParserTest#selfClosingVoidIsNotAnError": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.parser.HtmlParserTest#testAFlowContents": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.parser.HtmlParserTest#testFontFlowContents": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.parser.HtmlParserTest#testFragment": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.parser.HtmlParserTest#testHeaderContents": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.parser.HtmlParserTest#testHgroup": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.parser.HtmlParserTest#testHtmlLowerCase": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.parser.HtmlParserTest#testInvalidTableContents": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.parser.HtmlParserTest#testNoImagesInNoScriptInHead": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.parser.HtmlParserTest#testNormalisesIsIndex": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.parser.HtmlParserTest#testRelaxedTags": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.parser.HtmlParserTest#testSpaceAfterTag": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.parser.HtmlParserTest#testSpanContents": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.parser.XmlTreeBuilderTest#canNormalizeCase": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.parser.XmlTreeBuilderTest#caseSensitiveDeclaration": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.parser.XmlTreeBuilderTest#cdataPreservesWhiteSpace": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.parser.XmlTreeBuilderTest#handlesXmlDeclarationAsDeclaration": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.parser.XmlTreeBuilderTest#normalizesDiscordantTags": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.parser.XmlTreeBuilderTest#preservesCaseByDefault": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.parser.XmlTreeBuilderTest#testCommentAndDocType": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.parser.XmlTreeBuilderTest#testCreatesValidProlog": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.parser.XmlTreeBuilderTest#testDetectCharsetEncodingDeclaration": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.parser.XmlTreeBuilderTest#testDoesHandleEOFInTag": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.parser.XmlTreeBuilderTest#testDoesNotForceSelfClosingKnownTags": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.parser.XmlTreeBuilderTest#testPopToClose": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.parser.XmlTreeBuilderTest#testSimpleXmlParse": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.parser.XmlTreeBuilderTest#testSupplyParserToDataStream": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.parser.XmlTreeBuilderTest#testSupplyParserToJsoupClass": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.safety.CleanerTest#addsTagOnAttributesIfNotSet": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.safety.CleanerTest#basicBehaviourTest": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.safety.CleanerTest#basicWithImagesTest": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.safety.CleanerTest#cleansInternationalText": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.safety.CleanerTest#dropsUnresolvableRelativeLinks": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.safety.CleanerTest#handlesAllPseudoTag": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.safety.CleanerTest#handlesAttributesWithNoValue": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.safety.CleanerTest#handlesControlCharactersAfterTagName": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.safety.CleanerTest#handlesCustomProtocols": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.safety.CleanerTest#handlesFramesets": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.safety.CleanerTest#preservesRelativeLinksIfConfigured": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.safety.CleanerTest#resolvesRelativeLinks": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.safety.CleanerTest#simpleBehaviourTest": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.safety.CleanerTest#simpleBehaviourTest2": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.safety.CleanerTest#supplyOutputSettings": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.safety.CleanerTest#testCleanAnchorProtocol": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.safety.CleanerTest#testCleanJavascriptHref": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.safety.CleanerTest#testDropComments": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.safety.CleanerTest#testDropImageScript": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.safety.CleanerTest#testDropScript": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.safety.CleanerTest#testDropXmlProc": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.safety.CleanerTest#testDropsUnknownTags": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.safety.CleanerTest#testHandlesEmptyAttributes": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.safety.CleanerTest#testRelaxed": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.safety.CleanerTest#testRemoveAttributes": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.safety.CleanerTest#testRemoveEnforcedAttributes": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.safety.CleanerTest#testRemoveProtocols": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.safety.CleanerTest#testRemoveTags": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.safety.CleanerTest#whitelistedProtocolShouldBeRetained": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.select.ElementsTest#after": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.select.ElementsTest#before": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.select.ElementsTest#empty": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.select.ElementsTest#html": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.select.ElementsTest#remove": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.select.ElementsTest#tagNameSet": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.select.ElementsTest#unwrap": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.select.ElementsTest#unwrapKeepsSpace": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.select.ElementsTest#unwrapP": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.select.ElementsTest#wrap": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.select.ElementsTest#wrapDiv": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.select.SelectorTest#matchText": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.select.SelectorTest#testPseudoContains": [
+                    1400,
+                    1401
+                ],
+                "org.jsoup.select.TraversorTest#filterRemove": [
+                    1400,
+                    1401
+                ]
+            }
+        }
+    },
+    "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jsoup/src/main/java/org/jsoup/nodes/Node.java": {
+        "Node": {
+            "tests_covering_the_method": {
+                "org.jsoup.helper.DataUtilTest#discardsSpuriousByteOrderMark": [
+                    26
+                ],
+                "org.jsoup.helper.DataUtilTest#discardsSpuriousByteOrderMarkWhenNoCharsetSet": [
+                    26
+                ],
+                "org.jsoup.helper.DataUtilTest#firstMetaElementWithCharsetShouldBeUsedForDecoding": [
+                    26
+                ],
+                "org.jsoup.helper.DataUtilTest#secondMetaElementWithContentTypeContainsCharsetParameter": [
+                    26
+                ],
+                "org.jsoup.helper.DataUtilTest#supportsBOMinFiles": [
+                    26
+                ],
+                "org.jsoup.helper.DataUtilTest#wrongMetaCharsetFallback": [
+                    26
+                ],
+                "org.jsoup.helper.StringUtilTest#normaliseWhiteSpaceHandlesHighSurrogates": [
+                    26
+                ],
+                "org.jsoup.helper.W3CDomTest#convertsGoogle": [
+                    26
+                ],
+                "org.jsoup.helper.W3CDomTest#convertsGoogleLocation": [
+                    26
+                ],
+                "org.jsoup.helper.W3CDomTest#handlesInvalidAttributeNames": [
+                    26
+                ],
+                "org.jsoup.helper.W3CDomTest#namespacePreservation": [
+                    26
+                ],
+                "org.jsoup.helper.W3CDomTest#simpleConversion": [
+                    26
+                ],
+                "org.jsoup.integration.ConnectTest#bodyAfterParseThrowsValidationError": [
+                    26
+                ],
+                "org.jsoup.integration.ConnectTest#bodyAndBytesAvailableBeforeParse": [
+                    26
+                ],
+                "org.jsoup.integration.ConnectTest#canConnectToLocalServer": [
+                    26
+                ],
+                "org.jsoup.integration.ConnectTest#doesGet": [
+                    26
+                ],
+                "org.jsoup.integration.ConnectTest#doesPost": [
+                    26
+                ],
+                "org.jsoup.integration.ConnectTest#doesPut": [
+                    26
+                ],
+                "org.jsoup.integration.ConnectTest#fetchURIWithWihtespace": [
+                    26
+                ],
+                "org.jsoup.integration.ConnectTest#fetchURl": [
+                    26
+                ],
+                "org.jsoup.integration.ConnectTest#multiCookieSet": [
+                    26
+                ],
+                "org.jsoup.integration.ConnectTest#multipleParsesOkAfterBufferUp": [
+                    26
+                ],
+                "org.jsoup.integration.ConnectTest#parseParseThrowsValidates": [
+                    26
+                ],
+                "org.jsoup.integration.ConnectTest#postFiles": [
+                    26
+                ],
+                "org.jsoup.integration.ConnectTest#sendsRequestBody": [
+                    26
+                ],
+                "org.jsoup.integration.ConnectTest#sendsRequestBodyJsonWithData": [
+                    26
+                ],
+                "org.jsoup.integration.ConnectTest#sendsRequestBodyJsonWithoutData": [
+                    26
+                ],
+                "org.jsoup.integration.ConnectTest#sendsRequestBodyWithUrlParams": [
+                    26
+                ],
+                "org.jsoup.integration.ConnectTest#supportsDeflate": [
+                    26
+                ],
+                "org.jsoup.integration.ParseTest#testBaidu": [
+                    26
+                ],
+                "org.jsoup.integration.ParseTest#testBaiduVariant": [
+                    26
+                ],
+                "org.jsoup.integration.ParseTest#testBinary": [
+                    26
+                ],
+                "org.jsoup.integration.ParseTest#testBrokenHtml5CharsetWithASingleDoubleQuote": [
+                    26
+                ],
+                "org.jsoup.integration.ParseTest#testGoogleSearchIpod": [
+                    26
+                ],
+                "org.jsoup.integration.ParseTest#testHtml5Charset": [
+                    26
+                ],
+                "org.jsoup.integration.ParseTest#testLowercaseUtf8Charset": [
+                    26
+                ],
+                "org.jsoup.integration.ParseTest#testNewsHomepage": [
+                    26
+                ],
+                "org.jsoup.integration.ParseTest#testNytArticle": [
+                    26
+                ],
+                "org.jsoup.integration.ParseTest#testSmhBizArticle": [
+                    26
+                ],
+                "org.jsoup.integration.ParseTest#testYahooArticle": [
+                    26
+                ],
+                "org.jsoup.integration.ParseTest#testYahooJp": [
+                    26
+                ],
+                "org.jsoup.nodes.AttributeTest#html": [
+                    26
+                ],
+                "org.jsoup.nodes.AttributeTest#testWithSupplementaryCharacterInAttributeKeyAndValue": [
+                    26
+                ],
+                "org.jsoup.nodes.AttributesTest#html": [
+                    26
+                ],
+                "org.jsoup.nodes.DocumentTest#DocumentsWithSameContentAreEqual": [
+                    26
+                ],
+                "org.jsoup.nodes.DocumentTest#DocumentsWithSameContentAreVerifialbe": [
+                    26
+                ],
+                "org.jsoup.nodes.DocumentTest#htmlParseDefaultsToHtmlOutputSyntax": [
+                    26
+                ],
+                "org.jsoup.nodes.DocumentTest#parseAndHtmlOnDifferentThreads": [
+                    26
+                ],
+                "org.jsoup.nodes.DocumentTest#setTextPreservesDocumentStructure": [
+                    26
+                ],
+                "org.jsoup.nodes.DocumentTest#testClone": [
+                    26
+                ],
+                "org.jsoup.nodes.DocumentTest#testClonesDeclarations": [
+                    26
+                ],
+                "org.jsoup.nodes.DocumentTest#testHtmlAndXmlSyntax": [
+                    26
+                ],
+                "org.jsoup.nodes.DocumentTest#testHtmlAppendable": [
+                    26
+                ],
+                "org.jsoup.nodes.DocumentTest#testLocation": [
+                    26
+                ],
+                "org.jsoup.nodes.DocumentTest#testMetaCharsetUpdateCleanup": [
+                    26
+                ],
+                "org.jsoup.nodes.DocumentTest#testMetaCharsetUpdateDisabled": [
+                    26
+                ],
+                "org.jsoup.nodes.DocumentTest#testMetaCharsetUpdateDisabledNoChanges": [
+                    26
+                ],
+                "org.jsoup.nodes.DocumentTest#testMetaCharsetUpdateEnabledAfterCharsetChange": [
+                    26
+                ],
+                "org.jsoup.nodes.DocumentTest#testMetaCharsetUpdateIso8859": [
+                    26
+                ],
+                "org.jsoup.nodes.DocumentTest#testMetaCharsetUpdateNoCharset": [
+                    26
+                ],
+                "org.jsoup.nodes.DocumentTest#testMetaCharsetUpdateUtf8": [
+                    26
+                ],
+                "org.jsoup.nodes.DocumentTest#testMetaCharsetUpdateXmlDisabled": [
+                    26
+                ],
+                "org.jsoup.nodes.DocumentTest#testMetaCharsetUpdateXmlDisabledNoChanges": [
+                    26
+                ],
+                "org.jsoup.nodes.DocumentTest#testMetaCharsetUpdateXmlIso8859": [
+                    26
+                ],
+                "org.jsoup.nodes.DocumentTest#testMetaCharsetUpdateXmlNoCharset": [
+                    26
+                ],
+                "org.jsoup.nodes.DocumentTest#testMetaCharsetUpdateXmlUtf8": [
+                    26
+                ],
+                "org.jsoup.nodes.DocumentTest#testMetaCharsetUpdatedDisabledPerDefault": [
+                    26
+                ],
+                "org.jsoup.nodes.DocumentTest#testNormalisesStructure": [
+                    26
+                ],
+                "org.jsoup.nodes.DocumentTest#testOutputEncoding": [
+                    26
+                ],
+                "org.jsoup.nodes.DocumentTest#testShiftJisRoundtrip": [
+                    26
+                ],
+                "org.jsoup.nodes.DocumentTest#testTitles": [
+                    26
+                ],
+                "org.jsoup.nodes.DocumentTest#testXhtmlReferences": [
+                    26
+                ],
+                "org.jsoup.nodes.DocumentTypeTest#constructorValidationOkWithBlankName": [
+                    26
+                ],
+                "org.jsoup.nodes.DocumentTypeTest#constructorValidationOkWithBlankPublicAndSystemIds": [
+                    26
+                ],
+                "org.jsoup.nodes.DocumentTypeTest#constructorValidationThrowsExceptionOnNulls": [
+                    26
+                ],
+                "org.jsoup.nodes.DocumentTypeTest#outerHtmlGeneration": [
+                    26
+                ],
+                "org.jsoup.nodes.DocumentTypeTest#testRoundTrip": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#after": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#appendMustCorrectlyMoveChildrenInsideOneParentElement": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#before": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#booleanAttributeOutput": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#classNamesAndAttributeNameIsCaseInsensitive": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#dataset": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#elementByTagName": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#elementIsNotASiblingOfItself": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#getElementsByTagName": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#getNamespacedElementsByTag": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#insertChildrenArgumentValidation": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#insertChildrenAsCopy": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#insertChildrenAtPosition": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#moveByAppend": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#parentlessToString": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#testAddBooleanAttribute": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#testAddNewElement": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#testAddNewHtml": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#testAddNewText": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#testAppendRowToTable": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#testAppendTo": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#testBrHasSpace": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#testChainedRemoveAttributes": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#testChildThrowsIndexOutOfBoundsOnMissing": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#testChildrenElements": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#testClassDomMethods": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#testClassNames": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#testClassUpdates": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#testClone": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#testClonesClassnames": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#testContainerOutput": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#testCssPath": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#testElementSiblingIndex": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#testElementSiblingIndexSameContent": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#testEmptyElementFormatHtml": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#testFormatHtml": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#testFormatOutline": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#testGetChildText": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#testGetDataNodes": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#testGetElementById": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#testGetElementsWithAttribute": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#testGetElementsWithAttributeDash": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#testGetElementsWithAttributeValue": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#testGetElementsWithClass": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#testGetParents": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#testGetSiblings": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#testGetSiblingsWithDuplicateContent": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#testGetText": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#testGetTextNodes": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#testHasClassDomMethods": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#testHasText": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#testHashAndEqualsAndValue": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#testHashcodeIsStableWithContentChanges": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#testHtmlContainsOuter": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#testInnerHtml": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#testIs": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#testKeepsPreText": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#testKeepsPreTextAtDepth": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#testKeepsPreTextInCode": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#testLoopedRemoveAttributes": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#testManipulateTextNodes": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#testNamespacedElements": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#testNextElementSiblingAfterClone": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#testNoIndentOnScriptAndStyle": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#testNormalisesText": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#testNormalizesInvisiblesInText": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#testNormalizesNbspInText": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#testNotPretty": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#testOuterHtml": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#testPrependElement": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#testPrependNewHtml": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#testPrependRowToTable": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#testPrependText": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#testRelativeUrls": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#testRemoveAfterIndex": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#testRemoveBeforeIndex": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#testRemovingEmptyClassAttributeWhenLastClassRemoved": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#testSetHtml": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#testSetHtmlTitle": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#testSetIndent": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#testSetText": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#testShadowElementsAreUpdated": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#testShallowClone": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#testTagNameSet": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#testThrowsOnAddNullText": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#testThrowsOnPrependNullText": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#testWholeText": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#testWrap": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#testWrapWithRemainder": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#textHasSpaceAfterBlockTags": [
+                    26
+                ],
+                "org.jsoup.nodes.ElementTest#whiteSpaceClassElement": [
+                    26
+                ],
+                "org.jsoup.nodes.EntitiesTest#escapesGtInXmlAttributesButNotInHtml": [
+                    26
+                ],
+                "org.jsoup.nodes.EntitiesTest#letterDigitEntities": [
+                    26
+                ],
+                "org.jsoup.nodes.FormElementTest#actionWithNoBaseUri": [
+                    26
+                ],
+                "org.jsoup.nodes.FormElementTest#actionWithNoValue": [
+                    26
+                ],
+                "org.jsoup.nodes.FormElementTest#adoptedFormsRetainInputs": [
+                    26
+                ],
+                "org.jsoup.nodes.FormElementTest#controlsAddedAfterParseAreLinkedWithForms": [
+                    26
+                ],
+                "org.jsoup.nodes.FormElementTest#createsFormData": [
+                    26
+                ],
+                "org.jsoup.nodes.FormElementTest#createsSubmitableConnection": [
+                    26
+                ],
+                "org.jsoup.nodes.FormElementTest#formsAddedAfterParseAreFormElements": [
+                    26
+                ],
+                "org.jsoup.nodes.FormElementTest#hasAssociatedControls": [
+                    26
+                ],
+                "org.jsoup.nodes.FormElementTest#removeFormElement": [
+                    26
+                ],
+                "org.jsoup.nodes.FormElementTest#usesOnForCheckboxValueIfNoValueSet": [
+                    26
+                ],
+                "org.jsoup.nodes.NodeTest#absHandlesDotFromIndex": [
+                    26
+                ],
+                "org.jsoup.nodes.NodeTest#absHandlesRelativeQuery": [
+                    26
+                ],
+                "org.jsoup.nodes.NodeTest#after": [
+                    26
+                ],
+                "org.jsoup.nodes.NodeTest#before": [
+                    26
+                ],
+                "org.jsoup.nodes.NodeTest#changingAttributeValueShouldReplaceExistingAttributeCaseInsensitive": [
+                    26
+                ],
+                "org.jsoup.nodes.NodeTest#childNodesCopy": [
+                    26
+                ],
+                "org.jsoup.nodes.NodeTest#handleAbsOnFileUris": [
+                    26
+                ],
+                "org.jsoup.nodes.NodeTest#handleAbsOnLocalhostFileUris": [
+                    26
+                ],
+                "org.jsoup.nodes.NodeTest#handlesAbsOnImage": [
+                    26
+                ],
+                "org.jsoup.nodes.NodeTest#handlesAbsOnProtocolessAbsoluteUris": [
+                    26
+                ],
+                "org.jsoup.nodes.NodeTest#handlesAbsPrefix": [
+                    26
+                ],
+                "org.jsoup.nodes.NodeTest#handlesAbsPrefixOnHasAttr": [
+                    26
+                ],
+                "org.jsoup.nodes.NodeTest#handlesBaseUri": [
+                    26
+                ],
+                "org.jsoup.nodes.NodeTest#literalAbsPrefix": [
+                    26
+                ],
+                "org.jsoup.nodes.NodeTest#nodeIsNotASiblingOfItself": [
+                    26
+                ],
+                "org.jsoup.nodes.NodeTest#orphanNodeReturnsNullForSiblingElements": [
+                    26
+                ],
+                "org.jsoup.nodes.NodeTest#ownerDocument": [
+                    26
+                ],
+                "org.jsoup.nodes.NodeTest#root": [
+                    26
+                ],
+                "org.jsoup.nodes.NodeTest#setBaseUriIsRecursive": [
+                    26
+                ],
+                "org.jsoup.nodes.NodeTest#supportsClone": [
+                    26
+                ],
+                "org.jsoup.nodes.NodeTest#testRemove": [
+                    26
+                ],
+                "org.jsoup.nodes.NodeTest#testReplace": [
+                    26
+                ],
+                "org.jsoup.nodes.NodeTest#traverse": [
+                    26
+                ],
+                "org.jsoup.nodes.NodeTest#unwrap": [
+                    26
+                ],
+                "org.jsoup.nodes.NodeTest#unwrapNoChildren": [
+                    26
+                ],
+                "org.jsoup.nodes.TextNodeTest#testBlank": [
+                    26
+                ],
+                "org.jsoup.nodes.TextNodeTest#testSplitAnEmbolden": [
+                    26
+                ],
+                "org.jsoup.nodes.TextNodeTest#testSplitText": [
+                    26
+                ],
+                "org.jsoup.nodes.TextNodeTest#testTextBean": [
+                    26
+                ],
+                "org.jsoup.nodes.TextNodeTest#testWithSupplementaryCharacter": [
+                    26
+                ],
+                "org.jsoup.parser.AttributeParseTest#canStartWithEq": [
+                    26
+                ],
+                "org.jsoup.parser.AttributeParseTest#dropsSlashFromAttributeName": [
+                    26
+                ],
+                "org.jsoup.parser.AttributeParseTest#handlesNewLinesAndReturns": [
+                    26
+                ],
+                "org.jsoup.parser.AttributeParseTest#moreAttributeUnescapes": [
+                    26
+                ],
+                "org.jsoup.parser.AttributeParseTest#parsesBooleanAttributes": [
+                    26
+                ],
+                "org.jsoup.parser.AttributeParseTest#parsesEmptyString": [
+                    26
+                ],
+                "org.jsoup.parser.AttributeParseTest#parsesRoughAttributeString": [
+                    26
+                ],
+                "org.jsoup.parser.AttributeParseTest#strictAttributeUnescapes": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#associatedFormControlsWithDisjointForms": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#canPreserveAttributeCase": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#canPreserveBothCase": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#canPreserveTagCase": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#caseInsensitiveParseTree": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#caseSensitiveParseTree": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#cdataNodesAreTextNodes": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#commentAtEnd": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#commentBeforeHtml": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#convertsImageToImg": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#createsDocumentStructure": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#createsFormElements": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#createsStructureFromBodySnippet": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#discardsNakedTds": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#doesNotCreateImplicitLists": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#doesNotFindShortestMatchingEntity": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#dropsUnterminatedAttribute": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#dropsUnterminatedTag": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#emptyTdTag": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#findsCharsetInMalformedMeta": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#handleCDataInText": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#handleNullContextInParseFragment": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#handles0CharacterAsText": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#handlesBaseTags": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#handlesBaseWithoutHref": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#handlesBlocksInDefinitions": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#handlesCdata": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#handlesCdataAcrossBuffer": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#handlesCdataInScript": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#handlesCommentsInTable": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#handlesControlCodeInAttributeName": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#handlesDataOnlyTags": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#handlesDeepStack": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#handlesEscapedData": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#handlesEscapedScript": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#handlesFrames": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#handlesImplicitCaptionClose": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#handlesInputInTable": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#handlesInvalidDoctypes": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#handlesInvalidStartTags": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#handlesJavadocFont": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#handlesKnownEmptyBlocks": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#handlesKnownEmptyIframe": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#handlesKnownEmptyNoFrames": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#handlesKnownEmptyStyle": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#handlesKnownEmptyTitle": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#handlesManyChildren": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#handlesMisnestedTagsBI": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#handlesMisnestedTagsBP": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#handlesMultiClosingBody": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#handlesNestedImplicitTable": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#handlesNewlinesAndWhitespaceInTag": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#handlesNullInComments": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#handlesNullInData": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#handlesProtocolRelativeUrl": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#handlesQuotesInCommentsInScripts": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#handlesSolidusAtAttributeEnd": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#handlesSolidusInA": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#handlesSpanInTbody": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#handlesTagsInTextarea": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#handlesTbodyTable": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#handlesTextAfterData": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#handlesTextArea": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#handlesUnclosedAnchors": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#handlesUnclosedCdataAtEOF": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#handlesUnclosedDefinitionLists": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#handlesUnclosedFormattingElements": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#handlesUnclosedRawtextAtEof": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#handlesUnclosedScriptAtEof": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#handlesUnclosedTitle": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#handlesUnclosedTitleAtEof": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#handlesUnexpectedMarkupInTables": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#handlesUnknownInlineTags": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#handlesUnknownNamespaceTags": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#handlesUnknownTags": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#handlesWhatWgExpensesTableExample": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#handlesWhitespaceInoDocType": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#handlesXmlDeclarationAsBogusComment": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#ignoresContentAfterFrameset": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#ignoresDupeEndTrTag": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#noErrorsByDefault": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#noImplicitFormForTextAreas": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#noTableDirectInTable": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#normalisedBodyAfterContent": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#normalisesDocument": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#normalisesEmptyDocument": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#normalisesHeadlessBody": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#normalizesDiscordantTags": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#parsesBodyFragment": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#parsesComments": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#parsesQuiteRoughAttributes": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#parsesRoughAttributes": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#parsesSimpleDocument": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#parsesUnterminatedComments": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#parsesUnterminatedOption": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#parsesUnterminatedTextarea": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#preSkipsFirstNewline": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#preservesSpaceInScript": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#preservesSpaceInTextArea": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#reconstructFormattingElements": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#reconstructFormattingElementsInTable": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#relaxedBaseEntityMatchAndStrictExtendedMatch": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#roundTripsCdata": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#selfClosingOnNonvoidIsError": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#selfClosingVoidIsNotAnError": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#testAFlowContents": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#testFontFlowContents": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#testFragment": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#testHandlesDeepSpans": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#testHeaderContents": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#testHgroup": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#testHtmlLowerCase": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#testInvalidTableContents": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#testNoImagesInNoScriptInHead": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#testNormalisesIsIndex": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#testReinsertionModeForThCelss": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#testRelaxedTags": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#testSelectWithOption": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#testSpaceAfterTag": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#testSpanContents": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#testSupportsNonAsciiTags": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#testSupportsPartiallyNonAsciiTags": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#testTemplateInsideTable": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#testUsingSingleQuotesInQueries": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#tracksErrorsWhenRequested": [
+                    26
+                ],
+                "org.jsoup.parser.HtmlParserTest#tracksLimitedErrorsWhenRequested": [
+                    26
+                ],
+                "org.jsoup.parser.TokenQueueTest#testNestedQuotes": [
+                    26
+                ],
+                "org.jsoup.parser.TokeniserStateTest#testBeforeTagName": [
+                    26
+                ],
+                "org.jsoup.parser.TokeniserStateTest#testCharacterReferenceInRcdata": [
+                    26
+                ],
+                "org.jsoup.parser.TokeniserStateTest#testCommentEndBangCoverage": [
+                    26
+                ],
+                "org.jsoup.parser.TokeniserStateTest#testCommentEndCoverage": [
+                    26
+                ],
+                "org.jsoup.parser.TokeniserStateTest#testEndTagOpen": [
+                    26
+                ],
+                "org.jsoup.parser.TokeniserStateTest#testPublicAndSystemIdentifiersWithWhitespace": [
+                    26
+                ],
+                "org.jsoup.parser.TokeniserStateTest#testPublicIdentifiersWithWhitespace": [
+                    26
+                ],
+                "org.jsoup.parser.TokeniserStateTest#testRCDATAEndTagName": [
+                    26
+                ],
+                "org.jsoup.parser.TokeniserStateTest#testRcdataLessthanSign": [
+                    26
+                ],
+                "org.jsoup.parser.TokeniserStateTest#testSystemIdentifiersWithWhitespace": [
+                    26
+                ],
+                "org.jsoup.parser.TokeniserTest#bufferUpInAttributeVal": [
+                    26
+                ],
+                "org.jsoup.parser.TokeniserTest#handleLargeCdata": [
+                    26
+                ],
+                "org.jsoup.parser.TokeniserTest#handleLargeComment": [
+                    26
+                ],
+                "org.jsoup.parser.TokeniserTest#handleLargeText": [
+                    26
+                ],
+                "org.jsoup.parser.TokeniserTest#handleLargeTitle": [
+                    26
+                ],
+                "org.jsoup.parser.TokeniserTest#handleSuperLargeAttributeName": [
+                    26
+                ],
+                "org.jsoup.parser.TokeniserTest#handleSuperLargeTagNames": [
+                    26
+                ],
+                "org.jsoup.parser.XmlTreeBuilderTest#canNormalizeCase": [
+                    26
+                ],
+                "org.jsoup.parser.XmlTreeBuilderTest#caseSensitiveDeclaration": [
+                    26
+                ],
+                "org.jsoup.parser.XmlTreeBuilderTest#cdataPreservesWhiteSpace": [
+                    26
+                ],
+                "org.jsoup.parser.XmlTreeBuilderTest#handlesXmlDeclarationAsDeclaration": [
+                    26
+                ],
+                "org.jsoup.parser.XmlTreeBuilderTest#normalizesDiscordantTags": [
+                    26
+                ],
+                "org.jsoup.parser.XmlTreeBuilderTest#preservesCaseByDefault": [
+                    26
+                ],
+                "org.jsoup.parser.XmlTreeBuilderTest#roundTripsCdata": [
+                    26
+                ],
+                "org.jsoup.parser.XmlTreeBuilderTest#testCommentAndDocType": [
+                    26
+                ],
+                "org.jsoup.parser.XmlTreeBuilderTest#testCreatesValidProlog": [
+                    26
+                ],
+                "org.jsoup.parser.XmlTreeBuilderTest#testDetectCharsetEncodingDeclaration": [
+                    26
+                ],
+                "org.jsoup.parser.XmlTreeBuilderTest#testDoesHandleEOFInTag": [
+                    26
+                ],
+                "org.jsoup.parser.XmlTreeBuilderTest#testDoesNotForceSelfClosingKnownTags": [
+                    26
+                ],
+                "org.jsoup.parser.XmlTreeBuilderTest#testParseDeclarationAttributes": [
+                    26
+                ],
+                "org.jsoup.parser.XmlTreeBuilderTest#testPopToClose": [
+                    26
+                ],
+                "org.jsoup.parser.XmlTreeBuilderTest#testSimpleXmlParse": [
+                    26
+                ],
+                "org.jsoup.parser.XmlTreeBuilderTest#testSupplyParserToDataStream": [
+                    26
+                ],
+                "org.jsoup.parser.XmlTreeBuilderTest#testSupplyParserToJsoupClass": [
+                    26
+                ],
+                "org.jsoup.parser.XmlTreeBuilderTest#xmlFragment": [
+                    26
+                ],
+                "org.jsoup.parser.XmlTreeBuilderTest#xmlParseDefaultsToHtmlOutputSyntax": [
+                    26
+                ],
+                "org.jsoup.safety.CleanerTest#addsTagOnAttributesIfNotSet": [
+                    26
+                ],
+                "org.jsoup.safety.CleanerTest#basicBehaviourTest": [
+                    26
+                ],
+                "org.jsoup.safety.CleanerTest#basicWithImagesTest": [
+                    26
+                ],
+                "org.jsoup.safety.CleanerTest#cleansInternationalText": [
+                    26
+                ],
+                "org.jsoup.safety.CleanerTest#dropsUnresolvableRelativeLinks": [
+                    26
+                ],
+                "org.jsoup.safety.CleanerTest#handlesAllPseudoTag": [
+                    26
+                ],
+                "org.jsoup.safety.CleanerTest#handlesAttributesWithNoValue": [
+                    26
+                ],
+                "org.jsoup.safety.CleanerTest#handlesControlCharactersAfterTagName": [
+                    26
+                ],
+                "org.jsoup.safety.CleanerTest#handlesCustomProtocols": [
+                    26
+                ],
+                "org.jsoup.safety.CleanerTest#handlesFramesets": [
+                    26
+                ],
+                "org.jsoup.safety.CleanerTest#preservesRelativeLinksIfConfigured": [
+                    26
+                ],
+                "org.jsoup.safety.CleanerTest#resolvesRelativeLinks": [
+                    26
+                ],
+                "org.jsoup.safety.CleanerTest#simpleBehaviourTest": [
+                    26
+                ],
+                "org.jsoup.safety.CleanerTest#simpleBehaviourTest2": [
+                    26
+                ],
+                "org.jsoup.safety.CleanerTest#supplyOutputSettings": [
+                    26
+                ],
+                "org.jsoup.safety.CleanerTest#testCleanAnchorProtocol": [
+                    26
+                ],
+                "org.jsoup.safety.CleanerTest#testCleanJavascriptHref": [
+                    26
+                ],
+                "org.jsoup.safety.CleanerTest#testDropComments": [
+                    26
+                ],
+                "org.jsoup.safety.CleanerTest#testDropImageScript": [
+                    26
+                ],
+                "org.jsoup.safety.CleanerTest#testDropScript": [
+                    26
+                ],
+                "org.jsoup.safety.CleanerTest#testDropXmlProc": [
+                    26
+                ],
+                "org.jsoup.safety.CleanerTest#testDropsUnknownTags": [
+                    26
+                ],
+                "org.jsoup.safety.CleanerTest#testHandlesEmptyAttributes": [
+                    26
+                ],
+                "org.jsoup.safety.CleanerTest#testIsValidBodyHtml": [
+                    26
+                ],
+                "org.jsoup.safety.CleanerTest#testIsValidDocument": [
+                    26
+                ],
+                "org.jsoup.safety.CleanerTest#testRelaxed": [
+                    26
+                ],
+                "org.jsoup.safety.CleanerTest#testRemoveAttributes": [
+                    26
+                ],
+                "org.jsoup.safety.CleanerTest#testRemoveEnforcedAttributes": [
+                    26
+                ],
+                "org.jsoup.safety.CleanerTest#testRemoveProtocols": [
+                    26
+                ],
+                "org.jsoup.safety.CleanerTest#testRemoveTags": [
+                    26
+                ],
+                "org.jsoup.safety.CleanerTest#testScriptTagInWhiteList": [
+                    26
+                ],
+                "org.jsoup.safety.CleanerTest#whitelistedProtocolShouldBeRetained": [
+                    26
+                ],
+                "org.jsoup.select.CssTest#empty": [
+                    26
+                ],
+                "org.jsoup.select.CssTest#firstChild": [
+                    26
+                ],
+                "org.jsoup.select.CssTest#firstOfType": [
+                    26
+                ],
+                "org.jsoup.select.CssTest#lastChild": [
+                    26
+                ],
+                "org.jsoup.select.CssTest#lastOfType": [
+                    26
+                ],
+                "org.jsoup.select.CssTest#nthChild_advanced": [
+                    26
+                ],
+                "org.jsoup.select.CssTest#nthChild_simple": [
+                    26
+                ],
+                "org.jsoup.select.CssTest#nthLastChild_advanced": [
+                    26
+                ],
+                "org.jsoup.select.CssTest#nthLastChild_simple": [
+                    26
+                ],
+                "org.jsoup.select.CssTest#nthLastOfType_advanced": [
+                    26
+                ],
+                "org.jsoup.select.CssTest#nthLastOfType_simple": [
+                    26
+                ],
+                "org.jsoup.select.CssTest#nthOfType_advanced": [
+                    26
+                ],
+                "org.jsoup.select.CssTest#nthOfType_simple": [
+                    26
+                ],
+                "org.jsoup.select.CssTest#nthOfType_unknownTag": [
+                    26
+                ],
+                "org.jsoup.select.CssTest#onlyChild": [
+                    26
+                ],
+                "org.jsoup.select.CssTest#onlyOfType": [
+                    26
+                ],
+                "org.jsoup.select.CssTest#root": [
+                    26
+                ],
+                "org.jsoup.select.ElementsTest#absAttr": [
+                    26
+                ],
+                "org.jsoup.select.ElementsTest#after": [
+                    26
+                ],
+                "org.jsoup.select.ElementsTest#attr": [
+                    26
+                ],
+                "org.jsoup.select.ElementsTest#attributes": [
+                    26
+                ],
+                "org.jsoup.select.ElementsTest#before": [
+                    26
+                ],
+                "org.jsoup.select.ElementsTest#classWithHyphen": [
+                    26
+                ],
+                "org.jsoup.select.ElementsTest#classes": [
+                    26
+                ],
+                "org.jsoup.select.ElementsTest#eachAttr": [
+                    26
+                ],
+                "org.jsoup.select.ElementsTest#eachText": [
+                    26
+                ],
+                "org.jsoup.select.ElementsTest#empty": [
+                    26
+                ],
+                "org.jsoup.select.ElementsTest#eq": [
+                    26
+                ],
+                "org.jsoup.select.ElementsTest#filter": [
+                    26
+                ],
+                "org.jsoup.select.ElementsTest#forms": [
+                    26
+                ],
+                "org.jsoup.select.ElementsTest#hasAbsAttr": [
+                    26
+                ],
+                "org.jsoup.select.ElementsTest#hasAttr": [
+                    26
+                ],
+                "org.jsoup.select.ElementsTest#hasClassCaseInsensitive": [
+                    26
+                ],
+                "org.jsoup.select.ElementsTest#hasText": [
+                    26
+                ],
+                "org.jsoup.select.ElementsTest#html": [
+                    26
+                ],
+                "org.jsoup.select.ElementsTest#is": [
+                    26
+                ],
+                "org.jsoup.select.ElementsTest#not": [
+                    26
+                ],
+                "org.jsoup.select.ElementsTest#outerHtml": [
+                    26
+                ],
+                "org.jsoup.select.ElementsTest#parents": [
+                    26
+                ],
+                "org.jsoup.select.ElementsTest#remove": [
+                    26
+                ],
+                "org.jsoup.select.ElementsTest#setHtml": [
+                    26
+                ],
+                "org.jsoup.select.ElementsTest#siblings": [
+                    26
+                ],
+                "org.jsoup.select.ElementsTest#tagNameSet": [
+                    26
+                ],
+                "org.jsoup.select.ElementsTest#text": [
+                    26
+                ],
+                "org.jsoup.select.ElementsTest#traverse": [
+                    26
+                ],
+                "org.jsoup.select.ElementsTest#unwrap": [
+                    26
+                ],
+                "org.jsoup.select.ElementsTest#unwrapKeepsSpace": [
+                    26
+                ],
+                "org.jsoup.select.ElementsTest#unwrapP": [
+                    26
+                ],
+                "org.jsoup.select.ElementsTest#val": [
+                    26
+                ],
+                "org.jsoup.select.ElementsTest#wrap": [
+                    26
+                ],
+                "org.jsoup.select.ElementsTest#wrapDiv": [
+                    26
+                ],
+                "org.jsoup.select.SelectorTest#adjacentSiblings": [
+                    26
+                ],
+                "org.jsoup.select.SelectorTest#adjacentSiblingsWithId": [
+                    26
+                ],
+                "org.jsoup.select.SelectorTest#and": [
+                    26
+                ],
+                "org.jsoup.select.SelectorTest#attributeWithBrackets": [
+                    26
+                ],
+                "org.jsoup.select.SelectorTest#caseInsensitive": [
+                    26
+                ],
+                "org.jsoup.select.SelectorTest#containsData": [
+                    26
+                ],
+                "org.jsoup.select.SelectorTest#containsOwn": [
+                    26
+                ],
+                "org.jsoup.select.SelectorTest#containsWithQuote": [
+                    26
+                ],
+                "org.jsoup.select.SelectorTest#deeperDescendant": [
+                    26
+                ],
+                "org.jsoup.select.SelectorTest#descendant": [
+                    26
+                ],
+                "org.jsoup.select.SelectorTest#findBetweenSpan": [
+                    26
+                ],
+                "org.jsoup.select.SelectorTest#generalSiblings": [
+                    26
+                ],
+                "org.jsoup.select.SelectorTest#handlesCommasInSelector": [
+                    26
+                ],
+                "org.jsoup.select.SelectorTest#matchText": [
+                    26
+                ],
+                "org.jsoup.select.SelectorTest#matchTextAttributes": [
+                    26
+                ],
+                "org.jsoup.select.SelectorTest#matchesOwn": [
+                    26
+                ],
+                "org.jsoup.select.SelectorTest#mixCombinator": [
+                    26
+                ],
+                "org.jsoup.select.SelectorTest#mixCombinatorGroup": [
+                    26
+                ],
+                "org.jsoup.select.SelectorTest#multiChildDescent": [
+                    26
+                ],
+                "org.jsoup.select.SelectorTest#notAdjacent": [
+                    26
+                ],
+                "org.jsoup.select.SelectorTest#notAll": [
+                    26
+                ],
+                "org.jsoup.select.SelectorTest#notClass": [
+                    26
+                ],
+                "org.jsoup.select.SelectorTest#notParas": [
+                    26
+                ],
+                "org.jsoup.select.SelectorTest#parentChildElement": [
+                    26
+                ],
+                "org.jsoup.select.SelectorTest#parentChildStar": [
+                    26
+                ],
+                "org.jsoup.select.SelectorTest#parentWithClassChild": [
+                    26
+                ],
+                "org.jsoup.select.SelectorTest#selectClassWithSpace": [
+                    26
+                ],
+                "org.jsoup.select.SelectorTest#selectFirst": [
+                    26
+                ],
+                "org.jsoup.select.SelectorTest#selectFirstWithAnd": [
+                    26
+                ],
+                "org.jsoup.select.SelectorTest#selectFirstWithOr": [
+                    26
+                ],
+                "org.jsoup.select.SelectorTest#selectSameElements": [
+                    26
+                ],
+                "org.jsoup.select.SelectorTest#selectSupplementaryCharacter": [
+                    26
+                ],
+                "org.jsoup.select.SelectorTest#splitOnBr": [
+                    26
+                ],
+                "org.jsoup.select.SelectorTest#testAllElements": [
+                    26
+                ],
+                "org.jsoup.select.SelectorTest#testAllWithClass": [
+                    26
+                ],
+                "org.jsoup.select.SelectorTest#testByAttribute": [
+                    26
+                ],
+                "org.jsoup.select.SelectorTest#testByAttributeRegex": [
+                    26
+                ],
+                "org.jsoup.select.SelectorTest#testByAttributeRegexCharacterClass": [
+                    26
+                ],
+                "org.jsoup.select.SelectorTest#testByAttributeRegexCombined": [
+                    26
+                ],
+                "org.jsoup.select.SelectorTest#testByAttributeStarting": [
+                    26
+                ],
+                "org.jsoup.select.SelectorTest#testByClass": [
+                    26
+                ],
+                "org.jsoup.select.SelectorTest#testByClassCaseInsensitive": [
+                    26
+                ],
+                "org.jsoup.select.SelectorTest#testById": [
+                    26
+                ],
+                "org.jsoup.select.SelectorTest#testByTag": [
+                    26
+                ],
+                "org.jsoup.select.SelectorTest#testCharactersInIdAndClass": [
+                    26
+                ],
+                "org.jsoup.select.SelectorTest#testCombinedWithContains": [
+                    26
+                ],
+                "org.jsoup.select.SelectorTest#testGroupOr": [
+                    26
+                ],
+                "org.jsoup.select.SelectorTest#testGroupOrAttribute": [
+                    26
+                ],
+                "org.jsoup.select.SelectorTest#testMatches": [
+                    26
+                ],
+                "org.jsoup.select.SelectorTest#testNamespacedTag": [
+                    26
+                ],
+                "org.jsoup.select.SelectorTest#testNestedHas": [
+                    26
+                ],
+                "org.jsoup.select.SelectorTest#testPseudoBetween": [
+                    26
+                ],
+                "org.jsoup.select.SelectorTest#testPseudoCombined": [
+                    26
+                ],
+                "org.jsoup.select.SelectorTest#testPseudoContains": [
+                    26
+                ],
+                "org.jsoup.select.SelectorTest#testPseudoEquals": [
+                    26
+                ],
+                "org.jsoup.select.SelectorTest#testPseudoGreaterThan": [
+                    26
+                ],
+                "org.jsoup.select.SelectorTest#testPseudoHas": [
+                    26
+                ],
+                "org.jsoup.select.SelectorTest#testPseudoLessThan": [
+                    26
+                ],
+                "org.jsoup.select.SelectorTest#testPsuedoContainsWithParentheses": [
+                    26
+                ],
+                "org.jsoup.select.SelectorTest#testRelaxedTags": [
+                    26
+                ],
+                "org.jsoup.select.SelectorTest#testSupportsLeadingCombinator": [
+                    26
+                ],
+                "org.jsoup.select.SelectorTest#testWildcardNamespacedTag": [
+                    26
+                ],
+                "org.jsoup.select.TraversorTest#filterRemove": [
+                    26
+                ],
+                "org.jsoup.select.TraversorTest#filterSkipChildren": [
+                    26
+                ],
+                "org.jsoup.select.TraversorTest#filterSkipEntirely": [
+                    26
+                ],
+                "org.jsoup.select.TraversorTest#filterStop": [
+                    26
+                ],
+                "org.jsoup.select.TraversorTest#filterVisit": [
+                    26
+                ]
+            }
+        },
+        "outerHtml": {
+            "tests_covering_the_method": {
+                "org.jsoup.integration.ParseTest#testBaidu": [
+                    567,
+                    568,
+                    569
+                ],
+                "org.jsoup.integration.ParseTest#testBaiduVariant": [
+                    567,
+                    568,
+                    569
+                ],
+                "org.jsoup.nodes.DocumentTest#parseAndHtmlOnDifferentThreads": [
+                    567,
+                    568,
+                    569
+                ],
+                "org.jsoup.nodes.DocumentTypeTest#outerHtmlGeneration": [
+                    567,
+                    568,
+                    569
+                ],
+                "org.jsoup.nodes.DocumentTypeTest#testRoundTrip": [
+                    567,
+                    568,
+                    569
+                ],
+                "org.jsoup.nodes.ElementTest#booleanAttributeOutput": [
+                    567,
+                    568,
+                    569
+                ],
+                "org.jsoup.nodes.ElementTest#elementIsNotASiblingOfItself": [
+                    567,
+                    568,
+                    569
+                ],
+                "org.jsoup.nodes.ElementTest#parentlessToString": [
+                    567,
+                    568,
+                    569
+                ],
+                "org.jsoup.nodes.ElementTest#testAddBooleanAttribute": [
+                    567,
+                    568,
+                    569
+                ],
+                "org.jsoup.nodes.ElementTest#testChainedRemoveAttributes": [
+                    567,
+                    568,
+                    569
+                ],
+                "org.jsoup.nodes.ElementTest#testChildrenElements": [
+                    567,
+                    568,
+                    569
+                ],
+                "org.jsoup.nodes.ElementTest#testClone": [
+                    567,
+                    568,
+                    569
+                ],
+                "org.jsoup.nodes.ElementTest#testContainerOutput": [
+                    567,
+                    568,
+                    569
+                ],
+                "org.jsoup.nodes.ElementTest#testEmptyElementFormatHtml": [
+                    567,
+                    568,
+                    569
+                ],
+                "org.jsoup.nodes.ElementTest#testHashAndEqualsAndValue": [
+                    567,
+                    568,
+                    569
+                ],
+                "org.jsoup.nodes.ElementTest#testHtmlContainsOuter": [
+                    567,
+                    568,
+                    569
+                ],
+                "org.jsoup.nodes.ElementTest#testNormalizesInvisiblesInText": [
+                    567,
+                    568,
+                    569
+                ],
+                "org.jsoup.nodes.ElementTest#testNormalizesNbspInText": [
+                    567,
+                    568,
+                    569
+                ],
+                "org.jsoup.nodes.ElementTest#testRemoveAfterIndex": [
+                    567,
+                    568,
+                    569
+                ],
+                "org.jsoup.nodes.ElementTest#testRemoveBeforeIndex": [
+                    567,
+                    568,
+                    569
+                ],
+                "org.jsoup.nodes.EntitiesTest#escapesGtInXmlAttributesButNotInHtml": [
+                    567,
+                    568,
+                    569
+                ],
+                "org.jsoup.nodes.NodeTest#nodeIsNotASiblingOfItself": [
+                    567,
+                    568,
+                    569
+                ],
+                "org.jsoup.nodes.TextNodeTest#testWithSupplementaryCharacter": [
+                    567,
+                    568,
+                    569
+                ],
+                "org.jsoup.parser.AttributeParseTest#parsesBooleanAttributes": [
+                    567,
+                    568,
+                    569
+                ],
+                "org.jsoup.parser.HtmlParserTest#handleCDataInText": [
+                    567,
+                    568,
+                    569
+                ],
+                "org.jsoup.parser.HtmlParserTest#handleNullContextInParseFragment": [
+                    567,
+                    568,
+                    569
+                ],
+                "org.jsoup.parser.HtmlParserTest#handlesCdataInScript": [
+                    567,
+                    568,
+                    569
+                ],
+                "org.jsoup.parser.HtmlParserTest#handlesWhitespaceInoDocType": [
+                    567,
+                    568,
+                    569
+                ],
+                "org.jsoup.parser.HtmlParserTest#parsesBodyFragment": [
+                    567,
+                    568,
+                    569
+                ],
+                "org.jsoup.parser.HtmlParserTest#preservesSpaceInScript": [
+                    567,
+                    568,
+                    569
+                ],
+                "org.jsoup.parser.HtmlParserTest#preservesSpaceInTextArea": [
+                    567,
+                    568,
+                    569
+                ],
+                "org.jsoup.parser.HtmlParserTest#roundTripsCdata": [
+                    567,
+                    568,
+                    569
+                ],
+                "org.jsoup.parser.TokeniserStateTest#testPublicAndSystemIdentifiersWithWhitespace": [
+                    567,
+                    568,
+                    569
+                ],
+                "org.jsoup.parser.TokeniserStateTest#testPublicIdentifiersWithWhitespace": [
+                    567,
+                    568,
+                    569
+                ],
+                "org.jsoup.parser.TokeniserStateTest#testSystemIdentifiersWithWhitespace": [
+                    567,
+                    568,
+                    569
+                ],
+                "org.jsoup.parser.XmlTreeBuilderTest#roundTripsCdata": [
+                    567,
+                    568,
+                    569
+                ],
+                "org.jsoup.parser.XmlTreeBuilderTest#testParseDeclarationAttributes": [
+                    567,
+                    568,
+                    569
+                ],
+                "org.jsoup.select.ElementsTest#outerHtml": [
+                    567,
+                    568,
+                    569
+                ],
+                "org.jsoup.select.ElementsTest#setHtml": [
+                    567,
+                    568,
+                    569
+                ],
+                "org.jsoup.select.ElementsTest#val": [
+                    567,
+                    568,
+                    569
+                ],
+                "org.jsoup.select.SelectorTest#containsData": [
+                    567,
+                    568,
+                    569
+                ],
+                "org.jsoup.select.SelectorTest#splitOnBr": [
+                    567,
+                    568,
+                    569
+                ]
+            }
+        }
+    }
+}

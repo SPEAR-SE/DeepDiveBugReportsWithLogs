@@ -1,0 +1,14 @@
+{
+    "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/commons-csv/src/main/java/org/apache/commons/csv/CSVParser.java": {
+        "getHeaderMap": {
+            "tests_covering_the_method": {
+                "org.apache.commons.csv.CSVParserTest#testGetHeaderMap": [
+                    288
+                ],
+                "org.apache.commons.csv.CSVParserTest#testNoHeaderMap": [
+                    288
+                ]
+            }
+        }
+    }
+}

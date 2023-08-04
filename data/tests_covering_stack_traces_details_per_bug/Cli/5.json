@@ -1,0 +1,1296 @@
+{
+    "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/commons-cli/src/java/org/apache/commons/cli/CommandLine.java": {
+        "hasOption": {
+            "tests_covering_the_method": {
+                "org.apache.commons.cli.ApplicationTest#testAnt": [
+                    68
+                ],
+                "org.apache.commons.cli.ApplicationTest#testLs": [
+                    68
+                ],
+                "org.apache.commons.cli.ArgumentIsOptionTest#testOption": [
+                    68
+                ],
+                "org.apache.commons.cli.ArgumentIsOptionTest#testOptionAndOptionWithArgument": [
+                    68
+                ],
+                "org.apache.commons.cli.ArgumentIsOptionTest#testOptionWithArgument": [
+                    68
+                ],
+                "org.apache.commons.cli.BugsTest#test11457": [
+                    68
+                ],
+                "org.apache.commons.cli.BugsTest#test12210": [
+                    68
+                ],
+                "org.apache.commons.cli.BugsTest#test14786": [
+                    68
+                ],
+                "org.apache.commons.cli.BugsTest#test15046": [
+                    68
+                ],
+                "org.apache.commons.cli.BugsTest#test31148": [
+                    68
+                ],
+                "org.apache.commons.cli.GnuParseTest#testDoubleDash": [
+                    68
+                ],
+                "org.apache.commons.cli.GnuParseTest#testMultiple": [
+                    68
+                ],
+                "org.apache.commons.cli.GnuParseTest#testMultipleWithLong": [
+                    68
+                ],
+                "org.apache.commons.cli.GnuParseTest#testSimpleLong": [
+                    68
+                ],
+                "org.apache.commons.cli.GnuParseTest#testSimpleShort": [
+                    68
+                ],
+                "org.apache.commons.cli.GnuParseTest#testSingleDash": [
+                    68
+                ],
+                "org.apache.commons.cli.GnuParseTest#testStop": [
+                    68
+                ],
+                "org.apache.commons.cli.LongOptionWithShort#testLongOptionWithShort": [
+                    68
+                ],
+                "org.apache.commons.cli.OptionGroupTest#testNoOptionsExtraArgs": [
+                    68
+                ],
+                "org.apache.commons.cli.OptionGroupTest#testSingleLongOption": [
+                    68
+                ],
+                "org.apache.commons.cli.OptionGroupTest#testSingleOption": [
+                    68
+                ],
+                "org.apache.commons.cli.OptionGroupTest#testSingleOptionFromGroup": [
+                    68
+                ],
+                "org.apache.commons.cli.OptionGroupTest#testTwoOptionsFromDifferentGroup": [
+                    68
+                ],
+                "org.apache.commons.cli.OptionGroupTest#testTwoValidLongOptions": [
+                    68
+                ],
+                "org.apache.commons.cli.OptionGroupTest#testTwoValidOptions": [
+                    68
+                ],
+                "org.apache.commons.cli.OptionGroupTest#testValidLongOnlyOptions": [
+                    68
+                ],
+                "org.apache.commons.cli.ParseRequiredTest#testOptionAndRequiredOption": [
+                    68
+                ],
+                "org.apache.commons.cli.ParseRequiredTest#testWithRequiredOption": [
+                    68
+                ],
+                "org.apache.commons.cli.ParseTest#testComplexShort": [
+                    68
+                ],
+                "org.apache.commons.cli.ParseTest#testDoubleDash": [
+                    68
+                ],
+                "org.apache.commons.cli.ParseTest#testMultiple": [
+                    68
+                ],
+                "org.apache.commons.cli.ParseTest#testMultipleWithLong": [
+                    68
+                ],
+                "org.apache.commons.cli.ParseTest#testSimpleLong": [
+                    68
+                ],
+                "org.apache.commons.cli.ParseTest#testSimpleShort": [
+                    68
+                ],
+                "org.apache.commons.cli.ParseTest#testSingleDash": [
+                    68
+                ],
+                "org.apache.commons.cli.ParseTest#testStop": [
+                    68
+                ],
+                "org.apache.commons.cli.PatternOptionBuilderTest#testSimplePattern": [
+                    68
+                ],
+                "org.apache.commons.cli.ValueTest#testLongNoArg": [
+                    68
+                ],
+                "org.apache.commons.cli.ValueTest#testLongOptionalArgValue": [
+                    68
+                ],
+                "org.apache.commons.cli.ValueTest#testLongOptionalArgValues": [
+                    68
+                ],
+                "org.apache.commons.cli.ValueTest#testLongOptionalNArgValues": [
+                    68
+                ],
+                "org.apache.commons.cli.ValueTest#testLongOptionalNoValue": [
+                    68
+                ],
+                "org.apache.commons.cli.ValueTest#testLongWithArg": [
+                    68
+                ],
+                "org.apache.commons.cli.ValueTest#testPropertyOptionFlags": [
+                    68
+                ],
+                "org.apache.commons.cli.ValueTest#testPropertyOptionMultipleValues": [
+                    68
+                ],
+                "org.apache.commons.cli.ValueTest#testPropertyOptionSingularValue": [
+                    68
+                ],
+                "org.apache.commons.cli.ValueTest#testPropertyOverrideValues": [
+                    68
+                ],
+                "org.apache.commons.cli.ValueTest#testShortNoArg": [
+                    68
+                ],
+                "org.apache.commons.cli.ValueTest#testShortOptionalArgNoValue": [
+                    68
+                ],
+                "org.apache.commons.cli.ValueTest#testShortOptionalArgValue": [
+                    68
+                ],
+                "org.apache.commons.cli.ValueTest#testShortOptionalArgValues": [
+                    68
+                ],
+                "org.apache.commons.cli.ValueTest#testShortOptionalNArgValues": [
+                    68
+                ],
+                "org.apache.commons.cli.ValueTest#testShortWithArg": [
+                    68
+                ],
+                "org.apache.commons.cli.ValuesTest#testCharSeparator": [
+                    68
+                ],
+                "org.apache.commons.cli.ValuesTest#testComplexValues": [
+                    68
+                ],
+                "org.apache.commons.cli.ValuesTest#testMultipleArgValues": [
+                    68
+                ],
+                "org.apache.commons.cli.ValuesTest#testShortArgs": [
+                    68
+                ],
+                "org.apache.commons.cli.ValuesTest#testShortArgsWithValue": [
+                    68
+                ],
+                "org.apache.commons.cli.ValuesTest#testTwoArgValues": [
+                    68
+                ],
+                "org.apache.commons.cli.bug.BugCLI13Test#testCLI13": [
+                    68
+                ]
+            }
+        },
+        "resolveOption": {
+            "tests_covering_the_method": {
+                "org.apache.commons.cli.ApplicationTest#testAnt": [
+                    166,
+                    167,
+                    169,
+                    170,
+                    172,
+                    174,
+                    179
+                ],
+                "org.apache.commons.cli.ApplicationTest#testLs": [
+                    166,
+                    167,
+                    169,
+                    170,
+                    174,
+                    176
+                ],
+                "org.apache.commons.cli.ArgumentIsOptionTest#testOption": [
+                    166,
+                    167,
+                    169,
+                    170,
+                    172,
+                    174,
+                    179,
+                    180
+                ],
+                "org.apache.commons.cli.ArgumentIsOptionTest#testOptionAndOptionWithArgument": [
+                    166,
+                    167,
+                    169,
+                    170,
+                    172,
+                    174,
+                    179
+                ],
+                "org.apache.commons.cli.ArgumentIsOptionTest#testOptionWithArgument": [
+                    166,
+                    167,
+                    169,
+                    170,
+                    172,
+                    174,
+                    179,
+                    180
+                ],
+                "org.apache.commons.cli.BugsTest#test11456": [
+                    166,
+                    167,
+                    169,
+                    170,
+                    172
+                ],
+                "org.apache.commons.cli.BugsTest#test11457": [
+                    166,
+                    167,
+                    169,
+                    170,
+                    174,
+                    176
+                ],
+                "org.apache.commons.cli.BugsTest#test11458": [
+                    166,
+                    167,
+                    169,
+                    170,
+                    172,
+                    174,
+                    179
+                ],
+                "org.apache.commons.cli.BugsTest#test11680": [
+                    166,
+                    167,
+                    169,
+                    170,
+                    172,
+                    174,
+                    179,
+                    180
+                ],
+                "org.apache.commons.cli.BugsTest#test12210": [
+                    166,
+                    167,
+                    169,
+                    170,
+                    172,
+                    174,
+                    179
+                ],
+                "org.apache.commons.cli.BugsTest#test14786": [
+                    166,
+                    167,
+                    169,
+                    170,
+                    172
+                ],
+                "org.apache.commons.cli.BugsTest#test15046": [
+                    166,
+                    167,
+                    169,
+                    170,
+                    174,
+                    179,
+                    180
+                ],
+                "org.apache.commons.cli.BugsTest#test15648": [
+                    166,
+                    167,
+                    169,
+                    170,
+                    172
+                ],
+                "org.apache.commons.cli.BugsTest#test31148": [
+                    166,
+                    167,
+                    169,
+                    170,
+                    172,
+                    180
+                ],
+                "org.apache.commons.cli.GnuParseTest#testDoubleDash": [
+                    166,
+                    167,
+                    169,
+                    170,
+                    172,
+                    174,
+                    179,
+                    180
+                ],
+                "org.apache.commons.cli.GnuParseTest#testMultiple": [
+                    166,
+                    167,
+                    169,
+                    170,
+                    172,
+                    174,
+                    179,
+                    180
+                ],
+                "org.apache.commons.cli.GnuParseTest#testMultipleWithLong": [
+                    166,
+                    167,
+                    169,
+                    170,
+                    172,
+                    174,
+                    179,
+                    180
+                ],
+                "org.apache.commons.cli.GnuParseTest#testSimpleLong": [
+                    166,
+                    167,
+                    169,
+                    170,
+                    172,
+                    174,
+                    179
+                ],
+                "org.apache.commons.cli.GnuParseTest#testSimpleShort": [
+                    166,
+                    167,
+                    169,
+                    170,
+                    172,
+                    174,
+                    179
+                ],
+                "org.apache.commons.cli.GnuParseTest#testSingleDash": [
+                    166,
+                    167,
+                    169,
+                    170,
+                    172,
+                    174,
+                    179
+                ],
+                "org.apache.commons.cli.GnuParseTest#testStop": [
+                    166,
+                    167,
+                    169,
+                    170,
+                    172
+                ],
+                "org.apache.commons.cli.LongOptionWithShort#testLongOptionWithShort": [
+                    166,
+                    167,
+                    169,
+                    170,
+                    172,
+                    174,
+                    176,
+                    179
+                ],
+                "org.apache.commons.cli.OptionGroupTest#testNoOptionsExtraArgs": [
+                    166,
+                    167,
+                    180
+                ],
+                "org.apache.commons.cli.OptionGroupTest#testSingleLongOption": [
+                    166,
+                    167,
+                    169,
+                    170,
+                    172,
+                    174,
+                    179,
+                    180
+                ],
+                "org.apache.commons.cli.OptionGroupTest#testSingleOption": [
+                    166,
+                    167,
+                    169,
+                    170,
+                    172,
+                    174,
+                    179,
+                    180
+                ],
+                "org.apache.commons.cli.OptionGroupTest#testSingleOptionFromGroup": [
+                    166,
+                    167,
+                    169,
+                    170,
+                    172,
+                    174,
+                    179,
+                    180
+                ],
+                "org.apache.commons.cli.OptionGroupTest#testTwoOptionsFromDifferentGroup": [
+                    166,
+                    167,
+                    169,
+                    170,
+                    172,
+                    174,
+                    179,
+                    180
+                ],
+                "org.apache.commons.cli.OptionGroupTest#testTwoValidLongOptions": [
+                    166,
+                    167,
+                    169,
+                    170,
+                    172,
+                    174,
+                    179,
+                    180
+                ],
+                "org.apache.commons.cli.OptionGroupTest#testTwoValidOptions": [
+                    166,
+                    167,
+                    169,
+                    170,
+                    172,
+                    174,
+                    179,
+                    180
+                ],
+                "org.apache.commons.cli.OptionGroupTest#testValidLongOnlyOptions": [
+                    166,
+                    167,
+                    169,
+                    170,
+                    174,
+                    176
+                ],
+                "org.apache.commons.cli.ParseRequiredTest#testOptionAndRequiredOption": [
+                    166,
+                    167,
+                    169,
+                    170,
+                    172,
+                    174,
+                    179
+                ],
+                "org.apache.commons.cli.ParseRequiredTest#testWithRequiredOption": [
+                    166,
+                    167,
+                    169,
+                    170,
+                    172,
+                    174,
+                    179,
+                    180
+                ],
+                "org.apache.commons.cli.ParseTest#testComplexShort": [
+                    166,
+                    167,
+                    169,
+                    170,
+                    172,
+                    174,
+                    179
+                ],
+                "org.apache.commons.cli.ParseTest#testDoubleDash": [
+                    166,
+                    167,
+                    169,
+                    170,
+                    172,
+                    174,
+                    179,
+                    180
+                ],
+                "org.apache.commons.cli.ParseTest#testMultiple": [
+                    166,
+                    167,
+                    169,
+                    170,
+                    172,
+                    174,
+                    179,
+                    180
+                ],
+                "org.apache.commons.cli.ParseTest#testMultipleWithLong": [
+                    166,
+                    167,
+                    169,
+                    170,
+                    172,
+                    174,
+                    179,
+                    180
+                ],
+                "org.apache.commons.cli.ParseTest#testSimpleLong": [
+                    166,
+                    167,
+                    169,
+                    170,
+                    172,
+                    174,
+                    176,
+                    179
+                ],
+                "org.apache.commons.cli.ParseTest#testSimpleShort": [
+                    166,
+                    167,
+                    169,
+                    170,
+                    172,
+                    174,
+                    179
+                ],
+                "org.apache.commons.cli.ParseTest#testSingleDash": [
+                    166,
+                    167,
+                    169,
+                    170,
+                    172,
+                    174,
+                    179
+                ],
+                "org.apache.commons.cli.ParseTest#testStop": [
+                    166,
+                    167,
+                    169,
+                    170,
+                    172
+                ],
+                "org.apache.commons.cli.PatternOptionBuilderTest#testSimplePattern": [
+                    166,
+                    167,
+                    169,
+                    170,
+                    172,
+                    174,
+                    179,
+                    180
+                ],
+                "org.apache.commons.cli.ValueTest#testLongNoArg": [
+                    166,
+                    167,
+                    169,
+                    170,
+                    172
+                ],
+                "org.apache.commons.cli.ValueTest#testLongOptionalArgValue": [
+                    166,
+                    167,
+                    169,
+                    170,
+                    174,
+                    176
+                ],
+                "org.apache.commons.cli.ValueTest#testLongOptionalArgValues": [
+                    166,
+                    167,
+                    169,
+                    170,
+                    174,
+                    176
+                ],
+                "org.apache.commons.cli.ValueTest#testLongOptionalNArgValues": [
+                    166,
+                    167,
+                    169,
+                    170,
+                    174,
+                    176
+                ],
+                "org.apache.commons.cli.ValueTest#testLongOptionalNoValue": [
+                    166,
+                    167,
+                    169,
+                    170,
+                    174,
+                    176
+                ],
+                "org.apache.commons.cli.ValueTest#testLongWithArg": [
+                    166,
+                    167,
+                    169,
+                    170,
+                    172,
+                    174,
+                    179
+                ],
+                "org.apache.commons.cli.ValueTest#testPropertyOptionFlags": [
+                    166,
+                    167,
+                    169,
+                    170,
+                    172,
+                    174,
+                    179,
+                    180
+                ],
+                "org.apache.commons.cli.ValueTest#testPropertyOptionMultipleValues": [
+                    166,
+                    167,
+                    169,
+                    170,
+                    172,
+                    180
+                ],
+                "org.apache.commons.cli.ValueTest#testPropertyOptionSingularValue": [
+                    166,
+                    167,
+                    169,
+                    170,
+                    174,
+                    176,
+                    179,
+                    180
+                ],
+                "org.apache.commons.cli.ValueTest#testPropertyOverrideValues": [
+                    166,
+                    167,
+                    169,
+                    170,
+                    172,
+                    174,
+                    179,
+                    180
+                ],
+                "org.apache.commons.cli.ValueTest#testShortNoArg": [
+                    166,
+                    167,
+                    169,
+                    170,
+                    172,
+                    174,
+                    179
+                ],
+                "org.apache.commons.cli.ValueTest#testShortOptionalArgNoValue": [
+                    166,
+                    167,
+                    169,
+                    170,
+                    172
+                ],
+                "org.apache.commons.cli.ValueTest#testShortOptionalArgValue": [
+                    166,
+                    167,
+                    169,
+                    170,
+                    172
+                ],
+                "org.apache.commons.cli.ValueTest#testShortOptionalArgValues": [
+                    166,
+                    167,
+                    169,
+                    170,
+                    172
+                ],
+                "org.apache.commons.cli.ValueTest#testShortOptionalNArgValues": [
+                    166,
+                    167,
+                    169,
+                    170,
+                    172
+                ],
+                "org.apache.commons.cli.ValueTest#testShortWithArg": [
+                    166,
+                    167,
+                    169,
+                    170,
+                    172,
+                    174,
+                    179
+                ],
+                "org.apache.commons.cli.ValuesTest#testCharSeparator": [
+                    166,
+                    167,
+                    169,
+                    170,
+                    172,
+                    174,
+                    179
+                ],
+                "org.apache.commons.cli.ValuesTest#testComplexValues": [
+                    166,
+                    167,
+                    169,
+                    170,
+                    172,
+                    174,
+                    179
+                ],
+                "org.apache.commons.cli.ValuesTest#testMultipleArgValues": [
+                    166,
+                    167,
+                    169,
+                    170,
+                    172,
+                    174,
+                    179
+                ],
+                "org.apache.commons.cli.ValuesTest#testShortArgs": [
+                    166,
+                    167,
+                    169,
+                    170,
+                    172,
+                    174,
+                    179
+                ],
+                "org.apache.commons.cli.ValuesTest#testShortArgsWithValue": [
+                    166,
+                    167,
+                    169,
+                    170,
+                    172,
+                    174,
+                    179
+                ],
+                "org.apache.commons.cli.ValuesTest#testTwoArgValues": [
+                    166,
+                    167,
+                    169,
+                    170,
+                    172,
+                    174,
+                    179
+                ],
+                "org.apache.commons.cli.bug.BugCLI13Test#testCLI13": [
+                    166,
+                    167,
+                    169,
+                    170,
+                    172,
+                    174,
+                    176
+                ],
+                "org.apache.commons.cli.bug.BugCLI51Test#test": [
+                    166,
+                    167,
+                    169,
+                    170,
+                    172
+                ],
+                "org.apache.commons.cli.bug.BugCLI71Test#testBasic": [
+                    166,
+                    167,
+                    169,
+                    170,
+                    172,
+                    174,
+                    179
+                ],
+                "org.apache.commons.cli.bug.BugCLI71Test#testGetsDefaultIfOptional": [
+                    166,
+                    167,
+                    169,
+                    170,
+                    172,
+                    174,
+                    179
+                ],
+                "org.apache.commons.cli.bug.BugCLI71Test#testMistakenArgument": [
+                    166,
+                    167,
+                    169,
+                    170,
+                    172,
+                    174,
+                    179
+                ]
+            }
+        }
+    },
+    "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/commons-cli/src/java/org/apache/commons/cli/Util.java": {
+        "stripLeadingHyphens": {
+            "tests_covering_the_method": {
+                "org.apache.commons.cli.ApplicationTest#testAnt": [
+                    36,
+                    40,
+                    42,
+                    45
+                ],
+                "org.apache.commons.cli.ApplicationTest#testLs": [
+                    36,
+                    38,
+                    40,
+                    45
+                ],
+                "org.apache.commons.cli.ArgumentIsOptionTest#testOption": [
+                    36,
+                    40,
+                    42,
+                    45
+                ],
+                "org.apache.commons.cli.ArgumentIsOptionTest#testOptionAndOptionWithArgument": [
+                    36,
+                    40,
+                    42,
+                    45
+                ],
+                "org.apache.commons.cli.ArgumentIsOptionTest#testOptionWithArgument": [
+                    36,
+                    40,
+                    42,
+                    45
+                ],
+                "org.apache.commons.cli.BugsTest#test11456": [
+                    36,
+                    40,
+                    42,
+                    45
+                ],
+                "org.apache.commons.cli.BugsTest#test11457": [
+                    36,
+                    38,
+                    40,
+                    45
+                ],
+                "org.apache.commons.cli.BugsTest#test11458": [
+                    36,
+                    40,
+                    42,
+                    45
+                ],
+                "org.apache.commons.cli.BugsTest#test11680": [
+                    36,
+                    40,
+                    42,
+                    45
+                ],
+                "org.apache.commons.cli.BugsTest#test12210": [
+                    36,
+                    40,
+                    42,
+                    45
+                ],
+                "org.apache.commons.cli.BugsTest#test13425": [
+                    36,
+                    40,
+                    42
+                ],
+                "org.apache.commons.cli.BugsTest#test13935": [
+                    36,
+                    40,
+                    42
+                ],
+                "org.apache.commons.cli.BugsTest#test14786": [
+                    36,
+                    40,
+                    42,
+                    45
+                ],
+                "org.apache.commons.cli.BugsTest#test15046": [
+                    36,
+                    40,
+                    42,
+                    45
+                ],
+                "org.apache.commons.cli.BugsTest#test15648": [
+                    36,
+                    40,
+                    42,
+                    45
+                ],
+                "org.apache.commons.cli.BugsTest#test31148": [
+                    36,
+                    40,
+                    45
+                ],
+                "org.apache.commons.cli.BuildTest#testDuplicateLong": [
+                    36,
+                    40,
+                    45
+                ],
+                "org.apache.commons.cli.BuildTest#testDuplicateSimple": [
+                    36,
+                    40,
+                    45
+                ],
+                "org.apache.commons.cli.GnuParseTest#testDoubleDash": [
+                    36,
+                    38,
+                    40,
+                    45
+                ],
+                "org.apache.commons.cli.GnuParseTest#testExtraOption": [
+                    36,
+                    40,
+                    42
+                ],
+                "org.apache.commons.cli.GnuParseTest#testMissingArg": [
+                    36,
+                    40,
+                    42
+                ],
+                "org.apache.commons.cli.GnuParseTest#testMultiple": [
+                    36,
+                    40,
+                    42,
+                    45
+                ],
+                "org.apache.commons.cli.GnuParseTest#testMultipleWithLong": [
+                    36,
+                    38,
+                    40,
+                    45
+                ],
+                "org.apache.commons.cli.GnuParseTest#testSimpleLong": [
+                    36,
+                    38,
+                    40,
+                    45
+                ],
+                "org.apache.commons.cli.GnuParseTest#testSimpleShort": [
+                    36,
+                    40,
+                    42,
+                    45
+                ],
+                "org.apache.commons.cli.GnuParseTest#testSingleDash": [
+                    36,
+                    38,
+                    40,
+                    42,
+                    45
+                ],
+                "org.apache.commons.cli.GnuParseTest#testStop": [
+                    36,
+                    40,
+                    42,
+                    45
+                ],
+                "org.apache.commons.cli.LongOptionWithShort#testLongOptionWithShort": [
+                    36,
+                    40,
+                    42,
+                    45
+                ],
+                "org.apache.commons.cli.OptionGroupTest#testNoOptionsExtraArgs": [
+                    36,
+                    40,
+                    45
+                ],
+                "org.apache.commons.cli.OptionGroupTest#testSingleLongOption": [
+                    36,
+                    38,
+                    40,
+                    45
+                ],
+                "org.apache.commons.cli.OptionGroupTest#testSingleOption": [
+                    36,
+                    40,
+                    42,
+                    45
+                ],
+                "org.apache.commons.cli.OptionGroupTest#testSingleOptionFromGroup": [
+                    36,
+                    40,
+                    42,
+                    45
+                ],
+                "org.apache.commons.cli.OptionGroupTest#testTwoLongOptionsFromGroup": [
+                    36,
+                    38
+                ],
+                "org.apache.commons.cli.OptionGroupTest#testTwoOptionsFromDifferentGroup": [
+                    36,
+                    40,
+                    42,
+                    45
+                ],
+                "org.apache.commons.cli.OptionGroupTest#testTwoOptionsFromGroup": [
+                    36,
+                    40,
+                    42
+                ],
+                "org.apache.commons.cli.OptionGroupTest#testTwoValidLongOptions": [
+                    36,
+                    38,
+                    40,
+                    45
+                ],
+                "org.apache.commons.cli.OptionGroupTest#testTwoValidOptions": [
+                    36,
+                    40,
+                    42,
+                    45
+                ],
+                "org.apache.commons.cli.OptionGroupTest#testValidLongOnlyOptions": [
+                    36,
+                    38,
+                    40,
+                    45
+                ],
+                "org.apache.commons.cli.ParseRequiredTest#testMissingRequiredOption": [
+                    36,
+                    40,
+                    42
+                ],
+                "org.apache.commons.cli.ParseRequiredTest#testOptionAndRequiredOption": [
+                    36,
+                    40,
+                    42,
+                    45
+                ],
+                "org.apache.commons.cli.ParseRequiredTest#testWithRequiredOption": [
+                    36,
+                    40,
+                    42,
+                    45
+                ],
+                "org.apache.commons.cli.ParseTest#testComplexShort": [
+                    36,
+                    40,
+                    42,
+                    45
+                ],
+                "org.apache.commons.cli.ParseTest#testDoubleDash": [
+                    36,
+                    38,
+                    40,
+                    42,
+                    45
+                ],
+                "org.apache.commons.cli.ParseTest#testExtraOption": [
+                    36,
+                    40,
+                    42,
+                    45
+                ],
+                "org.apache.commons.cli.ParseTest#testMissingArg": [
+                    36,
+                    40,
+                    42,
+                    45
+                ],
+                "org.apache.commons.cli.ParseTest#testMultiple": [
+                    36,
+                    40,
+                    42,
+                    45
+                ],
+                "org.apache.commons.cli.ParseTest#testMultipleWithLong": [
+                    36,
+                    38,
+                    40,
+                    45
+                ],
+                "org.apache.commons.cli.ParseTest#testSimpleLong": [
+                    36,
+                    38,
+                    40,
+                    45
+                ],
+                "org.apache.commons.cli.ParseTest#testSimpleShort": [
+                    36,
+                    40,
+                    42,
+                    45
+                ],
+                "org.apache.commons.cli.ParseTest#testSingleDash": [
+                    36,
+                    38,
+                    40,
+                    42,
+                    45
+                ],
+                "org.apache.commons.cli.ParseTest#testStop": [
+                    36,
+                    40,
+                    42,
+                    45
+                ],
+                "org.apache.commons.cli.PatternOptionBuilderTest#testSimplePattern": [
+                    36,
+                    40,
+                    42,
+                    45
+                ],
+                "org.apache.commons.cli.ValueTest#testLongNoArg": [
+                    36,
+                    38,
+                    40,
+                    42,
+                    45
+                ],
+                "org.apache.commons.cli.ValueTest#testLongOptionalArgValue": [
+                    36,
+                    38,
+                    40,
+                    42,
+                    45
+                ],
+                "org.apache.commons.cli.ValueTest#testLongOptionalArgValues": [
+                    36,
+                    38,
+                    40,
+                    42,
+                    45
+                ],
+                "org.apache.commons.cli.ValueTest#testLongOptionalNArgValues": [
+                    36,
+                    38,
+                    40,
+                    42,
+                    45
+                ],
+                "org.apache.commons.cli.ValueTest#testLongOptionalNoValue": [
+                    36,
+                    38,
+                    40,
+                    42,
+                    45
+                ],
+                "org.apache.commons.cli.ValueTest#testLongWithArg": [
+                    36,
+                    38,
+                    40,
+                    42,
+                    45
+                ],
+                "org.apache.commons.cli.ValueTest#testPropertyOptionFlags": [
+                    36,
+                    38,
+                    40,
+                    42,
+                    45
+                ],
+                "org.apache.commons.cli.ValueTest#testPropertyOptionMultipleValues": [
+                    36,
+                    38,
+                    40,
+                    42,
+                    45
+                ],
+                "org.apache.commons.cli.ValueTest#testPropertyOptionSingularValue": [
+                    36,
+                    38,
+                    40,
+                    42,
+                    45
+                ],
+                "org.apache.commons.cli.ValueTest#testPropertyOverrideValues": [
+                    36,
+                    38,
+                    40,
+                    42,
+                    45
+                ],
+                "org.apache.commons.cli.ValueTest#testShortNoArg": [
+                    36,
+                    38,
+                    40,
+                    42,
+                    45
+                ],
+                "org.apache.commons.cli.ValueTest#testShortOptionalArgNoValue": [
+                    36,
+                    38,
+                    40,
+                    42,
+                    45
+                ],
+                "org.apache.commons.cli.ValueTest#testShortOptionalArgValue": [
+                    36,
+                    38,
+                    40,
+                    42,
+                    45
+                ],
+                "org.apache.commons.cli.ValueTest#testShortOptionalArgValues": [
+                    36,
+                    38,
+                    40,
+                    42,
+                    45
+                ],
+                "org.apache.commons.cli.ValueTest#testShortOptionalNArgValues": [
+                    36,
+                    38,
+                    40,
+                    42,
+                    45
+                ],
+                "org.apache.commons.cli.ValueTest#testShortWithArg": [
+                    36,
+                    38,
+                    40,
+                    42,
+                    45
+                ],
+                "org.apache.commons.cli.ValuesTest#testCharSeparator": [
+                    36,
+                    38,
+                    40,
+                    42,
+                    45
+                ],
+                "org.apache.commons.cli.ValuesTest#testComplexValues": [
+                    36,
+                    38,
+                    40,
+                    42,
+                    45
+                ],
+                "org.apache.commons.cli.ValuesTest#testExtraArgs": [
+                    36,
+                    38,
+                    40,
+                    42,
+                    45
+                ],
+                "org.apache.commons.cli.ValuesTest#testMultipleArgValues": [
+                    36,
+                    38,
+                    40,
+                    42,
+                    45
+                ],
+                "org.apache.commons.cli.ValuesTest#testShortArgs": [
+                    36,
+                    38,
+                    40,
+                    42,
+                    45
+                ],
+                "org.apache.commons.cli.ValuesTest#testShortArgsWithValue": [
+                    36,
+                    38,
+                    40,
+                    42,
+                    45
+                ],
+                "org.apache.commons.cli.ValuesTest#testTwoArgValues": [
+                    36,
+                    38,
+                    40,
+                    42,
+                    45
+                ],
+                "org.apache.commons.cli.bug.BugCLI13Test#testCLI13": [
+                    36,
+                    40,
+                    42,
+                    45
+                ],
+                "org.apache.commons.cli.bug.BugCLI51Test#test": [
+                    36,
+                    40,
+                    42,
+                    45
+                ],
+                "org.apache.commons.cli.bug.BugCLI71Test#testBasic": [
+                    36,
+                    40,
+                    42,
+                    45
+                ],
+                "org.apache.commons.cli.bug.BugCLI71Test#testGetsDefaultIfOptional": [
+                    36,
+                    40,
+                    42,
+                    45
+                ],
+                "org.apache.commons.cli.bug.BugCLI71Test#testLackOfError": [
+                    36,
+                    40,
+                    42
+                ],
+                "org.apache.commons.cli.bug.BugCLI71Test#testMistakenArgument": [
+                    36,
+                    40,
+                    42,
+                    45
+                ]
+            }
+        }
+    }
+}

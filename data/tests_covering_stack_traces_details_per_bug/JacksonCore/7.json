@@ -1,0 +1,19 @@
+{
+    "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-core/src/main/java/com/fasterxml/jackson/core/JsonGenerator.java": {
+        "_reportError": {
+            "tests_covering_the_method": {}
+        }
+    },
+    "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-core/src/main/java/com/fasterxml/jackson/core/json/WriterBasedJsonGenerator.java": {
+        "writeFieldName": {
+            "tests_covering_the_method": {
+                "com.fasterxml.jackson.core.json.TestGeneratorWithSerializedString#testSimple": [
+                    111,
+                    112,
+                    115,
+                    116
+                ]
+            }
+        }
+    }
+}

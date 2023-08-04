@@ -1,0 +1,2174 @@
+{
+    "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-databind/src/main/java/com/fasterxml/jackson/databind/deser/SettableBeanProperty.java": {
+        "deserialize": {
+            "tests_covering_the_method": {
+                "com.fasterxml.jackson.databind.TestHandlerInstantiation#testTypeIdResolver": [
+                    530,
+                    532,
+                    535,
+                    536,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.TestJDKSerialization#testObjectMapper": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.TestJDKSerialization#testObjectReader": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.TestObjectMapper#testProviderConfig": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.TestObjectMapperBeanDeserializer#testListBean": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.TestObjectMapperBeanDeserializer#testSimpleBean": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.TestParserUsingMapper#testPojoReading": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.TestReadValues#testNonRootBeans": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.TestReadValues#testRootBeans": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.TestReadValues#testRootBeansWithParser": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.TestRootName#testReconfiguringOfWrapping": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.TestRootName#testRootUsingExplicitConfig": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.TestRootName#testRootViaMapper": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.TestRootName#testRootViaWriterAndReader": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.access.TestSerAnyGetter#testDynaBean": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.big.TestBiggerData#testReading": [
+                    530,
+                    532,
+                    533,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.big.TestBiggerData#testRoundTrip": [
+                    530,
+                    532,
+                    533,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.contextual.TestContextAttributeWithDeser#testHierarchic": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.contextual.TestContextAttributeWithDeser#testSimpleDefaults": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.contextual.TestContextAttributeWithDeser#testSimplePerCall": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.contextual.TestContextualDeserialization#testAnnotatedArray": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.contextual.TestContextualDeserialization#testAnnotatedCtor": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.contextual.TestContextualDeserialization#testAnnotatedList": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.contextual.TestContextualDeserialization#testAnnotatedMap": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.contextual.TestContextualDeserialization#testSimple": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.contextual.TestContextualDeserialization#testSimpleWithAnnotations": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.contextual.TestContextualDeserialization#testSimpleWithClassAnnotations": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.contextual.TestContextualKeyTypes#testSimpleKeyDeser": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.contextual.TestContextualWithAnnDeserializer#testAnnotatedContextual": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.convert.TestBeanConversions#testBeanConvert": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.convert.TestBeanConversions#testErrorReporting": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.convert.TestBeanConversions#testIssue11": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.convert.TestConvertingDeserializer#testClassAnnotationForLists": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.convert.TestConvertingDeserializer#testPropertyAnnotationArrayLC": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.convert.TestConvertingDeserializer#testPropertyAnnotationForArrays": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.convert.TestConvertingDeserializer#testPropertyAnnotationForLists": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.convert.TestConvertingDeserializer#testPropertyAnnotationForMaps": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.convert.TestConvertingDeserializer#testPropertyAnnotationLowerCasing": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.convert.TestConvertingDeserializer#testPropertyAnnotationSimple": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.convert.TestMapConversions#testMapToBean": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.convert.TestPolymorphicUpdateValue#testPolymorphicTest": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.convert.TestUpdateValue#testBeanUpdate": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.convert.TestUpdateValue#testUpdateSequence": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.convert.TestUpdateValue#testUpdatingWithViews": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.creators.TestBuilderSimple#testCustomWith": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.creators.TestBuilderSimple#testImmutable": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.creators.TestBuilderSimple#testMultiAccess": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.creators.TestBuilderSimple#testSimple": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.creators.TestBuilderSimple#testWithCreator": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.creators.TestConstructFromMap#testViaFactory": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.creators.TestCreators#testConstructorAndProps": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.creators.TestCreators#testConstructorCreator": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.creators.TestCreators#testDeferredConstructorAndProps": [
+                    530,
+                    532,
+                    533,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.creators.TestCreators#testDeferredFactoryAndProps": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.creators.TestCreators#testFactoryAndProps": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.creators.TestCreators#testFactoryCreatorWithMixin": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.creators.TestCreators#testFactoryCreatorWithRenamingMixin": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.creators.TestCreators#testMapWithConstructor": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.creators.TestCreators#testMapWithFactory": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.creators.TestCreators#testNoArgsFactory": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.creators.TestCreators#testSimpleConstructor": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.creators.TestCreators#testSimpleFactory": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.creators.TestCreators2#testCreatorMultipleArgumentWithoutAnnotation": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.creators.TestCreators2#testCreatorProperties": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.creators.TestCreators2#testJackson431": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.creators.TestCreators2#testJackson438": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.creators.TestCreators2#testSimpleConstructor": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.creators.TestCreators3#testMulitCtor421": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.creators.TestPolymorphicCreators#testManualPolymorphicCatBasic": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.creators.TestPolymorphicCreators#testManualPolymorphicCatWithReorder": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.creators.TestPolymorphicCreators#testManualPolymorphicDog": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.creators.TestPolymorphicCreators#testManualPolymorphicWithNumbered": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.creators.TestValueInstantiator#testPolymorphicCreatorBean": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.creators.TestValueInstantiator#testPropertyBasedBeanInstantiator": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.creators.TestValueInstantiator#testPropertyBasedMapInstantiator": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.creators.TestValueUpdate#testValueUpdateWithCreator": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestAnnotationIgnore#testFailOnIgnore": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestAnnotationIgnore#testSimpleIgnore": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestAnnotationUsing#testArrayContentUsing": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestAnnotationUsing#testListContentUsing": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestAnnotationUsing#testMapContentUsing": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestAnnotationUsing#testMapKeyUsing": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestAnnotationUsing#testMethodDeserializer": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestAnyProperties#testPolymorphic": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestArrayDeserialization#testBeanArray": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestArrayDeserialization#testFromEmptyString2": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestArrayDeserialization#testUntypedArrayOfArrays": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestBasicAnnotations#testImpliedProperty": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestBasicAnnotations#testIssue442PrivateUnwrapped": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestBasicAnnotations#testSetterInheritance": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestBasicAnnotations#testSimpleSetter": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestBasicAnnotations#testSimpleSetter2": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestBasicAnnotations#testSimpleSetter3": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestBeanDeserializer#testIssue476": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestBeanDeserializer#testPropertyRemoval": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestCollectionDeserialization#testImplicitArrays": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestCollectionDeserialization#testIterableWithBeans": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestCollectionDeserialization#testIterableWithStrings": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestConfig#testAnnotationsDisabled": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestConfig#testNoAccessOverrides": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestCustomDeserializers#testContextReadValue": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestCustomDeserializers#testCustomBeanDeserializer": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestCustomDeserializers#testIssue882": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestCustomFactory#testCustomBeanDeserializer": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestCyclicTypes#testCycleWith2Classes": [
+                    530,
+                    532,
+                    533,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestCyclicTypes#testLinked": [
+                    530,
+                    532,
+                    533,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestCyclicTypes#testLinkedGeneric": [
+                    530,
+                    532,
+                    533
+                ],
+                "com.fasterxml.jackson.databind.deser.TestDateDeserialization#testCustomCalendarWithAnnotation": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestDateDeserialization#testCustomCalendarWithTimeZone": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestDateDeserialization#testCustomDateWithAnnotation": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestEnumDeserialization#testAllowUnknownEnumValuesAsMapKeysReadAsNull": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestEnumDeserialization#testDoNotAllowUnknownEnumValuesAsMapKeysWhenReadAsNullDisabled": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestExceptionDeserialization#testIOException": [
+                    530,
+                    532,
+                    533,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestExceptionDeserialization#testWithCreator": [
+                    530,
+                    532,
+                    533,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestExceptionDeserialization#testWithNullMessage": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestFieldDeserialization#testNoAutoDetect": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestFieldDeserialization#testOkFieldOverride": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestFieldDeserialization#testSimpleAnnotation": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestFieldDeserialization#testSimpleAutoDetect": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestFieldDeserialization#testTypeAnnotation": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestGenericMapDeser#testMapWrapper": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestGenerics#testArrayOfGenericWrappers": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestGenerics#testArrayOfGenericWrappersSingleValueArray": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestGenerics#testGenericWrapper": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestGenerics#testGenericWrapperWithSingleElementArray": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestGenerics#testMultipleWrappers": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestGenerics#testMultipleWrappersSingleValueArray": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestGenerics#testSimpleNumberBean": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestGenericsBounded#testBounded": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestGenericsBounded#testGenericsComplex": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestGenericsBounded#testIssue778": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestGenericsBounded#testLowerBound": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestIgnoredTypes#testIgnoredType": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestInjectables#testIssueGH471": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestInjectables#testSimple": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestInjectables#testWithCtors": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestInnerClass#testSimpleNonStaticInner": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestJacksonTypes#testJsonLocation": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestJdkTypes#testClassWithParams": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestJdkTypes#testEmptyStringForPrimitives": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestJdkTypes#testEmptyStringForWrappers": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestJdkTypes#testLongToBoolean": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestJdkTypes#testNullForPrimitives": [
+                    530,
+                    532,
+                    533
+                ],
+                "com.fasterxml.jackson.databind.deser.TestJdkTypes#testStackTraceElementWithCustom": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestMapDeserialization#testEnumPolymorphicSerializationTest": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestNumbers#testDeserializeDecimalHappyPath": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestNumbers#testDeserializeDecimalProperException": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestNumbers#testDeserializeDecimalProperExceptionWhenIdSet": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestOverloaded#testConflictResolution": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestOverloaded#testOverride": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestOverloaded#testSpecialization": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestParentChildReferences#testAbstract368": [
+                    530,
+                    532,
+                    533,
+                    535,
+                    536,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestParentChildReferences#testArrayOfRefs": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestParentChildReferences#testFullRefs": [
+                    530,
+                    532,
+                    533,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestParentChildReferences#testIssue693": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestParentChildReferences#testIssue708": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestParentChildReferences#testListOfRefs": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestParentChildReferences#testMapOfRefs": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestParentChildReferences#testSimpleRefs": [
+                    530,
+                    532,
+                    533,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestParentChildReferences#testSimpleRefsWithGetter": [
+                    530,
+                    532,
+                    533,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestSetterlessProperties#testSetterlessPrecedence": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestSimpleAtomicTypes#testPolymorphicAtomicReference": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestSimpleTypes#testBooleanPrimitive": [
+                    530,
+                    532,
+                    533,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestSimpleTypes#testCharacterWrapper": [
+                    530,
+                    532,
+                    533
+                ],
+                "com.fasterxml.jackson.databind.deser.TestSimpleTypes#testDoublePrimitive": [
+                    530,
+                    532,
+                    533,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestSimpleTypes#testDoublePrimitiveNonNumeric": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestSimpleTypes#testFloatPrimitiveNonNumeric": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestSimpleTypes#testIntPrimitive": [
+                    530,
+                    532,
+                    533,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestSimpleTypes#testIntWithOverride": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestStatics#testSimpleIgnore": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestValueAnnotations#testOverrideArrayClass": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestValueAnnotations#testOverrideArrayContents": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestValueAnnotations#testOverrideClassValid": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestValueAnnotations#testOverrideContentClassValid": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestValueAnnotations#testOverrideKeyClassValid": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestValueAnnotations#testOverrideMapContents": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestValueAnnotations#testOverrideMapValid": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.deser.TestValueAnnotations#testRootInterfaceAs": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.filter.TestJsonFilter#testIssue89": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.filter.TestUnknownPropertyDeserialization#testClassWithIgnoreUnknown": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.filter.TestUnknownPropertyDeserialization#testClassWithUnknownAndIgnore": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.filter.TestUnknownPropertyDeserialization#testPropertyIgnoral": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.filter.TestUnknownPropertyDeserialization#testPropertyIgnoralForMap": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.filter.TestUnknownPropertyDeserialization#testPropertyIgnoralWithClass": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.filter.TestUnknownPropertyDeserialization#testUnknownHandlingDefault": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.filter.TestUnknownPropertyDeserialization#testUnknownHandlingIgnoreWithFeature": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.filter.TestUnknownPropertyDeserialization#testUnknownHandlingIgnoreWithHandler": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.filter.TestUnknownPropertyDeserialization#testUnknownHandlingIgnoreWithHandlerAndObjectReader": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.filter.TestUnknownPropertyDeserialization#testWithClassIgnore": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.interop.TestExternalizable#testSerializeAsExternalizable": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.interop.TestFormatDetection#testSimpleWithJSON": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.interop.TestGroovyBeans#testSimpleDeserialization": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.interop.TestJDKProxy#testSimple": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.introspect.TestAnnotationMerging#testSharedNamesFromGetterToSetter": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.introspect.TestAnnotationMerging#testSharedTypeInfo": [
+                    530,
+                    532,
+                    535,
+                    536
+                ],
+                "com.fasterxml.jackson.databind.introspect.TestAnnotationMerging#testSharedTypeInfoWithCtor": [
+                    530,
+                    532,
+                    535,
+                    536
+                ],
+                "com.fasterxml.jackson.databind.introspect.TestInferredMutators#testDeserializationInference": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.introspect.TestJacksonAnnotationIntrospector#testSerializeDeserializeWithJaxbAnnotations": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.introspect.TestNamingStrategyCustom#testCStyleNaming": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.introspect.TestNamingStrategyCustom#testLowerCase": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.introspect.TestNamingStrategyCustom#testPerClassAnnotation": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.introspect.TestNamingStrategyCustom#testSimpleFields": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.introspect.TestNamingStrategyCustom#testSimpleSetters": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.introspect.TestNamingStrategyCustom#testWithGetterAsSetter": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.introspect.TestNamingStrategyStd#testLowerCaseAcronymsTranslations": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.introspect.TestNamingStrategyStd#testLowerCaseOtherNonStandardNamesTranslations": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.introspect.TestNamingStrategyStd#testLowerCaseTranslations": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.introspect.TestNamingStrategyStd#testLowerCaseUnchangedNames": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.introspect.TestPropertyConflicts#testInferredNameConflictsWithSetters": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.introspect.TestPropertyConflicts#testRegularAndIsGetter": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.jsontype.TestAbstractContainers#testAbstractLists": [
+                    530,
+                    532,
+                    535,
+                    536
+                ],
+                "com.fasterxml.jackson.databind.jsontype.TestAbstractContainers#testAbstractMaps": [
+                    530,
+                    532,
+                    535,
+                    536
+                ],
+                "com.fasterxml.jackson.databind.jsontype.TestAbstractTypeNames#testEmptyCollection": [
+                    530,
+                    532,
+                    533,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.jsontype.TestAbstractTypeNames#testInnerClassWithType": [
+                    530,
+                    532,
+                    535,
+                    536,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.jsontype.TestAbstractWithObjectId#testIssue877": [
+                    530,
+                    532,
+                    535,
+                    536
+                ],
+                "com.fasterxml.jackson.databind.jsontype.TestCustomTypeIdResolver#testCustomTypeIdResolver": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.jsontype.TestCustomTypeIdResolver#testCustomWithExternal": [
+                    530,
+                    532,
+                    535,
+                    536,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.jsontype.TestDefaultForArrays#testArrayTypingNested": [
+                    530,
+                    532,
+                    535,
+                    536
+                ],
+                "com.fasterxml.jackson.databind.jsontype.TestDefaultForArrays#testArrayTypingSimple": [
+                    530,
+                    532,
+                    535,
+                    536
+                ],
+                "com.fasterxml.jackson.databind.jsontype.TestDefaultForEnums#testSimpleEnumBean": [
+                    530,
+                    532,
+                    535,
+                    536,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.jsontype.TestDefaultForEnums#testSimpleEnumsAsField": [
+                    530,
+                    532,
+                    535,
+                    536
+                ],
+                "com.fasterxml.jackson.databind.jsontype.TestDefaultForLists#testDateTypes": [
+                    530,
+                    532,
+                    535,
+                    536
+                ],
+                "com.fasterxml.jackson.databind.jsontype.TestDefaultForLists#testJackson667": [
+                    530,
+                    532,
+                    535,
+                    536
+                ],
+                "com.fasterxml.jackson.databind.jsontype.TestDefaultForLists#testListOfLongs": [
+                    530,
+                    532,
+                    535,
+                    536
+                ],
+                "com.fasterxml.jackson.databind.jsontype.TestDefaultForLists#testListOfNumbers": [
+                    530,
+                    532,
+                    535,
+                    536
+                ],
+                "com.fasterxml.jackson.databind.jsontype.TestDefaultForMaps#testJackson428": [
+                    530,
+                    532,
+                    535,
+                    536
+                ],
+                "com.fasterxml.jackson.databind.jsontype.TestDefaultForMaps#testList": [
+                    530,
+                    532,
+                    535,
+                    536,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.jsontype.TestDefaultForMaps#testMap": [
+                    530,
+                    532,
+                    535,
+                    536,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.jsontype.TestDefaultForObject#testAbstractBean": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.jsontype.TestDefaultForObject#testBeanAsObject": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.jsontype.TestDefaultForObject#testIssue352": [
+                    530,
+                    532,
+                    535,
+                    536,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.jsontype.TestDefaultForObject#testJackson311": [
+                    530,
+                    532,
+                    535,
+                    536,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.jsontype.TestDefaultForObject#testNullValue": [
+                    530,
+                    532,
+                    533
+                ],
+                "com.fasterxml.jackson.databind.jsontype.TestDefaultForObject#testTokenBuffer": [
+                    530,
+                    532,
+                    535,
+                    536
+                ],
+                "com.fasterxml.jackson.databind.jsontype.TestDefaultForScalars#test417": [
+                    530,
+                    532,
+                    535,
+                    536,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.jsontype.TestDefaultWithCreators#testWithCreators": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.jsontype.TestEnumTyping#testUntypedEnum": [
+                    530,
+                    532,
+                    535,
+                    536
+                ],
+                "com.fasterxml.jackson.databind.jsontype.TestExternalId#testExternalTypeWithCreator": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.jsontype.TestExternalId#testImproperExternalIdDeserialization": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.jsontype.TestExternalId#testIssue798": [
+                    530,
+                    532,
+                    535,
+                    536,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.jsontype.TestExternalId#testIssue831": [
+                    530,
+                    532,
+                    535,
+                    536,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.jsontype.TestExternalId#testMultipleTypeIdsDeserialization": [
+                    530,
+                    532,
+                    535,
+                    536,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.jsontype.TestExternalId#testSimpleDeserialization": [
+                    530,
+                    532,
+                    535,
+                    536,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.jsontype.TestExternalId#testWithAsValue": [
+                    530,
+                    532,
+                    535,
+                    536
+                ],
+                "com.fasterxml.jackson.databind.jsontype.TestExternalId#testWithScalar118": [
+                    530,
+                    532,
+                    535,
+                    536
+                ],
+                "com.fasterxml.jackson.databind.jsontype.TestGenericListSerialization#testSubTypesFor356": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.jsontype.TestNoTypeInfo#testWithIdNone": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.jsontype.TestPropertyTypeInfo#testSimpleArrayField": [
+                    530,
+                    532,
+                    535,
+                    536,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.jsontype.TestPropertyTypeInfo#testSimpleArrayMethod": [
+                    530,
+                    532,
+                    535,
+                    536,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.jsontype.TestPropertyTypeInfo#testSimpleField": [
+                    530,
+                    532,
+                    535,
+                    536,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.jsontype.TestPropertyTypeInfo#testSimpleListField": [
+                    530,
+                    532,
+                    535,
+                    536,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.jsontype.TestPropertyTypeInfo#testSimpleListMethod": [
+                    530,
+                    532,
+                    535,
+                    536,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.jsontype.TestPropertyTypeInfo#testSimpleMapField": [
+                    530,
+                    532,
+                    535,
+                    536,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.jsontype.TestPropertyTypeInfo#testSimpleMapMethod": [
+                    530,
+                    532,
+                    535,
+                    536
+                ],
+                "com.fasterxml.jackson.databind.jsontype.TestPropertyTypeInfo#testSimpleMethod": [
+                    530,
+                    532,
+                    535,
+                    536,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.jsontype.TestScalars#testScalarsViaAbstractType": [
+                    530,
+                    532,
+                    535,
+                    536
+                ],
+                "com.fasterxml.jackson.databind.jsontype.TestScalars#testScalarsWithTyping": [
+                    530,
+                    532,
+                    535,
+                    536
+                ],
+                "com.fasterxml.jackson.databind.jsontype.TestSubtypes#testDefaultImpl": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.jsontype.TestSubtypes#testDefaultImplViaModule": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.jsontype.TestSubtypes#testDeserializatioNamed": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.jsontype.TestSubtypes#testDeserializationNonNamed": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.jsontype.TestSubtypes#testPropertyWithSubtypes": [
+                    530,
+                    532,
+                    535,
+                    536,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.jsontype.TestSubtypes#testSubtypesViaModule": [
+                    530,
+                    532,
+                    535,
+                    536,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.jsontype.TestTypeNames#testRoundTrip": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.jsontype.TestTypeNames#testRoundTripMap": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.jsontype.TestTypedDeserialization#testAbstractEmptyBaseClass": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.jsontype.TestTypedDeserialization#testCagedAnimal": [
+                    530,
+                    532,
+                    535,
+                    536,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.jsontype.TestTypedDeserialization#testIssue506WithDate": [
+                    530,
+                    532,
+                    535,
+                    536
+                ],
+                "com.fasterxml.jackson.databind.jsontype.TestTypedDeserialization#testIssue506WithNumber": [
+                    530,
+                    532,
+                    535,
+                    536
+                ],
+                "com.fasterxml.jackson.databind.jsontype.TestTypedDeserialization#testListAsArray": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.jsontype.TestTypedDeserialization#testSimpleClassAsProperty": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.jsontype.TestTypedDeserialization#testTypeAsArray": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.jsontype.TestTypedDeserialization#testTypeAsWrapper": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.jsontype.TestTypedDeserializationWithDefault#testDeserializationWithObject": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.jsontype.TestVisibleTypeId#testIssue263": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.jsontype.TestVisibleTypeId#testVisibleWithExternalId": [
+                    530,
+                    532,
+                    535,
+                    536,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.jsontype.TestVisibleTypeId#testVisibleWithProperty": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.jsontype.TestVisibleTypeId#testVisibleWithWrapperArray": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.jsontype.TestVisibleTypeId#testVisibleWithWrapperObject": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.jsontype.TestWithGenerics#testJackson387": [
+                    530,
+                    532,
+                    535,
+                    536,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.jsontype.TestWithGenerics#testJackson430": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.mixins.TestMixinDeserForClass#testClassMixInsForObjectClass": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.mixins.TestMixinDeserForClass#testClassMixInsMidLevel": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.mixins.TestMixinDeserForClass#testClassMixInsTopLevel": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.node.TestConversions#testIssue709": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.node.TestConversions#testTreeToValue": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.node.TestTreeDeserialization#testMixed": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.node.TestTreeDeserialization#testNullHandlingCovariance": [
+                    530,
+                    532,
+                    533
+                ],
+                "com.fasterxml.jackson.databind.node.TestTreeTraversingParser#testDataBind": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.node.TestTreeTraversingParser#testSkipChildrenWrt370": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.ser.TestJsonValue#testPolymorphicSerdeWithDelegate": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.struct.TestBackRefsWithPolymorphic#testDeserialize": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.struct.TestFormatForCollections#testListAsObject": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.struct.TestObjectId#testColumnMetadata": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.struct.TestObjectIdDeserialization#testCustomDeserializationClass": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.struct.TestObjectIdDeserialization#testCustomDeserializationProperty": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.struct.TestObjectIdDeserialization#testCustomPoolResolver": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.struct.TestObjectIdDeserialization#testForwardReference": [
+                    530,
+                    532,
+                    533,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.struct.TestObjectIdDeserialization#testForwardReferenceInCollection": [
+                    530,
+                    532,
+                    533,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.struct.TestObjectIdDeserialization#testForwardReferenceInMap": [
+                    530,
+                    532,
+                    533,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.struct.TestObjectIdDeserialization#testKeepCollectionOrdering": [
+                    530,
+                    532,
+                    533,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.struct.TestObjectIdDeserialization#testKeepMapOrdering": [
+                    530,
+                    532,
+                    533,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.struct.TestObjectIdDeserialization#testSimpleDeserWithForwardRefs": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.struct.TestObjectIdDeserialization#testSimpleDeserializationClass": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.struct.TestObjectIdDeserialization#testSimpleDeserializationProperty": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.struct.TestObjectIdDeserialization#testSimpleUUIDForClassRoundTrip": [
+                    530,
+                    532,
+                    533,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.struct.TestObjectIdDeserialization#testUnresolvedForwardReference": [
+                    530,
+                    532,
+                    533,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.struct.TestObjectIdWithEquals#testSimpleEquals": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.struct.TestObjectIdWithPolymorphic#testIssue811": [
+                    530,
+                    532,
+                    533,
+                    535,
+                    536,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.struct.TestObjectIdWithPolymorphic#testPolymorphicRoundtrip": [
+                    530,
+                    532,
+                    535,
+                    536,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.struct.TestPOJOAsArray#testReadSimplePropertyValue": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.struct.TestPOJOAsArray#testReadSimpleRootValue": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.struct.TestPOJOAsArrayAdvanced#testWithCreatorsOrdered": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.struct.TestPOJOAsArrayAdvanced#testWithCreatorsShuffled": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.struct.TestPOJOAsArrayAdvanced#testWithView": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.struct.TestPOJOAsArrayWithBuilder#testSimpleBuilder": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.struct.TestUnwrapped#testDeepUnwrapping": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.struct.TestUnwrapped#testDoubleUnwrapping": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.struct.TestUnwrapped#testSimpleUnwrappedDeserialize": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.struct.TestUnwrapped#testUnwrappedDeserializeWithCreator": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.struct.TestUnwrappedWithPrefix#testDeepPrefixedUnwrappingDeserialize": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.struct.TestUnwrappedWithPrefix#testHierarchicConfigDeserialize": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.struct.TestUnwrappedWithPrefix#testHierarchicConfigRoundTrip": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.struct.TestUnwrappedWithPrefix#testIssue226": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.struct.TestUnwrappedWithPrefix#testPrefixedUnwrapping": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.type.TestTypeFactory#testSneakyBeanProperties": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.views.TestViewDeserialization#testSimple": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.databind.views.TestViewDeserialization#testWithoutDefaultInclusion": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.failing.TestExternalTypeId#testTypes": [
+                    530,
+                    532,
+                    535,
+                    536,
+                    538
+                ],
+                "com.fasterxml.jackson.failing.TestMultipleExternalIds#testMultiple": [
+                    530,
+                    532,
+                    535,
+                    536,
+                    538
+                ],
+                "com.fasterxml.jackson.failing.TestNonStaticInnerClassInList32#testInnerList": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.failing.TestObjectIdDeserialization#testForwardReferenceInArray": [
+                    530,
+                    532,
+                    533,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.failing.TestObjectIdDeserialization#testForwardReferenceInEnumMap": [
+                    530,
+                    532,
+                    533,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.failing.TestObjectIdDeserialization#testForwardReferenceInQueue": [
+                    530,
+                    532,
+                    533,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.failing.TestObjectIdDeserialization#testForwardReferenceWithDefensiveCopy": [
+                    530,
+                    532,
+                    533,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.failing.TestTypeAliases#testResolution743": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.failing.TestUnwrappedIssue383#testRecursiveUsage": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.failing.TestUnwrappedWithCreator#testUnwrappedWithCreator": [
+                    530,
+                    532,
+                    535,
+                    538
+                ],
+                "com.fasterxml.jackson.failing.TestVisibleExternalId#testVisibleTypeId": [
+                    530,
+                    532,
+                    535,
+                    536
+                ]
+            }
+        }
+    },
+    "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-databind/src/main/java/com/fasterxml/jackson/databind/deser/std/StringArrayDeserializer.java": {
+        "deserialize": {
+            "tests_covering_the_method": {
+                "com.fasterxml.jackson.databind.convert.TestConvertingDeserializer#testPropertyAnnotationArrayLC": [
+                    47,
+                    50,
+                    51
+                ],
+                "com.fasterxml.jackson.databind.deser.TestArrayDeserialization#testFromEmptyString": [
+                    47,
+                    48
+                ],
+                "com.fasterxml.jackson.databind.deser.TestArrayDeserialization#testStringArray": [
+                    47,
+                    50,
+                    54,
+                    55,
+                    57,
+                    60,
+                    63,
+                    64,
+                    65,
+                    66,
+                    70,
+                    74,
+                    75,
+                    76,
+                    77,
+                    78
+                ],
+                "com.fasterxml.jackson.databind.deser.TestCollectionDeserialization#testImplicitArrays": [
+                    47,
+                    48
+                ],
+                "com.fasterxml.jackson.databind.deser.TestFieldDeserialization#testSimpleAnnotation": [
+                    47,
+                    50,
+                    54,
+                    55,
+                    57,
+                    60,
+                    63,
+                    64,
+                    70,
+                    74,
+                    75,
+                    76,
+                    77,
+                    78
+                ],
+                "com.fasterxml.jackson.databind.deser.TestValueAnnotations#testOverrideArrayClass": [
+                    47,
+                    50,
+                    54,
+                    55,
+                    57,
+                    60,
+                    63,
+                    64,
+                    70,
+                    74,
+                    75,
+                    76,
+                    77,
+                    78
+                ],
+                "com.fasterxml.jackson.databind.jsontype.TestDefaultForArrays#testArrayTypingSimple": [
+                    47,
+                    50,
+                    54,
+                    55,
+                    57,
+                    60,
+                    76,
+                    77,
+                    78
+                ]
+            }
+        }
+    }
+}

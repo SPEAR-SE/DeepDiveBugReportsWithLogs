@@ -1,0 +1,36 @@
+{
+    "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/commons-math/src/java/org/apache/commons/math/analysis/BrentSolver.java": {
+        "solve": {
+            "tests_covering_the_method": {
+                "org.apache.commons.math.analysis.BrentSolverTest#testInitialGuess": [
+                    67,
+                    68,
+                    74,
+                    75,
+                    76,
+                    77,
+                    81,
+                    82,
+                    88,
+                    93,
+                    94,
+                    100,
+                    101,
+                    67,
+                    68,
+                    74,
+                    75,
+                    76,
+                    77,
+                    81,
+                    82,
+                    88,
+                    93,
+                    94,
+                    100,
+                    101
+                ]
+            }
+        }
+    }
+}

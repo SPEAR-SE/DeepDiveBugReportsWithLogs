@@ -1,0 +1,107 @@
+{
+    "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-databind/src/main/java/com/fasterxml/jackson/databind/DeserializationContext.java": {
+        "findContextualValueDeserializer": {
+            "tests_covering_the_method": {}
+        },
+        "findKeyDeserializer": {
+            "tests_covering_the_method": {}
+        },
+        "handleSecondaryContextualization": {
+            "tests_covering_the_method": {
+                "com.fasterxml.jackson.databind.misc.RaceCondition738Test#testRepeatedly": [
+                    678,
+                    686
+                ],
+                "com.fasterxml.jackson.databind.misc.TestBlocking#testEagerAdvance": [
+                    678,
+                    686
+                ]
+            }
+        },
+        "reportMappingException": {
+            "tests_covering_the_method": {}
+        }
+    },
+    "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-databind/src/main/java/com/fasterxml/jackson/databind/JsonMappingException.java": {
+        "from": {
+            "tests_covering_the_method": {}
+        }
+    },
+    "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-databind/src/main/java/com/fasterxml/jackson/databind/ObjectMapper.java": {
+        "_readMapAndClose": {
+            "tests_covering_the_method": {
+                "com.fasterxml.jackson.databind.misc.RaceCondition738Test#testRepeatedly": [
+                    3770,
+                    3772,
+                    3773,
+                    3778,
+                    3781,
+                    3782,
+                    3783,
+                    3784,
+                    3787,
+                    3789,
+                    3792,
+                    3793,
+                    3794
+                ]
+            }
+        },
+        "readValue": {
+            "tests_covering_the_method": {}
+        }
+    },
+    "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-databind/src/main/java/com/fasterxml/jackson/databind/deser/BeanDeserializer.java": {
+        "_deserializeUsingPropertyBased": {
+            "tests_covering_the_method": {}
+        },
+        "_deserializeWithErrorWrapping": {
+            "tests_covering_the_method": {}
+        },
+        "deserialize": {
+            "tests_covering_the_method": {}
+        },
+        "deserializeFromObject": {
+            "tests_covering_the_method": {}
+        }
+    },
+    "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-databind/src/main/java/com/fasterxml/jackson/databind/deser/BeanDeserializerBase.java": {
+        "deserializeFromObjectUsingNonDefault": {
+            "tests_covering_the_method": {}
+        }
+    },
+    "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-databind/src/main/java/com/fasterxml/jackson/databind/deser/DeserializerCache.java": {
+        "_handleUnknownKeyDeserializer": {
+            "tests_covering_the_method": {}
+        },
+        "findKeyDeserializer": {
+            "tests_covering_the_method": {}
+        }
+    },
+    "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-databind/src/main/java/com/fasterxml/jackson/databind/deser/SettableBeanProperty.java": {
+        "deserialize": {
+            "tests_covering_the_method": {}
+        }
+    },
+    "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-databind/src/main/java/com/fasterxml/jackson/databind/deser/std/MapDeserializer.java": {
+        "createContextual": {
+            "tests_covering_the_method": {}
+        },
+        "deserializeWithType": {
+            "tests_covering_the_method": {}
+        }
+    },
+    "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-databind/src/main/java/com/fasterxml/jackson/databind/jsontype/impl/AsArrayTypeDeserializer.java": {
+        "_deserialize": {
+            "tests_covering_the_method": {}
+        },
+        "deserializeTypedFromObject": {
+            "tests_covering_the_method": {}
+        }
+    },
+    "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-databind/src/main/java/com/fasterxml/jackson/databind/jsontype/impl/TypeDeserializerBase.java": {
+        "_findDeserializer": {
+            "tests_covering_the_method": {}
+        }
+    }
+}

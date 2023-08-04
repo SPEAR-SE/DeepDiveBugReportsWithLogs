@@ -1,0 +1,703 @@
+{
+    "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/commons-csv/src/main/java/org/apache/commons/csv/CSVParser.java": {
+        "initializeHeader": {
+            "tests_covering_the_method": {
+                "org.apache.commons.csv.CSVFileParserTest#testCSVFile[0]": [
+                    340,
+                    341,
+                    342,
+                    374
+                ],
+                "org.apache.commons.csv.CSVFileParserTest#testCSVFile[1]": [
+                    340,
+                    341,
+                    342,
+                    374
+                ],
+                "org.apache.commons.csv.CSVFileParserTest#testCSVFile[2]": [
+                    340,
+                    341,
+                    342,
+                    374
+                ],
+                "org.apache.commons.csv.CSVFileParserTest#testCSVFile[3]": [
+                    340,
+                    341,
+                    342,
+                    374
+                ],
+                "org.apache.commons.csv.CSVFileParserTest#testCSVFile[4]": [
+                    340,
+                    341,
+                    342,
+                    374
+                ],
+                "org.apache.commons.csv.CSVFileParserTest#testCSVFile[5]": [
+                    340,
+                    341,
+                    342,
+                    374
+                ],
+                "org.apache.commons.csv.CSVFileParserTest#testCSVUrl[0]": [
+                    340,
+                    341,
+                    342,
+                    374
+                ],
+                "org.apache.commons.csv.CSVFileParserTest#testCSVUrl[1]": [
+                    340,
+                    341,
+                    342,
+                    374
+                ],
+                "org.apache.commons.csv.CSVFileParserTest#testCSVUrl[2]": [
+                    340,
+                    341,
+                    342,
+                    374
+                ],
+                "org.apache.commons.csv.CSVFileParserTest#testCSVUrl[3]": [
+                    340,
+                    341,
+                    342,
+                    374
+                ],
+                "org.apache.commons.csv.CSVFileParserTest#testCSVUrl[4]": [
+                    340,
+                    341,
+                    342,
+                    374
+                ],
+                "org.apache.commons.csv.CSVFileParserTest#testCSVUrl[5]": [
+                    340,
+                    341,
+                    342,
+                    374
+                ],
+                "org.apache.commons.csv.CSVParserTest#testBOMInputStream": [
+                    340,
+                    341,
+                    342,
+                    343,
+                    345,
+                    346,
+                    348,
+                    349,
+                    350,
+                    352,
+                    360,
+                    361,
+                    362,
+                    363,
+                    364,
+                    365,
+                    370,
+                    374
+                ],
+                "org.apache.commons.csv.CSVParserTest#testBackslashEscaping": [
+                    340,
+                    341,
+                    342,
+                    374
+                ],
+                "org.apache.commons.csv.CSVParserTest#testBackslashEscaping2": [
+                    340,
+                    341,
+                    342,
+                    374
+                ],
+                "org.apache.commons.csv.CSVParserTest#testCSV57": [
+                    340,
+                    341,
+                    342,
+                    374
+                ],
+                "org.apache.commons.csv.CSVParserTest#testCarriageReturnEndings": [
+                    340,
+                    341,
+                    342,
+                    374
+                ],
+                "org.apache.commons.csv.CSVParserTest#testCarriageReturnLineFeedEndings": [
+                    340,
+                    341,
+                    342,
+                    374
+                ],
+                "org.apache.commons.csv.CSVParserTest#testClose": [
+                    340,
+                    341,
+                    342,
+                    343,
+                    345,
+                    346,
+                    348,
+                    349,
+                    350,
+                    352,
+                    360,
+                    361,
+                    362,
+                    363,
+                    364,
+                    365,
+                    370,
+                    374
+                ],
+                "org.apache.commons.csv.CSVParserTest#testDefaultFormat": [
+                    340,
+                    341,
+                    342,
+                    374
+                ],
+                "org.apache.commons.csv.CSVParserTest#testDuplicateHeaders": [
+                    340,
+                    341,
+                    342,
+                    343,
+                    345,
+                    346,
+                    348,
+                    349,
+                    350,
+                    352,
+                    360,
+                    361,
+                    362,
+                    363,
+                    364,
+                    365,
+                    367,
+                    370
+                ],
+                "org.apache.commons.csv.CSVParserTest#testEmptyFile": [
+                    340,
+                    341,
+                    342,
+                    374
+                ],
+                "org.apache.commons.csv.CSVParserTest#testEmptyLineBehaviourCSV": [
+                    340,
+                    341,
+                    342,
+                    374
+                ],
+                "org.apache.commons.csv.CSVParserTest#testEmptyLineBehaviourExcel": [
+                    340,
+                    341,
+                    342,
+                    374
+                ],
+                "org.apache.commons.csv.CSVParserTest#testEndOfFileBehaviorCSV": [
+                    340,
+                    341,
+                    342,
+                    374
+                ],
+                "org.apache.commons.csv.CSVParserTest#testEndOfFileBehaviourExcel": [
+                    340,
+                    341,
+                    342,
+                    374
+                ],
+                "org.apache.commons.csv.CSVParserTest#testExcelFormat1": [
+                    340,
+                    341,
+                    342,
+                    374
+                ],
+                "org.apache.commons.csv.CSVParserTest#testExcelFormat2": [
+                    340,
+                    341,
+                    342,
+                    374
+                ],
+                "org.apache.commons.csv.CSVParserTest#testForEach": [
+                    340,
+                    341,
+                    342,
+                    374
+                ],
+                "org.apache.commons.csv.CSVParserTest#testGetHeaderMap": [
+                    340,
+                    341,
+                    342,
+                    343,
+                    345,
+                    346,
+                    353,
+                    356,
+                    360,
+                    361,
+                    362,
+                    363,
+                    364,
+                    365,
+                    370,
+                    374
+                ],
+                "org.apache.commons.csv.CSVParserTest#testGetLine": [
+                    340,
+                    341,
+                    342,
+                    374
+                ],
+                "org.apache.commons.csv.CSVParserTest#testGetLineNumberWithCR": [
+                    340,
+                    341,
+                    342,
+                    374
+                ],
+                "org.apache.commons.csv.CSVParserTest#testGetLineNumberWithCRLF": [
+                    340,
+                    341,
+                    342,
+                    374
+                ],
+                "org.apache.commons.csv.CSVParserTest#testGetLineNumberWithLF": [
+                    340,
+                    341,
+                    342,
+                    374
+                ],
+                "org.apache.commons.csv.CSVParserTest#testGetOneLine": [
+                    340,
+                    341,
+                    342,
+                    374
+                ],
+                "org.apache.commons.csv.CSVParserTest#testGetOneLineOneParser": [
+                    340,
+                    341,
+                    342,
+                    374
+                ],
+                "org.apache.commons.csv.CSVParserTest#testGetRecordNumberWithCR": [
+                    340,
+                    341,
+                    342,
+                    374
+                ],
+                "org.apache.commons.csv.CSVParserTest#testGetRecordNumberWithCRLF": [
+                    340,
+                    341,
+                    342,
+                    374
+                ],
+                "org.apache.commons.csv.CSVParserTest#testGetRecordNumberWithLF": [
+                    340,
+                    341,
+                    342,
+                    374
+                ],
+                "org.apache.commons.csv.CSVParserTest#testGetRecordWithMultiLineValues": [
+                    340,
+                    341,
+                    342,
+                    374
+                ],
+                "org.apache.commons.csv.CSVParserTest#testGetRecords": [
+                    340,
+                    341,
+                    342,
+                    374
+                ],
+                "org.apache.commons.csv.CSVParserTest#testHeader": [
+                    340,
+                    341,
+                    342,
+                    343,
+                    345,
+                    346,
+                    348,
+                    349,
+                    350,
+                    352,
+                    360,
+                    361,
+                    362,
+                    363,
+                    364,
+                    365,
+                    370,
+                    374
+                ],
+                "org.apache.commons.csv.CSVParserTest#testHeaderComment": [
+                    340,
+                    341,
+                    342,
+                    343,
+                    345,
+                    346,
+                    348,
+                    349,
+                    350,
+                    352,
+                    360,
+                    361,
+                    362,
+                    363,
+                    364,
+                    365,
+                    370,
+                    374
+                ],
+                "org.apache.commons.csv.CSVParserTest#testHeaderMissing": [
+                    340,
+                    341,
+                    342,
+                    343,
+                    345,
+                    346,
+                    348,
+                    349,
+                    350,
+                    352,
+                    360,
+                    361,
+                    362,
+                    363,
+                    364,
+                    365,
+                    370,
+                    374
+                ],
+                "org.apache.commons.csv.CSVParserTest#testHeaderMissingWithNull": [
+                    340,
+                    341,
+                    342,
+                    343,
+                    345,
+                    346,
+                    348,
+                    349,
+                    350,
+                    352,
+                    360,
+                    361,
+                    362,
+                    363,
+                    364,
+                    365,
+                    370,
+                    374
+                ],
+                "org.apache.commons.csv.CSVParserTest#testHeadersMissing": [
+                    340,
+                    341,
+                    342,
+                    343,
+                    345,
+                    346,
+                    348,
+                    349,
+                    350,
+                    352,
+                    360,
+                    361,
+                    362,
+                    363,
+                    364,
+                    365,
+                    370,
+                    374
+                ],
+                "org.apache.commons.csv.CSVParserTest#testHeadersMissingException": [
+                    340,
+                    341,
+                    342,
+                    343,
+                    345,
+                    346,
+                    348,
+                    349,
+                    350,
+                    352,
+                    360,
+                    361,
+                    362,
+                    363,
+                    364,
+                    365,
+                    367,
+                    370
+                ],
+                "org.apache.commons.csv.CSVParserTest#testIgnoreEmptyLines": [
+                    340,
+                    341,
+                    342,
+                    374
+                ],
+                "org.apache.commons.csv.CSVParserTest#testIterator": [
+                    340,
+                    341,
+                    342,
+                    374
+                ],
+                "org.apache.commons.csv.CSVParserTest#testLineFeedEndings": [
+                    340,
+                    341,
+                    342,
+                    374
+                ],
+                "org.apache.commons.csv.CSVParserTest#testMappedButNotSetAsOutlook2007ContactExport": [
+                    340,
+                    341,
+                    342,
+                    343,
+                    345,
+                    346,
+                    353,
+                    354,
+                    356,
+                    360,
+                    361,
+                    362,
+                    363,
+                    364,
+                    365,
+                    370,
+                    374
+                ],
+                "org.apache.commons.csv.CSVParserTest#testMultipleIterators": [
+                    340,
+                    341,
+                    342,
+                    374
+                ],
+                "org.apache.commons.csv.CSVParserTest#testNoHeaderMap": [
+                    340,
+                    341,
+                    342,
+                    374
+                ],
+                "org.apache.commons.csv.CSVParserTest#testProvidedHeader": [
+                    340,
+                    341,
+                    342,
+                    343,
+                    345,
+                    346,
+                    353,
+                    356,
+                    360,
+                    361,
+                    362,
+                    363,
+                    364,
+                    365,
+                    370,
+                    374
+                ],
+                "org.apache.commons.csv.CSVParserTest#testProvidedHeaderAuto": [
+                    340,
+                    341,
+                    342,
+                    343,
+                    345,
+                    346,
+                    348,
+                    349,
+                    350,
+                    352,
+                    360,
+                    361,
+                    362,
+                    363,
+                    364,
+                    365,
+                    370,
+                    374
+                ],
+                "org.apache.commons.csv.CSVParserTest#testRoundtrip": [
+                    340,
+                    341,
+                    342,
+                    374
+                ],
+                "org.apache.commons.csv.CSVParserTest#testSkipAutoHeader": [
+                    340,
+                    341,
+                    342,
+                    343,
+                    345,
+                    346,
+                    348,
+                    349,
+                    350,
+                    352,
+                    360,
+                    361,
+                    362,
+                    363,
+                    364,
+                    365,
+                    370,
+                    374
+                ],
+                "org.apache.commons.csv.CSVParserTest#testSkipSetHeader": [
+                    340,
+                    341,
+                    342,
+                    343,
+                    345,
+                    346,
+                    353,
+                    354,
+                    356,
+                    360,
+                    361,
+                    362,
+                    363,
+                    364,
+                    365,
+                    370,
+                    374
+                ],
+                "org.apache.commons.csv.CSVPrinterTest#testParseCustomNullValues": [
+                    340,
+                    341,
+                    342,
+                    374
+                ],
+                "org.apache.commons.csv.CSVPrinterTest#testRandom": [
+                    340,
+                    341,
+                    342,
+                    374
+                ],
+                "org.apache.commons.csv.CSVRecordTest#testToMapWithNoHeader": [
+                    340,
+                    341,
+                    342,
+                    374
+                ],
+                "org.apache.commons.csv.CSVRecordTest#testToMapWithShortRecord": [
+                    340,
+                    341,
+                    342,
+                    343,
+                    345,
+                    346,
+                    353,
+                    356,
+                    360,
+                    361,
+                    362,
+                    363,
+                    364,
+                    365,
+                    370,
+                    374
+                ],
+                "org.apache.commons.csv.FercGovTest#testContractFile": [
+                    340,
+                    341,
+                    342,
+                    343,
+                    345,
+                    346,
+                    348,
+                    349,
+                    350,
+                    352,
+                    360,
+                    361,
+                    362,
+                    363,
+                    364,
+                    365,
+                    370,
+                    374
+                ],
+                "org.apache.commons.csv.FercGovTest#testTransactionFile": [
+                    340,
+                    341,
+                    342,
+                    343,
+                    345,
+                    346,
+                    348,
+                    349,
+                    350,
+                    352,
+                    360,
+                    361,
+                    362,
+                    363,
+                    364,
+                    365,
+                    370,
+                    374
+                ],
+                "org.apache.commons.csv.perf.PerformanceTest#testParseBigFileRepeat": [
+                    340,
+                    341,
+                    342,
+                    374
+                ]
+            }
+        },
+        "parse": {
+            "tests_covering_the_method": {
+                "org.apache.commons.csv.CSVFileParserTest#testCSVUrl[0]": [
+                    202,
+                    203,
+                    204,
+                    206
+                ],
+                "org.apache.commons.csv.CSVFileParserTest#testCSVUrl[1]": [
+                    202,
+                    203,
+                    204,
+                    206
+                ],
+                "org.apache.commons.csv.CSVFileParserTest#testCSVUrl[2]": [
+                    202,
+                    203,
+                    204,
+                    206
+                ],
+                "org.apache.commons.csv.CSVFileParserTest#testCSVUrl[3]": [
+                    202,
+                    203,
+                    204,
+                    206
+                ],
+                "org.apache.commons.csv.CSVFileParserTest#testCSVUrl[4]": [
+                    202,
+                    203,
+                    204,
+                    206
+                ],
+                "org.apache.commons.csv.CSVFileParserTest#testCSVUrl[5]": [
+                    202,
+                    203,
+                    204,
+                    206
+                ],
+                "org.apache.commons.csv.CSVParserTest#testParseUrlCharsetNullFormat": [
+                    202,
+                    203,
+                    204
+                ],
+                "org.apache.commons.csv.CSVParserTest#testParserUrlNullCharsetFormat": [
+                    202,
+                    203
+                ],
+                "org.apache.commons.csv.FercGovTest#testContractFile": [
+                    202,
+                    203,
+                    204,
+                    206
+                ],
+                "org.apache.commons.csv.FercGovTest#testTransactionFile": [
+                    202,
+                    203,
+                    204,
+                    206
+                ]
+            }
+        }
+    }
+}

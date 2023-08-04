@@ -1,0 +1,21 @@
+{
+    "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/commons-compress/src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveInputStream.java": {
+        "getNextCPIOEntry": {
+            "tests_covering_the_method": {
+                "org.apache.commons.compress.archivers.CpioTestCase#testCpioUnarchive": [
+                    189,
+                    190,
+                    193,
+                    194,
+                    195,
+                    197,
+                    200,
+                    201
+                ]
+            }
+        },
+        "readFully": {
+            "tests_covering_the_method": {}
+        }
+    }
+}

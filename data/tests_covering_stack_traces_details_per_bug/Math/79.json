@@ -1,0 +1,15 @@
+{
+    "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/commons-math/src/main/java/org/apache/commons/math/stat/clustering/KMeansPlusPlusClusterer.java": {
+        "assignPointsToClusters": {
+            "tests_covering_the_method": {
+                "org.apache.commons.math.stat.clustering.KMeansPlusPlusClustererTest#dimension2": [
+                    89,
+                    90,
+                    91,
+                    92,
+                    93
+                ]
+            }
+        }
+    }
+}
