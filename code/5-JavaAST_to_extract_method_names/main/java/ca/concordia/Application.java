@@ -68,6 +68,7 @@ public class Application {
                     Map<String, Object> bug = (Map<String, Object>) bugs.get(bugID);
                     String buggyCommit = (String) bug.get("buggy_commit");
                     String bugfixCommit = (String) bug.get("bugfix_commit");
+                    String bugReportCommit = (String) bug.get("bug_report_commit_hash");
 
                     // Checking the code
                     List<MethodData> addedLinesMethods;
@@ -78,23 +79,32 @@ public class Application {
                     Map<String, Map<String, Object>> modifiedCode = (Map<String, Map<String, Object>>) bug.get("modified_code");
                     for (String filePath : modifiedCode.keySet()) {
                         String filePathFixed = filePath;
-                        System.out.println(filePath);
                         if (filePath.startsWith("b/")) {
                             filePathFixed = filePath.substring(2);
                         }
-                        System.out.println(filePathFixed);
                         String absolute_file_path = Paths.get(path_to_repo , filePathFixed).toString();
-                        System.out.println(absolute_file_path);
                         Map<String, Object> fileInfo = modifiedCode.get(filePath);
                         List<Double> deletedLinesDouble = (List<Double>) fileInfo.get("deleted_lines");
                         deletedLinesMethods = get_touched_methods(buggyCommit, path_to_repo,deletedLinesDouble, absolute_file_path, filePathFixed, false);
                         List<Double> addedLinesDouble = (List<Double>) fileInfo.get("added_lines");
                         addedLinesMethods = get_touched_methods(bugfixCommit, path_to_repo,addedLinesDouble, absolute_file_path, filePathFixed, false);
 
+                        GitHelper.checkoutCommit(path_to_repo, bugReportCommit);
                         for (MethodData md : deletedLinesMethods){
                             String fileName = filePathFixed;
                             String methodName = md.getMethodName();
-                            buggyMethods= addNewMethod(buggyMethods, methodName, fileName, md);
+                            Integer startLine = md.getStartLine();
+                            MethodData bugReportMd = null;
+                            try {
+                                bugReportMd = MethodFinderFromName.findMethodLines(absolute_file_path, startLine, methodName);
+                            } catch (NoSuchFileException exception){
+                                // newMethod
+                            }
+                            if (bugReportMd != null) {
+                                buggyMethods = addNewMethod(buggyMethods, methodName, fileName, md, bugReportMd);
+                            } else {
+                                buggyMethods = addNewMethod(buggyMethods, methodName, fileName, md);
+                            }
                         }
                         List<Integer> addedLines = convertDoubleListIntoIntegers(addedLinesDouble);
                         // If a method was added in the bugfix commit, it is not a buggy method
@@ -116,7 +126,20 @@ public class Application {
                                 if (isNewMethod){
                                     newMethods= addNewMethod(newMethods, methodName, fileName, md);
                                 } else{
-                                    buggyMethods= addNewMethod(buggyMethods, methodName, fileName, newMd);
+                                    GitHelper.checkoutCommit(path_to_repo, bugReportCommit);
+                                    Integer startLine = md.getStartLine();
+                                    MethodData bugReportMd = null;
+                                    try {
+                                        bugReportMd = MethodFinderFromName.findMethodLines(absolute_file_path, startLine, methodName);
+                                    } catch (NoSuchFileException exception){
+                                        // newMethod
+                                    }
+                                    if (bugReportMd != null) {
+                                        buggyMethods = addNewMethod(buggyMethods, methodName, fileName, newMd, bugReportMd);
+                                    } else {
+                                        buggyMethods = addNewMethod(buggyMethods, methodName, fileName, newMd);
+                                    }
+                                    GitHelper.checkoutCommit(path_to_repo, bugfixCommit);
                                 }
                             }
                         }
@@ -160,7 +183,19 @@ public class Application {
                         for (MethodData md : deletedLinesTests){
                             String fileName = filePathFixed;
                             String testName = md.getMethodName();
-                            updatedTests= addNewMethod(updatedTests, testName, fileName, md);
+                            GitHelper.checkoutCommit(path_to_repo, bugReportCommit);
+                            Integer startLine = md.getStartLine();
+                            MethodData bugReportMd = null;
+                            try {
+                                bugReportMd = MethodFinderFromName.findMethodLines(absolute_file_path, startLine, testName);
+                            } catch (NoSuchFileException exception){
+                                // newMethod
+                            }
+                            if (bugReportMd != null) {
+                                updatedTests = addNewMethod(updatedTests, testName, fileName, md, bugReportMd);
+                            } else {
+                                updatedTests = addNewMethod(updatedTests, testName, fileName, md);
+                            }
                         }
                         List<Integer> addedLines = convertDoubleListIntoIntegers(addedLinesDouble);
                         // If a method was added in the bugfix commit, it is not a buggy method
@@ -173,7 +208,20 @@ public class Application {
                                 if (newTest) {
                                     newTests= addNewMethod(newTests, testName, fileName, md);
                                 } else {
-                                    updatedTests= addNewMethod(updatedTests, testName, fileName, md);
+                                    GitHelper.checkoutCommit(path_to_repo, bugReportCommit);
+                                    Integer startLine = md.getStartLine();
+                                    MethodData bugReportMd = null;
+                                    try {
+                                        bugReportMd = MethodFinderFromName.findMethodLines(absolute_file_path, startLine, testName);
+                                    } catch (NoSuchFileException exception){
+                                        // newMethod
+                                    }
+                                    if (bugReportMd != null) {
+                                        updatedTests = addNewMethod(updatedTests, testName, fileName, md, bugReportMd);
+                                    }else {
+                                        updatedTests = addNewMethod(updatedTests, testName, fileName, md);
+                                    }
+                                    GitHelper.checkoutCommit(path_to_repo, bugfixCommit);
                                 }
                             }
                         }
@@ -208,7 +256,20 @@ public class Application {
                             }
                         }
                         if (md!=null){
-                            st_methods_details= addNewMethod(st_methods_details, methodName, absolute_st_file_path, md);
+                            GitHelper.checkoutCommit(path_to_repo, bugReportCommit);
+                            Integer startLine = md.getStartLine();
+                            MethodData bugReportMd = null;
+                            try {
+                                bugReportMd = MethodFinderFromName.findMethodLines(absolute_st_file_path, startLine, methodName);
+                            } catch (NoSuchFileException exception){
+                                // newMethod
+                            }
+                            if (bugReportMd != null) {
+                                st_methods_details = addNewMethod(st_methods_details, methodName, absolute_st_file_path, md, bugReportMd);
+                            } else {
+                                st_methods_details = addNewMethod(st_methods_details, methodName, absolute_st_file_path, md);
+                            }
+                            GitHelper.checkoutCommit(path_to_repo, buggyCommit);
                         }
                     }
 
@@ -274,6 +335,25 @@ public class Application {
         Map<String, Integer> methodInfo = new HashMap<>();
         methodInfo.put("startLine",startLine);
         methodInfo.put("endLine",endLine);
+        Map<String, Map<String, Integer>> fileMethods = methodsObject.get(fileName);
+        fileMethods.put(methodName, methodInfo);
+        methodsObject.put(fileName, fileMethods);
+        return methodsObject;
+    }
+
+    public static Map<String, Map<String, Map<String, Integer>>> addNewMethod(Map<String, Map<String, Map<String, Integer>>> methodsObject, String methodName, String fileName, MethodData methodData, MethodData bugReportCommitmethodData){
+        if (!methodsObject.keySet().contains(fileName)) {
+            methodsObject.put(fileName, new HashMap<>());
+        }
+        int startLine = methodData.getStartLine();
+        int endLine = methodData.getEndLine();
+        int bugReportCommitStartLine = bugReportCommitmethodData.getStartLine();
+        int bugReportCommitEndLine = bugReportCommitmethodData.getEndLine();
+        Map<String, Integer> methodInfo = new HashMap<>();
+        methodInfo.put("startLine",startLine);
+        methodInfo.put("endLine",endLine);
+        methodInfo.put("bugReportCommitStartLine",bugReportCommitStartLine);
+        methodInfo.put("bugReportCommitEndLine",bugReportCommitEndLine);
         Map<String, Map<String, Integer>> fileMethods = methodsObject.get(fileName);
         fileMethods.put(methodName, methodInfo);
         methodsObject.put(fileName, fileMethods);
