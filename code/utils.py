@@ -55,6 +55,7 @@ def find_file_in_path(file_name, path):
     for root, dirs, files in os.walk(path):
         if file_name in files:
             return os.path.join(root, file_name)
+    return None
 
 
 def read_file_lines(file_name, path):
@@ -431,3 +432,118 @@ def read_tests_file(file_path):
             test_names.append(test_name)
             test_results.append(test_result)
     return test_names, test_results
+
+
+def read_file_lines_from_path(file_path):
+    with open(file_path, 'r', encoding='utf-8', errors='ignore') as file:
+        lines = [line.strip() for line in file.readlines()]
+    file.close()
+    return lines
+
+
+def count_lines_of_code_for_coverage(file_path, project_path, covered_lines, begin_line=1, end_line=-1):
+    path = os.path.join(project_path, file_path)
+    lines = read_file_lines_from_path(path)
+    if not lines:
+        return 0
+    if end_line == -1:
+        end_line = len(lines)
+    count = 0
+    multiline_comment_active = False
+    begin_pos = begin_line - 1
+    end_pos = end_line - 1
+
+    for i in range(begin_pos, end_pos + 1):
+        line = lines[i]
+
+        # If it is covered, it is a code line
+        if i + 1 in covered_lines:
+            count +=1
+            continue
+
+        # Ignore blocks inside multiline comments
+        if line.strip().startswith("/*"):
+            multiline_comment_active = True
+            continue
+        if multiline_comment_active:
+            if line.strip().endswith("*/"):
+                multiline_comment_active = False
+            continue
+        # Ignore single line comments
+        if line.strip().startswith("//"):
+            continue
+
+        # Remove end-ine comments
+        line = line.split("//")[0]
+        # Count non-empty lines
+        if line.strip() != "":
+            # Ignoring closing braces only lines
+            if line.strip() == "}":
+                continue
+
+            # Ignoring conditional lines (branches)
+            if line.replace(" ", "").startswith("if") or line.replace("}", "").replace(" ", "").startswith("else"):
+                continue
+
+            # Ignoring loop definition lines
+            if line.replace(" ", "").startswith("for") or line.replace(" ", "").startswith("while"):
+                continue
+
+            # Ignoring try-catch lines
+            if line.replace(" ", "").startswith("try") or line.replace("}", "").replace(" ", "").\
+                    startswith("catch") or line.replace("}", "").replace(" ", "").startswith("finally"):
+                continue
+
+            # Treating statements with line break
+            if line.strip().endswith("{") or line.strip().endswith("}") or line.strip().\
+                    endswith(";") or line.strip().endswith(","):
+                count = count + 1
+
+    return count
+
+
+def create_coverage_percent_file(obj, output_file_path):
+    with open(output_file_path, 'w') as file:
+        # create the csv writer object
+        csv_writer = csv.writer(file)
+        csv_writer.writerow(["Project", "Bug_id", "Average_coverage_buggy_files",
+                             "Average_coverage_stack_trace_files", "Average_all_files_coverage",
+                             "Average_buggy_methods_coverage",
+                             "Average_st_methods_coverage",
+                             "Pos_first_buggy_method_in_stack_trace"])
+        for project in obj.keys():
+            for bug_id in obj[project].keys():
+                csv_writer.writerow([project, bug_id,
+                                     obj[project][bug_id]["average_coverage_buggy_files"],
+                                     obj[project][bug_id]["average_coverage_stack_trace_files"],
+                                     obj[project][bug_id]["average_all_files_coverage"],
+                                     obj[project][bug_id]["average_buggy_methods_coverage"],
+                                     obj[project][bug_id]["average_st_methods_coverage"],
+                                     obj[project][bug_id]["pos_first_buggy_method_in_stack_trace"]])
+    file.close()
+
+
+def get_method_covered_lines_list(buggy_file_covered_lines, start_line, end_line):
+    method_covered_lines = []
+    for line in buggy_file_covered_lines:
+        if start_line <= line <= end_line:
+            method_covered_lines.append(line)
+    return method_covered_lines
+
+
+def find_file(file_name, path):
+    # Iterate through all the subdirectories in the path
+    for root, _, _ in os.walk(path):
+        # Create the full path to the file by joining the current root with the relative name
+        full_path = os.path.join(root, file_name)
+        if os.path.exists(full_path):
+            return os.path.abspath(full_path)
+    return None
+
+
+def get_bug_report_commit(data, project, bug_id):
+    bug_data = data[project][bug_id]
+    if "bug_report_commit_hash_ASE_paper" in bug_data.keys():
+        return bug_data["bug_report_commit_hash_ASE_paper"]
+    return bug_data["bug_report_commit_hash"]
+
