@@ -13,7 +13,8 @@ class CheckIfMethodWasCreatedFinder {
 
   public static boolean checkIfMethodWasCreated(String filename, List<Integer> addedLines, String methodName) throws IOException {
 
-    String source = FileUtil.read(filename);
+    FileResult result =FileUtil.read(filename);
+    String source = result.content;
 
     ASTParser parser = ASTParser.newParser(AST.getJLSLatest());
 

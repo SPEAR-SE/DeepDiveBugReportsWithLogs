@@ -7,16 +7,19 @@ import org.eclipse.jdt.core.dom.MethodDeclaration;
 
 public class FindMethodFromNameVisitor extends ASTVisitor  {
     private String methodName;
+
+    private String path;
     private MethodData methodData;
 
     private int aproxLineNumber;
 
     protected final CompilationUnit compilationUnit;
 
-    public FindMethodFromNameVisitor(CompilationUnit compilationUnit, String methodName, int aproxLineNumber) {
+    public FindMethodFromNameVisitor(CompilationUnit compilationUnit, String methodName, int aproxLineNumber, String path) {
         this.compilationUnit = compilationUnit;
         this.methodName = methodName;
         this.aproxLineNumber = aproxLineNumber;
+        this.path = path;
     }
 
     @Override
@@ -30,10 +33,10 @@ public class FindMethodFromNameVisitor extends ASTVisitor  {
         if (methodName.equals(nodeMethodName)) {
             if (methodData != null){
                 if (distFromAproxLine(aproxLineNumber, startLine, endLine) < distFromAproxLine(aproxLineNumber, methodData.getStartLine(), methodData.getEndLine())){
-                    methodData = new MethodData(nodeMethodName, startLine, endLine);
+                    methodData = new MethodData(nodeMethodName, startLine, endLine, path);
                 }
             } else{
-                methodData = new MethodData(nodeMethodName, startLine, endLine);
+                methodData = new MethodData(nodeMethodName, startLine, endLine, path);
             }
         }
         return super.visit(node);

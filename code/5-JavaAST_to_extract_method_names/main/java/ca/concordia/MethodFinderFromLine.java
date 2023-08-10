@@ -14,7 +14,9 @@ class MethodFinderFromLine {
 
   public static String findMethodName(String filename, int lineNumber) throws IOException {
 
-    String source = FileUtil.read(filename);
+    FileResult result =FileUtil.read(filename);
+    String source = result.content;
+    String path = result.path;
 
     ASTParser parser = ASTParser.newParser(AST.getJLSLatest());
 
@@ -25,7 +27,7 @@ class MethodFinderFromLine {
     parser.setSource(source.toCharArray());
     CompilationUnit compilationUnit = (CompilationUnit) parser.createAST(null);
 
-    FindMethodFromLineVisitor visitor = new FindMethodFromLineVisitor(compilationUnit, lineNumber);
+    FindMethodFromLineVisitor visitor = new FindMethodFromLineVisitor(compilationUnit, lineNumber, path);
     compilationUnit.accept(visitor);
 
     methodData = visitor.getmethodData();

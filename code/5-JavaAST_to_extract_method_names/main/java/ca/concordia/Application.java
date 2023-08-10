@@ -7,7 +7,6 @@ import com.google.gson.reflect.TypeToken;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.nio.file.NoSuchFileException;
 import java.nio.file.Paths;
 import java.util.*;
 
@@ -68,14 +67,19 @@ public class Application {
                     Map<String, Object> bug = (Map<String, Object>) bugs.get(bugID);
                     String buggyCommit = (String) bug.get("buggy_commit");
                     String bugfixCommit = (String) bug.get("bugfix_commit");
-                    String bugReportCommit = (String) bug.get("bug_report_commit_hash");
+                    String bugReportCommit;
+                    if (bug.containsKey("bug_report_commit_hash_ASE_paper")) {
+                        bugReportCommit = (String) bug.get("bug_report_commit_hash_ASE_paper");
+                    } else {
+                        bugReportCommit = (String) bug.get("bug_report_commit_hash");
+                    }
 
                     // Checking the code
                     List<MethodData> addedLinesMethods;
                     List<MethodData> deletedLinesMethods;
 
-                    Map<String,Map<String, Map<String, Integer>>> buggyMethods = new HashMap<>();
-                    Map<String,Map<String, Map<String, Integer>>> newMethods = new HashMap<>();
+                    Map<String, Map<String, Map<String, String>>> buggyMethods = new HashMap<>();
+                    Map<String, Map<String, Map<String, String>>> newMethods = new HashMap<>();
                     Map<String, Map<String, Object>> modifiedCode = (Map<String, Map<String, Object>>) bug.get("modified_code");
                     for (String filePath : modifiedCode.keySet()) {
                         String filePathFixed = filePath;
@@ -97,7 +101,7 @@ public class Application {
                             MethodData bugReportMd = null;
                             try {
                                 bugReportMd = MethodFinderFromName.findMethodLines(absolute_file_path, startLine, methodName);
-                            } catch (NoSuchFileException exception){
+                            } catch (NullPointerException exception){
                                 // newMethod
                             }
                             if (bugReportMd != null) {
@@ -117,7 +121,7 @@ public class Application {
                             MethodData newMd = null;
                             try {
                                 newMd = MethodFinderFromName.findMethodLines(absolute_file_path, aproxLineNumber, methodName);
-                            } catch (NoSuchFileException exception){
+                            } catch (NullPointerException exception){
                                 // newMethod
                             }
                             GitHelper.checkoutCommit(path_to_repo, bugfixCommit);
@@ -131,7 +135,7 @@ public class Application {
                                     MethodData bugReportMd = null;
                                     try {
                                         bugReportMd = MethodFinderFromName.findMethodLines(absolute_file_path, startLine, methodName);
-                                    } catch (NoSuchFileException exception){
+                                    } catch (NullPointerException exception){
                                         // newMethod
                                     }
                                     if (bugReportMd != null) {
@@ -149,8 +153,8 @@ public class Application {
                     List<MethodData> addedLinesTests;
                     List<MethodData> deletedLinesTests;
 
-                    Map<String,Map<String, Map<String, Integer>>> updatedTests = new HashMap<>();
-                    Map<String,Map<String, Map<String, Integer>>> newTests = new HashMap<>();
+                    Map<String, Map<String, Map<String, String>>> updatedTests = new HashMap<>();
+                    Map<String, Map<String, Map<String, String>>> newTests = new HashMap<>();
                     Map<String, Map<String, Object>> modifiedTests = new HashMap<>();
                     if (bug.get("modified_tests") != null){
                         modifiedTests = (Map<String, Map<String, Object>>) bug.get("modified_tests");
@@ -188,7 +192,7 @@ public class Application {
                             MethodData bugReportMd = null;
                             try {
                                 bugReportMd = MethodFinderFromName.findMethodLines(absolute_file_path, startLine, testName);
-                            } catch (NoSuchFileException exception){
+                            } catch (NullPointerException exception){
                                 // newMethod
                             }
                             if (bugReportMd != null) {
@@ -213,7 +217,7 @@ public class Application {
                                     MethodData bugReportMd = null;
                                     try {
                                         bugReportMd = MethodFinderFromName.findMethodLines(absolute_file_path, startLine, testName);
-                                    } catch (NoSuchFileException exception){
+                                    } catch (NullPointerException exception){
                                         // newMethod
                                     }
                                     if (bugReportMd != null) {
@@ -230,7 +234,7 @@ public class Application {
                     List<String> st_methods = (List<String>) bug.get("stack_trace_methods");
                     List<String> st_lines = (List<String>) bug.get("stack_trace_lines");
 
-                    Map<String,Map<String, Map<String, Integer>>> st_methods_details = new HashMap<>();
+                    Map<String, Map<String, Map<String, String>>> st_methods_details = new HashMap<>();
                     for (int i = 0; i < st_files.size(); i++) {
                         String fileName = st_files.get(i);
                         String method = st_methods.get(i);
@@ -251,7 +255,7 @@ public class Application {
                         if (absolute_st_file_path != null) {
                             try {
                                 md = MethodFinderFromName.findMethodLines(absolute_st_file_path, Integer.parseInt(line), methodName);
-                            } catch (NoSuchFileException exception) {
+                            } catch (NullPointerException exception) {
                                 // newMethod
                             }
                         }
@@ -261,7 +265,7 @@ public class Application {
                             MethodData bugReportMd = null;
                             try {
                                 bugReportMd = MethodFinderFromName.findMethodLines(absolute_st_file_path, startLine, methodName);
-                            } catch (NoSuchFileException exception){
+                            } catch (NullPointerException exception){
                                 // newMethod
                             }
                             if (bugReportMd != null) {
@@ -326,22 +330,22 @@ public class Application {
         return lines;
     }
 
-    public static Map<String, Map<String, Map<String, Integer>>> addNewMethod(Map<String, Map<String, Map<String, Integer>>> methodsObject, String methodName, String fileName, MethodData methodData){
+    public static Map<String, Map<String, Map<String, String>>> addNewMethod(Map<String, Map<String, Map<String, String>>> methodsObject, String methodName, String fileName, MethodData methodData){
         if (!methodsObject.keySet().contains(fileName)) {
             methodsObject.put(fileName, new HashMap<>());
         }
         int startLine = methodData.getStartLine();
         int endLine = methodData.getEndLine();
-        Map<String, Integer> methodInfo = new HashMap<>();
-        methodInfo.put("startLine",startLine);
-        methodInfo.put("endLine",endLine);
-        Map<String, Map<String, Integer>> fileMethods = methodsObject.get(fileName);
+        Map<String, String> methodInfo = new HashMap<>();
+        methodInfo.put("startLine", String.valueOf(startLine));
+        methodInfo.put("endLine", String.valueOf(endLine));
+        Map<String, Map<String, String>> fileMethods = methodsObject.get(fileName);
         fileMethods.put(methodName, methodInfo);
         methodsObject.put(fileName, fileMethods);
         return methodsObject;
     }
 
-    public static Map<String, Map<String, Map<String, Integer>>> addNewMethod(Map<String, Map<String, Map<String, Integer>>> methodsObject, String methodName, String fileName, MethodData methodData, MethodData bugReportCommitmethodData){
+    public static Map<String, Map<String, Map<String, String>>> addNewMethod(Map<String, Map<String, Map<String, String>>> methodsObject, String methodName, String fileName, MethodData methodData, MethodData bugReportCommitmethodData){
         if (!methodsObject.keySet().contains(fileName)) {
             methodsObject.put(fileName, new HashMap<>());
         }
@@ -349,12 +353,17 @@ public class Application {
         int endLine = methodData.getEndLine();
         int bugReportCommitStartLine = bugReportCommitmethodData.getStartLine();
         int bugReportCommitEndLine = bugReportCommitmethodData.getEndLine();
-        Map<String, Integer> methodInfo = new HashMap<>();
-        methodInfo.put("startLine",startLine);
-        methodInfo.put("endLine",endLine);
-        methodInfo.put("bugReportCommitStartLine",bugReportCommitStartLine);
-        methodInfo.put("bugReportCommitEndLine",bugReportCommitEndLine);
-        Map<String, Map<String, Integer>> fileMethods = methodsObject.get(fileName);
+        Map<String, String> methodInfo = new HashMap<>();
+        methodInfo.put("startLine", String.valueOf(startLine));
+        methodInfo.put("endLine", String.valueOf(endLine));
+        methodInfo.put("bugReportCommitStartLine", String.valueOf(bugReportCommitStartLine));
+        methodInfo.put("bugReportCommitEndLine", String.valueOf(bugReportCommitEndLine));
+        String path = methodData.getPath();
+        String bugReportPath = bugReportCommitmethodData.getPath();
+        if (!path.equals(bugReportPath)){
+            methodInfo.put("previousFileName", bugReportPath);
+        }
+        Map<String, Map<String, String>> fileMethods = methodsObject.get(fileName);
         fileMethods.put(methodName, methodInfo);
         methodsObject.put(fileName, fileMethods);
         return methodsObject;

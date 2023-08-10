@@ -7,10 +7,13 @@ public class MethodData {
     private int startLine;
     private int endLine;
 
-    public MethodData(String methodName, int startLine, int endLine) {
+    private String path;
+
+    public MethodData(String methodName, int startLine, int endLine, String path) {
         this.methodName = methodName;
         this.startLine = startLine;
         this.endLine = endLine;
+        this.path = path;
     }
 
 
@@ -22,6 +25,10 @@ public class MethodData {
     }
     public int getEndLine() {
         return endLine;
+    }
+
+    public String getPath() {
+        return path;
     }
 
     @Override

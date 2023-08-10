@@ -11,17 +11,75 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
+import java.util.EnumSet;
 import java.nio.file.*;
 import java.nio.file.attribute.BasicFileAttributes;
 
 public class FileUtil {
 
-    public static String read(String filename) throws IOException {
-        Path path = Paths.get(filename);
-        try (Stream<String> lines = Files.lines(path)) {
-            return lines.collect(Collectors.joining("\n"));
+    static EnvPropertiesLoader envPropertiesLoader = new EnvPropertiesLoader();
+    static String projectsPath = envPropertiesLoader.getSecret("projects_path");
+
+    public static Path extractProjectPath(String filePath) {
+        if (!filePath.startsWith(projectsPath)) {
+            return null;
         }
 
+        String remainingPath = filePath.substring(projectsPath.length());
+        String[] segments = remainingPath.split("/");
+
+        String projectPathStr =  projectsPath + segments[0] + "/";
+        Path projectPath = Paths.get(projectPathStr);
+        return projectPath;
+    }
+
+    public static String extractFileName(String filePath) {
+
+        String[] segments = filePath.split("/");
+
+        return segments[segments.length - 1];
+    }
+
+    public static FileResult read(String filePath) throws IOException {
+        Path path = Paths.get(filePath);
+        try (Stream<String> lines = Files.lines(path)) {
+            return new FileResult(lines.collect(Collectors.joining("\n")), filePath);
+        } catch (NoSuchFileException e) {
+            Path projectPath = extractProjectPath(filePath);
+            String fileName = extractFileName(filePath);
+            path = searchForFile(projectPath, fileName);
+            try (Stream<String> lines = Files.lines(path)) {
+                return new FileResult(lines.collect(Collectors.joining("\n")), path.toString());
+            } catch (Exception e2) {
+                //FIle do not exist
+            }
+        }
+        return null;
+    }
+
+    public static Path searchForFile(Path startPath, String fileName) throws IOException {
+        PathMatcherResult result = new PathMatcherResult();
+        Files.walkFileTree(startPath, EnumSet.noneOf(FileVisitOption.class), Integer.MAX_VALUE, new SimpleFileVisitor<Path>() {
+            @Override
+            public FileVisitResult visitFile(Path file, BasicFileAttributes attrs) {
+                if (file.getFileName().toString().equals(fileName)) {
+                    result.foundPath = file;
+                    return FileVisitResult.TERMINATE;
+                }
+                return FileVisitResult.CONTINUE;
+            }
+
+            @Override
+            public FileVisitResult visitFileFailed(Path file, IOException exc) {
+                return FileVisitResult.CONTINUE;
+            }
+        });
+
+        return result.foundPath;
+    }
+
+    private static class PathMatcherResult {
+        Path foundPath = null;
     }
 
     public static void writeJsonFile(JsonObject Json, String folder_name, String filename){
