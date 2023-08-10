@@ -12,7 +12,9 @@
         "JacksonDatabind_83",
         "JacksonDatabind_98",
         "Lang_19",
-        "Math_97",
+        "Math_97"
+    ],
+    "bugs_found_but_with_wrong_commit": [
         "Mockito_17",
         "Mockito_22",
         "Mockito_25",
