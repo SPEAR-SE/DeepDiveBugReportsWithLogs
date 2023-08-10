@@ -6,7 +6,7 @@
                     "com.fasterxml.jackson.databind.deser.TestNoClassDefFoundDeserializer#testClassIsMissing",
                     "com.fasterxml.jackson.failing.TestJavaType76#testRecursiveType"
                 ],
-                "number_of_falining_tests": 2,
+                "number_of_failing_tests": 2,
                 "number_of_tests_with_compilation_problems": 1153,
                 "total_number_of_tests": 1416
             },
@@ -1593,7 +1593,7 @@
                     "com.fasterxml.jackson.failing.TestMultipleExternalIds291#initializationError",
                     "com.fasterxml.jackson.failing.TestUnwrappedWithCreator265#initializationError"
                 ],
-                "number_of_falining_tests": 1580,
+                "number_of_failing_tests": 1580,
                 "number_of_tests_with_compilation_problems": 0,
                 "total_number_of_tests": 1580
             },
@@ -3191,7 +3191,7 @@
                     "com.fasterxml.jackson.failing.TestMultipleExternalIds291#initializationError",
                     "com.fasterxml.jackson.failing.TestUnwrappedWithCreator265#initializationError"
                 ],
-                "number_of_falining_tests": 1591,
+                "number_of_failing_tests": 1591,
                 "number_of_tests_with_compilation_problems": 0,
                 "total_number_of_tests": 1591
             },
@@ -3777,7 +3777,7 @@
                     "com.fasterxml.jackson.failing.TestMultipleExternalIds291#testMultiple",
                     "com.fasterxml.jackson.failing.TestUnwrappedWithCreator265#testUnwrappedWithCreator"
                 ],
-                "number_of_falining_tests": 579,
+                "number_of_failing_tests": 579,
                 "number_of_tests_with_compilation_problems": 0,
                 "total_number_of_tests": 670
             },
@@ -4374,7 +4374,7 @@
                     "com.fasterxml.jackson.failing.NoTypeInfo1654Test#testNoTypeElementOverride",
                     "com.fasterxml.jackson.failing.BuilderWithIgnored1214Test#testUnknown1214"
                 ],
-                "number_of_falining_tests": 590,
+                "number_of_failing_tests": 590,
                 "number_of_tests_with_compilation_problems": 0,
                 "total_number_of_tests": 726
             }
@@ -4389,7 +4389,7 @@
                     "org.apache.commons.cli2.bug.Bug27575Test#testRequiredOptions",
                     "org.apache.commons.cli2.bug.Bug27575Test#testRequiredOptions"
                 ],
-                "number_of_falining_tests": 2,
+                "number_of_failing_tests": 2,
                 "number_of_tests_with_compilation_problems": 0,
                 "total_number_of_tests": 1074
             },
@@ -4400,7 +4400,7 @@
                 "failing_tests_in_common_with_defects4j": [
                     "com.fasterxml.jackson.core.sym.TestByteBasedSymbols#testIssue207"
                 ],
-                "number_of_falining_tests": 1,
+                "number_of_failing_tests": 1,
                 "number_of_tests_with_compilation_problems": 0,
                 "total_number_of_tests": 330
             },
@@ -4437,7 +4437,7 @@
                 "failing_tests_in_common_with_defects4j": [
                     "com.fasterxml.jackson.databind.deser.TestArrayDeserialization#testStringArray"
                 ],
-                "number_of_falining_tests": 27,
+                "number_of_failing_tests": 27,
                 "number_of_tests_with_compilation_problems": 0,
                 "total_number_of_tests": 1253
             }
@@ -4464,7 +4464,7 @@
                 "failing_tests": [
                     "org.apache.commons.cli2.bug.Bug27575Test#testRequiredOptions"
                 ],
-                "number_of_falining_tests": 1,
+                "number_of_failing_tests": 1,
                 "number_of_tests_with_compilation_problems": 0,
                 "total_number_of_tests": 539
             },
@@ -4474,7 +4474,7 @@
                     "org.apache.commons.cli.BugsTest#test27635",
                     "org.apache.commons.cli.BugsTest#test19383"
                 ],
-                "number_of_falining_tests": 3,
+                "number_of_failing_tests": 3,
                 "number_of_tests_with_compilation_problems": 0,
                 "total_number_of_tests": 103
             },
@@ -4482,7 +4482,7 @@
                 "failing_tests": [
                     "com.google.javascript.jscomp.CrossModuleMethodMotionTest#testTwoMethods"
                 ],
-                "number_of_falining_tests": 1,
+                "number_of_failing_tests": 1,
                 "number_of_tests_with_compilation_problems": 0,
                 "total_number_of_tests": 2554
             },
@@ -4493,7 +4493,7 @@
                     "com.google.javascript.jscomp.IntegrationTest#testInstrumentMemoryAllocationPassOn",
                     "com.google.javascript.jscomp.IntegrationTest#testManyAdds"
                 ],
-                "number_of_falining_tests": 4,
+                "number_of_failing_tests": 4,
                 "number_of_tests_with_compilation_problems": 0,
                 "total_number_of_tests": 8156
             },
@@ -4501,7 +4501,7 @@
                 "failing_tests": [
                     "com.google.javascript.jscomp.CrossModuleMethodMotionTest#testTwoMethods"
                 ],
-                "number_of_falining_tests": 1,
+                "number_of_failing_tests": 1,
                 "number_of_tests_with_compilation_problems": 0,
                 "total_number_of_tests": 4616
             },
@@ -4510,7 +4510,7 @@
                     "com.google.javascript.jscomp.CrossModuleMethodMotionTest#testTwoMethods",
                     "com.google.javascript.jscomp.CrossModuleMethodMotionTest#testClosureVariableReads3"
                 ],
-                "number_of_falining_tests": 2,
+                "number_of_failing_tests": 2,
                 "number_of_tests_with_compilation_problems": 0,
                 "total_number_of_tests": 6186
             },
@@ -4520,7 +4520,7 @@
                     "com.google.javascript.jscomp.CrossModuleMethodMotionTest#testClosureVariableReads3",
                     "com.google.javascript.jscomp.IntegrationTest#testManyAdds"
                 ],
-                "number_of_falining_tests": 3,
+                "number_of_failing_tests": 3,
                 "number_of_tests_with_compilation_problems": 0,
                 "total_number_of_tests": 7830
             },
@@ -4529,7 +4529,7 @@
                     "com.google.javascript.jscomp.CrossModuleMethodMotionTest#testTwoMethods",
                     "com.google.javascript.jscomp.CrossModuleMethodMotionTest#testClosureVariableReads3"
                 ],
-                "number_of_falining_tests": 2,
+                "number_of_failing_tests": 2,
                 "number_of_tests_with_compilation_problems": 0,
                 "total_number_of_tests": 7413
             },
@@ -4538,7 +4538,7 @@
                     "com.google.javascript.jscomp.CrossModuleMethodMotionTest#testTwoMethods",
                     "com.google.javascript.jscomp.CrossModuleMethodMotionTest#testClosureVariableReads3"
                 ],
-                "number_of_falining_tests": 2,
+                "number_of_failing_tests": 2,
                 "number_of_tests_with_compilation_problems": 0,
                 "total_number_of_tests": 7373
             },
@@ -4547,49 +4547,49 @@
                     "com.google.javascript.jscomp.CrossModuleMethodMotionTest#testTwoMethods",
                     "com.google.javascript.jscomp.CrossModuleMethodMotionTest#testClosureVariableReads3"
                 ],
-                "number_of_falining_tests": 2,
+                "number_of_failing_tests": 2,
                 "number_of_tests_with_compilation_problems": 0,
                 "total_number_of_tests": 7155
             },
             "Codec_8": {
                 "failing_tests": [],
-                "number_of_falining_tests": 0,
+                "number_of_failing_tests": 0,
                 "number_of_tests_with_compilation_problems": 0,
                 "total_number_of_tests": 294
             },
             "Collections_28": {
                 "failing_tests": [],
-                "number_of_falining_tests": 0,
+                "number_of_failing_tests": 0,
                 "number_of_tests_with_compilation_problems": 0,
                 "total_number_of_tests": 5280
             },
             "Compress_1": {
                 "failing_tests": [],
-                "number_of_falining_tests": 0,
+                "number_of_failing_tests": 0,
                 "number_of_tests_with_compilation_problems": 0,
                 "total_number_of_tests": 69
             },
             "Compress_12": {
                 "failing_tests": [],
-                "number_of_falining_tests": 0,
+                "number_of_failing_tests": 0,
                 "number_of_tests_with_compilation_problems": 0,
                 "total_number_of_tests": 315
             },
             "Compress_14": {
                 "failing_tests": [],
-                "number_of_falining_tests": 0,
+                "number_of_failing_tests": 0,
                 "number_of_tests_with_compilation_problems": 0,
                 "total_number_of_tests": 317
             },
             "Compress_17": {
                 "failing_tests": [],
-                "number_of_falining_tests": 0,
+                "number_of_failing_tests": 0,
                 "number_of_tests_with_compilation_problems": 0,
                 "total_number_of_tests": 350
             },
             "Compress_18": {
                 "failing_tests": [],
-                "number_of_falining_tests": 0,
+                "number_of_failing_tests": 0,
                 "number_of_tests_with_compilation_problems": 0,
                 "total_number_of_tests": 351
             },
@@ -4597,7 +4597,7 @@
                 "failing_tests": [
                     "org.apache.commons.compress.archivers.zip.X5455_ExtendedTimestampTest#testSampleFile"
                 ],
-                "number_of_falining_tests": 1,
+                "number_of_failing_tests": 1,
                 "number_of_tests_with_compilation_problems": 0,
                 "total_number_of_tests": 466
             },
@@ -4607,7 +4607,7 @@
                     "org.apache.commons.compress.archivers.zip.X5455_ExtendedTimestampTest#testSampleFile",
                     "org.apache.commons.compress.archivers.zip.Zip64SupportIT#read100KFilesGeneratedByJava7JarUsingZipFile"
                 ],
-                "number_of_falining_tests": 3,
+                "number_of_failing_tests": 3,
                 "number_of_tests_with_compilation_problems": 0,
                 "total_number_of_tests": 935
             },
@@ -4616,7 +4616,7 @@
                     "org.apache.commons.compress.archivers.zip.X5455_ExtendedTimestampTest#testSampleFile",
                     "org.apache.commons.compress.archivers.zip.X5455_ExtendedTimestampTest#testSampleFile"
                 ],
-                "number_of_falining_tests": 2,
+                "number_of_failing_tests": 2,
                 "number_of_tests_with_compilation_problems": 0,
                 "total_number_of_tests": 1012
             },
@@ -4625,7 +4625,7 @@
                     "org.apache.commons.compress.archivers.zip.X5455_ExtendedTimestampTest#testSampleFile",
                     "org.apache.commons.compress.archivers.zip.X5455_ExtendedTimestampTest#testSampleFile"
                 ],
-                "number_of_falining_tests": 2,
+                "number_of_failing_tests": 2,
                 "number_of_tests_with_compilation_problems": 0,
                 "total_number_of_tests": 1106
             },
@@ -4633,7 +4633,7 @@
                 "failing_tests": [
                     "org.apache.commons.compress.archivers.zip.X5455_ExtendedTimestampTest#testSampleFile"
                 ],
-                "number_of_falining_tests": 1,
+                "number_of_failing_tests": 1,
                 "number_of_tests_with_compilation_problems": 0,
                 "total_number_of_tests": 613
             },
@@ -4642,43 +4642,43 @@
                     "org.apache.commons.compress.archivers.zip.X5455_ExtendedTimestampTest#testSampleFile",
                     "org.apache.commons.compress.archivers.zip.X5455_ExtendedTimestampTest#testSampleFile"
                 ],
-                "number_of_falining_tests": 2,
+                "number_of_failing_tests": 2,
                 "number_of_tests_with_compilation_problems": 0,
                 "total_number_of_tests": 1228
             },
             "Csv_12": {
                 "failing_tests": [],
-                "number_of_falining_tests": 0,
+                "number_of_failing_tests": 0,
                 "number_of_tests_with_compilation_problems": 0,
                 "total_number_of_tests": 206
             },
             "Csv_4": {
                 "failing_tests": [],
-                "number_of_falining_tests": 0,
+                "number_of_failing_tests": 0,
                 "number_of_tests_with_compilation_problems": 0,
                 "total_number_of_tests": 186
             },
             "Gson_12": {
                 "failing_tests": [],
-                "number_of_falining_tests": 0,
+                "number_of_failing_tests": 0,
                 "number_of_tests_with_compilation_problems": 0,
                 "total_number_of_tests": 1015
             },
             "Gson_5": {
                 "failing_tests": [],
-                "number_of_falining_tests": 0,
+                "number_of_failing_tests": 0,
                 "number_of_tests_with_compilation_problems": 0,
                 "total_number_of_tests": 1970
             },
             "Gson_8": {
                 "failing_tests": [],
-                "number_of_falining_tests": 0,
+                "number_of_failing_tests": 0,
                 "number_of_tests_with_compilation_problems": 0,
                 "total_number_of_tests": 989
             },
             "JacksonCore_11": {
                 "failing_tests": [],
-                "number_of_falining_tests": 0,
+                "number_of_failing_tests": 0,
                 "number_of_tests_with_compilation_problems": 0,
                 "total_number_of_tests": 334
             },
@@ -4686,13 +4686,13 @@
                 "failing_tests": [
                     "com.fasterxml.jackson.core.failing.TestJsonParserSymbols#testSymbolsWithNullBytes"
                 ],
-                "number_of_falining_tests": 1,
+                "number_of_failing_tests": 1,
                 "number_of_tests_with_compilation_problems": 0,
                 "total_number_of_tests": 239
             },
             "JacksonCore_7": {
                 "failing_tests": [],
-                "number_of_falining_tests": 0,
+                "number_of_failing_tests": 0,
                 "number_of_tests_with_compilation_problems": 0,
                 "total_number_of_tests": 261
             },
@@ -4725,7 +4725,7 @@
                     "com.fasterxml.jackson.failing.TestMultipleExternalIds291#testMultiple",
                     "com.fasterxml.jackson.failing.TestUnwrappedWithCreator265#testUnwrappedWithCreator"
                 ],
-                "number_of_falining_tests": 26,
+                "number_of_failing_tests": 26,
                 "number_of_tests_with_compilation_problems": 0,
                 "total_number_of_tests": 1375
             },
@@ -4757,7 +4757,7 @@
                     "com.fasterxml.jackson.failing.TestMultipleExternalIds291#testMultiple",
                     "com.fasterxml.jackson.failing.TestUnwrappedWithCreator265#testUnwrappedWithCreator"
                 ],
-                "number_of_falining_tests": 25,
+                "number_of_failing_tests": 25,
                 "number_of_tests_with_compilation_problems": 0,
                 "total_number_of_tests": 1377
             },
@@ -4796,7 +4796,7 @@
                     "com.fasterxml.jackson.failing.TestMultipleExternalIds291#testMultiple",
                     "com.fasterxml.jackson.failing.TestUnwrappedWithCreator265#testUnwrappedWithCreator"
                 ],
-                "number_of_falining_tests": 32,
+                "number_of_failing_tests": 32,
                 "number_of_tests_with_compilation_problems": 0,
                 "total_number_of_tests": 1483
             },
@@ -4838,7 +4838,7 @@
                     "com.fasterxml.jackson.failing.TestMultipleExternalIds291#testMultiple",
                     "com.fasterxml.jackson.failing.TestUnwrappedWithCreator265#testUnwrappedWithCreator"
                 ],
-                "number_of_falining_tests": 35,
+                "number_of_failing_tests": 35,
                 "number_of_tests_with_compilation_problems": 0,
                 "total_number_of_tests": 1492
             },
@@ -4878,7 +4878,7 @@
                     "com.fasterxml.jackson.failing.TestMultipleExternalIds291#testMultiple",
                     "com.fasterxml.jackson.failing.TestUnwrappedWithCreator265#testUnwrappedWithCreator"
                 ],
-                "number_of_falining_tests": 33,
+                "number_of_failing_tests": 33,
                 "number_of_tests_with_compilation_problems": 0,
                 "total_number_of_tests": 1510
             },
@@ -4917,13 +4917,13 @@
                     "com.fasterxml.jackson.failing.TestMultipleExternalIds291#testMultiple",
                     "com.fasterxml.jackson.failing.TestUnwrappedWithCreator265#testUnwrappedWithCreator"
                 ],
-                "number_of_falining_tests": 32,
+                "number_of_failing_tests": 32,
                 "number_of_tests_with_compilation_problems": 0,
                 "total_number_of_tests": 1549
             },
             "JacksonDatabind_59": {
                 "failing_tests": [],
-                "number_of_falining_tests": 0,
+                "number_of_failing_tests": 0,
                 "number_of_tests_with_compilation_problems": 0,
                 "total_number_of_tests": 7
             },
@@ -4965,7 +4965,7 @@
                     "com.fasterxml.jackson.failing.TestMultipleExternalIds291#testMultiple",
                     "com.fasterxml.jackson.failing.TestUnwrappedWithCreator265#testUnwrappedWithCreator"
                 ],
-                "number_of_falining_tests": 35,
+                "number_of_failing_tests": 35,
                 "number_of_tests_with_compilation_problems": 0,
                 "total_number_of_tests": 1488
             },
@@ -4998,43 +4998,43 @@
                     "com.fasterxml.jackson.failing.TestMultipleExternalIds291#testMultiple",
                     "com.fasterxml.jackson.failing.TestUnwrappedWithCreator265#testUnwrappedWithCreator"
                 ],
-                "number_of_falining_tests": 26,
+                "number_of_failing_tests": 26,
                 "number_of_tests_with_compilation_problems": 0,
                 "total_number_of_tests": 1360
             },
             "Jsoup_27": {
                 "failing_tests": [],
-                "number_of_falining_tests": 0,
+                "number_of_failing_tests": 0,
                 "number_of_tests_with_compilation_problems": 0,
                 "total_number_of_tests": 344
             },
             "Jsoup_34": {
                 "failing_tests": [],
-                "number_of_falining_tests": 0,
+                "number_of_failing_tests": 0,
                 "number_of_tests_with_compilation_problems": 0,
                 "total_number_of_tests": 396
             },
             "Jsoup_54": {
                 "failing_tests": [],
-                "number_of_falining_tests": 0,
+                "number_of_failing_tests": 0,
                 "number_of_tests_with_compilation_problems": 0,
                 "total_number_of_tests": 483
             },
             "Jsoup_78": {
                 "failing_tests": [],
-                "number_of_falining_tests": 0,
+                "number_of_failing_tests": 0,
                 "number_of_tests_with_compilation_problems": 0,
                 "total_number_of_tests": 628
             },
             "Jsoup_80": {
                 "failing_tests": [],
-                "number_of_falining_tests": 0,
+                "number_of_failing_tests": 0,
                 "number_of_tests_with_compilation_problems": 0,
                 "total_number_of_tests": 637
             },
             "Jsoup_82": {
                 "failing_tests": [],
-                "number_of_falining_tests": 0,
+                "number_of_failing_tests": 0,
                 "number_of_tests_with_compilation_problems": 0,
                 "total_number_of_tests": 637
             },
@@ -5042,19 +5042,19 @@
                 "failing_tests": [
                     "org.jsoup.nodes.EntitiesTest#getByName"
                 ],
-                "number_of_falining_tests": 1,
+                "number_of_failing_tests": 1,
                 "number_of_tests_with_compilation_problems": 0,
                 "total_number_of_tests": 528
             },
             "Jsoup_90": {
                 "failing_tests": [],
-                "number_of_falining_tests": 0,
+                "number_of_failing_tests": 0,
                 "number_of_tests_with_compilation_problems": 0,
                 "total_number_of_tests": 671
             },
             "JxPath_5": {
                 "failing_tests": [],
-                "number_of_falining_tests": 0,
+                "number_of_failing_tests": 0,
                 "number_of_tests_with_compilation_problems": 0,
                 "total_number_of_tests": 335
             },
@@ -5070,7 +5070,7 @@
                     "org.apache.commons.lang3.text.translate.UnicodeUnescaperTest#testUPlus",
                     "org.apache.commons.lang3.builder.ToStringBuilderTest#testReflectionHierarchyArrayList"
                 ],
-                "number_of_falining_tests": 9,
+                "number_of_failing_tests": 9,
                 "number_of_tests_with_compilation_problems": 0,
                 "total_number_of_tests": 5598
             },
@@ -5080,7 +5080,7 @@
                     "org.apache.commons.lang3.text.translate.UnicodeUnescaperTest#testUPlus",
                     "org.apache.commons.lang3.builder.ToStringBuilderTest#testReflectionHierarchyArrayList"
                 ],
-                "number_of_falining_tests": 3,
+                "number_of_failing_tests": 3,
                 "number_of_tests_with_compilation_problems": 0,
                 "total_number_of_tests": 1607
             },
@@ -5090,7 +5090,7 @@
                     "org.apache.commons.lang3.time.FastDateFormat_ParserTest#testParseZone",
                     "org.apache.commons.lang3.builder.ToStringBuilderTest#testReflectionHierarchyArrayList"
                 ],
-                "number_of_falining_tests": 3,
+                "number_of_failing_tests": 3,
                 "number_of_tests_with_compilation_problems": 0,
                 "total_number_of_tests": 2252
             },
@@ -5116,7 +5116,7 @@
                     "org.apache.commons.lang.EntitiesPerformanceTest#testLookupArray",
                     "org.apache.commons.lang.builder.ToStringBuilderTest#testReflectionHierarchyArrayList"
                 ],
-                "number_of_falining_tests": 19,
+                "number_of_failing_tests": 19,
                 "number_of_tests_with_compilation_problems": 0,
                 "total_number_of_tests": 1671
             },
@@ -5124,7 +5124,7 @@
                 "failing_tests": [
                     "org.apache.commons.math.ode.nonstiff.GraggBulirschStoerStepInterpolatorTest#derivativesConsistency"
                 ],
-                "number_of_falining_tests": 1,
+                "number_of_failing_tests": 1,
                 "number_of_tests_with_compilation_problems": 0,
                 "total_number_of_tests": 2095
             },
@@ -5132,13 +5132,13 @@
                 "failing_tests": [
                     "org.apache.commons.math.ode.nonstiff.GraggBulirschStoerStepInterpolatorTest#derivativesConsistency"
                 ],
-                "number_of_falining_tests": 1,
+                "number_of_failing_tests": 1,
                 "number_of_tests_with_compilation_problems": 0,
                 "total_number_of_tests": 2095
             },
             "Math_97": {
                 "failing_tests": [],
-                "number_of_falining_tests": 0,
+                "number_of_failing_tests": 0,
                 "number_of_tests_with_compilation_problems": 0,
                 "total_number_of_tests": 2015
             },
@@ -5147,9 +5147,9 @@
                     "org.mockitousage.basicapi.MocksSerializationTest#shouldSerializeRealPartialMock",
                     "org.mockitousage.basicapi.MocksSerializationTest#shouldSerializeObjectMock"
                 ],
-                "number_of_falining_tests": 2,
+                "number_of_failing_tests": 2,
                 "number_of_tests_with_compilation_problems": 0,
-                "total_number_of_tests": 903
+                "total_number_of_tests": 900
             },
             "Mockito_22": {
                 "failing_tests": [
@@ -5176,65 +5176,45 @@
                     "org.mockitousage.verification.VerificationInOrderWithCallsTest#shouldNotVerifySkippedCallsInInOrderWhenFewerCallsForSingleMethod",
                     "org.mockitousage.verification.VerificationInOrderWithCallsTest#shouldFailWhenMethodCalledTooFewTimes"
                 ],
-                "number_of_falining_tests": 22,
+                "number_of_failing_tests": 22,
                 "number_of_tests_with_compilation_problems": 0,
                 "total_number_of_tests": 1311
             },
             "Mockito_25": {
                 "failing_tests": [
-                    "org.mockito.internal.util.reflection.GenericMetadataSupportTest#class_return_type_of____append____resolved_to_StringBuilder_and_type_arguments",
-                    "org.mockitousage.configuration.ClassCacheVersusClassReloadingTest#should_throw_ClassCastException_on_second_call",
-                    "org.mockitousage.configuration.ClassCacheVersusClassReloadingTest#should_not_throw_ClassCastException_when_objenesis_cache_disabled",
-                    "org.mockitousage.basicapi.MocksSerializationForAnnotationTest#should_serialize_object_mock",
-                    "org.mockitousage.basicapi.MocksSerializationForAnnotationTest#should_serialize_real_partial_mock",
-                    "org.mockitousage.basicapi.MocksSerializationForAnnotationTest#should_serialize_with_stubbing_callback",
-                    "org.mockitousage.basicapi.MocksSerializationForAnnotationTest#should_serialization_work",
-                    "org.mockitousage.basicapi.MocksSerializationTest#should_serialize_object_mock",
-                    "org.mockitousage.basicapi.MocksSerializationTest#should_serialize_real_partial_mock",
-                    "org.mockitousage.verification.VerificationInOrderWithCallsTest#shouldNotVerifySkippedCallsInInOrderWhenFewerCallsForDifferentMethods",
-                    "org.mockitousage.verification.VerificationInOrderWithCallsTest#shouldFailWhenSingleMethodCallsAreOutOfSequence",
-                    "org.mockitousage.verification.VerificationInOrderWithCallsTest#shouldNotVerifySkippedCallsWhenFewerCallsForMethodsOnDifferentMocks",
-                    "org.mockitousage.verification.VerificationInOrderWithCallsTest#shouldFailWhenMethodCallsOnDifferentMocksAreOutOfSequence",
-                    "org.mockitousage.verification.VerificationInOrderWithCallsTest#shouldNotVerifySkippedCallsWhenFewerCallsForSingleMethod",
-                    "org.mockitousage.verification.VerificationInOrderWithCallsTest#shouldFailWhenDifferentMethodCallsAreOutOfSequence",
-                    "org.mockitousage.verification.VerificationInOrderWithCallsTest#shouldFailWhenMethodNotCalled",
-                    "org.mockitousage.verification.VerificationInOrderWithCallsTest#shouldNotVerifySkippedCallsWhenFewerCallsForDifferentMethods",
-                    "org.mockitousage.verification.VerificationInOrderWithCallsTest#shouldNotVerifySkippedCallsInInOrderWhenFewerCallsForMethodsOnDifferentMocks",
-                    "org.mockitousage.verification.VerificationInOrderWithCallsTest#shouldNotVerifySkippedCallsInInOrderWhenFewerCallsForSingleMethod",
-                    "org.mockitousage.verification.VerificationInOrderWithCallsTest#shouldFailWhenMethodCalledTooFewTimes"
+                    "org.mockitousage.basicapi.MocksSerializationTest#shouldSerializeRealPartialMock",
+                    "org.mockitousage.basicapi.MocksSerializationTest#shouldSerializeObjectMock",
+                    "org.mockitousage.bugs.ParentTestMockInjectionTest$ImplicitTest#initializationError"
                 ],
-                "number_of_falining_tests": 20,
+                "number_of_failing_tests": 3,
                 "number_of_tests_with_compilation_problems": 0,
-                "total_number_of_tests": 1280
+                "total_number_of_tests": 1012
             },
             "Mockito_30": {
                 "failing_tests": [
                     "org.mockitousage.basicapi.MocksSerializationTest#shouldSerializeRealPartialMock",
                     "org.mockitousage.basicapi.MocksSerializationTest#shouldSerializeObjectMock",
-                    "org.mockitousage.bugs.ShouldMocksCompareToBeConsistentWithEqualsTest#shouldAllowStubbingAndVerifyingCompareTo"
+                    "org.mockitousage.bugs.NPEOnAnyClassMatcherAutounboxTest#shouldNotThrowNPE"
                 ],
-                "number_of_falining_tests": 3,
+                "number_of_failing_tests": 3,
                 "number_of_tests_with_compilation_problems": 0,
-                "total_number_of_tests": 1003
+                "total_number_of_tests": 968
             },
             "Mockito_31": {
                 "failing_tests": [
                     "org.mockitousage.basicapi.MocksSerializationTest#shouldSerializeRealPartialMock",
                     "org.mockitousage.basicapi.MocksSerializationTest#shouldSerializeObjectMock",
-                    "org.mockitousage.bugs.ShouldMocksCompareToBeConsistentWithEqualsTest#shouldAllowStubbingAndVerifyingCompareTo"
+                    "org.mockitousage.bugs.NPEOnAnyClassMatcherAutounboxTest#shouldNotThrowNPE"
                 ],
-                "number_of_falining_tests": 3,
+                "number_of_failing_tests": 3,
                 "number_of_tests_with_compilation_problems": 0,
-                "total_number_of_tests": 1002
+                "total_number_of_tests": 968
             },
             "Mockito_35": {
-                "failing_tests": [
-                    "org.mockitousage.basicapi.MocksSerializationTest#shouldSerializeRealPartialMock",
-                    "org.mockitousage.basicapi.MocksSerializationTest#shouldSerializeObjectMock"
-                ],
-                "number_of_falining_tests": 2,
+                "failing_tests": [],
+                "number_of_failing_tests": 0,
                 "number_of_tests_with_compilation_problems": 0,
-                "total_number_of_tests": 877
+                "total_number_of_tests": 766
             },
             "Mockito_4": {
                 "failing_tests": [
@@ -5260,7 +5240,7 @@
                     "org.mockitousage.verification.VerificationInOrderWithCallsTest#shouldNotVerifySkippedCallsInInOrderWhenFewerCallsForSingleMethod",
                     "org.mockitousage.verification.VerificationInOrderWithCallsTest#shouldFailWhenMethodCalledTooFewTimes"
                 ],
-                "number_of_falining_tests": 21,
+                "number_of_failing_tests": 21,
                 "number_of_tests_with_compilation_problems": 0,
                 "total_number_of_tests": 1366
             },
@@ -5289,7 +5269,7 @@
                     "org.mockitousage.verification.VerificationInOrderWithCallsTest#shouldNotVerifySkippedCallsInInOrderWhenFewerCallsForSingleMethod",
                     "org.mockitousage.verification.VerificationInOrderWithCallsTest#shouldFailWhenMethodCalledTooFewTimes"
                 ],
-                "number_of_falining_tests": 22,
+                "number_of_failing_tests": 22,
                 "number_of_tests_with_compilation_problems": 0,
                 "total_number_of_tests": 1362
             },
@@ -5317,7 +5297,7 @@
                     "org.joda.time.format.TestDateTimeFormatStyle#testForStyle_shortFullDateTime",
                     "org.joda.time.format.TestDateTimeFormatStyle#testForStyle_longDateTime"
                 ],
-                "number_of_falining_tests": 21,
+                "number_of_failing_tests": 21,
                 "number_of_tests_with_compilation_problems": 0,
                 "total_number_of_tests": 3932
             },
@@ -5344,7 +5324,7 @@
                     "org.joda.time.format.TestDateTimeFormatStyle#testForStyle_shortFullDateTime",
                     "org.joda.time.format.TestDateTimeFormatStyle#testForStyle_longDateTime"
                 ],
-                "number_of_falining_tests": 20,
+                "number_of_failing_tests": 20,
                 "number_of_tests_with_compilation_problems": 0,
                 "total_number_of_tests": 3876
             }
