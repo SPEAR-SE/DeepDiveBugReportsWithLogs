@@ -1,0 +1,198 @@
+{
+    "Cli": {
+        "14": {
+            "failing_tests_number": 1,
+            "passing_tests_number": 538
+        },
+        "5": {
+            "failing_tests_number": 3,
+            "passing_tests_number": 102
+        },
+        "7": {
+            "failing_tests_number": 1,
+            "passing_tests_number": 1073
+        }
+    },
+    "Closure": {
+        "106": {
+            "failing_tests_number": 1,
+            "passing_tests_number": 2552
+        },
+        "125": {
+            "failing_tests_number": 4,
+            "passing_tests_number": 8154
+        },
+        "143": {
+            "failing_tests_number": 1,
+            "passing_tests_number": 4614
+        },
+        "152": {
+            "failing_tests_number": 2,
+            "passing_tests_number": 6184
+        },
+        "2": {
+            "failing_tests_number": 3,
+            "passing_tests_number": 7828
+        },
+        "34": {
+            "failing_tests_number": 2,
+            "passing_tests_number": 7411
+        },
+        "37": {
+            "failing_tests_number": 2,
+            "passing_tests_number": 7371
+        },
+        "55": {
+            "failing_tests_number": 2,
+            "passing_tests_number": 7153
+        }
+    },
+    "Compress": {
+        "23": {
+            "failing_tests_number": 1,
+            "passing_tests_number": 463
+        },
+        "24": {
+            "failing_tests_number": 2,
+            "passing_tests_number": 932
+        },
+        "27": {
+            "failing_tests_number": 1,
+            "passing_tests_number": 1009
+        },
+        "31": {
+            "failing_tests_number": 1,
+            "passing_tests_number": 1103
+        },
+        "32": {
+            "failing_tests_number": 1,
+            "passing_tests_number": 610
+        },
+        "34": {
+            "failing_tests_number": 1,
+            "passing_tests_number": 1225
+        }
+    },
+    "JacksonCore": {
+        "10": {
+            "failing_tests_number": 1,
+            "passing_tests_number": 326
+        },
+        "4": {
+            "failing_tests_number": 1,
+            "passing_tests_number": 235
+        }
+    },
+    "JacksonDatabind": {
+        "14": {
+            "failing_tests_number": 26,
+            "passing_tests_number": 1370
+        },
+        "15": {
+            "failing_tests_number": 25,
+            "passing_tests_number": 1372
+        },
+        "25": {
+            "failing_tests_number": 32,
+            "passing_tests_number": 1478
+        },
+        "28": {
+            "failing_tests_number": 35,
+            "passing_tests_number": 1487
+        },
+        "3": {
+            "failing_tests_number": 27,
+            "passing_tests_number": 1248
+        },
+        "32": {
+            "failing_tests_number": 33,
+            "passing_tests_number": 1505
+        },
+        "37": {
+            "failing_tests_number": 32,
+            "passing_tests_number": 1544
+        },
+        "73": {
+            "failing_tests_number": 35,
+            "passing_tests_number": 1483
+        },
+        "9": {
+            "failing_tests_number": 26,
+            "passing_tests_number": 1355
+        }
+    },
+    "Jsoup": {
+        "84": {
+            "failing_tests_number": 1,
+            "passing_tests_number": 522
+        }
+    },
+    "Lang": {
+        "19": {
+            "failing_tests_number": 3,
+            "passing_tests_number": 5591
+        },
+        "37": {
+            "failing_tests_number": 3,
+            "passing_tests_number": 1600
+        },
+        "6": {
+            "failing_tests_number": 3,
+            "passing_tests_number": 2245
+        },
+        "61": {
+            "failing_tests_number": 19,
+            "passing_tests_number": 1664
+        }
+    },
+    "Math": {
+        "79": {
+            "failing_tests_number": 1,
+            "passing_tests_number": 2087
+        },
+        "81": {
+            "failing_tests_number": 1,
+            "passing_tests_number": 2087
+        }
+    },
+    "Mockito": {
+        "17": {
+            "failing_tests_number": 2,
+            "passing_tests_number": 891
+        },
+        "22": {
+            "failing_tests_number": 22,
+            "passing_tests_number": 1302
+        },
+        "25": {
+            "failing_tests_number": 3,
+            "passing_tests_number": 1003
+        },
+        "30": {
+            "failing_tests_number": 3,
+            "passing_tests_number": 959
+        },
+        "31": {
+            "failing_tests_number": 3,
+            "passing_tests_number": 959
+        },
+        "4": {
+            "failing_tests_number": 21,
+            "passing_tests_number": 1357
+        },
+        "5": {
+            "failing_tests_number": 22,
+            "passing_tests_number": 1353
+        }
+    },
+    "Time": {
+        "10": {
+            "failing_tests_number": 21,
+            "passing_tests_number": 3922
+        },
+        "14": {
+            "failing_tests_number": 20,
+            "passing_tests_number": 3866
+        }
+    }
+}
