@@ -547,3 +547,51 @@ def get_bug_report_commit(data, project, bug_id):
         return bug_data["bug_report_commit_hash_ASE_paper"]
     return bug_data["bug_report_commit_hash"]
 
+
+def get_list_of_bugs_with_coverage(data):
+    bugs_list = list(
+        data["bugs_with_stack_traces"][
+            "bugs_without_failing_tests_in_commons_with_defects4j"].keys()) + \
+                list(data["bugs_with_stack_traces"][
+                         "bugs_with_failing_tests_in_commons_with_defects4j"].keys())
+    return bugs_list
+
+
+def write_matrix_to_file(matrix, filename):
+    with open(filename, 'w') as f:
+        for row in matrix:
+            f.write(' '.join(str(cell) for cell in row) + '\n')
+
+
+def write_strings_list_to_csv(strings, filename):
+    with open(filename, 'w', newline='') as f:
+        writer = csv.writer(f)
+        writer.writerow(["name"])
+        for string in strings:
+            writer.writerow([string])
+
+
+def write_two_lists_to_csv(list1, list2, filename):
+    with open(filename, 'w', newline='') as f:
+        writer = csv.writer(f)
+        for item1, item2 in zip(list1, list2):
+            writer.writerow([item1, item2])
+
+
+def store_methods_coverage_in_file(coverage, project, bug_id, gzoltar_files_path, file_name):
+    project_gzoltar_folder = os.path.join(gzoltar_files_path, project)
+    bug_gzoltar_folder = os.path.join(project_gzoltar_folder, bug_id)
+
+    methods_coverage_matrix = coverage["methods_covered_per_test"]
+    methods_coverage_matrix_file_name = os.path.join(bug_gzoltar_folder, "methods_matrix.txt")
+    write_matrix_to_file(methods_coverage_matrix, methods_coverage_matrix_file_name)
+
+    methods_spectra = coverage["methods_obj_list"]
+    methods_coverage_matrix_file_name =  os.path.join(bug_gzoltar_folder, "methods_spectra.csv")
+    write_strings_list_to_csv(methods_spectra, methods_coverage_matrix_file_name)
+
+    test_names = coverage["test_names"]
+    fake_test_results_ochiai_1 = coverage["test_results"]
+    fake_test_results_ochiai_1_file_name =  os.path.join(bug_gzoltar_folder, file_name)
+    write_two_lists_to_csv(test_names, fake_test_results_ochiai_1, fake_test_results_ochiai_1_file_name)
+
