@@ -595,3 +595,74 @@ def store_methods_coverage_in_file(coverage, project, bug_id, gzoltar_files_path
     fake_test_results_ochiai_1_file_name =  os.path.join(bug_gzoltar_folder, file_name)
     write_two_lists_to_csv(test_names, fake_test_results_ochiai_1, fake_test_results_ochiai_1_file_name)
 
+
+def read_methods_matrix_file(file_path):
+    statements_covered_per_test = []
+    with open(os.path.join(file_path, "methods_matrix.txt"), 'r') as f:
+        for line in f:
+            row = [int(num) for num in line.strip().split()]
+            statements_covered_per_test.append(row)
+    return statements_covered_per_test
+
+
+def read_methods_spectra_file(file_path):
+    lines_of_code_obj_list = []
+    with open(os.path.join(file_path, "methods_spectra.csv"), 'r') as file:
+        first_line = True
+        for line in file:
+            # Skip the first line
+            if first_line:
+                first_line = False
+                continue
+            lines_of_code_obj_list.append(line.replace("\n", ""))
+    return lines_of_code_obj_list
+
+
+def read_tests_csv_to_lists(file_path):
+    with open(os.path.join(file_path, "test_results_original_ochiai.csv"), 'r') as csvfile:
+        reader = csv.reader(csvfile)
+        test_names = []
+        test_results = []
+        for row in reader:
+            test_names.append(row[0].replace("\n", ""))  # First column
+            test_results.append(row[1])
+    return test_names, test_results
+
+
+def get_unique_tests_that_cover_the_methods(stackTraceMethodsDetails, file_path):
+    first_st_file = list(stackTraceMethodsDetails.keys())[0]
+    first_st_method = list(stackTraceMethodsDetails[first_st_file].keys())[0]
+    tests_covering_stack_traces_details = json_file_to_dict(file_path)
+    repeated_test_methods = list(tests_covering_stack_traces_details[first_st_file][first_st_method]["tests_covering_the_method"].keys())
+    for st_file in stackTraceMethodsDetails.keys():
+        for st_method in stackTraceMethodsDetails[st_file].keys():
+            removal_list = []
+            for test in repeated_test_methods:
+                if test not in tests_covering_stack_traces_details[st_file][st_method]["tests_covering_the_method"].keys():
+                    removal_list.append(test)
+            for test in removal_list:
+                repeated_test_methods.remove(test)
+
+    result = {}
+    for st_file in stackTraceMethodsDetails.keys():
+        for st_method in stackTraceMethodsDetails[st_file].keys():
+            unique_test_methods = list(tests_covering_stack_traces_details[st_file][st_method]["tests_covering_the_method"].keys())
+            removal_list = []
+            for test in unique_test_methods:
+                if test in repeated_test_methods:
+                    removal_list.append(test)
+            for test in removal_list:
+                unique_test_methods.remove(test)
+            if st_file not in result.keys():
+                result[st_file]={}
+            result[st_file][st_method] = unique_test_methods
+    return result
+
+def store_fake_test_results(coverage, project, bug_id, gzoltar_files_path, file_name):
+    project_gzoltar_folder = os.path.join(gzoltar_files_path, project)
+    bug_gzoltar_folder = os.path.join(project_gzoltar_folder , bug_id)
+    test_names = coverage["test_names"]
+    fake_test_results = coverage["fake_test_results"]
+    fake_test_results_file_path = os.path.join(bug_gzoltar_folder, file_name)
+    write_two_lists_to_csv(test_names, fake_test_results, fake_test_results_file_path)
+
