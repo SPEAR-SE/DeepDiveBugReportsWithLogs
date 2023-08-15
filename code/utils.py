@@ -618,6 +618,12 @@ def read_methods_spectra_file(file_path):
     return lines_of_code_obj_list
 
 
+def convert_to_boolean(value):
+    if isinstance(value, str):
+        return value.lower() == "true"
+    return bool(value)
+
+
 def read_tests_csv_to_lists(file_path):
     with open(os.path.join(file_path, "test_results_original_ochiai.csv"), 'r') as csvfile:
         reader = csv.reader(csvfile)
@@ -625,7 +631,7 @@ def read_tests_csv_to_lists(file_path):
         test_results = []
         for row in reader:
             test_names.append(row[0].replace("\n", ""))  # First column
-            test_results.append(row[1])
+            test_results.append(convert_to_boolean(row[1]))
     return test_names, test_results
 
 
@@ -660,7 +666,7 @@ def get_unique_tests_that_cover_the_methods(stackTraceMethodsDetails, file_path)
 
 def store_fake_test_results(coverage, project, bug_id, gzoltar_files_path, file_name):
     project_gzoltar_folder = os.path.join(gzoltar_files_path, project)
-    bug_gzoltar_folder = os.path.join(project_gzoltar_folder , bug_id)
+    bug_gzoltar_folder = os.path.join(project_gzoltar_folder, bug_id)
     test_names = coverage["test_names"]
     fake_test_results = coverage["fake_test_results"]
     fake_test_results_file_path = os.path.join(bug_gzoltar_folder, file_name)
