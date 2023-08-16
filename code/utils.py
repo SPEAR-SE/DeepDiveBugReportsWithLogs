@@ -458,7 +458,7 @@ def count_lines_of_code_for_coverage(file_path, project_path, covered_lines, beg
 
         # If it is covered, it is a code line
         if i + 1 in covered_lines:
-            count +=1
+            count += 1
             continue
 
         # Ignore blocks inside multiline comments
@@ -490,12 +490,12 @@ def count_lines_of_code_for_coverage(file_path, project_path, covered_lines, beg
                 continue
 
             # Ignoring try-catch lines
-            if line.replace(" ", "").startswith("try") or line.replace("}", "").replace(" ", "").\
+            if line.replace(" ", "").startswith("try") or line.replace("}", "").replace(" ", ""). \
                     startswith("catch") or line.replace("}", "").replace(" ", "").startswith("finally"):
                 continue
 
             # Treating statements with line break
-            if line.strip().endswith("{") or line.strip().endswith("}") or line.strip().\
+            if line.strip().endswith("{") or line.strip().endswith("}") or line.strip(). \
                     endswith(";") or line.strip().endswith(","):
                 count = count + 1
 
@@ -587,12 +587,12 @@ def store_methods_coverage_in_file(coverage, project, bug_id, gzoltar_files_path
     write_matrix_to_file(methods_coverage_matrix, methods_coverage_matrix_file_name)
 
     methods_spectra = coverage["methods_obj_list"]
-    methods_coverage_matrix_file_name =  os.path.join(bug_gzoltar_folder, "methods_spectra.csv")
+    methods_coverage_matrix_file_name = os.path.join(bug_gzoltar_folder, "methods_spectra.csv")
     write_strings_list_to_csv(methods_spectra, methods_coverage_matrix_file_name)
 
     test_names = coverage["test_names"]
     fake_test_results_ochiai_1 = coverage["test_results"]
-    fake_test_results_ochiai_1_file_name =  os.path.join(bug_gzoltar_folder, file_name)
+    fake_test_results_ochiai_1_file_name = os.path.join(bug_gzoltar_folder, file_name)
     write_two_lists_to_csv(test_names, fake_test_results_ochiai_1, fake_test_results_ochiai_1_file_name)
 
 
@@ -639,12 +639,14 @@ def get_unique_tests_that_cover_the_methods(stackTraceMethodsDetails, file_path)
     first_st_file = list(stackTraceMethodsDetails.keys())[0]
     first_st_method = list(stackTraceMethodsDetails[first_st_file].keys())[0]
     tests_covering_stack_traces_details = json_file_to_dict(file_path)
-    repeated_test_methods = list(tests_covering_stack_traces_details[first_st_file][first_st_method]["tests_covering_the_method"].keys())
+    repeated_test_methods = list(
+        tests_covering_stack_traces_details[first_st_file][first_st_method]["tests_covering_the_method"].keys())
     for st_file in stackTraceMethodsDetails.keys():
         for st_method in stackTraceMethodsDetails[st_file].keys():
             removal_list = []
             for test in repeated_test_methods:
-                if test not in tests_covering_stack_traces_details[st_file][st_method]["tests_covering_the_method"].keys():
+                if test not in tests_covering_stack_traces_details[st_file][st_method][
+                    "tests_covering_the_method"].keys():
                     removal_list.append(test)
             for test in removal_list:
                 repeated_test_methods.remove(test)
@@ -652,7 +654,8 @@ def get_unique_tests_that_cover_the_methods(stackTraceMethodsDetails, file_path)
     result = {}
     for st_file in stackTraceMethodsDetails.keys():
         for st_method in stackTraceMethodsDetails[st_file].keys():
-            unique_test_methods = list(tests_covering_stack_traces_details[st_file][st_method]["tests_covering_the_method"].keys())
+            unique_test_methods = list(
+                tests_covering_stack_traces_details[st_file][st_method]["tests_covering_the_method"].keys())
             removal_list = []
             for test in unique_test_methods:
                 if test in repeated_test_methods:
@@ -660,9 +663,10 @@ def get_unique_tests_that_cover_the_methods(stackTraceMethodsDetails, file_path)
             for test in removal_list:
                 unique_test_methods.remove(test)
             if st_file not in result.keys():
-                result[st_file]={}
+                result[st_file] = {}
             result[st_file][st_method] = unique_test_methods
     return result
+
 
 def store_fake_test_results(coverage, project, bug_id, gzoltar_files_path, file_name):
     project_gzoltar_folder = os.path.join(gzoltar_files_path, project)
@@ -672,3 +676,17 @@ def store_fake_test_results(coverage, project, bug_id, gzoltar_files_path, file_
     fake_test_results_file_path = os.path.join(bug_gzoltar_folder, file_name)
     write_two_lists_to_csv(test_names, fake_test_results, fake_test_results_file_path)
 
+
+def find_file_complete_name(file, bug_data):
+    for file_complete_name in bug_data["stackTraceMethodsDetails"].keys():
+        if file_complete_name.endswith(file):
+            return file_complete_name
+    return None
+
+
+def get_top_n_keys(dictionary, keys_to_consider, n):
+    sorted_dict = sorted(dictionary.items(), key=lambda x: x[1], reverse=True)
+    filtered_dict = [(key, value) for key, value in sorted_dict if key in keys_to_consider]
+    top_n_pairs = filtered_dict[:n]
+    top_n_keys = [pair[0] for pair in top_n_pairs]
+    return top_n_keys
