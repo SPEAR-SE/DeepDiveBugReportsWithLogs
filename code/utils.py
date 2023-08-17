@@ -10,6 +10,8 @@ from datetime import datetime
 import shutil
 import csv
 import sys
+import pandas as pd
+import glob
 
 sys.path.append('../DeepDiveBugReportsWithLogs')
 from my_secrets import github_token
@@ -200,6 +202,7 @@ def comment_java_test(filename, method_name):
 
     in_method = False
     brace_count = 0
+    found_first_open_brace = False
     for i, line in enumerate(lines):
         # If line above method declaration contains "@Test"
         if i > 0 and "@Test" in lines[i - 1]:
@@ -645,8 +648,7 @@ def get_unique_tests_that_cover_the_methods(stackTraceMethodsDetails, file_path)
         for st_method in stackTraceMethodsDetails[st_file].keys():
             removal_list = []
             for test in repeated_test_methods:
-                if test not in tests_covering_stack_traces_details[st_file][st_method][
-                    "tests_covering_the_method"].keys():
+                if test not in tests_covering_stack_traces_details[st_file][st_method]["tests_covering_the_method"].keys():
                     removal_list.append(test)
             for test in removal_list:
                 repeated_test_methods.remove(test)
@@ -690,3 +692,320 @@ def get_top_n_keys(dictionary, keys_to_consider, n):
     top_n_pairs = filtered_dict[:n]
     top_n_keys = [pair[0] for pair in top_n_pairs]
     return top_n_keys
+
+
+def sort_dict_by_values_reverse_order(dictionary):
+    return dict(sorted(dictionary.items(), key=lambda item: item[1], reverse=True))
+
+
+def find_method_in_ranking_data(method, ranking_data):
+    best_match = None
+    for m in ranking_data.keys():
+        if method.endswith(m):
+            if best_match is None or len(m) > len(best_match):
+                best_match = m
+    return best_match
+
+
+def get_number_of_buggy_methods_in_top_n(ranking_data, n, buggy_methods_list):
+    buggy_methods_in_top_n = 0
+    for method in buggy_methods_list:
+        try:
+            method_in_pattern = find_method_in_ranking_data(method, ranking_data)
+            if ranking_data[method_in_pattern] <= n:
+                buggy_methods_in_top_n += 1
+        except:
+            continue
+    return buggy_methods_in_top_n
+
+
+def get_first_buggy_method_in_stack_trace(buggy_methods_list, stack_trace_methods):
+    best_position = float('inf')
+    for buggy_method in buggy_methods_list:
+        for index, st_method in enumerate(stack_trace_methods):
+            st_method_id = st_method
+            if '#' not in st_method:  # Only adjust format if needed
+                last_dot_index = st_method.rfind('.')
+                if last_dot_index != -1:
+                    st_method_id = st_method[:last_dot_index] + '#' + st_method[last_dot_index + 1:]
+            if buggy_method.endswith(st_method_id):
+                if (index + 1) < best_position:
+                    best_position = index + 1
+                break
+    if best_position == float('inf'):
+        best_position = "not found"
+    return best_position
+
+
+def get_best_classified_buggy_method(ranking_data, buggy_methods_list):
+    best_position = float('inf')
+    for method in buggy_methods_list:
+        try:
+            if ranking_data[method] < best_position:
+                best_position = ranking_data[method]
+        except:
+            continue
+    if best_position == float('inf'):
+        best_position = "not found"
+    return best_position
+
+
+def get_precision_top_n(ranking_data, n, buggy_methods_list):
+    buggy_methods_in_top_n = get_number_of_buggy_methods_in_top_n(ranking_data, n, buggy_methods_list)
+    precision = buggy_methods_in_top_n / n
+    return precision
+
+
+def extract_buggy_methods_list(ranking_data, buggyMethods):
+    buggy_methods_list = []
+    temp = []
+    for file in buggyMethods.keys():
+        class_id = file.replace(".java", "")
+        class_id = class_id.replace("/", ".")
+        for method_name in buggyMethods[file]:
+            method_id = class_id + "#" + method_name
+            temp.append(method_id)
+    for temp_method_id in temp:
+        found = False
+        for method_name in ranking_data.keys():
+            if temp_method_id.endswith(method_name):
+                buggy_methods_list.append(method_name)
+                found = True
+                break
+        if not found:
+            buggy_methods_list.append(temp_method_id)
+    return buggy_methods_list
+
+
+def get_average_precision_top_n(n, project, buggy_methods, ranking_file_path):
+    total_sum = 0
+    for bug_id in buggy_methods[project].keys():
+        ranking_file = os.path.join(ranking_file_path, bug_id + ".json")
+        ranking_info = json_file_to_dict(ranking_file)
+        total_sum += get_precision_top_n(ranking_info, n, project)
+    return total_sum / len(buggy_methods[project].keys())
+
+
+def get_recall_top_n(ranking_data, n, buggy_methods_list):
+    if not buggy_methods_list:
+        return 0
+    buggy_methods_in_top_n = get_number_of_buggy_methods_in_top_n(ranking_data, n, buggy_methods_list)
+    recall = buggy_methods_in_top_n / len(buggy_methods_list)
+    return recall
+
+
+def get_average_recall_top_n(n, project, buggy_methods, ranking_file_path):
+    total_sum = 0
+    for bug_id in buggy_methods[project].keys():
+        ranking_info = json_file_to_dict(ranking_file_path)
+        total_sum += get_recall_top_n(ranking_info, n, project, bug_id)
+    return total_sum / len(buggy_methods[project].keys())
+
+
+def get_f1_top_n(ranking_data, n, buggy_methods):
+    precision = get_precision_top_n(ranking_data, n, buggy_methods)
+    recall = get_recall_top_n(ranking_data, n, buggy_methods)
+    try:
+        f1 = 2 * precision * recall / (precision + recall)
+    except ZeroDivisionError:
+        return 0.0
+    return f1
+
+
+def get_average_f1_top_n(n, project, buggy_methods, ranking_file_path):
+    total_sum = 0
+    for bug_id in buggy_methods[project].keys():
+        ranking_info = json_file_to_dict(ranking_file_path)
+        total_sum += get_f1_top_n(ranking_info, n, project, bug_id)
+    return total_sum / len(buggy_methods[project].keys())
+
+
+def get_method_rank(ranking_info, method):
+    for method_rank in ranking_info.keys():
+        if method_rank.endswith(method):
+            return ranking_info[method_rank]
+    return float('inf')
+
+
+def get_st_raking_dict(stack_trace_methods):
+    st_method_formated = []
+    for st_method in stack_trace_methods:
+        last_dot_index = st_method.rfind('.')
+        if last_dot_index != -1:
+            st_method_id = st_method[:last_dot_index] + '#' + st_method[last_dot_index + 1:]
+            st_method_formated.append(st_method_id)
+    return {item: index + 1 for index, item in enumerate(st_method_formated)}
+
+
+def get_mrr(project, ochiai_identificator, project_bugs_data,ranking_files_path):
+    sum_for_mrr = 0
+    number_of_bugs = len(project_bugs_data)
+    for bug_id in project_bugs_data.keys():
+        buggy_methods = project_bugs_data[bug_id]["buggyMethods"]
+        buggy_methods_list = convert_buggy_methods_dict_into_list(buggy_methods)
+        if ochiai_identificator == "stackTraces":
+            ranking_info = get_st_raking_dict(project_bugs_data[bug_id]["stack_trace_methods"])
+        else:
+            try:
+                ranking_file = os.path.join(ranking_files_path,  bug_id + ".json")
+                ranking_info = json_file_to_dict(ranking_file)
+            except FileNotFoundError:
+                continue
+        if len(ranking_info) == 0:  # No ranking info
+            if ochiai_identificator != "stackTraces":  # Due to the ausence of gzoltar files
+                number_of_bugs -= 1
+            continue
+        best_rank_found = len(ranking_info.keys())
+        for buggy_method in buggy_methods_list:
+            if get_method_rank(ranking_info, buggy_method) < best_rank_found:
+                best_rank_found = get_method_rank(ranking_info, buggy_method)
+        sum_for_mrr += 1 / best_rank_found
+    mrr = sum_for_mrr / number_of_bugs
+    return mrr
+
+
+def get_map(project, ochiai_identificator, project_bugs_data, ranking_files_path):
+    sum_for_map = 0
+    number_of_bugs = 0
+    for bug_id in project_bugs_data.keys():
+        buggy_methods = project_bugs_data[bug_id]["buggyMethods"]
+        buggy_methods_list = convert_buggy_methods_dict_into_list(buggy_methods)
+        if ochiai_identificator == "stackTraces":
+            ranking_info = get_st_raking_dict(project_bugs_data[bug_id]["stack_trace_methods"])
+        else:
+            ranking_file = os.path.join(ranking_files_path,  bug_id + ".json")
+            try:
+                ranking_info = json_file_to_dict(ranking_file)
+            except FileNotFoundError:
+                continue
+        if len(ranking_info) == 0:
+            if ochiai_identificator != "stackTraces":
+                continue
+        number_of_bugs += 1
+        relevant_docs = 0
+        sum_for_ap = 0
+        buggy_methods_found = 0
+        for rank, method in enumerate(sorted(ranking_info, key=ranking_info.get), start=1):
+            for buggy_method in buggy_methods_list:
+                if buggy_method.endswith(method):
+                    relevant_docs += 1
+                    precision_at_rank = relevant_docs / rank
+                    sum_for_ap += precision_at_rank
+                    buggy_methods_found += 1
+                    break
+        sum_for_map += sum_for_ap / buggy_methods_found if buggy_methods_found else 0
+    return sum_for_map / number_of_bugs if number_of_bugs else 0
+
+
+def create_or_update_bug_metrics_file(bug_metrics, bug_metrics_file_path, ochiai_scores_folders_list):
+    ochiai_scores_folders_list = sorted(ochiai_scores_folders_list)
+    # Column names
+    columns = ['Project', 'Bug Id', 'Stack Trace (ST) size', 'Number of buggy methods',
+               'Position of the first buggy method into the ST', ]
+    for ochiai_type in ochiai_scores_folders_list:
+        columns += [
+            f'Number of fake failing tests {ochiai_type}',
+            f'Number of fake passing tests {ochiai_type}',
+            f'Position of the first buggy method into the {ochiai_type}',
+            f'Precision {ochiai_type} Top 10',
+            f'Recall {ochiai_type} Top 10',
+            f'F1 {ochiai_type} Top 10',
+        ]
+
+    # Create the dataframe if the file doesn't exist
+    if not os.path.isfile(bug_metrics_file_path):
+        df = pd.DataFrame(columns=columns)
+        df.to_csv(bug_metrics_file_path, index=False)
+    else:
+        # Otherwise, read existing file into dataframe
+        df = pd.read_csv(bug_metrics_file_path)
+
+    # Iterate over the bugs object
+    for project in bug_metrics.keys():
+        for bug_id in bug_metrics[project].keys():
+            data = {'Project': project, 'Bug Id': bug_id}
+            for metric in bug_metrics[project][bug_id].keys():
+                data[metric] = bug_metrics[project][bug_id][metric]
+
+            # Create a temporary dataframe for new data
+            new_data = pd.DataFrame(data, index=[0])
+
+            # Check if the bug_id and project exist in the dataframe
+            mask = (df['Project'] == project) & (df['Bug Id'] == bug_id)
+
+            if not df[mask].empty:
+                # If the bug_id and project exist, update the row
+                df.loc[mask, columns[2:]] = new_data[columns[2:]].values
+            else:
+                # If it doesn't exist, append the new data
+                df = pd.concat([df, new_data], ignore_index=True)
+
+    # Write the dataframe back to csv
+    df.to_csv(bug_metrics_file_path, index=False)
+
+
+def create_or_update_project_metrics_file(project_metrics, project_metrics_file_path, ochiai_scores_folders_list):
+    ochiai_scores_folders_list = sorted(ochiai_scores_folders_list)
+    # Column names
+    columns = ['Project', 'Map Stack Traces', 'MRR Stack Traces']
+
+    for ochiai_type in ochiai_scores_folders_list:
+        columns += [
+            f'Map {ochiai_type}', f'MRR {ochiai_type}'
+        ]
+
+    # Create the dataframe if the file doesn't exist
+    if not os.path.isfile(project_metrics_file_path):
+        df = pd.DataFrame(columns=columns)
+        df.to_csv(project_metrics_file_path, index=False)
+    else:
+        # Otherwise, read existing file into dataframe
+        df = pd.read_csv(project_metrics_file_path)
+
+    # Iterate over the bugs object
+    for project in project_metrics.keys():
+        data = {'Project': project}
+        for metric in project_metrics[project].keys():
+            data[metric] = project_metrics[project][metric]
+
+        # Create a temporary dataframe for new data
+        new_data = pd.DataFrame(data, index=[0])
+
+        # Check if the bug_id and project exist in the dataframe
+        mask = (df['Project'] == project)
+
+        if not df[mask].empty:
+            # If the bug_id and project exist, update the row
+            df.loc[mask, columns[2:]] = new_data[columns[2:]].values
+        else:
+            # If it doesn't exist, append the new data
+            df = pd.concat([df, new_data], ignore_index=True)
+
+    # Write the dataframe back to csv
+    df.to_csv(project_metrics_file_path, index=False)
+
+
+def get_folder_names(path):
+    folder_names = [folder for folder in os.listdir(path) if os.path.isdir(os.path.join(path, folder))]
+    return folder_names
+
+
+def get_json_files(path):
+    json_files = glob.glob(os.path.join(path, "*.json"))
+    return json_files
+
+
+def convert_buggy_methods_dict_into_list(data):
+    result = []
+    for file, methods in data.items():
+        # Convert file path to desired format
+        class_name = file.replace("/", ".")
+        # Removing the file extension (.java in this case)
+        class_name = class_name.replace(".java", "")
+        for method, _ in methods.items():
+            result.append(f"{class_name}#{method}")
+    return result
+
+
+
+#%%

@@ -2,6 +2,9 @@ import unittest
 import os
 import importlib
 import utils
+import json
+import tempfile
+import shutil
 
 importlib.reload(utils)
 
@@ -174,6 +177,642 @@ class TestGetMethodCoveredLinesList(unittest.TestCase):
         result = utils.get_method_covered_lines_list(buggy_file_covered_lines, start_line, end_line)
         self.assertEqual(result, expected)
 
+
+class TestSortDictFunction(unittest.TestCase):
+
+    def test_basic_functionality(self):
+        dictionary = {'a': 3, 'b': 1, 'c': 2}
+        expected = {'a': 3, 'c': 2, 'b': 1}
+        self.assertEqual(utils.sort_dict_by_values_reverse_order(dictionary), expected)
+
+    def test_empty_dictionary(self):
+        dictionary = {}
+        expected = {}
+        self.assertEqual(utils.sort_dict_by_values_reverse_order(dictionary), expected)
+
+    def test_edge_cases_with_duplicate_values(self):
+        dictionary = {'a': 3, 'b': 1, 'c': 2, 'd': 3}
+        sorted_dict = utils.sort_dict_by_values_reverse_order(dictionary)
+        self.assertEqual(sorted_dict['a'], 3)
+        self.assertEqual(sorted_dict['d'], 3)
+        self.assertTrue(list(sorted_dict.values()) == [3, 3, 2, 1])
+
+    def test_non_integer_values(self):
+        # Floating point values
+        dictionary = {'a': 3.5, 'b': 1.2, 'c': 2.8}
+        expected = {'a': 3.5, 'c': 2.8, 'b': 1.2}
+        self.assertEqual(utils.sort_dict_by_values_reverse_order(dictionary), expected)
+
+        # String values
+        dictionary = {'a': 'apple', 'b': 'banana', 'c': 'cherry'}
+        expected = {'c': 'cherry', 'b': 'banana', 'a': 'apple'}
+        self.assertEqual(utils.sort_dict_by_values_reverse_order(dictionary), expected)
+
+    def test_large_dictionary(self):
+        dictionary = {str(i): i for i in range(1000)}
+        expected = {str(999 - i): 999 - i for i in range(1000)}
+        self.assertEqual(utils.sort_dict_by_values_reverse_order(dictionary), expected)
+
+
+class TestFindMethodInRankingDataFunction(unittest.TestCase):
+
+    def test_basic_functionality(self):
+        ranking_data = {'methodA': 'dataA', 'methodB': 'dataB'}
+        method = 'com.example.methodA'
+        expected = 'methodA'
+        self.assertEqual(utils.find_method_in_ranking_data(method, ranking_data), expected)
+
+    def test_no_matching_method(self):
+        ranking_data = {'methodA': 'dataA', 'methodB': 'dataB'}
+        method = 'com.example.methodC'
+        self.assertIsNone(utils.find_method_in_ranking_data(method, ranking_data))
+
+    def test_multiple_possible_matches(self):
+        ranking_data = {'methodA': 'dataA', 'com.example.methodA': 'dataB'}
+        method = 'com.example.methodA'
+        # As 'com.example.methodA' is the exact match and also the latter key,
+        # it should be the one that is returned.
+        expected = 'com.example.methodA'
+        self.assertEqual(utils.find_method_in_ranking_data(method, ranking_data), expected)
+
+    def test_empty_ranking_data(self):
+        ranking_data = {}
+        method = 'com.example.methodA'
+        self.assertIsNone(utils.find_method_in_ranking_data(method, ranking_data))
+
+
+class TestGetNumberOfBuggyMethodsInTopN(unittest.TestCase):
+
+    def test_basic_functionality(self):
+        ranking_data = {'methodA': 1, 'methodB': 2, 'methodC': 3}
+        buggy_methods_list = ['com.example.methodA', 'com.example.methodB']
+        result = utils.get_number_of_buggy_methods_in_top_n(ranking_data, 2, buggy_methods_list)
+        self.assertEqual(result, 2)
+
+    def test_no_buggy_methods_in_top_n(self):
+        ranking_data = {'methodA': 1, 'methodB': 2, 'methodC': 3}
+        buggy_methods_list = ['com.example.methodC']
+        result = utils.get_number_of_buggy_methods_in_top_n(ranking_data, 2, buggy_methods_list)
+        self.assertEqual(result, 0)
+
+    def test_exception_scenario(self):
+        ranking_data = {'methodA': 1}
+        buggy_methods_list = ['com.example.methodX']  # methodX does not exist in ranking_data
+        result = utils.get_number_of_buggy_methods_in_top_n(ranking_data, 2, buggy_methods_list)
+        self.assertEqual(result, 0)
+
+    def test_larger_n_than_ranking_data(self):
+        ranking_data = {'methodA': 1, 'methodB': 2}
+        buggy_methods_list = ['com.example.methodA', 'com.example.methodB', 'com.example.methodC']
+        result = utils.get_number_of_buggy_methods_in_top_n(ranking_data, 5, buggy_methods_list)
+        self.assertEqual(result, 2)
+
+    def test_multiple_buggy_methods_same_rank(self):
+        ranking_data = {'methodA': 1, 'methodB': 1, 'methodC': 2}
+        buggy_methods_list = ['com.example.methodA', 'com.example.methodB']
+        result = utils.get_number_of_buggy_methods_in_top_n(ranking_data, 1, buggy_methods_list)
+        self.assertEqual(result, 2)
+
+
+class TestGetFirstBuggyMethodInStackTrace(unittest.TestCase):
+
+    def test_basic_functionality(self):
+        buggy_methods = ['com.example.ClassA#methodA']
+        stack_trace = ['com.example.ClassA.methodA', 'com.example.ClassB.methodB']
+        result = utils.get_first_buggy_method_in_stack_trace(buggy_methods, stack_trace)
+        self.assertEqual(result, 1)
+
+    def test_no_buggy_method_in_stack_trace(self):
+        buggy_methods = ['com.example.ClassC#methodC']
+        stack_trace = ['com.example.ClassA.methodA', 'com.example.ClassB.methodB']
+        result = utils.get_first_buggy_method_in_stack_trace(buggy_methods, stack_trace)
+        self.assertEqual(result, "not found")
+
+    def test_multiple_buggy_methods(self):
+        buggy_methods = ['com.example.ClassA#methodA', 'com.example.ClassB#methodB']
+        stack_trace = ['com.example.ClassB.methodB', 'com.example.ClassA.methodA']
+        result = utils.get_first_buggy_method_in_stack_trace(buggy_methods, stack_trace)
+        self.assertEqual(result, 1)
+
+    def test_method_format_adjustment(self):
+        buggy_methods = ['com.example.ClassA#methodA']
+        stack_trace = ['com.example.ClassA#methodA']
+        result = utils.get_first_buggy_method_in_stack_trace(buggy_methods, stack_trace)
+        self.assertEqual(result, 1)
+
+    def test_empty_inputs(self):
+        buggy_methods = []
+        stack_trace = []
+        result = utils.get_first_buggy_method_in_stack_trace(buggy_methods, stack_trace)
+        self.assertEqual(result, "not found")
+
+
+class TestGetBestClassifiedBuggyMethod(unittest.TestCase):
+
+    def test_basic_functionality(self):
+        ranking_data = {'com.example.ClassA#methodA': 1, 'com.example.ClassB#methodB': 2}
+        buggy_methods = ['com.example.ClassA#methodA']
+        result = utils.get_best_classified_buggy_method(ranking_data, buggy_methods)
+        self.assertEqual(result, 1)
+
+    def test_no_buggy_method_in_ranking_data(self):
+        ranking_data = {'com.example.ClassA#methodA': 1, 'com.example.ClassB#methodB': 2}
+        buggy_methods = ['com.example.ClassC#methodC']
+        result = utils.get_best_classified_buggy_method(ranking_data, buggy_methods)
+        self.assertEqual(result, "not found")
+
+    def test_multiple_buggy_methods(self):
+        ranking_data = {'com.example.ClassA#methodA': 3, 'com.example.ClassB#methodB': 2, 'com.example.ClassC#methodC': 1}
+        buggy_methods = ['com.example.ClassA#methodA', 'com.example.ClassB#methodB']
+        result = utils.get_best_classified_buggy_method(ranking_data, buggy_methods)
+        self.assertEqual(result, 2)
+
+    def test_empty_inputs(self):
+        ranking_data = {}
+        buggy_methods = []
+        result = utils.get_best_classified_buggy_method(ranking_data, buggy_methods)
+        self.assertEqual(result, "not found")
+
+    def test_some_buggy_methods_not_in_ranking_data(self):
+        ranking_data = {'com.example.ClassA#methodA': 2}
+        buggy_methods = ['com.example.ClassA#methodA', 'com.example.ClassC#methodC']
+        result = utils.get_best_classified_buggy_method(ranking_data, buggy_methods)
+        self.assertEqual(result, 2)
+
+
+class TestGetPrecisionTopN(unittest.TestCase):
+
+    def test_basic_functionality(self):
+        ranking_data = {'com.example.ClassA#methodA': 1, 'com.example.ClassB#methodB': 2}
+        buggy_methods = ['com.example.ClassA#methodA']
+        result = utils.get_precision_top_n(ranking_data, 2, buggy_methods)
+        self.assertEqual(result, 0.5)
+
+    def test_no_buggy_method_in_top_n(self):
+        ranking_data = {'com.example.ClassA#methodA': 3, 'com.example.ClassB#methodB': 2, 'com.example.ClassC#methodC': 1}
+        buggy_methods = ['com.example.ClassA#methodA']
+        result = utils.get_precision_top_n(ranking_data, 2, buggy_methods)
+        self.assertEqual(result, 0)
+
+    def test_all_top_n_are_buggy_methods(self):
+        ranking_data = {'com.example.ClassA#methodA': 1, 'com.example.ClassB#methodB': 2}
+        buggy_methods = ['com.example.ClassA#methodA', 'com.example.ClassB#methodB']
+        result = utils.get_precision_top_n(ranking_data, 2, buggy_methods)
+        self.assertEqual(result, 1)
+
+    def test_some_buggy_methods_in_top_n(self):
+        ranking_data = {'com.example.ClassA#methodA': 3, 'com.example.ClassB#methodB': 1, 'com.example.ClassC#methodC': 2}
+        buggy_methods = ['com.example.ClassA#methodA', 'com.example.ClassC#methodC']
+        result = utils.get_precision_top_n(ranking_data, 2, buggy_methods)
+        self.assertEqual(result, 0.5)
+
+    def test_empty_inputs(self):
+        ranking_data = {}
+        buggy_methods = []
+        result = utils.get_precision_top_n(ranking_data, 2, buggy_methods)
+        self.assertEqual(result, 0)
+
+    def test_n_larger_than_ranking_data(self):
+        ranking_data = {'com.example.ClassA#methodA': 1}
+        buggy_methods = ['com.example.ClassA#methodA']
+        result = utils.get_precision_top_n(ranking_data, 3, buggy_methods)
+        self.assertEqual(result, 1/3)
+
+
+class TestExtractBuggyMethodsList(unittest.TestCase):
+
+    def test_basic_functionality(self):
+        ranking_data = {'com.example.ClassA#methodA': 1}
+        buggy_methods_data = {'com.example.ClassA.java': ['methodA']}
+        result = utils.extract_buggy_methods_list(ranking_data, buggy_methods_data)
+        self.assertEqual(result, ['com.example.ClassA#methodA'])
+
+    def test_method_not_found_in_ranking_data(self):
+        ranking_data = {}
+        buggy_methods_data = {'ClassA.java': ['methodA']}
+        result = utils.extract_buggy_methods_list(ranking_data, buggy_methods_data)
+        self.assertEqual(result, ['ClassA#methodA'])
+
+    def test_method_with_different_name_in_ranking_data(self):
+        ranking_data = {'com.example.ClassA#methodA': 1}
+        buggy_methods_data = {'com/example/ClassA.java': ['methodA']}
+        result = utils.extract_buggy_methods_list(ranking_data, buggy_methods_data)
+        self.assertEqual(result, ['com.example.ClassA#methodA'])
+
+    def test_empty_inputs(self):
+        ranking_data = {}
+        buggy_methods_data = {}
+        result = utils.extract_buggy_methods_list(ranking_data, buggy_methods_data)
+        self.assertEqual(result, [])
+
+
+class TestGetRecallTopN(unittest.TestCase):
+
+    def test_basic_functionality(self):
+        ranking_data = {
+            'methodA': 5,
+            'methodB': 4,
+            'methodC': 3,
+            'methodD': 2,
+            'methodE': 1
+        }
+        buggy_methods_list = ['methodA', 'methodD']
+
+        result = utils.get_recall_top_n(ranking_data, 3, buggy_methods_list)
+        self.assertEqual(result, 0.5)  # Only methodD is in top 3, so recall is 0.5
+
+    def test_empty_buggy_methods(self):
+        ranking_data = {'methodA': 1, 'methodB': 2}
+        buggy_methods_list = []
+
+        result = utils.get_recall_top_n(ranking_data, 2, buggy_methods_list)
+        self.assertEqual(result, 0)  # No buggy methods to consider
+
+    def test_empty_ranking_data(self):
+        ranking_data = {}
+        buggy_methods_list = ['methodA', 'methodB']
+
+        result = utils.get_recall_top_n(ranking_data, 2, buggy_methods_list)
+        self.assertEqual(result, 0)  # No methods in the ranking data
+
+    def test_all_buggy_methods_in_top_n(self):
+        ranking_data = {
+            'methodA': 1,
+            'methodB': 2,
+            'methodC': 3,
+            'methodD': 4
+        }
+        buggy_methods_list = ['methodA', 'methodB']
+
+        result = utils.get_recall_top_n(ranking_data, 2, buggy_methods_list)
+        self.assertEqual(result, 1.0)  # All buggy methods are in top 2
+
+    def test_no_buggy_methods_in_top_n(self):
+        ranking_data = {
+            'methodA': 3,
+            'methodB': 4,
+            'methodC': 1,
+            'methodD': 2
+        }
+        buggy_methods_list = ['methodA', 'methodB']
+
+        result = utils.get_recall_top_n(ranking_data, 2, buggy_methods_list)
+        self.assertEqual(result, 0)  # No buggy methods are in top 2
+
+
+class TestGetF1TopN(unittest.TestCase):
+
+    def test_basic_functionality(self):
+        ranking_data = {
+            'methodA': 5,
+            'methodB': 4,
+            'methodC': 3,
+            'methodD': 2,
+            'methodE': 1
+        }
+        buggy_methods = ['methodA', 'methodD']
+
+        result = utils.get_f1_top_n(ranking_data, 3, buggy_methods)
+        expected_f1 = 2 * (1/3 * 0.5) / (1/3 + 0.5)  # Using the known precision and recall values
+        self.assertEqual(result, expected_f1)
+
+    def test_no_buggy_methods_in_top_n(self):
+        ranking_data = {
+            'methodA': 5,
+            'methodB': 4,
+            'methodC': 3,
+            'methodD': 2,
+            'methodE': 1
+        }
+        buggy_methods = ['methodF', 'methodG']
+
+        result = utils.get_f1_top_n(ranking_data, 3, buggy_methods)
+        self.assertEqual(result, 0)
+
+    def test_all_buggy_methods_in_top_n(self):
+        ranking_data = {
+            'methodA': 1,
+            'methodB': 2
+        }
+        buggy_methods = ['methodA', 'methodB']
+
+        result = utils.get_f1_top_n(ranking_data, 2, buggy_methods)
+        self.assertEqual(result, 1.0)  # Precision and recall are both 1
+
+    def test_empty_buggy_methods(self):
+        ranking_data = {'methodA': 1, 'methodB': 2}
+        buggy_methods = []
+
+        result = utils.get_f1_top_n(ranking_data, 2, buggy_methods)
+        self.assertEqual(result, 0)  # No buggy methods to consider
+
+    def test_empty_ranking_data(self):
+        ranking_data = {}
+        buggy_methods = ['methodA', 'methodB']
+
+        result = utils.get_f1_top_n(ranking_data, 2, buggy_methods)
+        self.assertEqual(result, 0)  # No methods in the ranking data
+
+    def test_recall_zero_precision_zero(self):
+        ranking_data = {
+            'methodA': 4,
+            'methodB': 3,
+            'methodC': 2,
+            'methodD': 1
+        }
+        buggy_methods = ['methodE']
+
+        result = utils.get_f1_top_n(ranking_data, 2, buggy_methods)
+        self.assertEqual(result, 0)
+
+
+class TestGetMethodRankFunction(unittest.TestCase):
+
+    def test_basic_functionality(self):
+        ranking_info = {
+            'com.example.methodA': 1,
+            'com.example.methodB': 2,
+            'com.example.methodC': 3
+        }
+        method = 'com.example.methodB'
+        result = utils.get_method_rank(ranking_info, method)
+        self.assertEqual(result, 2)
+
+    def test_method_not_in_ranking(self):
+        ranking_info = {
+            'com.example.methodA': 1,
+            'com.example.methodB': 2
+        }
+        method = 'com.example.methodZ'
+        result = utils.get_method_rank(ranking_info, method)
+        self.assertEqual(result, float('inf'))
+
+    def test_multiple_possible_matches(self):
+        ranking_info = {
+            'com.example.methodA': 1,
+            'example.methodA': 2
+        }
+        method = 'example.methodA'
+        result = utils.get_method_rank(ranking_info, method)
+        self.assertEqual(result, 2)
+
+
+class TestGetStRakingDictFunction(unittest.TestCase):
+
+    def test_basic_functionality(self):
+        stack_trace_methods = [
+            'com.example.ClassA.methodA',
+            'com.example.ClassB.methodB',
+            'com.example.ClassC.methodC'
+        ]
+        expected = {
+            'com.example.ClassA#methodA': 1,
+            'com.example.ClassB#methodB': 2,
+            'com.example.ClassC#methodC': 3
+        }
+        result = utils.get_st_raking_dict(stack_trace_methods)
+        self.assertEqual(result, expected)
+
+    def test_special_characters_in_method_name(self):
+        stack_trace_methods = ['com.example.ClassA.methodA$', 'com.example.ClassB.methodB?']
+        expected = {
+            'com.example.ClassA#methodA$': 1,
+            'com.example.ClassB#methodB?': 2
+        }
+        result = utils.get_st_raking_dict(stack_trace_methods)
+        self.assertEqual(result, expected)
+
+    def test_no_dot_in_method_name(self):
+        stack_trace_methods = ['methodA', 'methodB']
+        expected = {}
+        result = utils.get_st_raking_dict(stack_trace_methods)
+        self.assertEqual(result, expected)
+
+    def test_empty_stack_trace(self):
+        stack_trace_methods = []
+        expected = {}
+        result = utils.get_st_raking_dict(stack_trace_methods)
+        self.assertEqual(result, expected)
+
+
+class TestGetMRRFunction(unittest.TestCase):
+    ranking_files_path = "/tmp"  # Adjust as needed.
+
+    project_bugs_data = {
+        "bug_001": {
+            "buggyMethods": {
+                "src/java/org/apache/commons/cli2/option/GroupImpl.java": {
+                    "validate": {
+                        "endLine": "285",
+                        "bugReportCommitEndLine": "285",
+                        "startLine": "237",
+                        "bugReportCommitStartLine": "237"
+                    }
+                }
+            },
+            "stack_trace_methods": [
+                "org.apache.commons.cli2.validation.FileValidator.validate",
+                "org.apache.commons.cli2.option.ArgumentImpl.validate",
+                "org.apache.commons.cli2.option.ParentImpl.validate",
+                "org.apache.commons.cli2.option.DefaultOption.validate",
+                "org.apache.commons.cli2.option.GroupImpl.validate",
+                "org.apache.commons.cli2.commandline.Parser.parse",
+                "org.apache.commons.cli2.commandline.Parser.parseAndHelp",
+                "org.apache.commons.cli2.issues.CLI2Sample.main"
+            ]
+        }
+    }
+
+    @classmethod
+    def setUpClass(cls):
+        # For "originalOchiai"
+        original_ochiai_ranking = {
+            "src.java.org.apache.commons.cli2.option.GroupImpl#validate": 1,
+            "SomeOtherMethod.method": 2
+        }
+
+        project_dir = os.path.join(cls.ranking_files_path, "originalOchiai", "ProjectA")
+        os.makedirs(project_dir, exist_ok=True)
+
+        with open(os.path.join(project_dir, "bug_001.json"), "w") as f:
+            json.dump(original_ochiai_ranking, f)
+
+    @classmethod
+    def tearDownClass(cls):
+        # Cleaning up the test data.
+        os.remove(os.path.join(cls.ranking_files_path, "originalOchiai", "ProjectA", "bug_001.json"))
+
+    def test_with_stack_traces(self):
+        result = utils.get_mrr("ProjectA", "stackTraces", self.project_bugs_data, {}, self.ranking_files_path)
+        self.assertEqual(result, 0.2)
+
+    def test_with_originalOchiai(self):
+        result = utils.get_mrr("ProjectA", "originalOchiai", self.project_bugs_data, {}, self.ranking_files_path)
+        self.assertEqual(result, 1.0)
+
+    def test_multiple_bugs_diverse_methods(self):
+        # Create a temporary directory for the test
+        self.test_dir = tempfile.mkdtemp()
+        self.project = "ProjectA"
+
+        # Mocking the project_bugs_data
+        project_bugs_data = {
+            "bug_001": {
+                "buggyMethods": {
+                    "src/java/some/package/ClassOne.java": {
+                        "methodOne": {"startLine": "10", "endLine": "20"}
+                    }
+                },
+                "stack_trace_methods": [
+                    "some.package.ClassOne.methodOne"
+                ]
+            },
+            "bug_002": {
+                "buggyMethods": {
+                    "src/java/some/package/ClassTwo.java": {
+                        "methodTwo": {"startLine": "10", "endLine": "20"},
+                        "methodThree": {"startLine": "25", "endLine": "35"}
+                    }
+                },
+                "stack_trace_methods": [
+                    "some.package.ClassTwo.methodTwo",
+                    "some.package.ClassTwo.methodThree"
+                ]
+            }
+        }
+
+        # Mocking the ranking file data for the original Ochiai
+        original_ochiai_ranking = {
+            "src.java.some.package.ClassOne#methodOne": 5,
+            "src.java.some.package.ClassTwo#methodTwo": 2,
+            "SomeOtherMethod.method": 1
+        }
+
+        # Saving the mocked ranking to a file
+        ranking_file_path = os.path.join(self.test_dir, "originalOchiai", self.project, "bug_001.json")
+        os.makedirs(os.path.dirname(ranking_file_path), exist_ok=True)
+        with open(ranking_file_path, 'w') as f:
+            json.dump(original_ochiai_ranking, f)
+
+        ranking_file_path_bug_002 = os.path.join(self.test_dir, "originalOchiai", self.project, "bug_002.json")
+        with open(ranking_file_path_bug_002, 'w') as f:
+            json.dump(original_ochiai_ranking, f)
+
+        result = utils.get_mrr(self.project, "originalOchiai", project_bugs_data, {}, self.test_dir)
+
+        self.assertAlmostEqual(result, 0.35, places=2)
+
+        # Clean up
+        shutil.rmtree(self.test_dir)
+
+
+class TestGetMAPFunction(unittest.TestCase):
+
+    ranking_files_path = "/tmp"  # Adjust as needed.
+
+    project_bugs_data = {
+        "bug_001": {
+            "buggyMethods": {
+                "src/java/org/apache/commons/cli2/option/GroupImpl.java": {
+                    "validate": {
+                        "endLine": "285",
+                        "bugReportCommitEndLine": "285",
+                        "startLine": "237",
+                        "bugReportCommitStartLine": "237"
+                    }
+                }
+            },
+            "stack_trace_methods": [
+                "org.apache.commons.cli2.validation.FileValidator.validate",
+                "org.apache.commons.cli2.option.ArgumentImpl.validate",
+                "org.apache.commons.cli2.option.ParentImpl.validate",
+                "org.apache.commons.cli2.option.DefaultOption.validate",
+                "org.apache.commons.cli2.option.GroupImpl.validate",
+                "org.apache.commons.cli2.commandline.Parser.parse",
+                "org.apache.commons.cli2.commandline.Parser.parseAndHelp",
+                "org.apache.commons.cli2.issues.CLI2Sample.main"
+            ]
+        }
+    }
+
+    @classmethod
+    def setUpClass(cls):
+        original_ochiai_ranking = {
+            "src.java.org.apache.commons.cli2.option.GroupImpl#validate": 1,
+            "SomeOtherMethod.method": 2
+        }
+
+        project_dir = os.path.join(cls.ranking_files_path, "originalOchiai", "ProjectA")
+        os.makedirs(project_dir, exist_ok=True)
+
+        with open(os.path.join(project_dir, "bug_001.json"), "w") as f:
+            json.dump(original_ochiai_ranking, f)
+
+    @classmethod
+    def tearDownClass(cls):
+        # Cleaning up the test data.
+        os.remove(os.path.join(cls.ranking_files_path, "originalOchiai", "ProjectA", "bug_001.json"))
+
+    def test_with_stack_traces_map(self):
+        result = utils.get_map("ProjectA", "stackTraces", self.project_bugs_data, {}, self.ranking_files_path)
+        self.assertEqual(result, 0.2)
+
+    def test_with_originalOchiai_map(self):
+        result = utils.get_map("ProjectA", "originalOchiai", self.project_bugs_data, {}, self.ranking_files_path)
+        self.assertEqual(result, 1.0)
+
+    def test_multiple_bugs_diverse_methods_map(self):
+        # Create a temporary directory for the test
+        self.test_dir = tempfile.mkdtemp()
+        self.project = "ProjectA"
+
+        # Mocking the project_bugs_data
+        project_bugs_data = {
+            "bug_001": {
+                "buggyMethods": {
+                    "src/java/some/package/ClassOne.java": {
+                        "methodOne": {"startLine": "10", "endLine": "20"}
+                    }
+                },
+                "stack_trace_methods": [
+                    "some.package.ClassOne.methodOne"
+                ]
+            },
+            "bug_002": {
+                "buggyMethods": {
+                    "src/java/some/package/ClassTwo.java": {
+                        "methodTwo": {"startLine": "10", "endLine": "20"},
+                        "methodThree": {"startLine": "25", "endLine": "35"}
+                    }
+                },
+                "stack_trace_methods": [
+                    "some.package.ClassTwo.methodTwo",
+                    "some.package.ClassTwo.methodThree"
+                ]
+            }
+        }
+
+        # Mocking the ranking file data for the original Ochiai
+        original_ochiai_ranking = {
+            "src.java.some.package.ClassOne#methodOne": 5,
+            "src.java.some.package.ClassTwo#methodTwo": 2,
+            "SomeOtherMethod.method": 1
+        }
+
+        # Saving the mocked ranking to a file
+        ranking_file_path = os.path.join(self.test_dir, "originalOchiai", self.project, "bug_001.json")
+        os.makedirs(os.path.dirname(ranking_file_path), exist_ok=True)
+        with open(ranking_file_path, 'w') as f:
+            json.dump(original_ochiai_ranking, f)
+
+        ranking_file_path_bug_002 = os.path.join(self.test_dir, "originalOchiai", self.project, "bug_002.json")
+        with open(ranking_file_path_bug_002, 'w') as f:
+            json.dump(original_ochiai_ranking, f)
+        result = utils.get_map(self.project, "originalOchiai", project_bugs_data, {}, self.test_dir)
+        self.assertAlmostEqual(result, 0.42, places=2)
+
+        # Clean up
+        shutil.rmtree(self.test_dir)
 
 if __name__ == "__main__":
     unittest.main()
