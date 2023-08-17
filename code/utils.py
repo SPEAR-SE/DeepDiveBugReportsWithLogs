@@ -822,7 +822,7 @@ def get_average_f1_top_n(n, project, buggy_methods, ranking_file_path):
 
 def get_method_rank(ranking_info, method):
     for method_rank in ranking_info.keys():
-        if method_rank.endswith(method):
+        if method.endswith(method_rank):
             return ranking_info[method_rank]
     return float('inf')
 
@@ -837,7 +837,7 @@ def get_st_raking_dict(stack_trace_methods):
     return {item: index + 1 for index, item in enumerate(st_method_formated)}
 
 
-def get_mrr(project, ochiai_identificator, project_bugs_data,ranking_files_path):
+def get_mrr(project, ochiai_identificator, project_bugs_data, ranking_files_path):
     sum_for_mrr = 0
     number_of_bugs = len(project_bugs_data)
     for bug_id in project_bugs_data.keys():
@@ -847,7 +847,7 @@ def get_mrr(project, ochiai_identificator, project_bugs_data,ranking_files_path)
             ranking_info = get_st_raking_dict(project_bugs_data[bug_id]["stack_trace_methods"])
         else:
             try:
-                ranking_file = os.path.join(ranking_files_path,  bug_id + ".json")
+                ranking_file = os.path.join(ranking_files_path, ochiai_identificator, project,  bug_id + ".json")
                 ranking_info = json_file_to_dict(ranking_file)
             except FileNotFoundError:
                 continue
@@ -873,7 +873,7 @@ def get_map(project, ochiai_identificator, project_bugs_data, ranking_files_path
         if ochiai_identificator == "stackTraces":
             ranking_info = get_st_raking_dict(project_bugs_data[bug_id]["stack_trace_methods"])
         else:
-            ranking_file = os.path.join(ranking_files_path,  bug_id + ".json")
+            ranking_file = os.path.join(ranking_files_path, ochiai_identificator, project,  bug_id + ".json")
             try:
                 ranking_info = json_file_to_dict(ranking_file)
             except FileNotFoundError:
@@ -947,7 +947,7 @@ def create_or_update_bug_metrics_file(bug_metrics, bug_metrics_file_path, ochiai
 def create_or_update_project_metrics_file(project_metrics, project_metrics_file_path, ochiai_scores_folders_list):
     ochiai_scores_folders_list = sorted(ochiai_scores_folders_list)
     # Column names
-    columns = ['Project', 'Map Stack Traces', 'MRR Stack Traces']
+    columns = ['Project']
 
     for ochiai_type in ochiai_scores_folders_list:
         columns += [
