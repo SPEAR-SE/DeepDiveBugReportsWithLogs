@@ -424,7 +424,7 @@
       "updatedTests": {}
     }
   },
-  ""Closure"": {
+  "Closure": {
     "106": {
       "bug_report_commit_hash": "96fd67bf5342eccc5da34e351889aa87eb3e39c3",
       "bug_report_creation_date": "2009-11-08T19:16:45Z",
