@@ -858,8 +858,6 @@ def get_mrr(project, ochiai_identificator, project_bugs_data, ranking_files_path
             for buggy_method in buggy_methods_list:
                 if get_method_rank(ranking_info, buggy_method) < best_rank_found:
                     best_rank_found = get_method_rank(ranking_info, buggy_method)
-        print(bug_id)
-        print(best_rank_found)
         sum_for_mrr += 1 / best_rank_found
     mrr = sum_for_mrr / number_of_bugs
     return mrr
@@ -886,7 +884,6 @@ def get_map(project, ochiai_identificator, project_bugs_data, ranking_files_path
         buggy_methods_found = 0
         if not no_classification_available:
             sorted_ranking_info = {k: v for k, v in sorted(ranking_info.items(), key=lambda item: item[1], reverse=False)}
-            print(sorted_ranking_info)
             for method in sorted_ranking_info.keys():
                 rank = sorted_ranking_info[method]
                 for buggy_method in buggy_methods_list:
