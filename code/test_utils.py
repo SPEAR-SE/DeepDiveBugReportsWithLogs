@@ -627,10 +627,11 @@ class TestGetMRRFunction(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        # For "originalOchiai"
         original_ochiai_ranking = {
             "src.java.org.apache.commons.cli2.option.GroupImpl#validate": 1,
-            "SomeOtherMethod.method": 2
+            "SomeOtherMethod.method": 2,
+            "src.java.org.apache.commons.cli2.commandline.Parser#parse": 3,
+            "src.java.org.apache.commons.cli2.validation.FileValidator#validate": 4
         }
 
         project_dir = os.path.join(cls.ranking_files_path, "originalOchiai", "ProjectA")
@@ -644,15 +645,15 @@ class TestGetMRRFunction(unittest.TestCase):
         # Cleaning up the test data.
         os.remove(os.path.join(cls.ranking_files_path, "originalOchiai", "ProjectA", "bug_001.json"))
 
-    def test_with_stack_traces(self):
+    def test_with_stack_traces_mrr(self):
         result = utils.get_mrr("ProjectA", "stackTraces", self.project_bugs_data, self.ranking_files_path)
         self.assertEqual(result, 0.2)
 
-    def test_with_originalOchiai(self):
+    def test_with_originalOchiai_mrr(self):
         result = utils.get_mrr("ProjectA", "originalOchiai", self.project_bugs_data, self.ranking_files_path)
-        self.assertEqual(result, 0.5)
+        self.assertEqual(result, 1)
 
-    def test_multiple_bugs_diverse_methods(self):
+    def test_multiple_bugs_diverse_methods_mrr_ochiai(self):
         # Create a temporary directory for the test
         self.test_dir = tempfile.mkdtemp()
         self.project = "ProjectA"
@@ -684,28 +685,195 @@ class TestGetMRRFunction(unittest.TestCase):
         }
 
         # Mocking the ranking file data for the original Ochiai
-        original_ochiai_ranking = {
+        original_ochiai_ranking_1 = {
             "src.java.some.package.ClassOne#methodOne": 5,
             "src.java.some.package.ClassTwo#methodTwo": 2,
-            "SomeOtherMethod.method": 1
+            "SomeOtherMethod.method": 1,
+            "SomeOtherMethod.method2": 4,
+            "SomeOtherMethod.method3": 4,
+        }
+        original_ochiai_ranking_2 = {
+            "src.java.some.package.ClassOne#methodOne": 1,
+            "src.java.some.package.ClassTwo#methodTwo": 10,
+            "SomeOtherMethod.method": 4,
+            "SomeOtherMethod.method2": 4,
+            "SomeOtherMethod.method3": 4,
+            "SomeOtherMethod.method8": 5,
+            "SomeOtherMethod.method4": 7,
+            "SomeOtherMethod.method5": 7,
+            "SomeOtherMethod.method6": 8,
+            "SomeOtherMethod.method7": 9,
         }
 
         # Saving the mocked ranking to a file
         ranking_file_path = os.path.join(self.test_dir, "originalOchiai", self.project, "bug_001.json")
         os.makedirs(os.path.dirname(ranking_file_path), exist_ok=True)
         with open(ranking_file_path, 'w') as f:
-            json.dump(original_ochiai_ranking, f)
+            json.dump(original_ochiai_ranking_1, f)
 
         ranking_file_path_bug_002 = os.path.join(self.test_dir, "originalOchiai", self.project, "bug_002.json")
         with open(ranking_file_path_bug_002, 'w') as f:
-            json.dump(original_ochiai_ranking, f)
-
+            json.dump(original_ochiai_ranking_2, f)
         result = utils.get_mrr(self.project, "originalOchiai", project_bugs_data, self.test_dir)
-
-        self.assertAlmostEqual(result, 0.33, places=2)
+        self.assertAlmostEqual(result, 0.15, places=2)
 
         # Clean up
         shutil.rmtree(self.test_dir)
+
+    def test_multiple_bugs_diverse_methods_mrr_ochiai_2(self):
+        # Create a temporary directory for the test
+        self.test_dir = tempfile.mkdtemp()
+        self.project = "ProjectA"
+
+        # Mocking the project_bugs_data
+        project_bugs_data = {
+            "bug_001": {
+                "buggyMethods": {
+                    "src/java/some/package/ClassOne.java": {
+                        "methodOne": {"startLine": "10", "endLine": "20"}
+                    }
+                },
+                "stack_trace_methods": [
+                    "some.package.ClassOne.methodOne"
+                ]
+            },
+            "bug_002": {
+                "buggyMethods": {
+                    "src/java/some/package/ClassTwo.java": {
+                        "methodTwo": {"startLine": "10", "endLine": "20"},
+                        "methodThree": {"startLine": "25", "endLine": "35"}
+                    }
+                },
+                "stack_trace_methods": [
+                    "some.package.ClassTwo.methodTwo",
+                    "some.package.ClassTwo.methodThree"
+                ]
+            }
+        }
+
+        # Mocking the ranking file data for the original Ochiai
+        original_ochiai_ranking_1 = {
+            "src.java.some.package.ClassOne#methodOne": 2,
+            "src.java.some.package.ClassTwo#methodTwo": 2,
+            "SomeOtherMethod.method": 5,
+            "SomeOtherMethod.method2": 4,
+            "SomeOtherMethod.method3": 4,
+        }
+        original_ochiai_ranking_2 = {
+            "src.java.some.package.ClassOne#methodOne": 1,
+            "src.java.some.package.ClassTwo#methodTwo": 8,
+            "src.java.some.package.ClassTwo#methodThree": 2,
+            "SomeOtherMethod.method2": 4,
+            "SomeOtherMethod.method3": 4,
+            "SomeOtherMethod.method8": 5,
+            "SomeOtherMethod.method4": 7,
+            "SomeOtherMethod.method5": 7,
+            "SomeOtherMethod.method6": 10,
+            "SomeOtherMethod.method7": 9,
+        }
+
+        # Saving the mocked ranking to a file
+        ranking_file_path = os.path.join(self.test_dir, "originalOchiai", self.project, "bug_001.json")
+        os.makedirs(os.path.dirname(ranking_file_path), exist_ok=True)
+        with open(ranking_file_path, 'w') as f:
+            json.dump(original_ochiai_ranking_1, f)
+
+        ranking_file_path_bug_002 = os.path.join(self.test_dir, "originalOchiai", self.project, "bug_002.json")
+        with open(ranking_file_path_bug_002, 'w') as f:
+            json.dump(original_ochiai_ranking_2, f)
+        result = utils.get_mrr(self.project, "originalOchiai", project_bugs_data, self.test_dir)
+        self.assertAlmostEqual(result, 0.5, places=2)
+
+        # Clean up
+        shutil.rmtree(self.test_dir)
+
+    def test_multiple_bugs_diverse_methods_mrr_st(self):
+        # Create a temporary directory for the test
+        self.test_dir = tempfile.mkdtemp()
+        self.project = "ProjectA"
+
+        # Mocking the project_bugs_data
+        project_bugs_data = {
+            "bug_001": {
+                "buggyMethods": {
+                    "src/java/some/package/ClassOne.java": {
+                        "methodOne": {"startLine": "10", "endLine": "20"}
+                    }
+                },
+                "stack_trace_methods": [
+                    "SomeOtherMethod.method",
+                    "src.java.some.package.ClassTwo.methodTwo",
+                    "SomeOtherMethod.method3",
+                    "SomeOtherMethod.method2",
+                    "src.java.some.package.ClassOne.methodOne"
+                ]
+            },
+            "bug_002": {
+                "buggyMethods": {
+                    "src/java/some/package/ClassTwo.java": {
+                        "methodTwo": {"startLine": "10", "endLine": "20"},
+                        "methodThree": {"startLine": "25", "endLine": "35"}
+                    }
+                },
+                "stack_trace_methods": [
+                    "src.java.some.package.ClassOne.methodOne",
+                    "SomeOtherMethod.method",
+                    "SomeOtherMethod.method2",
+                    "SomeOtherMethod.method3",
+                    "SomeOtherMethod.method8",
+                    "SomeOtherMethod.method4",
+                    "SomeOtherMethod.method5",
+                    "SomeOtherMethod.method6",
+                    "SomeOtherMethod.method7",
+                    "src.java.some.package.ClassTwo.methodTwo"
+                ]
+            }
+        }
+
+        result = utils.get_mrr(self.project, "stackTraces", project_bugs_data, None)
+        self.assertAlmostEqual(result, 0.15, places=2)
+
+    def test_multiple_bugs_diverse_methods_mrr_st_2(self):
+        # Create a temporary directory for the test
+        self.test_dir = tempfile.mkdtemp()
+        self.project = "ProjectA"
+
+        # Mocking the project_bugs_data
+        project_bugs_data = {
+            "bug_001": {
+                "buggyMethods": {
+                    "src/java/some/package/ClassOne.java": {
+                        "methodOne": {"startLine": "10", "endLine": "20"}
+                    }
+                },
+                "stack_trace_methods": [
+                    "SomeOtherMethod.method",
+                ]
+            },
+            "bug_002": {
+                "buggyMethods": {
+                    "src/java/some/package/ClassTwo.java": {
+                        "methodTwo": {"startLine": "10", "endLine": "20"},
+                        "methodThree": {"startLine": "25", "endLine": "35"}
+                    }
+                },
+                "stack_trace_methods": [
+                    "src.java.some.package.ClassOne.methodOne",
+                    "SomeOtherMethod.method",
+                    "SomeOtherMethod.method2",
+                    "SomeOtherMethod.method3",
+                    "SomeOtherMethod.method8",
+                    "SomeOtherMethod.method4",
+                    "SomeOtherMethod.method5",
+                    "SomeOtherMethod.method6",
+                    "SomeOtherMethod.method7",
+                    "src.java.some.package.ClassTwo.methodTwo"
+                ]
+            }
+        }
+
+        result = utils.get_mrr(self.project, "stackTraces", project_bugs_data, None)
+        self.assertAlmostEqual(result, 0.05, places=2)
 
 
 class TestGetMAPFunction(unittest.TestCase):

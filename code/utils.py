@@ -852,17 +852,14 @@ def get_mrr(project, ochiai_identificator, project_bugs_data, ranking_files_path
                 ranking_info = json_file_to_dict(ranking_file)
             except FileNotFoundError:
                 no_classification_available = True
-        #if len(ranking_info) == 0:  # No ranking info
-        #    if ochiai_identificator != "stackTraces":  # Due to the ausence of gzoltar files
-        #        number_of_bugs -= 1
-        #    continue
-        if no_classification_available or len(ranking_info.keys())==0:
-            best_rank_found = float('inf')
-        else:
-            best_rank_found = len(ranking_info.keys())
+
+        best_rank_found = float('inf')
+        if not no_classification_available and len(ranking_info.keys()) > 0:
             for buggy_method in buggy_methods_list:
                 if get_method_rank(ranking_info, buggy_method) < best_rank_found:
                     best_rank_found = get_method_rank(ranking_info, buggy_method)
+        print(bug_id)
+        print(best_rank_found)
         sum_for_mrr += 1 / best_rank_found
     mrr = sum_for_mrr / number_of_bugs
     return mrr
