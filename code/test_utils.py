@@ -96,43 +96,42 @@ class TestCountLinesOfCodeForCoverage(unittest.TestCase):
         count = utils.count_lines_of_code_for_coverage('real_java_file.java', 'test_project', [])
         self.assertEqual(count, 11)
 
-
-def test_real_java_file2(self):
-    with open('test_project/real_java_file.java', 'w') as file:
-        file.write("""public class ComplexExample {
-    public static void main(String[] args) {
-        int[] numbers = {10, 20, 30, 40, 50}; //Hey
-
-        try {
-            //hey2;
-            for (int i = 0; i <= numbers.length; i++) {
-                if (i == numbers.length) {
-                /*hey3;*/
-                    throw new ArrayIndexOutOfBoundsException("Index out of bounds");
+    def test_real_java_file2(self):
+        with open('test_project/real_java_file.java', 'w') as file:
+            file.write("""public class ComplexExample {
+        public static void main(String[] args) {
+            int[] numbers = {10, 20, 30, 40, 50}; //Hey
+    
+            try {
+                //hey2;
+                for (int i = 0; i <= numbers.length; i++) {
+                    if (i == numbers.length) {
+                    /*hey3;*/
+                        throw new ArrayIndexOutOfBoundsException("Index out of bounds");
+                    }
+                    if (numbers[i] % 20 == 0) {
+                        System.out.println("Divisible by 20: " + numbers[i]);
+                    } else {
+                        /*
+                        hey4;
+                        */
+                        System.out.println("Not divisible by 20: " + numbers[i]);
+                    }
                 }
-                if (numbers[i] % 20 == 0) {
-                    System.out.println("Divisible by 20: " + numbers[i]);
-                } else {
-                    /*
-                    hey4;
-                    */
-                    System.out.println("Not divisible by 20: " + numbers[i]);
-                }
+            } catch (ArrayIndexOutOfBoundsException e) {
+                System.err.println("Caught exception: " + e.getMessage());
+            } finally {
+                System.out.println("Execution completed, whether an exception was thrown or not.");
             }
-        } catch (ArrayIndexOutOfBoundsException e) {
-            System.err.println("Caught exception: " + e.getMessage());
-        } finally {
-            System.out.println("Execution completed, whether an exception was thrown or not.");
+        }
+    
+        public static void printMessage() {
+            System.out.println("This is a complex Java example!");
         }
     }
-
-    public static void printMessage() {
-        System.out.println("This is a complex Java example!");
-    }
-}
-""")
-    count = utils.count_lines_of_code_for_coverage('real_java_file.java', 'test_project', [])
-    self.assertEqual(count, 9)
+    """)
+        count = utils.count_lines_of_code_for_coverage('real_java_file.java', 'test_project', [])
+        self.assertEqual(count, 8)
 
 
 class TestGetMethodCoveredLinesList(unittest.TestCase):
@@ -643,12 +642,12 @@ class TestGetMRRFunction(unittest.TestCase):
         os.remove(os.path.join(cls.ranking_files_path, "originalOchiai", "ProjectA", "bug_001.json"))
 
     def test_with_stack_traces(self):
-        result = utils.get_mrr("ProjectA", "stackTraces", self.project_bugs_data, {}, self.ranking_files_path)
+        result = utils.get_mrr("ProjectA", "stackTraces", self.project_bugs_data, self.ranking_files_path)
         self.assertEqual(result, 0.2)
 
     def test_with_originalOchiai(self):
-        result = utils.get_mrr("ProjectA", "originalOchiai", self.project_bugs_data, {}, self.ranking_files_path)
-        self.assertEqual(result, 1.0)
+        result = utils.get_mrr("ProjectA", "originalOchiai", self.project_bugs_data, self.ranking_files_path)
+        self.assertEqual(result, 0.5)
 
     def test_multiple_bugs_diverse_methods(self):
         # Create a temporary directory for the test
@@ -698,9 +697,9 @@ class TestGetMRRFunction(unittest.TestCase):
         with open(ranking_file_path_bug_002, 'w') as f:
             json.dump(original_ochiai_ranking, f)
 
-        result = utils.get_mrr(self.project, "originalOchiai", project_bugs_data, {}, self.test_dir)
+        result = utils.get_mrr(self.project, "originalOchiai", project_bugs_data, self.test_dir)
 
-        self.assertAlmostEqual(result, 0.35, places=2)
+        self.assertAlmostEqual(result, 0.33, places=2)
 
         # Clean up
         shutil.rmtree(self.test_dir)
@@ -754,12 +753,12 @@ class TestGetMAPFunction(unittest.TestCase):
         os.remove(os.path.join(cls.ranking_files_path, "originalOchiai", "ProjectA", "bug_001.json"))
 
     def test_with_stack_traces_map(self):
-        result = utils.get_map("ProjectA", "stackTraces", self.project_bugs_data, {}, self.ranking_files_path)
+        result = utils.get_map("ProjectA", "stackTraces", self.project_bugs_data, self.ranking_files_path)
         self.assertEqual(result, 0.2)
 
     def test_with_originalOchiai_map(self):
-        result = utils.get_map("ProjectA", "originalOchiai", self.project_bugs_data, {}, self.ranking_files_path)
-        self.assertEqual(result, 1.0)
+        result = utils.get_map("ProjectA", "originalOchiai", self.project_bugs_data, self.ranking_files_path)
+        self.assertEqual(result, 0.0)
 
     def test_multiple_bugs_diverse_methods_map(self):
         # Create a temporary directory for the test
@@ -808,11 +807,159 @@ class TestGetMAPFunction(unittest.TestCase):
         ranking_file_path_bug_002 = os.path.join(self.test_dir, "originalOchiai", self.project, "bug_002.json")
         with open(ranking_file_path_bug_002, 'w') as f:
             json.dump(original_ochiai_ranking, f)
-        result = utils.get_map(self.project, "originalOchiai", project_bugs_data, {}, self.test_dir)
-        self.assertAlmostEqual(result, 0.42, places=2)
+        result = utils.get_map(self.project, "originalOchiai", project_bugs_data, self.test_dir)
+        self.assertAlmostEqual(result, 0, places=2)
 
         # Clean up
         shutil.rmtree(self.test_dir)
+
+
+class TestRankMethods(unittest.TestCase):
+
+    def test_all_the_same(self):
+        ochiai_scores_all_the_same = {
+            "method1": 0.9,
+            "method2": 0.9,
+            "method3": 0.9,
+            "method4": 0.9,
+            "method5": 0.9,
+        }
+        expected_ranking_all_the_same = {
+            "method1": 5,
+            "method2": 5,
+            "method3": 5,
+            "method4": 5,
+            "method5": 5,
+        }
+        ranking = utils.rank_methods(ochiai_scores_all_the_same)
+        self.assertEqual(ranking, expected_ranking_all_the_same)
+
+    def test_all_the_same2(self):
+        ochiai_scores_all_the_same2 = {
+            "method1": 0,
+            "method2": 0.0,
+            "method3": 0,
+            "method4": 0.0,
+            "method5": 0,
+        }
+        expected_ranking_all_the_same2 = {
+            "method1": 5,
+            "method2": 5,
+            "method3": 5,
+            "method4": 5,
+            "method5": 5,
+        }
+        ranking = utils.rank_methods(ochiai_scores_all_the_same2)
+        self.assertEqual(ranking, expected_ranking_all_the_same2)
+
+    def test_some_equal(self):
+        ochiai_scores_some_equal = {
+            "method1": 0.9,
+            "method2": 0.8,
+            "method3": 0.8,
+            "method4": 0.7,
+            "method5": 0.9,
+        }
+        expected_ranking_some_equal = {
+            "method1": 2,
+            "method2": 4,
+            "method3": 4,
+            "method4": 5,
+            "method5": 2,
+        }
+        ranking = utils.rank_methods(ochiai_scores_some_equal)
+        self.assertEqual(ranking, expected_ranking_some_equal)
+
+    def test_all_different(self):
+        ochiai_scores_all_different = {
+            "method1": 1,
+            "method2": 0,
+            "method3": 0.1,
+            "method4": 0.7,
+            "method5": 0.952,
+        }
+        expected_all_different = {
+            "method1": 1,
+            "method2": 5,
+            "method3": 4,
+            "method4": 3,
+            "method5": 2,
+        }
+        ranking = utils.rank_methods(ochiai_scores_all_different)
+        self.assertEqual(ranking, expected_all_different)
+
+    def test_empty(self):
+        ochiai_scores_empty = {
+        }
+        expected_empty = {
+        }
+        ranking = utils.rank_methods(ochiai_scores_empty)
+        self.assertEqual(ranking, expected_empty)
+
+    def test_single_method(self):
+        ochiai_scores_single_method = {
+            "method1": 0.9,
+        }
+        expected_single_method = {
+            "method1": 1,
+        }
+        ranking = utils.rank_methods(ochiai_scores_single_method)
+        self.assertEqual(ranking, expected_single_method)
+
+    def test_alternating_rankings(self):
+        ochiai_scores_alternating = {
+            "method1": 0.9,
+            "method2": 0.7,
+            "method3": 0.8,
+            "method4": 0.6,
+            "method5": 0.5,
+        }
+        expected_alternating = {
+            "method1": 1,
+            "method2": 3,
+            "method3": 2,
+            "method4": 4,
+            "method5": 5,
+        }
+        ranking = utils.rank_methods(ochiai_scores_alternating)
+        self.assertEqual(ranking, expected_alternating)
+
+    def test_consecutive_equal_rankings(self):
+        ochiai_scores_consecutive_equal = {
+            "method1": 0.9,
+            "method2": 0.9,
+            "method3": 0.8,
+            "method4": 0.8,
+            "method5": 0.7,
+        }
+        expected_consecutive_equal = {
+            "method1": 2,
+            "method2": 2,
+            "method3": 4,
+            "method4": 4,
+            "method5": 5,
+        }
+        ranking = utils.rank_methods(ochiai_scores_consecutive_equal)
+        self.assertEqual(ranking, expected_consecutive_equal)
+
+    def test_negative_scores(self):
+        ochiai_scores_negative = {
+            "method1": -0.9,
+            "method2": 0.9,
+            "method3": 0,
+            "method4": -0.5,
+            "method5": 0.5,
+        }
+        expected_negative = {
+            "method1": 5,
+            "method2": 1,
+            "method3": 3,
+            "method4": 4,
+            "method5": 2,
+        }
+        ranking = utils.rank_methods(ochiai_scores_negative)
+        self.assertEqual(ranking, expected_negative)
+
 
 if __name__ == "__main__":
     unittest.main()

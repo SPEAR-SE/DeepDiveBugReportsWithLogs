@@ -921,24 +921,20 @@ def create_or_update_bug_metrics_file(bug_metrics, bug_metrics_file_path, ochiai
         df = pd.read_csv(bug_metrics_file_path)
 
     # Iterate over the bugs object
-    for project in bug_metrics.keys():
-        for bug_id in bug_metrics[project].keys():
+    for project, bugs in bug_metrics.items():
+        for bug_id, metrics in bugs.items():
             data = {'Project': project, 'Bug Id': bug_id}
-            for metric in bug_metrics[project][bug_id].keys():
-                data[metric] = bug_metrics[project][bug_id][metric]
-
-            # Create a temporary dataframe for new data
-            new_data = pd.DataFrame(data, index=[0])
+            data.update(metrics)
 
             # Check if the bug_id and project exist in the dataframe
             mask = (df['Project'] == project) & (df['Bug Id'] == bug_id)
 
             if not df[mask].empty:
                 # If the bug_id and project exist, update the row
-                df.loc[mask, columns[2:]] = new_data[columns[2:]].values
+                df.loc[mask, columns[2:]] = pd.DataFrame([data])[columns[2:]].values
             else:
                 # If it doesn't exist, append the new data
-                df = pd.concat([df, new_data], ignore_index=True)
+                df = pd.concat([df, pd.DataFrame([data])], ignore_index=True)
 
     # Write the dataframe back to csv
     df.to_csv(bug_metrics_file_path, index=False)
@@ -1006,6 +1002,33 @@ def convert_buggy_methods_dict_into_list(data):
             result.append(f"{class_name}#{method}")
     return result
 
+
+def rank_methods(ochiai_scores_data):
+    # Sort methods based on their suspicion scores in descending order
+    sorted_methods = sorted(ochiai_scores_data.items(), key=lambda x: x[1], reverse=True)
+
+    ranked_methods = {}
+    rank = 0
+    i = 0
+
+    while i < len(sorted_methods):
+        # Count methods with the same score
+        same_score_count = 1
+        current_score = sorted_methods[i][1]
+
+        for j in range(i+1, len(sorted_methods)):
+            if sorted_methods[j][1] == current_score:
+                same_score_count += 1
+            else:
+                break
+
+        # Assign rank
+        for j in range(same_score_count):
+            ranked_methods[sorted_methods[i+j][0]] = i + same_score_count
+
+        i += same_score_count
+
+    return ranked_methods
 
 
 #%%
