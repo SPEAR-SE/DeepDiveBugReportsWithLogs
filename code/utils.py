@@ -883,15 +883,15 @@ def get_map(project, ochiai_identificator, project_bugs_data, ranking_files_path
                 ranking_info = json_file_to_dict(ranking_file)
             except FileNotFoundError:
                 no_classification_available = True
-        #if len(ranking_info) == 0:
-        #    if ochiai_identificator != "stackTraces":
-        #        continue
         number_of_bugs += 1
         relevant_docs = 0
         sum_for_ap = 0
         buggy_methods_found = 0
         if not no_classification_available:
-            for rank, method in enumerate(sorted(ranking_info, key=ranking_info.get), start=1):
+            sorted_ranking_info = {k: v for k, v in sorted(ranking_info.items(), key=lambda item: item[1], reverse=False)}
+            print(sorted_ranking_info)
+            for method in sorted_ranking_info.keys():
+                rank = sorted_ranking_info[method]
                 for buggy_method in buggy_methods_list:
                     if buggy_method.endswith(method):
                         relevant_docs += 1
@@ -899,7 +899,8 @@ def get_map(project, ochiai_identificator, project_bugs_data, ranking_files_path
                         sum_for_ap += precision_at_rank
                         buggy_methods_found += 1
                         break
-        sum_for_map += sum_for_ap / buggy_methods_found if buggy_methods_found else 0
+        n_buggy_methods = len(buggy_methods_list)
+        sum_for_map += sum_for_ap / n_buggy_methods if n_buggy_methods else 0
     return sum_for_map / number_of_bugs if number_of_bugs else 0
 
 
@@ -1002,10 +1003,10 @@ def get_json_files(path):
 def convert_buggy_methods_dict_into_list(data):
     result = []
     for file, methods in data.items():
-        # Convert file path to desired format
-        class_name = file.replace("/", ".")
         # Removing the file extension (.java in this case)
-        class_name = class_name.replace(".java", "")
+        class_name = file.replace(".java", "")
+        # Convert file path to desired format
+        class_name = class_name.replace("/", ".")
         for method, _ in methods.items():
             result.append(f"{class_name}#{method}")
     return result
