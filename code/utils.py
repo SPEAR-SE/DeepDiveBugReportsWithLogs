@@ -1034,4 +1034,17 @@ def rank_methods(ochiai_scores_data):
     return ranked_methods
 
 
-#%%
+def get_json_files(directory):
+
+    if not os. path. isdir(directory):
+        return []
+
+    # List all files in the given directory
+    all_files = os.listdir(directory)
+
+    # Filter out files that end with '.json' and return them
+    json_files_names_list = [file for file in all_files if file.endswith('.json')]
+    json_files_names_list = sorted(json_files_names_list, key=str.lower)
+    json_files_names_list = [os.path.join(directory, file) for file in json_files_names_list]
+
+    return json_files_names_list
