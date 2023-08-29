@@ -1,0 +1,1318 @@
+{
+    "Cli": {
+        "14": {
+            "entry_0": {
+                "fake_failing_tests_number": 7,
+                "fake_passing_tests_number": 532
+            },
+            "entry_1": {
+                "fake_failing_tests_number": 1,
+                "fake_passing_tests_number": 538
+            },
+            "entry_2": {
+                "fake_failing_tests_number": 2,
+                "fake_passing_tests_number": 537
+            },
+            "entry_3": {
+                "fake_failing_tests_number": 1,
+                "fake_passing_tests_number": 538
+            },
+            "entry_4": {
+                "fake_failing_tests_number": 1,
+                "fake_passing_tests_number": 538
+            },
+            "entry_5": {
+                "fake_failing_tests_number": 1,
+                "fake_passing_tests_number": 538
+            },
+            "entry_6": {
+                "fake_failing_tests_number": 2,
+                "fake_passing_tests_number": 537
+            },
+            "fake_failing_tests_number": 2.142857142857143,
+            "fake_passing_tests_number": 536.8571428571429
+        },
+        "5": {
+            "entry_0": {
+                "fake_failing_tests_number": 26,
+                "fake_passing_tests_number": 77
+            },
+            "entry_1": {
+                "fake_failing_tests_number": 22,
+                "fake_passing_tests_number": 81
+            },
+            "entry_2": {
+                "fake_failing_tests_number": 60,
+                "fake_passing_tests_number": 43
+            },
+            "fake_failing_tests_number": 36.0,
+            "fake_passing_tests_number": 67.0
+        }
+    },
+    "Closure": {
+        "125": {
+            "entry_0": {
+                "fake_failing_tests_number": 151,
+                "fake_passing_tests_number": 8005
+            },
+            "entry_1": {
+                "fake_failing_tests_number": 237,
+                "fake_passing_tests_number": 7919
+            },
+            "entry_2": {
+                "fake_failing_tests_number": 237,
+                "fake_passing_tests_number": 7919
+            },
+            "entry_3": {
+                "fake_failing_tests_number": 1,
+                "fake_passing_tests_number": 8155
+            },
+            "entry_4": {
+                "fake_failing_tests_number": 110,
+                "fake_passing_tests_number": 8046
+            },
+            "entry_7": {
+                "fake_failing_tests_number": 6877,
+                "fake_passing_tests_number": 1279
+            },
+            "entry_8": {
+                "fake_failing_tests_number": 499,
+                "fake_passing_tests_number": 7657
+            },
+            "entry_9": {
+                "fake_failing_tests_number": 1,
+                "fake_passing_tests_number": 8155
+            },
+            "fake_failing_tests_number": 1014.125,
+            "fake_passing_tests_number": 7141.875
+        },
+        "152": {
+            "entry_1": {
+                "fake_failing_tests_number": 101,
+                "fake_passing_tests_number": 6085
+            },
+            "entry_2": {
+                "fake_failing_tests_number": 93,
+                "fake_passing_tests_number": 6093
+            },
+            "entry_3": {
+                "fake_failing_tests_number": 93,
+                "fake_passing_tests_number": 6093
+            },
+            "entry_4": {
+                "fake_failing_tests_number": 47,
+                "fake_passing_tests_number": 6139
+            },
+            "entry_5": {
+                "fake_failing_tests_number": 48,
+                "fake_passing_tests_number": 6138
+            },
+            "entry_7": {
+                "fake_failing_tests_number": 7,
+                "fake_passing_tests_number": 6179
+            },
+            "entry_8": {
+                "fake_failing_tests_number": 2350,
+                "fake_passing_tests_number": 3836
+            },
+            "fake_failing_tests_number": 391.2857142857143,
+            "fake_passing_tests_number": 5794.714285714285
+        },
+        "2": {
+            "entry_0": {
+                "fake_failing_tests_number": 6,
+                "fake_passing_tests_number": 7824
+            },
+            "entry_1": {
+                "fake_failing_tests_number": 5,
+                "fake_passing_tests_number": 7825
+            },
+            "entry_2": {
+                "fake_failing_tests_number": 1,
+                "fake_passing_tests_number": 7829
+            },
+            "entry_3": {
+                "fake_failing_tests_number": 5462,
+                "fake_passing_tests_number": 2368
+            },
+            "entry_4": {
+                "fake_failing_tests_number": 5462,
+                "fake_passing_tests_number": 2368
+            },
+            "entry_5": {
+                "fake_failing_tests_number": 5462,
+                "fake_passing_tests_number": 2368
+            },
+            "entry_6": {
+                "fake_failing_tests_number": 2621,
+                "fake_passing_tests_number": 5209
+            },
+            "entry_7": {
+                "fake_failing_tests_number": 2334,
+                "fake_passing_tests_number": 5496
+            },
+            "entry_8": {
+                "fake_failing_tests_number": 2334,
+                "fake_passing_tests_number": 5496
+            },
+            "fake_failing_tests_number": 2631.8888888888887,
+            "fake_passing_tests_number": 5198.111111111111
+        },
+        "34": {
+            "entry_0": {
+                "fake_failing_tests_number": 367,
+                "fake_passing_tests_number": 7046
+            },
+            "entry_1": {
+                "fake_failing_tests_number": 367,
+                "fake_passing_tests_number": 7046
+            },
+            "entry_2": {
+                "fake_failing_tests_number": 130,
+                "fake_passing_tests_number": 7283
+            },
+            "entry_3": {
+                "fake_failing_tests_number": 2,
+                "fake_passing_tests_number": 7411
+            },
+            "entry_4": {
+                "fake_failing_tests_number": 86,
+                "fake_passing_tests_number": 7327
+            },
+            "entry_5": {
+                "fake_failing_tests_number": 89,
+                "fake_passing_tests_number": 7324
+            },
+            "entry_7": {
+                "fake_failing_tests_number": 367,
+                "fake_passing_tests_number": 7046
+            },
+            "entry_8": {
+                "fake_failing_tests_number": 367,
+                "fake_passing_tests_number": 7046
+            },
+            "entry_9": {
+                "fake_failing_tests_number": 130,
+                "fake_passing_tests_number": 7283
+            },
+            "fake_failing_tests_number": 211.66666666666666,
+            "fake_passing_tests_number": 7201.333333333333
+        },
+        "37": {
+            "entry_1": {
+                "fake_failing_tests_number": 3079,
+                "fake_passing_tests_number": 4294
+            },
+            "entry_2": {
+                "fake_failing_tests_number": 5156,
+                "fake_passing_tests_number": 2217
+            },
+            "entry_3": {
+                "fake_failing_tests_number": 5156,
+                "fake_passing_tests_number": 2217
+            },
+            "entry_4": {
+                "fake_failing_tests_number": 6244,
+                "fake_passing_tests_number": 1129
+            },
+            "entry_5": {
+                "fake_failing_tests_number": 6244,
+                "fake_passing_tests_number": 1129
+            },
+            "entry_6": {
+                "fake_failing_tests_number": 3166,
+                "fake_passing_tests_number": 4207
+            },
+            "entry_7": {
+                "fake_failing_tests_number": 6212,
+                "fake_passing_tests_number": 1161
+            },
+            "entry_8": {
+                "fake_failing_tests_number": 7,
+                "fake_passing_tests_number": 7366
+            },
+            "entry_9": {
+                "fake_failing_tests_number": 6224,
+                "fake_passing_tests_number": 1149
+            },
+            "fake_failing_tests_number": 4609.777777777777,
+            "fake_passing_tests_number": 2763.222222222222
+        },
+        "55": {
+            "entry_0": {
+                "fake_failing_tests_number": 166,
+                "fake_passing_tests_number": 6989
+            },
+            "entry_1": {
+                "fake_failing_tests_number": 166,
+                "fake_passing_tests_number": 6989
+            },
+            "entry_2": {
+                "fake_failing_tests_number": 157,
+                "fake_passing_tests_number": 6998
+            },
+            "entry_3": {
+                "fake_failing_tests_number": 157,
+                "fake_passing_tests_number": 6998
+            },
+            "entry_4": {
+                "fake_failing_tests_number": 76,
+                "fake_passing_tests_number": 7079
+            },
+            "entry_5": {
+                "fake_failing_tests_number": 79,
+                "fake_passing_tests_number": 7076
+            },
+            "entry_8": {
+                "fake_failing_tests_number": 5,
+                "fake_passing_tests_number": 7150
+            },
+            "entry_9": {
+                "fake_failing_tests_number": 4,
+                "fake_passing_tests_number": 7151
+            },
+            "fake_failing_tests_number": 101.25,
+            "fake_passing_tests_number": 7053.75
+        }
+    },
+    "Codec": {
+        "8": {
+            "entry_0": {
+                "fake_failing_tests_number": 2,
+                "fake_passing_tests_number": 292
+            },
+            "entry_1": {
+                "fake_failing_tests_number": 1,
+                "fake_passing_tests_number": 293
+            },
+            "entry_2": {
+                "fake_failing_tests_number": 1,
+                "fake_passing_tests_number": 293
+            },
+            "fake_failing_tests_number": 1.3333333333333333,
+            "fake_passing_tests_number": 292.6666666666667
+        }
+    },
+    "Compress": {
+        "1": {
+            "entry_1": {
+                "fake_failing_tests_number": 1,
+                "fake_passing_tests_number": 68
+            },
+            "fake_failing_tests_number": 1.0,
+            "fake_passing_tests_number": 68.0
+        },
+        "12": {
+            "entry_0": {
+                "fake_failing_tests_number": 1,
+                "fake_passing_tests_number": 314
+            },
+            "entry_1": {
+                "fake_failing_tests_number": 1,
+                "fake_passing_tests_number": 314
+            },
+            "entry_3": {
+                "fake_failing_tests_number": 2,
+                "fake_passing_tests_number": 313
+            },
+            "entry_4": {
+                "fake_failing_tests_number": 11,
+                "fake_passing_tests_number": 304
+            },
+            "fake_failing_tests_number": 3.75,
+            "fake_passing_tests_number": 311.25
+        },
+        "14": {
+            "entry_0": {
+                "fake_failing_tests_number": 2,
+                "fake_passing_tests_number": 315
+            },
+            "fake_failing_tests_number": 2.0,
+            "fake_passing_tests_number": 315.0
+        },
+        "17": {
+            "entry_0": {
+                "fake_failing_tests_number": 1,
+                "fake_passing_tests_number": 349
+            },
+            "fake_failing_tests_number": 1.0,
+            "fake_passing_tests_number": 349.0
+        },
+        "18": {
+            "entry_0": {
+                "fake_failing_tests_number": 10,
+                "fake_passing_tests_number": 341
+            },
+            "entry_1": {
+                "fake_failing_tests_number": 1,
+                "fake_passing_tests_number": 350
+            },
+            "entry_2": {
+                "fake_failing_tests_number": 1,
+                "fake_passing_tests_number": 350
+            },
+            "fake_failing_tests_number": 4.0,
+            "fake_passing_tests_number": 347.0
+        },
+        "23": {
+            "entry_1": {
+                "fake_failing_tests_number": 16,
+                "fake_passing_tests_number": 450
+            },
+            "entry_2": {
+                "fake_failing_tests_number": 3,
+                "fake_passing_tests_number": 463
+            },
+            "entry_3": {
+                "fake_failing_tests_number": 3,
+                "fake_passing_tests_number": 463
+            },
+            "fake_failing_tests_number": 7.333333333333333,
+            "fake_passing_tests_number": 458.6666666666667
+        },
+        "24": {
+            "entry_0": {
+                "fake_failing_tests_number": 2,
+                "fake_passing_tests_number": 933
+            },
+            "entry_1": {
+                "fake_failing_tests_number": 16,
+                "fake_passing_tests_number": 919
+            },
+            "entry_2": {
+                "fake_failing_tests_number": 84,
+                "fake_passing_tests_number": 851
+            },
+            "entry_3": {
+                "fake_failing_tests_number": 84,
+                "fake_passing_tests_number": 851
+            },
+            "entry_5": {
+                "fake_failing_tests_number": 2,
+                "fake_passing_tests_number": 933
+            },
+            "fake_failing_tests_number": 37.6,
+            "fake_passing_tests_number": 897.4
+        },
+        "27": {
+            "entry_0": {
+                "fake_failing_tests_number": 2,
+                "fake_passing_tests_number": 1010
+            },
+            "entry_2": {
+                "fake_failing_tests_number": 2,
+                "fake_passing_tests_number": 1010
+            },
+            "entry_3": {
+                "fake_failing_tests_number": 16,
+                "fake_passing_tests_number": 996
+            },
+            "entry_4": {
+                "fake_failing_tests_number": 86,
+                "fake_passing_tests_number": 926
+            },
+            "entry_5": {
+                "fake_failing_tests_number": 86,
+                "fake_passing_tests_number": 926
+            },
+            "entry_7": {
+                "fake_failing_tests_number": 2,
+                "fake_passing_tests_number": 1010
+            },
+            "fake_failing_tests_number": 32.333333333333336,
+            "fake_passing_tests_number": 979.6666666666666
+        },
+        "31": {
+            "entry_0": {
+                "fake_failing_tests_number": 2,
+                "fake_passing_tests_number": 1104
+            },
+            "fake_failing_tests_number": 2.0,
+            "fake_passing_tests_number": 1104.0
+        },
+        "32": {
+            "entry_3": {
+                "fake_failing_tests_number": 2,
+                "fake_passing_tests_number": 611
+            },
+            "entry_4": {
+                "fake_failing_tests_number": 22,
+                "fake_passing_tests_number": 591
+            },
+            "entry_5": {
+                "fake_failing_tests_number": 1,
+                "fake_passing_tests_number": 612
+            },
+            "fake_failing_tests_number": 8.333333333333334,
+            "fake_passing_tests_number": 604.6666666666666
+        },
+        "34": {
+            "entry_0": {
+                "fake_failing_tests_number": 28,
+                "fake_passing_tests_number": 1200
+            },
+            "entry_1": {
+                "fake_failing_tests_number": 16,
+                "fake_passing_tests_number": 1212
+            },
+            "entry_2": {
+                "fake_failing_tests_number": 2,
+                "fake_passing_tests_number": 1226
+            },
+            "entry_3": {
+                "fake_failing_tests_number": 100,
+                "fake_passing_tests_number": 1128
+            },
+            "entry_4": {
+                "fake_failing_tests_number": 38,
+                "fake_passing_tests_number": 1190
+            },
+            "entry_5": {
+                "fake_failing_tests_number": 98,
+                "fake_passing_tests_number": 1130
+            },
+            "fake_failing_tests_number": 47.0,
+            "fake_passing_tests_number": 1181.0
+        }
+    },
+    "Csv": {
+        "12": {
+            "entry_0": {
+                "fake_failing_tests_number": 13,
+                "fake_passing_tests_number": 193
+            },
+            "entry_2": {
+                "fake_failing_tests_number": 8,
+                "fake_passing_tests_number": 198
+            },
+            "fake_failing_tests_number": 10.5,
+            "fake_passing_tests_number": 195.5
+        },
+        "4": {
+            "entry_2": {
+                "fake_failing_tests_number": 2,
+                "fake_passing_tests_number": 184
+            },
+            "fake_failing_tests_number": 2.0,
+            "fake_passing_tests_number": 184.0
+        }
+    },
+    "Gson": {
+        "12": {
+            "entry_0": {
+                "fake_failing_tests_number": 9,
+                "fake_passing_tests_number": 1006
+            },
+            "fake_failing_tests_number": 9.0,
+            "fake_passing_tests_number": 1006.0
+        },
+        "5": {
+            "entry_0": {
+                "fake_failing_tests_number": 8,
+                "fake_passing_tests_number": 1962
+            },
+            "entry_1": {
+                "fake_failing_tests_number": 2,
+                "fake_passing_tests_number": 1968
+            },
+            "entry_2": {
+                "fake_failing_tests_number": 2,
+                "fake_passing_tests_number": 1968
+            },
+            "entry_3": {
+                "fake_failing_tests_number": 66,
+                "fake_passing_tests_number": 1904
+            },
+            "entry_6": {
+                "fake_failing_tests_number": 212,
+                "fake_passing_tests_number": 1758
+            },
+            "fake_failing_tests_number": 58.0,
+            "fake_passing_tests_number": 1912.0
+        }
+    },
+    "JacksonCore": {
+        "10": {
+            "entry_1": {
+                "fake_failing_tests_number": 1,
+                "fake_passing_tests_number": 329
+            },
+            "entry_2": {
+                "fake_failing_tests_number": 12,
+                "fake_passing_tests_number": 318
+            },
+            "entry_3": {
+                "fake_failing_tests_number": 1,
+                "fake_passing_tests_number": 329
+            },
+            "entry_4": {
+                "fake_failing_tests_number": 1,
+                "fake_passing_tests_number": 329
+            },
+            "entry_7": {
+                "fake_failing_tests_number": 1,
+                "fake_passing_tests_number": 329
+            },
+            "entry_8": {
+                "fake_failing_tests_number": 12,
+                "fake_passing_tests_number": 318
+            },
+            "entry_9": {
+                "fake_failing_tests_number": 1,
+                "fake_passing_tests_number": 329
+            },
+            "fake_failing_tests_number": 4.142857142857143,
+            "fake_passing_tests_number": 325.85714285714283
+        },
+        "11": {
+            "entry_0": {
+                "fake_failing_tests_number": 4,
+                "fake_passing_tests_number": 330
+            },
+            "entry_1": {
+                "fake_failing_tests_number": 1,
+                "fake_passing_tests_number": 333
+            },
+            "entry_2": {
+                "fake_failing_tests_number": 6,
+                "fake_passing_tests_number": 328
+            },
+            "entry_3": {
+                "fake_failing_tests_number": 1,
+                "fake_passing_tests_number": 333
+            },
+            "entry_4": {
+                "fake_failing_tests_number": 1,
+                "fake_passing_tests_number": 333
+            },
+            "entry_5": {
+                "fake_failing_tests_number": 2,
+                "fake_passing_tests_number": 332
+            },
+            "entry_6": {
+                "fake_failing_tests_number": 1,
+                "fake_passing_tests_number": 333
+            },
+            "entry_7": {
+                "fake_failing_tests_number": 1,
+                "fake_passing_tests_number": 333
+            },
+            "fake_failing_tests_number": 2.125,
+            "fake_passing_tests_number": 331.875
+        },
+        "4": {
+            "entry_0": {
+                "fake_failing_tests_number": 2,
+                "fake_passing_tests_number": 237
+            },
+            "entry_1": {
+                "fake_failing_tests_number": 1,
+                "fake_passing_tests_number": 238
+            },
+            "entry_2": {
+                "fake_failing_tests_number": 10,
+                "fake_passing_tests_number": 229
+            },
+            "entry_6": {
+                "fake_failing_tests_number": 1,
+                "fake_passing_tests_number": 238
+            },
+            "fake_failing_tests_number": 3.5,
+            "fake_passing_tests_number": 235.5
+        },
+        "7": {
+            "entry_1": {
+                "fake_failing_tests_number": 1,
+                "fake_passing_tests_number": 260
+            },
+            "fake_failing_tests_number": 1.0,
+            "fake_passing_tests_number": 260.0
+        }
+    },
+    "JacksonDatabind": {
+        "14": {
+            "entry_0": {
+                "fake_failing_tests_number": 14,
+                "fake_passing_tests_number": 1361
+            },
+            "entry_1": {
+                "fake_failing_tests_number": 14,
+                "fake_passing_tests_number": 1361
+            },
+            "entry_2": {
+                "fake_failing_tests_number": 1,
+                "fake_passing_tests_number": 1374
+            },
+            "entry_3": {
+                "fake_failing_tests_number": 3,
+                "fake_passing_tests_number": 1372
+            },
+            "entry_4": {
+                "fake_failing_tests_number": 3,
+                "fake_passing_tests_number": 1372
+            },
+            "entry_5": {
+                "fake_failing_tests_number": 22,
+                "fake_passing_tests_number": 1353
+            },
+            "entry_6": {
+                "fake_failing_tests_number": 8,
+                "fake_passing_tests_number": 1367
+            },
+            "entry_7": {
+                "fake_failing_tests_number": 1,
+                "fake_passing_tests_number": 1374
+            },
+            "fake_failing_tests_number": 8.25,
+            "fake_passing_tests_number": 1366.75
+        },
+        "15": {
+            "entry_0": {
+                "fake_failing_tests_number": 3,
+                "fake_passing_tests_number": 1374
+            },
+            "entry_1": {
+                "fake_failing_tests_number": 1,
+                "fake_passing_tests_number": 1376
+            },
+            "entry_2": {
+                "fake_failing_tests_number": 10,
+                "fake_passing_tests_number": 1367
+            },
+            "entry_3": {
+                "fake_failing_tests_number": 3,
+                "fake_passing_tests_number": 1374
+            },
+            "entry_4": {
+                "fake_failing_tests_number": 1,
+                "fake_passing_tests_number": 1376
+            },
+            "entry_5": {
+                "fake_failing_tests_number": 7,
+                "fake_passing_tests_number": 1370
+            },
+            "entry_6": {
+                "fake_failing_tests_number": 5,
+                "fake_passing_tests_number": 1372
+            },
+            "entry_7": {
+                "fake_failing_tests_number": 1,
+                "fake_passing_tests_number": 1376
+            },
+            "entry_8": {
+                "fake_failing_tests_number": 511,
+                "fake_passing_tests_number": 866
+            },
+            "fake_failing_tests_number": 60.22222222222222,
+            "fake_passing_tests_number": 1316.7777777777778
+        },
+        "25": {
+            "entry_0": {
+                "fake_failing_tests_number": 515,
+                "fake_passing_tests_number": 968
+            },
+            "entry_1": {
+                "fake_failing_tests_number": 1,
+                "fake_passing_tests_number": 1482
+            },
+            "entry_2": {
+                "fake_failing_tests_number": 4,
+                "fake_passing_tests_number": 1479
+            },
+            "entry_3": {
+                "fake_failing_tests_number": 1,
+                "fake_passing_tests_number": 1482
+            },
+            "entry_4": {
+                "fake_failing_tests_number": 2,
+                "fake_passing_tests_number": 1481
+            },
+            "entry_5": {
+                "fake_failing_tests_number": 51,
+                "fake_passing_tests_number": 1432
+            },
+            "entry_6": {
+                "fake_failing_tests_number": 890,
+                "fake_passing_tests_number": 593
+            },
+            "entry_7": {
+                "fake_failing_tests_number": 648,
+                "fake_passing_tests_number": 835
+            },
+            "entry_8": {
+                "fake_failing_tests_number": 461,
+                "fake_passing_tests_number": 1022
+            },
+            "entry_9": {
+                "fake_failing_tests_number": 1,
+                "fake_passing_tests_number": 1482
+            },
+            "fake_failing_tests_number": 257.4,
+            "fake_passing_tests_number": 1225.6
+        },
+        "28": {
+            "entry_1": {
+                "fake_failing_tests_number": 9,
+                "fake_passing_tests_number": 1483
+            },
+            "entry_2": {
+                "fake_failing_tests_number": 9,
+                "fake_passing_tests_number": 1483
+            },
+            "entry_3": {
+                "fake_failing_tests_number": 5,
+                "fake_passing_tests_number": 1487
+            },
+            "entry_4": {
+                "fake_failing_tests_number": 5,
+                "fake_passing_tests_number": 1487
+            },
+            "entry_5": {
+                "fake_failing_tests_number": 3,
+                "fake_passing_tests_number": 1489
+            },
+            "entry_6": {
+                "fake_failing_tests_number": 11,
+                "fake_passing_tests_number": 1481
+            },
+            "entry_7": {
+                "fake_failing_tests_number": 15,
+                "fake_passing_tests_number": 1477
+            },
+            "entry_8": {
+                "fake_failing_tests_number": 21,
+                "fake_passing_tests_number": 1471
+            },
+            "entry_9": {
+                "fake_failing_tests_number": 686,
+                "fake_passing_tests_number": 806
+            },
+            "fake_failing_tests_number": 84.88888888888889,
+            "fake_passing_tests_number": 1407.111111111111
+        },
+        "3": {
+            "entry_0": {
+                "fake_failing_tests_number": 1,
+                "fake_passing_tests_number": 1252
+            },
+            "entry_1": {
+                "fake_failing_tests_number": 1,
+                "fake_passing_tests_number": 1252
+            },
+            "entry_2": {
+                "fake_failing_tests_number": 2,
+                "fake_passing_tests_number": 1251
+            },
+            "fake_failing_tests_number": 1.3333333333333333,
+            "fake_passing_tests_number": 1251.6666666666667
+        },
+        "32": {
+            "entry_4": {
+                "fake_failing_tests_number": 1,
+                "fake_passing_tests_number": 1509
+            },
+            "entry_5": {
+                "fake_failing_tests_number": 3,
+                "fake_passing_tests_number": 1507
+            },
+            "entry_6": {
+                "fake_failing_tests_number": 3,
+                "fake_passing_tests_number": 1507
+            },
+            "entry_7": {
+                "fake_failing_tests_number": 4,
+                "fake_passing_tests_number": 1506
+            },
+            "fake_failing_tests_number": 2.75,
+            "fake_passing_tests_number": 1507.25
+        },
+        "37": {
+            "entry_0": {
+                "fake_failing_tests_number": 18,
+                "fake_passing_tests_number": 1531
+            },
+            "entry_1": {
+                "fake_failing_tests_number": 18,
+                "fake_passing_tests_number": 1531
+            },
+            "entry_2": {
+                "fake_failing_tests_number": 1,
+                "fake_passing_tests_number": 1548
+            },
+            "entry_3": {
+                "fake_failing_tests_number": 4,
+                "fake_passing_tests_number": 1545
+            },
+            "entry_4": {
+                "fake_failing_tests_number": 3,
+                "fake_passing_tests_number": 1546
+            },
+            "entry_5": {
+                "fake_failing_tests_number": 7,
+                "fake_passing_tests_number": 1542
+            },
+            "entry_6": {
+                "fake_failing_tests_number": 5,
+                "fake_passing_tests_number": 1544
+            },
+            "entry_7": {
+                "fake_failing_tests_number": 17,
+                "fake_passing_tests_number": 1532
+            },
+            "entry_8": {
+                "fake_failing_tests_number": 1,
+                "fake_passing_tests_number": 1548
+            },
+            "entry_9": {
+                "fake_failing_tests_number": 2,
+                "fake_passing_tests_number": 1547
+            },
+            "fake_failing_tests_number": 7.6,
+            "fake_passing_tests_number": 1541.4
+        },
+        "59": {
+            "entry_6": {
+                "fake_failing_tests_number": 2,
+                "fake_passing_tests_number": 5
+            },
+            "fake_failing_tests_number": 2.0,
+            "fake_passing_tests_number": 5.0
+        },
+        "73": {
+            "entry_0": {
+                "fake_failing_tests_number": 16,
+                "fake_passing_tests_number": 1472
+            },
+            "entry_1": {
+                "fake_failing_tests_number": 2,
+                "fake_passing_tests_number": 1486
+            },
+            "entry_5": {
+                "fake_failing_tests_number": 26,
+                "fake_passing_tests_number": 1462
+            },
+            "entry_6": {
+                "fake_failing_tests_number": 3,
+                "fake_passing_tests_number": 1485
+            },
+            "entry_7": {
+                "fake_failing_tests_number": 4,
+                "fake_passing_tests_number": 1484
+            },
+            "entry_8": {
+                "fake_failing_tests_number": 1,
+                "fake_passing_tests_number": 1487
+            },
+            "entry_9": {
+                "fake_failing_tests_number": 2,
+                "fake_passing_tests_number": 1486
+            },
+            "fake_failing_tests_number": 7.714285714285714,
+            "fake_passing_tests_number": 1480.2857142857142
+        }
+    },
+    "Jsoup": {
+        "27": {
+            "entry_1": {
+                "fake_failing_tests_number": 3,
+                "fake_passing_tests_number": 341
+            },
+            "fake_failing_tests_number": 3.0,
+            "fake_passing_tests_number": 341.0
+        },
+        "34": {
+            "entry_0": {
+                "fake_failing_tests_number": 4,
+                "fake_passing_tests_number": 392
+            },
+            "entry_1": {
+                "fake_failing_tests_number": 1,
+                "fake_passing_tests_number": 395
+            },
+            "entry_3": {
+                "fake_failing_tests_number": 14,
+                "fake_passing_tests_number": 382
+            },
+            "entry_4": {
+                "fake_failing_tests_number": 319,
+                "fake_passing_tests_number": 77
+            },
+            "entry_5": {
+                "fake_failing_tests_number": 295,
+                "fake_passing_tests_number": 101
+            },
+            "entry_6": {
+                "fake_failing_tests_number": 289,
+                "fake_passing_tests_number": 107
+            },
+            "entry_7": {
+                "fake_failing_tests_number": 275,
+                "fake_passing_tests_number": 121
+            },
+            "entry_8": {
+                "fake_failing_tests_number": 265,
+                "fake_passing_tests_number": 131
+            },
+            "fake_failing_tests_number": 182.75,
+            "fake_passing_tests_number": 213.25
+        },
+        "54": {
+            "entry_2": {
+                "fake_failing_tests_number": 338,
+                "fake_passing_tests_number": 145
+            },
+            "entry_3": {
+                "fake_failing_tests_number": 2,
+                "fake_passing_tests_number": 481
+            },
+            "entry_4": {
+                "fake_failing_tests_number": 3,
+                "fake_passing_tests_number": 480
+            },
+            "fake_failing_tests_number": 114.33333333333333,
+            "fake_passing_tests_number": 368.6666666666667
+        },
+        "78": {
+            "entry_0": {
+                "fake_failing_tests_number": 545,
+                "fake_passing_tests_number": 83
+            },
+            "entry_2": {
+                "fake_failing_tests_number": 476,
+                "fake_passing_tests_number": 152
+            },
+            "entry_3": {
+                "fake_failing_tests_number": 453,
+                "fake_passing_tests_number": 175
+            },
+            "entry_4": {
+                "fake_failing_tests_number": 39,
+                "fake_passing_tests_number": 589
+            },
+            "entry_5": {
+                "fake_failing_tests_number": 3,
+                "fake_passing_tests_number": 625
+            },
+            "entry_7": {
+                "fake_failing_tests_number": 5,
+                "fake_passing_tests_number": 623
+            },
+            "entry_8": {
+                "fake_failing_tests_number": 545,
+                "fake_passing_tests_number": 83
+            },
+            "fake_failing_tests_number": 295.14285714285717,
+            "fake_passing_tests_number": 332.85714285714283
+        },
+        "80": {
+            "entry_2": {
+                "fake_failing_tests_number": 21,
+                "fake_passing_tests_number": 616
+            },
+            "entry_3": {
+                "fake_failing_tests_number": 4,
+                "fake_passing_tests_number": 633
+            },
+            "entry_4": {
+                "fake_failing_tests_number": 4,
+                "fake_passing_tests_number": 633
+            },
+            "entry_5": {
+                "fake_failing_tests_number": 498,
+                "fake_passing_tests_number": 139
+            },
+            "entry_6": {
+                "fake_failing_tests_number": 462,
+                "fake_passing_tests_number": 175
+            },
+            "entry_7": {
+                "fake_failing_tests_number": 39,
+                "fake_passing_tests_number": 598
+            },
+            "entry_8": {
+                "fake_failing_tests_number": 17,
+                "fake_passing_tests_number": 620
+            },
+            "fake_failing_tests_number": 149.28571428571428,
+            "fake_passing_tests_number": 487.7142857142857
+        },
+        "82": {
+            "entry_3": {
+                "fake_failing_tests_number": 42,
+                "fake_passing_tests_number": 595
+            },
+            "entry_4": {
+                "fake_failing_tests_number": 194,
+                "fake_passing_tests_number": 443
+            },
+            "entry_5": {
+                "fake_failing_tests_number": 194,
+                "fake_passing_tests_number": 443
+            },
+            "fake_failing_tests_number": 143.33333333333334,
+            "fake_passing_tests_number": 493.6666666666667
+        },
+        "84": {
+            "entry_4": {
+                "fake_failing_tests_number": 358,
+                "fake_passing_tests_number": 170
+            },
+            "entry_5": {
+                "fake_failing_tests_number": 2,
+                "fake_passing_tests_number": 526
+            },
+            "entry_6": {
+                "fake_failing_tests_number": 4,
+                "fake_passing_tests_number": 524
+            },
+            "fake_failing_tests_number": 121.33333333333333,
+            "fake_passing_tests_number": 406.6666666666667
+        },
+        "90": {
+            "entry_5": {
+                "fake_failing_tests_number": 23,
+                "fake_passing_tests_number": 648
+            },
+            "entry_6": {
+                "fake_failing_tests_number": 23,
+                "fake_passing_tests_number": 648
+            },
+            "entry_7": {
+                "fake_failing_tests_number": 23,
+                "fake_passing_tests_number": 648
+            },
+            "fake_failing_tests_number": 23.0,
+            "fake_passing_tests_number": 648.0
+        }
+    },
+    "JxPath": {
+        "5": {
+            "entry_0": {
+                "fake_failing_tests_number": 15,
+                "fake_passing_tests_number": 320
+            },
+            "entry_1": {
+                "fake_failing_tests_number": 15,
+                "fake_passing_tests_number": 320
+            },
+            "entry_2": {
+                "fake_failing_tests_number": 15,
+                "fake_passing_tests_number": 320
+            },
+            "entry_3": {
+                "fake_failing_tests_number": 33,
+                "fake_passing_tests_number": 302
+            },
+            "entry_7": {
+                "fake_failing_tests_number": 7,
+                "fake_passing_tests_number": 328
+            },
+            "entry_8": {
+                "fake_failing_tests_number": 11,
+                "fake_passing_tests_number": 324
+            },
+            "fake_failing_tests_number": 16.0,
+            "fake_passing_tests_number": 319.0
+        }
+    },
+    "Lang": {
+        "19": {
+            "entry_1": {
+                "fake_failing_tests_number": 3,
+                "fake_passing_tests_number": 5595
+            },
+            "entry_2": {
+                "fake_failing_tests_number": 27,
+                "fake_passing_tests_number": 5571
+            },
+            "entry_3": {
+                "fake_failing_tests_number": 24,
+                "fake_passing_tests_number": 5574
+            },
+            "entry_4": {
+                "fake_failing_tests_number": 24,
+                "fake_passing_tests_number": 5574
+            },
+            "fake_failing_tests_number": 19.5,
+            "fake_passing_tests_number": 5578.5
+        },
+        "37": {
+            "entry_0": {
+                "fake_failing_tests_number": 1,
+                "fake_passing_tests_number": 1606
+            },
+            "fake_failing_tests_number": 1.0,
+            "fake_passing_tests_number": 1606.0
+        },
+        "6": {
+            "entry_2": {
+                "fake_failing_tests_number": 8,
+                "fake_passing_tests_number": 2244
+            },
+            "entry_3": {
+                "fake_failing_tests_number": 8,
+                "fake_passing_tests_number": 2244
+            },
+            "entry_4": {
+                "fake_failing_tests_number": 1,
+                "fake_passing_tests_number": 2251
+            },
+            "fake_failing_tests_number": 5.666666666666667,
+            "fake_passing_tests_number": 2246.3333333333335
+        },
+        "61": {
+            "entry_0": {
+                "fake_failing_tests_number": 13,
+                "fake_passing_tests_number": 1658
+            },
+            "entry_1": {
+                "fake_failing_tests_number": 1,
+                "fake_passing_tests_number": 1670
+            },
+            "fake_failing_tests_number": 7.0,
+            "fake_passing_tests_number": 1664.0
+        }
+    },
+    "Math": {
+        "79": {
+            "entry_0": {
+                "fake_failing_tests_number": 1,
+                "fake_passing_tests_number": 2094
+            },
+            "fake_failing_tests_number": 1.0,
+            "fake_passing_tests_number": 2094.0
+        },
+        "81": {
+            "entry_0": {
+                "fake_failing_tests_number": 1,
+                "fake_passing_tests_number": 2094
+            },
+            "entry_1": {
+                "fake_failing_tests_number": 1,
+                "fake_passing_tests_number": 2094
+            },
+            "entry_2": {
+                "fake_failing_tests_number": 1,
+                "fake_passing_tests_number": 2094
+            },
+            "entry_3": {
+                "fake_failing_tests_number": 15,
+                "fake_passing_tests_number": 2080
+            },
+            "entry_4": {
+                "fake_failing_tests_number": 34,
+                "fake_passing_tests_number": 2061
+            },
+            "fake_failing_tests_number": 10.4,
+            "fake_passing_tests_number": 2084.6
+        },
+        "97": {
+            "entry_0": {
+                "fake_failing_tests_number": 2,
+                "fake_passing_tests_number": 2013
+            },
+            "entry_1": {
+                "fake_failing_tests_number": 2,
+                "fake_passing_tests_number": 2013
+            },
+            "fake_failing_tests_number": 2.0,
+            "fake_passing_tests_number": 2013.0
+        }
+    },
+    "Mockito": {
+        "4": {
+            "entry_2": {
+                "fake_failing_tests_number": 35,
+                "fake_passing_tests_number": 1331
+            },
+            "entry_3": {
+                "fake_failing_tests_number": 6,
+                "fake_passing_tests_number": 1360
+            },
+            "entry_4": {
+                "fake_failing_tests_number": 1,
+                "fake_passing_tests_number": 1365
+            },
+            "entry_5": {
+                "fake_failing_tests_number": 10,
+                "fake_passing_tests_number": 1356
+            },
+            "fake_failing_tests_number": 13.0,
+            "fake_passing_tests_number": 1353.0
+        }
+    },
+    "Time": {
+        "10": {
+            "entry_0": {
+                "fake_failing_tests_number": 72,
+                "fake_passing_tests_number": 3860
+            },
+            "entry_1": {
+                "fake_failing_tests_number": 1815,
+                "fake_passing_tests_number": 2117
+            },
+            "entry_2": {
+                "fake_failing_tests_number": 71,
+                "fake_passing_tests_number": 3861
+            },
+            "entry_3": {
+                "fake_failing_tests_number": 1,
+                "fake_passing_tests_number": 3931
+            },
+            "entry_4": {
+                "fake_failing_tests_number": 1,
+                "fake_passing_tests_number": 3931
+            },
+            "entry_5": {
+                "fake_failing_tests_number": 72,
+                "fake_passing_tests_number": 3860
+            },
+            "entry_6": {
+                "fake_failing_tests_number": 1815,
+                "fake_passing_tests_number": 2117
+            },
+            "entry_7": {
+                "fake_failing_tests_number": 4,
+                "fake_passing_tests_number": 3928
+            },
+            "entry_8": {
+                "fake_failing_tests_number": 4,
+                "fake_passing_tests_number": 3928
+            },
+            "entry_9": {
+                "fake_failing_tests_number": 21,
+                "fake_passing_tests_number": 3911
+            },
+            "fake_failing_tests_number": 387.6,
+            "fake_passing_tests_number": 3544.4
+        },
+        "14": {
+            "entry_0": {
+                "fake_failing_tests_number": 72,
+                "fake_passing_tests_number": 3804
+            },
+            "entry_1": {
+                "fake_failing_tests_number": 1782,
+                "fake_passing_tests_number": 2094
+            },
+            "entry_2": {
+                "fake_failing_tests_number": 1,
+                "fake_passing_tests_number": 3875
+            },
+            "entry_3": {
+                "fake_failing_tests_number": 4,
+                "fake_passing_tests_number": 3872
+            },
+            "entry_4": {
+                "fake_failing_tests_number": 9,
+                "fake_passing_tests_number": 3867
+            },
+            "entry_5": {
+                "fake_failing_tests_number": 2,
+                "fake_passing_tests_number": 3874
+            },
+            "fake_failing_tests_number": 311.6666666666667,
+            "fake_passing_tests_number": 3564.3333333333335
+        }
+    }
+}
