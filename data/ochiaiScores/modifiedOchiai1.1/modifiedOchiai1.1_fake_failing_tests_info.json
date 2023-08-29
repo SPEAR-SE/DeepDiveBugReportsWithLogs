@@ -1,0 +1,234 @@
+{
+    "Cli": {
+        "14": {
+            "fake_failing_tests_number": 71,
+            "fake_passing_tests_number": 468
+        },
+        "5": {
+            "fake_failing_tests_number": 21,
+            "fake_passing_tests_number": 82
+        }
+    },
+    "Closure": {
+        "125": {
+            "fake_failing_tests_number": 7805,
+            "fake_passing_tests_number": 351
+        },
+        "152": {
+            "fake_failing_tests_number": 2442,
+            "fake_passing_tests_number": 3744
+        },
+        "2": {
+            "fake_failing_tests_number": 6625,
+            "fake_passing_tests_number": 1205
+        },
+        "34": {
+            "fake_failing_tests_number": 368,
+            "fake_passing_tests_number": 7045
+        },
+        "37": {
+            "fake_failing_tests_number": 5925,
+            "fake_passing_tests_number": 1448
+        },
+        "55": {
+            "fake_failing_tests_number": 3525,
+            "fake_passing_tests_number": 3630
+        }
+    },
+    "Codec": {
+        "8": {
+            "fake_failing_tests_number": 36,
+            "fake_passing_tests_number": 258
+        }
+    },
+    "Compress": {
+        "1": {
+            "fake_failing_tests_number": 1,
+            "fake_passing_tests_number": 68
+        },
+        "12": {
+            "fake_failing_tests_number": 11,
+            "fake_passing_tests_number": 304
+        },
+        "14": {
+            "fake_failing_tests_number": 4,
+            "fake_passing_tests_number": 313
+        },
+        "17": {
+            "fake_failing_tests_number": 33,
+            "fake_passing_tests_number": 317
+        },
+        "18": {
+            "fake_failing_tests_number": 18,
+            "fake_passing_tests_number": 333
+        },
+        "23": {
+            "fake_failing_tests_number": 23,
+            "fake_passing_tests_number": 443
+        },
+        "24": {
+            "fake_failing_tests_number": 18,
+            "fake_passing_tests_number": 917
+        },
+        "27": {
+            "fake_failing_tests_number": 18,
+            "fake_passing_tests_number": 994
+        },
+        "32": {
+            "fake_failing_tests_number": 47,
+            "fake_passing_tests_number": 566
+        },
+        "34": {
+            "fake_failing_tests_number": 192,
+            "fake_passing_tests_number": 1036
+        }
+    },
+    "Csv": {
+        "12": {
+            "fake_failing_tests_number": 59,
+            "fake_passing_tests_number": 147
+        }
+    },
+    "Gson": {
+        "5": {
+            "fake_failing_tests_number": 672,
+            "fake_passing_tests_number": 1298
+        }
+    },
+    "JacksonCore": {
+        "10": {
+            "fake_failing_tests_number": 119,
+            "fake_passing_tests_number": 211
+        },
+        "11": {
+            "fake_failing_tests_number": 63,
+            "fake_passing_tests_number": 271
+        },
+        "4": {
+            "fake_failing_tests_number": 106,
+            "fake_passing_tests_number": 133
+        },
+        "7": {
+            "fake_failing_tests_number": 1,
+            "fake_passing_tests_number": 260
+        }
+    },
+    "JacksonDatabind": {
+        "14": {
+            "fake_failing_tests_number": 432,
+            "fake_passing_tests_number": 943
+        },
+        "15": {
+            "fake_failing_tests_number": 643,
+            "fake_passing_tests_number": 734
+        },
+        "25": {
+            "fake_failing_tests_number": 898,
+            "fake_passing_tests_number": 585
+        },
+        "28": {
+            "fake_failing_tests_number": 858,
+            "fake_passing_tests_number": 634
+        },
+        "3": {
+            "fake_failing_tests_number": 336,
+            "fake_passing_tests_number": 917
+        },
+        "32": {
+            "fake_failing_tests_number": 814,
+            "fake_passing_tests_number": 696
+        },
+        "37": {
+            "fake_failing_tests_number": 892,
+            "fake_passing_tests_number": 657
+        },
+        "59": {
+            "fake_failing_tests_number": 2,
+            "fake_passing_tests_number": 5
+        },
+        "73": {
+            "fake_failing_tests_number": 521,
+            "fake_passing_tests_number": 967
+        }
+    },
+    "Jsoup": {
+        "27": {
+            "fake_failing_tests_number": 12,
+            "fake_passing_tests_number": 332
+        },
+        "34": {
+            "fake_failing_tests_number": 326,
+            "fake_passing_tests_number": 70
+        },
+        "54": {
+            "fake_failing_tests_number": 384,
+            "fake_passing_tests_number": 99
+        },
+        "78": {
+            "fake_failing_tests_number": 547,
+            "fake_passing_tests_number": 81
+        },
+        "80": {
+            "fake_failing_tests_number": 497,
+            "fake_passing_tests_number": 140
+        },
+        "82": {
+            "fake_failing_tests_number": 531,
+            "fake_passing_tests_number": 106
+        },
+        "84": {
+            "fake_failing_tests_number": 411,
+            "fake_passing_tests_number": 117
+        },
+        "90": {
+            "fake_failing_tests_number": 26,
+            "fake_passing_tests_number": 645
+        }
+    },
+    "JxPath": {
+        "5": {
+            "fake_failing_tests_number": 112,
+            "fake_passing_tests_number": 223
+        }
+    },
+    "Lang": {
+        "19": {
+            "fake_failing_tests_number": 90,
+            "fake_passing_tests_number": 5508
+        },
+        "6": {
+            "fake_failing_tests_number": 34,
+            "fake_passing_tests_number": 2218
+        },
+        "61": {
+            "fake_failing_tests_number": 42,
+            "fake_passing_tests_number": 1629
+        }
+    },
+    "Math": {
+        "81": {
+            "fake_failing_tests_number": 19,
+            "fake_passing_tests_number": 2076
+        }
+    },
+    "Mockito": {
+        "35": {
+            "fake_failing_tests_number": 601,
+            "fake_passing_tests_number": 165
+        },
+        "4": {
+            "fake_failing_tests_number": 92,
+            "fake_passing_tests_number": 1274
+        }
+    },
+    "Time": {
+        "10": {
+            "fake_failing_tests_number": 2030,
+            "fake_passing_tests_number": 1902
+        },
+        "14": {
+            "fake_failing_tests_number": 1993,
+            "fake_passing_tests_number": 1883
+        }
+    }
+}
