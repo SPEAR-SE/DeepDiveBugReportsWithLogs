@@ -1048,3 +1048,11 @@ def get_json_files(directory):
     json_files_names_list = [os.path.join(directory, file) for file in json_files_names_list]
 
     return json_files_names_list
+
+
+def get_entries_order_score(covered_entries_index_list):
+    sum = 0
+    entries_score = [1, 0.9, 0.8, 0.7, 0.6, 0.5, 0.4, 0.3, 0.2, 0.1]
+    for entry_index in covered_entries_index_list:
+        sum += entries_score[entry_index]
+    return sum
