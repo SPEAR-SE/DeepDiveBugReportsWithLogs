@@ -840,8 +840,8 @@ def get_st_raking_dict(stack_trace_methods):
 def get_mrr(project, ochiai_identificator, project_bugs_data, ranking_files_path):
     sum_for_mrr = 0
     number_of_bugs = len(project_bugs_data)
-    no_classification_available = False
     for bug_id in project_bugs_data.keys():
+        no_classification_available = False
         buggy_methods = project_bugs_data[bug_id]["buggyMethods"]
         buggy_methods_list = convert_buggy_methods_dict_into_list(buggy_methods)
         if ochiai_identificator == "stackTraces":
@@ -866,8 +866,9 @@ def get_mrr(project, ochiai_identificator, project_bugs_data, ranking_files_path
 def get_map(project, ochiai_identificator, project_bugs_data, ranking_files_path):
     sum_for_map = 0
     number_of_bugs = 0
-    no_classification_available = False
+
     for bug_id in project_bugs_data.keys():
+        no_classification_available = False
         buggy_methods = project_bugs_data[bug_id]["buggyMethods"]
         buggy_methods_list = convert_buggy_methods_dict_into_list(buggy_methods)
         if ochiai_identificator == "stackTraces":
