@@ -648,7 +648,8 @@ def get_unique_tests_that_cover_the_methods(stackTraceMethodsDetails, file_path)
         for st_method in stackTraceMethodsDetails[st_file].keys():
             removal_list = []
             for test in repeated_test_methods:
-                if test not in tests_covering_stack_traces_details[st_file][st_method]["tests_covering_the_method"].keys():
+                if test not in tests_covering_stack_traces_details[st_file][st_method][
+                    "tests_covering_the_method"].keys():
                     removal_list.append(test)
             for test in removal_list:
                 repeated_test_methods.remove(test)
@@ -843,12 +844,15 @@ def get_mrr(project, ochiai_identificator, project_bugs_data, ranking_files_path
     for bug_id in project_bugs_data.keys():
         no_classification_available = False
         buggy_methods = project_bugs_data[bug_id]["buggyMethods"]
+        if not buggy_methods:
+            number_of_bugs -= 1
+            continue  # Bug has no buggy_methods
         buggy_methods_list = convert_buggy_methods_dict_into_list(buggy_methods)
         if ochiai_identificator == "stackTraces":
             ranking_info = get_st_raking_dict(project_bugs_data[bug_id]["stack_trace_methods"])
         else:
             try:
-                ranking_file = os.path.join(ranking_files_path, ochiai_identificator, project,  bug_id + ".json")
+                ranking_file = os.path.join(ranking_files_path, ochiai_identificator, project, bug_id + ".json")
                 ranking_info = json_file_to_dict(ranking_file)
             except FileNotFoundError:
                 no_classification_available = True
@@ -859,7 +863,7 @@ def get_mrr(project, ochiai_identificator, project_bugs_data, ranking_files_path
                 if get_method_rank(ranking_info, buggy_method) < best_rank_found:
                     best_rank_found = get_method_rank(ranking_info, buggy_method)
         sum_for_mrr += 1 / best_rank_found
-    mrr = sum_for_mrr / number_of_bugs
+    mrr = sum_for_mrr / number_of_bugs if number_of_bugs else 0
     return mrr
 
 
@@ -870,11 +874,13 @@ def get_map(project, ochiai_identificator, project_bugs_data, ranking_files_path
     for bug_id in project_bugs_data.keys():
         no_classification_available = False
         buggy_methods = project_bugs_data[bug_id]["buggyMethods"]
+        if not buggy_methods:
+            continue  # Bug has no buggy_methods
         buggy_methods_list = convert_buggy_methods_dict_into_list(buggy_methods)
         if ochiai_identificator == "stackTraces":
             ranking_info = get_st_raking_dict(project_bugs_data[bug_id]["stack_trace_methods"])
         else:
-            ranking_file = os.path.join(ranking_files_path, ochiai_identificator, project,  bug_id + ".json")
+            ranking_file = os.path.join(ranking_files_path, ochiai_identificator, project, bug_id + ".json")
             try:
                 ranking_info = json_file_to_dict(ranking_file)
             except FileNotFoundError:
@@ -884,7 +890,8 @@ def get_map(project, ochiai_identificator, project_bugs_data, ranking_files_path
         sum_for_ap = 0
         buggy_methods_found = 0
         if not no_classification_available:
-            sorted_ranking_info = {k: v for k, v in sorted(ranking_info.items(), key=lambda item: item[1], reverse=False)}
+            sorted_ranking_info = {k: v for k, v in
+                                   sorted(ranking_info.items(), key=lambda item: item[1], reverse=False)}
             for method in sorted_ranking_info.keys():
                 rank = sorted_ranking_info[method]
                 for buggy_method in buggy_methods_list:
@@ -902,7 +909,7 @@ def get_map(project, ochiai_identificator, project_bugs_data, ranking_files_path
 def create_or_update_bug_metrics_file(bug_metrics, bug_metrics_file_path, ochiai_scores_folders_list):
     ochiai_scores_folders_list = sorted(ochiai_scores_folders_list)
     # Column names
-    columns = ['Project', 'Bug Id',  'Number of buggy methods',
+    columns = ['Project', 'Bug Id', 'Number of buggy methods',
                'Stack Trace (ST) size', 'Position of the first buggy method into the ST',
                'Precision ST Top N', 'Recall ST Top N', 'F1 ST Top N']
     for ochiai_type in ochiai_scores_folders_list:
@@ -1020,7 +1027,7 @@ def rank_methods(ochiai_scores_data):
         same_score_count = 1
         current_score = sorted_methods[i][1]
 
-        for j in range(i+1, len(sorted_methods)):
+        for j in range(i + 1, len(sorted_methods)):
             if sorted_methods[j][1] == current_score:
                 same_score_count += 1
             else:
@@ -1028,7 +1035,7 @@ def rank_methods(ochiai_scores_data):
 
         # Assign rank
         for j in range(same_score_count):
-            ranked_methods[sorted_methods[i+j][0]] = i + same_score_count
+            ranked_methods[sorted_methods[i + j][0]] = i + same_score_count
 
         i += same_score_count
 
@@ -1036,8 +1043,7 @@ def rank_methods(ochiai_scores_data):
 
 
 def get_json_files(directory):
-
-    if not os. path. isdir(directory):
+    if not os.path.isdir(directory):
         return []
 
     # List all files in the given directory
