@@ -911,7 +911,7 @@ def create_or_update_bug_metrics_file(bug_metrics, bug_metrics_file_path, ochiai
     # Column names
     columns = ['Project', 'Bug Id', 'Number of buggy methods',
                'Stack Trace (ST) size', 'Position of the first buggy method into the ST',
-               'Precision ST Top N', 'Recall ST Top N', 'F1 ST Top N']
+               'Precision ST Top 10', 'Recall ST Top 10', 'F1 ST Top 10']
     for ochiai_type in ochiai_scores_folders_list:
         columns += [
             f'Number of fake failing tests {ochiai_type}',
