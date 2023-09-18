@@ -1,5 +1,5 @@
 {
-    "java.util.HashMap#<init>": 1,
+    "java.util.HashMap#<init>": 2,
     "java.util.LinkedHashMap#<init>": 3,
     "org.apache.commons.csv.Assertions#Assertions": 116,
     "org.apache.commons.csv.Assertions#notNull": 22,
@@ -43,7 +43,7 @@
     "org.apache.commons.csv.CSVParser#addRecordValue": 41,
     "org.apache.commons.csv.CSVParser#close": 116,
     "org.apache.commons.csv.CSVParser#getCurrentLineNumber": 116,
-    "org.apache.commons.csv.CSVParser#getHeaderMap": 2,
+    "org.apache.commons.csv.CSVParser#getHeaderMap": 1,
     "org.apache.commons.csv.CSVParser#getRecordNumber": 116,
     "org.apache.commons.csv.CSVParser#getRecords": 116,
     "org.apache.commons.csv.CSVParser#initializeHeader": 6,
