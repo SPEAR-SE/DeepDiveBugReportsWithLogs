@@ -629,7 +629,7 @@
     "org.jsoup.parser.TokeniserState#TokeniserState": 211,
     "org.jsoup.parser.TokeniserState#handleDataDoubleEscapeTag": 958,
     "org.jsoup.parser.TokeniserState#handleDataEndTag": 124,
-    "org.jsoup.parser.TokeniserState$67#read": 33,
+    "org.jsoup.parser.TokeniserState#read": 33,
     "org.jsoup.parser.TokeniserState.1#read": 198,
     "org.jsoup.parser.TokeniserState.10#read": 156,
     "org.jsoup.parser.TokeniserState.11#read": 5,

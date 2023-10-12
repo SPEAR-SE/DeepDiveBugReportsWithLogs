@@ -1,0 +1,23 @@
+{
+    "com.fasterxml.jackson.databind.DeserializationContext#findContextualValueDeserializer": 8,
+    "com.fasterxml.jackson.databind.DeserializationContext#findKeyDeserializer": 5,
+    "com.fasterxml.jackson.databind.DeserializationContext#handleSecondaryContextualization": 7,
+    "com.fasterxml.jackson.databind.DeserializationContext#reportMappingException": 2,
+    "com.fasterxml.jackson.databind.JsonMappingException#from": 1,
+    "com.fasterxml.jackson.databind.ObjectMapper#_readMapAndClose": 21,
+    "com.fasterxml.jackson.databind.ObjectMapper#readValue": 21,
+    "com.fasterxml.jackson.databind.deser.BeanDeserializer#_deserializeUsingPropertyBased": 21,
+    "com.fasterxml.jackson.databind.deser.BeanDeserializer#_deserializeWithErrorWrapping": 21,
+    "com.fasterxml.jackson.databind.deser.BeanDeserializer#deserialize": 21,
+    "com.fasterxml.jackson.databind.deser.BeanDeserializer#deserializeFromObject": 21,
+    "com.fasterxml.jackson.databind.deser.BeanDeserializerBase#deserializeFromObjectUsingNonDefault": 21,
+    "com.fasterxml.jackson.databind.deser.DeserializerCache#_handleUnknownKeyDeserializer": 3,
+    "com.fasterxml.jackson.databind.deser.DeserializerCache#findKeyDeserializer": 4,
+    "com.fasterxml.jackson.databind.deser.SettableBeanProperty#deserialize": 21,
+    "com.fasterxml.jackson.databind.deser.std.MapDeserializer#createContextual": 6,
+    "com.fasterxml.jackson.databind.deser.std.MapDeserializer#deserializeWithType": 21,
+    "com.fasterxml.jackson.databind.jsontype.impl.AsArrayTypeDeserializer#_deserialize": 21,
+    "com.fasterxml.jackson.databind.jsontype.impl.AsArrayTypeDeserializer#deserializeTypedFromObject": 21,
+    "com.fasterxml.jackson.databind.jsontype.impl.TypeDeserializerBase#_findDeserializer": 9,
+    "com.test.testjackson.testjackson.TestJackson#testFails": 21
+}

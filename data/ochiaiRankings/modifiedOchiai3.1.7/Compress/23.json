@@ -336,7 +336,7 @@
     "org.apache.commons.compress.archivers.sevenz.Coders#Coders": 1324,
     "org.apache.commons.compress.archivers.sevenz.Coders#addDecoder": 112,
     "org.apache.commons.compress.archivers.sevenz.Coders#addEncoder": 1324,
-    "org.apache.commons.compress.archivers.sevenz.Coders$LZMADecoder#decode": 2,
+    "org.apache.commons.compress.archivers.sevenz.Coders#decode": 2,
     "org.apache.commons.compress.archivers.sevenz.Coders.AES256SHA256Decoder#Coders$AES256SHA256Decoder": 18,
     "org.apache.commons.compress.archivers.sevenz.Coders.AES256SHA256Decoder#decode": 125,
     "org.apache.commons.compress.archivers.sevenz.Coders.AES256SHA256Decoder.1#close": 141,

@@ -1,0 +1,6 @@
+{
+    "PatriciaTrieTest#testPrefixMapClear": 0.25,
+    "java.util.AbstractCollection#clear": 0.5,
+    "java.util.AbstractMap#clear": 0.3333333333333333,
+    "org.apache.commons.collections4.trie.AbstractPatriciaTrie#remove": 1.0
+}

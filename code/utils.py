@@ -720,6 +720,14 @@ def get_number_of_buggy_methods_in_top_n(ranking_data, n, buggy_methods_list):
     return buggy_methods_in_top_n
 
 
+def remove_between_dollar_and_dot(st_method):
+    return re.sub(r'\$[^.]*\.', '.', st_method)
+
+
+def remove_between_dollar_and_hash(st_method):
+    return re.sub(r'\$[^#]*#', '#', st_method)
+
+
 def get_first_buggy_method_in_stack_trace(buggy_methods_list, stack_trace_methods):
     best_position = float('inf')
     for buggy_method in buggy_methods_list:
@@ -775,6 +783,7 @@ def extract_buggy_methods_list(ranking_data, buggyMethods):
                 break
         if not found:
             buggy_methods_list.append(temp_method_id)
+
     return buggy_methods_list
 
 
@@ -834,6 +843,8 @@ def get_st_raking_dict(stack_trace_methods):
         last_dot_index = st_method.rfind('.')
         if last_dot_index != -1:
             st_method_id = st_method[:last_dot_index] + '#' + st_method[last_dot_index + 1:]
+            if '$' in st_method_id:
+                st_method_id = remove_between_dollar_and_hash(st_method_id)
             st_method_formated.append(st_method_id)
     return {item: index + 1 for index, item in enumerate(st_method_formated)}
 

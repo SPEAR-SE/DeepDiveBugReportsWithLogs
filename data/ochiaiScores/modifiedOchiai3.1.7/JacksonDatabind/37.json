@@ -4750,14 +4750,13 @@
     "org.junit.runner.JUnitCore#run": 0.1,
     "org.junit.runners.BlockJUnit4ClassRunner#runChild": 0.2,
     "org.junit.runners.ParentRunner#access$000": 0.1,
-    "org.junit.runners.ParentRunner#run": 0.1,
+    "org.junit.runners.ParentRunner#evaluate": 0.1,
+    "org.junit.runners.ParentRunner#run": 0.2,
     "org.junit.runners.ParentRunner#runChildren": 0.1,
     "org.junit.runners.ParentRunner#runLeaf": 0.1,
-    "org.junit.runners.ParentRunner$1#schedule": 0.1,
-    "org.junit.runners.ParentRunner$2#evaluate": 0.1,
-    "org.junit.runners.ParentRunner$3#run": 0.1,
+    "org.junit.runners.ParentRunner#schedule": 0.1,
     "org.junit.runners.model.FrameworkMethod#invokeExplosively": 0.1,
-    "org.junit.runners.model.FrameworkMethod$1#runReflectiveCall": 0.1,
+    "org.junit.runners.model.FrameworkMethod#runReflectiveCall": 0.1,
     "sun.reflect.DelegatingMethodAccessorImpl#invoke": 0.2,
     "sun.reflect.NativeMethodAccessorImpl#invoke": 0.2
 }

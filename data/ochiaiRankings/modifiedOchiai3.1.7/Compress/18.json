@@ -1,5 +1,5 @@
 {
-    "net.disy.gisterm.tilecacheset.desktop.controller.ExportController$1#run": 119,
+    "net.disy.gisterm.tilecacheset.desktop.controller.ExportController#run": 119,
     "net.disy.gisterm.tilecacheset.export.TileCacheSetExporter#export": 119,
     "net.disy.gisterm.tilecacheset.export.TileCacheSetExporter#tarTreeStructure": 119,
     "net.disy.lib.io.tar.TarUtilities#addDirectory": 2,

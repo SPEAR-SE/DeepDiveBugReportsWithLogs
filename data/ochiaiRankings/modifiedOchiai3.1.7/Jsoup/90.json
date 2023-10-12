@@ -1,0 +1,8 @@
+{
+    "org.jsoup.helper.HttpConnection#addHeader": 4,
+    "org.jsoup.helper.HttpConnection#execute": 3,
+    "org.jsoup.helper.HttpConnection#fixHeaderEncoding": 2,
+    "org.jsoup.helper.HttpConnection#looksLikeUtf8": 1,
+    "org.jsoup.helper.HttpConnection#processResponseHeaders": 5,
+    "org.jsoup.helper.HttpConnection#setupFromConnection": 6
+}

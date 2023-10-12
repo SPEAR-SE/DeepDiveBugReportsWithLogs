@@ -41,6 +41,12 @@
             "fake_passing_tests_number": 279
         }
     },
+    "Collections": {
+        "28": {
+            "fake_failing_tests_number": 0,
+            "fake_passing_tests_number": 5280
+        }
+    },
     "Compress": {
         "1": {
             "fake_failing_tests_number": 1,
@@ -105,6 +111,10 @@
         "5": {
             "fake_failing_tests_number": 30,
             "fake_passing_tests_number": 1940
+        },
+        "8": {
+            "fake_failing_tests_number": 0,
+            "fake_passing_tests_number": 989
         }
     },
     "JacksonCore": {
@@ -154,6 +164,10 @@
             "fake_failing_tests_number": 15,
             "fake_passing_tests_number": 1534
         },
+        "59": {
+            "fake_failing_tests_number": 0,
+            "fake_passing_tests_number": 7
+        },
         "73": {
             "fake_failing_tests_number": 15,
             "fake_passing_tests_number": 1473
@@ -187,6 +201,10 @@
         "84": {
             "fake_failing_tests_number": 15,
             "fake_passing_tests_number": 513
+        },
+        "90": {
+            "fake_failing_tests_number": 0,
+            "fake_passing_tests_number": 671
         }
     },
     "JxPath": {
@@ -228,6 +246,10 @@
         }
     },
     "Mockito": {
+        "35": {
+            "fake_failing_tests_number": 0,
+            "fake_passing_tests_number": 766
+        },
         "4": {
             "fake_failing_tests_number": 15,
             "fake_passing_tests_number": 1351

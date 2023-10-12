@@ -1,0 +1,4 @@
+{
+    "com.google.gson.internal.UnsafeAllocator#newInstance": 0.5,
+    "java.lang.reflect.Method#invoke": 1.0
+}
