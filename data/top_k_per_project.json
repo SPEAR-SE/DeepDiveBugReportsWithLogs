@@ -1,0 +1,1952 @@
+{
+    "Stack Trace": {
+        "Cli": {
+            "Top 1": 1,
+            "Top 10": 2,
+            "Top 3": 1,
+            "Top 5": 2
+        },
+        "Closure": {
+            "Top 1": 1,
+            "Top 10": 4,
+            "Top 3": 2,
+            "Top 5": 2
+        },
+        "Codec": {
+            "Top 1": 1,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Compress": {
+            "Top 1": 3,
+            "Top 10": 8,
+            "Top 3": 6,
+            "Top 5": 8
+        },
+        "Csv": {
+            "Top 1": 0,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Gson": {
+            "Top 1": 1,
+            "Top 10": 2,
+            "Top 3": 2,
+            "Top 5": 2
+        },
+        "JacksonCore": {
+            "Top 1": 1,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "JacksonDatabind": {
+            "Top 1": 1,
+            "Top 10": 4,
+            "Top 3": 2,
+            "Top 5": 3
+        },
+        "Jsoup": {
+            "Top 1": 3,
+            "Top 10": 6,
+            "Top 3": 3,
+            "Top 5": 5
+        },
+        "JxPath": {
+            "Top 1": 1,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Lang": {
+            "Top 1": 1,
+            "Top 10": 3,
+            "Top 3": 3,
+            "Top 5": 3
+        },
+        "Math": {
+            "Top 1": 2,
+            "Top 10": 2,
+            "Top 3": 2,
+            "Top 5": 2
+        },
+        "Mockito": {
+            "Top 1": 0,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Time": {
+            "Top 1": 0,
+            "Top 10": 2,
+            "Top 3": 1,
+            "Top 5": 2
+        }
+    },
+    "modifiedOchiai1.0": {
+        "Cli": {
+            "Top 1": 0,
+            "Top 10": 1,
+            "Top 3": 0,
+            "Top 5": 0
+        },
+        "Closure": {
+            "Top 1": 0,
+            "Top 10": 1,
+            "Top 3": 0,
+            "Top 5": 0
+        },
+        "Codec": {
+            "Top 1": 1,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Compress": {
+            "Top 1": 1,
+            "Top 10": 2,
+            "Top 3": 2,
+            "Top 5": 2
+        },
+        "Csv": {},
+        "Gson": {
+            "Top 1": 0,
+            "Top 10": 0,
+            "Top 3": 0,
+            "Top 5": 0
+        },
+        "JacksonCore": {
+            "Top 1": 0,
+            "Top 10": 1,
+            "Top 3": 0,
+            "Top 5": 1
+        },
+        "JacksonDatabind": {
+            "Top 1": 0,
+            "Top 10": 0,
+            "Top 3": 0,
+            "Top 5": 0
+        },
+        "Jsoup": {
+            "Top 1": 0,
+            "Top 10": 0,
+            "Top 3": 0,
+            "Top 5": 0
+        },
+        "JxPath": {
+            "Top 1": 0,
+            "Top 10": 0,
+            "Top 3": 0,
+            "Top 5": 0
+        },
+        "Lang": {
+            "Top 1": 1,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Math": {
+            "Top 1": 0,
+            "Top 10": 1,
+            "Top 3": 0,
+            "Top 5": 1
+        },
+        "Mockito": {
+            "Top 1": 0,
+            "Top 10": 0,
+            "Top 3": 0,
+            "Top 5": 0
+        },
+        "Time": {
+            "Top 1": 0,
+            "Top 10": 0,
+            "Top 3": 0,
+            "Top 5": 0
+        }
+    },
+    "modifiedOchiai1.1": {
+        "Cli": {
+            "Top 1": 0,
+            "Top 10": 1,
+            "Top 3": 0,
+            "Top 5": 0
+        },
+        "Closure": {
+            "Top 1": 0,
+            "Top 10": 1,
+            "Top 3": 0,
+            "Top 5": 0
+        },
+        "Codec": {
+            "Top 1": 1,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Compress": {
+            "Top 1": 1,
+            "Top 10": 4,
+            "Top 3": 2,
+            "Top 5": 2
+        },
+        "Csv": {},
+        "Gson": {
+            "Top 1": 0,
+            "Top 10": 0,
+            "Top 3": 0,
+            "Top 5": 0
+        },
+        "JacksonCore": {
+            "Top 1": 0,
+            "Top 10": 1,
+            "Top 3": 0,
+            "Top 5": 1
+        },
+        "JacksonDatabind": {
+            "Top 1": 0,
+            "Top 10": 0,
+            "Top 3": 0,
+            "Top 5": 0
+        },
+        "Jsoup": {
+            "Top 1": 0,
+            "Top 10": 0,
+            "Top 3": 0,
+            "Top 5": 0
+        },
+        "JxPath": {
+            "Top 1": 0,
+            "Top 10": 0,
+            "Top 3": 0,
+            "Top 5": 0
+        },
+        "Lang": {
+            "Top 1": 1,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Math": {
+            "Top 1": 0,
+            "Top 10": 1,
+            "Top 3": 0,
+            "Top 5": 1
+        },
+        "Mockito": {
+            "Top 1": 0,
+            "Top 10": 0,
+            "Top 3": 0,
+            "Top 5": 0
+        },
+        "Time": {
+            "Top 1": 0,
+            "Top 10": 0,
+            "Top 3": 0,
+            "Top 5": 0
+        }
+    },
+    "modifiedOchiai2.0": {
+        "Cli": {
+            "Top 1": 0,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Closure": {
+            "Top 1": 0,
+            "Top 10": 0,
+            "Top 3": 0,
+            "Top 5": 0
+        },
+        "Codec": {
+            "Top 1": 0,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Compress": {
+            "Top 1": 2,
+            "Top 10": 4,
+            "Top 3": 4,
+            "Top 5": 4
+        },
+        "Csv": {
+            "Top 1": 1,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Gson": {
+            "Top 1": 1,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "JacksonCore": {
+            "Top 1": 0,
+            "Top 10": 1,
+            "Top 3": 0,
+            "Top 5": 0
+        },
+        "JacksonDatabind": {
+            "Top 1": 0,
+            "Top 10": 1,
+            "Top 3": 0,
+            "Top 5": 0
+        },
+        "Jsoup": {
+            "Top 1": 0,
+            "Top 10": 0,
+            "Top 3": 0,
+            "Top 5": 0
+        },
+        "JxPath": {
+            "Top 1": 0,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Lang": {
+            "Top 1": 0,
+            "Top 10": 2,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Math": {
+            "Top 1": 0,
+            "Top 10": 0,
+            "Top 3": 0,
+            "Top 5": 0
+        },
+        "Mockito": {
+            "Top 1": 0,
+            "Top 10": 1,
+            "Top 3": 0,
+            "Top 5": 0
+        },
+        "Time": {
+            "Top 1": 0,
+            "Top 10": 0,
+            "Top 3": 0,
+            "Top 5": 0
+        }
+    },
+    "modifiedOchiai2.1": {
+        "Cli": {
+            "Top 1": 0,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Closure": {
+            "Top 1": 0,
+            "Top 10": 0,
+            "Top 3": 0,
+            "Top 5": 0
+        },
+        "Codec": {
+            "Top 1": 0,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Compress": {
+            "Top 1": 2,
+            "Top 10": 4,
+            "Top 3": 4,
+            "Top 5": 4
+        },
+        "Csv": {
+            "Top 1": 1,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Gson": {
+            "Top 1": 1,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "JacksonCore": {
+            "Top 1": 0,
+            "Top 10": 1,
+            "Top 3": 0,
+            "Top 5": 0
+        },
+        "JacksonDatabind": {
+            "Top 1": 0,
+            "Top 10": 2,
+            "Top 3": 2,
+            "Top 5": 2
+        },
+        "Jsoup": {
+            "Top 1": 0,
+            "Top 10": 0,
+            "Top 3": 0,
+            "Top 5": 0
+        },
+        "JxPath": {
+            "Top 1": 0,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Lang": {
+            "Top 1": 0,
+            "Top 10": 2,
+            "Top 3": 2,
+            "Top 5": 2
+        },
+        "Math": {
+            "Top 1": 0,
+            "Top 10": 0,
+            "Top 3": 0,
+            "Top 5": 0
+        },
+        "Mockito": {
+            "Top 1": 0,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Time": {
+            "Top 1": 0,
+            "Top 10": 0,
+            "Top 3": 0,
+            "Top 5": 0
+        }
+    },
+    "modifiedOchiai2.2": {
+        "Cli": {
+            "Top 1": 0,
+            "Top 10": 0,
+            "Top 3": 0,
+            "Top 5": 0
+        },
+        "Closure": {
+            "Top 1": 1,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Codec": {
+            "Top 1": 0,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Compress": {
+            "Top 1": 1,
+            "Top 10": 3,
+            "Top 3": 2,
+            "Top 5": 2
+        },
+        "Csv": {
+            "Top 1": 1,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Gson": {
+            "Top 1": 1,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "JacksonCore": {
+            "Top 1": 0,
+            "Top 10": 0,
+            "Top 3": 0,
+            "Top 5": 0
+        },
+        "JacksonDatabind": {
+            "Top 1": 1,
+            "Top 10": 2,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Jsoup": {
+            "Top 1": 0,
+            "Top 10": 1,
+            "Top 3": 0,
+            "Top 5": 0
+        },
+        "JxPath": {
+            "Top 1": 0,
+            "Top 10": 0,
+            "Top 3": 0,
+            "Top 5": 0
+        },
+        "Lang": {
+            "Top 1": 0,
+            "Top 10": 2,
+            "Top 3": 1,
+            "Top 5": 2
+        },
+        "Math": {
+            "Top 1": 0,
+            "Top 10": 0,
+            "Top 3": 0,
+            "Top 5": 0
+        },
+        "Mockito": {
+            "Top 1": 0,
+            "Top 10": 0,
+            "Top 3": 0,
+            "Top 5": 0
+        },
+        "Time": {
+            "Top 1": 0,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        }
+    },
+    "modifiedOchiai3.0": {
+        "Cli": {
+            "Top 1": 0,
+            "Top 10": 0,
+            "Top 3": 0,
+            "Top 5": 0
+        },
+        "Closure": {
+            "Top 1": 0,
+            "Top 10": 0,
+            "Top 3": 0,
+            "Top 5": 0
+        },
+        "Codec": {
+            "Top 1": 0,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Compress": {
+            "Top 1": 1,
+            "Top 10": 3,
+            "Top 3": 2,
+            "Top 5": 2
+        },
+        "Csv": {
+            "Top 1": 1,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Gson": {
+            "Top 1": 1,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "JacksonCore": {
+            "Top 1": 0,
+            "Top 10": 0,
+            "Top 3": 0,
+            "Top 5": 0
+        },
+        "JacksonDatabind": {
+            "Top 1": 1,
+            "Top 10": 2,
+            "Top 3": 2,
+            "Top 5": 2
+        },
+        "Jsoup": {
+            "Top 1": 0,
+            "Top 10": 1,
+            "Top 3": 0,
+            "Top 5": 0
+        },
+        "JxPath": {
+            "Top 1": 0,
+            "Top 10": 0,
+            "Top 3": 0,
+            "Top 5": 0
+        },
+        "Lang": {
+            "Top 1": 1,
+            "Top 10": 2,
+            "Top 3": 2,
+            "Top 5": 2
+        },
+        "Math": {
+            "Top 1": 0,
+            "Top 10": 0,
+            "Top 3": 0,
+            "Top 5": 0
+        },
+        "Mockito": {
+            "Top 1": 0,
+            "Top 10": 0,
+            "Top 3": 0,
+            "Top 5": 0
+        },
+        "Time": {
+            "Top 1": 0,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        }
+    },
+    "modifiedOchiai3.1": {
+        "Cli": {
+            "Top 1": 0,
+            "Top 10": 1,
+            "Top 3": 0,
+            "Top 5": 1
+        },
+        "Closure": {
+            "Top 1": 0,
+            "Top 10": 0,
+            "Top 3": 0,
+            "Top 5": 0
+        },
+        "Codec": {
+            "Top 1": 1,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Compress": {
+            "Top 1": 1,
+            "Top 10": 4,
+            "Top 3": 3,
+            "Top 5": 3
+        },
+        "Csv": {
+            "Top 1": 1,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Gson": {
+            "Top 1": 1,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "JacksonCore": {
+            "Top 1": 0,
+            "Top 10": 0,
+            "Top 3": 0,
+            "Top 5": 0
+        },
+        "JacksonDatabind": {
+            "Top 1": 0,
+            "Top 10": 2,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Jsoup": {
+            "Top 1": 0,
+            "Top 10": 1,
+            "Top 3": 0,
+            "Top 5": 0
+        },
+        "JxPath": {
+            "Top 1": 0,
+            "Top 10": 0,
+            "Top 3": 0,
+            "Top 5": 0
+        },
+        "Lang": {
+            "Top 1": 0,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Math": {
+            "Top 1": 0,
+            "Top 10": 0,
+            "Top 3": 0,
+            "Top 5": 0
+        },
+        "Mockito": {
+            "Top 1": 0,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Time": {
+            "Top 1": 1,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        }
+    },
+    "modifiedOchiai3.1.1": {
+        "Cli": {
+            "Top 1": 1,
+            "Top 10": 2,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Closure": {
+            "Top 1": 1,
+            "Top 10": 2,
+            "Top 3": 2,
+            "Top 5": 2
+        },
+        "Codec": {
+            "Top 1": 1,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Compress": {
+            "Top 1": 2,
+            "Top 10": 7,
+            "Top 3": 7,
+            "Top 5": 7
+        },
+        "Csv": {
+            "Top 1": 1,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Gson": {
+            "Top 1": 1,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "JacksonCore": {
+            "Top 1": 0,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "JacksonDatabind": {
+            "Top 1": 1,
+            "Top 10": 2,
+            "Top 3": 2,
+            "Top 5": 2
+        },
+        "Jsoup": {
+            "Top 1": 1,
+            "Top 10": 2,
+            "Top 3": 2,
+            "Top 5": 2
+        },
+        "JxPath": {
+            "Top 1": 1,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Lang": {
+            "Top 1": 2,
+            "Top 10": 3,
+            "Top 3": 2,
+            "Top 5": 3
+        },
+        "Math": {
+            "Top 1": 2,
+            "Top 10": 2,
+            "Top 3": 2,
+            "Top 5": 2
+        },
+        "Mockito": {
+            "Top 1": 0,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Time": {
+            "Top 1": 0,
+            "Top 10": 2,
+            "Top 3": 1,
+            "Top 5": 2
+        }
+    },
+    "modifiedOchiai3.1.2": {
+        "Cli": {
+            "Top 1": 1,
+            "Top 10": 2,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Closure": {
+            "Top 1": 1,
+            "Top 10": 2,
+            "Top 3": 2,
+            "Top 5": 2
+        },
+        "Codec": {
+            "Top 1": 1,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Compress": {
+            "Top 1": 2,
+            "Top 10": 7,
+            "Top 3": 7,
+            "Top 5": 7
+        },
+        "Csv": {
+            "Top 1": 1,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Gson": {
+            "Top 1": 1,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "JacksonCore": {
+            "Top 1": 0,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "JacksonDatabind": {
+            "Top 1": 1,
+            "Top 10": 2,
+            "Top 3": 2,
+            "Top 5": 2
+        },
+        "Jsoup": {
+            "Top 1": 1,
+            "Top 10": 2,
+            "Top 3": 2,
+            "Top 5": 2
+        },
+        "JxPath": {
+            "Top 1": 1,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Lang": {
+            "Top 1": 2,
+            "Top 10": 3,
+            "Top 3": 2,
+            "Top 5": 3
+        },
+        "Math": {
+            "Top 1": 2,
+            "Top 10": 2,
+            "Top 3": 2,
+            "Top 5": 2
+        },
+        "Mockito": {
+            "Top 1": 0,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Time": {
+            "Top 1": 0,
+            "Top 10": 2,
+            "Top 3": 1,
+            "Top 5": 2
+        }
+    },
+    "modifiedOchiai3.1.3": {
+        "Cli": {
+            "Top 1": 1,
+            "Top 10": 2,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Closure": {
+            "Top 1": 1,
+            "Top 10": 2,
+            "Top 3": 2,
+            "Top 5": 2
+        },
+        "Codec": {
+            "Top 1": 1,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Compress": {
+            "Top 1": 2,
+            "Top 10": 7,
+            "Top 3": 7,
+            "Top 5": 7
+        },
+        "Csv": {
+            "Top 1": 1,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Gson": {
+            "Top 1": 1,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "JacksonCore": {
+            "Top 1": 0,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "JacksonDatabind": {
+            "Top 1": 1,
+            "Top 10": 2,
+            "Top 3": 2,
+            "Top 5": 2
+        },
+        "Jsoup": {
+            "Top 1": 1,
+            "Top 10": 2,
+            "Top 3": 2,
+            "Top 5": 2
+        },
+        "JxPath": {
+            "Top 1": 1,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Lang": {
+            "Top 1": 2,
+            "Top 10": 3,
+            "Top 3": 2,
+            "Top 5": 3
+        },
+        "Math": {
+            "Top 1": 2,
+            "Top 10": 2,
+            "Top 3": 2,
+            "Top 5": 2
+        },
+        "Mockito": {
+            "Top 1": 0,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Time": {
+            "Top 1": 0,
+            "Top 10": 2,
+            "Top 3": 1,
+            "Top 5": 2
+        }
+    },
+    "modifiedOchiai3.1.4": {
+        "Cli": {
+            "Top 1": 1,
+            "Top 10": 2,
+            "Top 3": 1,
+            "Top 5": 2
+        },
+        "Closure": {
+            "Top 1": 1,
+            "Top 10": 2,
+            "Top 3": 2,
+            "Top 5": 2
+        },
+        "Codec": {
+            "Top 1": 1,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Compress": {
+            "Top 1": 3,
+            "Top 10": 7,
+            "Top 3": 7,
+            "Top 5": 7
+        },
+        "Csv": {
+            "Top 1": 1,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Gson": {
+            "Top 1": 1,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "JacksonCore": {
+            "Top 1": 0,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "JacksonDatabind": {
+            "Top 1": 1,
+            "Top 10": 2,
+            "Top 3": 2,
+            "Top 5": 2
+        },
+        "Jsoup": {
+            "Top 1": 1,
+            "Top 10": 2,
+            "Top 3": 2,
+            "Top 5": 2
+        },
+        "JxPath": {
+            "Top 1": 1,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Lang": {
+            "Top 1": 2,
+            "Top 10": 3,
+            "Top 3": 3,
+            "Top 5": 3
+        },
+        "Math": {
+            "Top 1": 2,
+            "Top 10": 2,
+            "Top 3": 2,
+            "Top 5": 2
+        },
+        "Mockito": {
+            "Top 1": 0,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Time": {
+            "Top 1": 0,
+            "Top 10": 2,
+            "Top 3": 1,
+            "Top 5": 1
+        }
+    },
+    "modifiedOchiai3.1.5": {
+        "Cli": {
+            "Top 1": 1,
+            "Top 10": 2,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Closure": {
+            "Top 1": 1,
+            "Top 10": 2,
+            "Top 3": 2,
+            "Top 5": 2
+        },
+        "Codec": {
+            "Top 1": 1,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Compress": {
+            "Top 1": 2,
+            "Top 10": 7,
+            "Top 3": 5,
+            "Top 5": 7
+        },
+        "Csv": {
+            "Top 1": 1,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Gson": {
+            "Top 1": 1,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "JacksonCore": {
+            "Top 1": 1,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "JacksonDatabind": {
+            "Top 1": 1,
+            "Top 10": 3,
+            "Top 3": 2,
+            "Top 5": 2
+        },
+        "Jsoup": {
+            "Top 1": 1,
+            "Top 10": 3,
+            "Top 3": 1,
+            "Top 5": 2
+        },
+        "JxPath": {
+            "Top 1": 1,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Lang": {
+            "Top 1": 1,
+            "Top 10": 3,
+            "Top 3": 3,
+            "Top 5": 3
+        },
+        "Math": {
+            "Top 1": 2,
+            "Top 10": 2,
+            "Top 3": 2,
+            "Top 5": 2
+        },
+        "Mockito": {
+            "Top 1": 0,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Time": {
+            "Top 1": 0,
+            "Top 10": 2,
+            "Top 3": 1,
+            "Top 5": 2
+        }
+    },
+    "modifiedOchiai3.1.6": {
+        "Cli": {
+            "Top 1": 1,
+            "Top 10": 2,
+            "Top 3": 1,
+            "Top 5": 2
+        },
+        "Closure": {
+            "Top 1": 1,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Codec": {
+            "Top 1": 1,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Compress": {
+            "Top 1": 3,
+            "Top 10": 7,
+            "Top 3": 6,
+            "Top 5": 7
+        },
+        "Csv": {
+            "Top 1": 1,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Gson": {
+            "Top 1": 1,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "JacksonCore": {
+            "Top 1": 0,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "JacksonDatabind": {
+            "Top 1": 1,
+            "Top 10": 2,
+            "Top 3": 2,
+            "Top 5": 2
+        },
+        "Jsoup": {
+            "Top 1": 1,
+            "Top 10": 2,
+            "Top 3": 2,
+            "Top 5": 2
+        },
+        "JxPath": {
+            "Top 1": 1,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Lang": {
+            "Top 1": 2,
+            "Top 10": 3,
+            "Top 3": 3,
+            "Top 5": 3
+        },
+        "Math": {
+            "Top 1": 2,
+            "Top 10": 2,
+            "Top 3": 2,
+            "Top 5": 2
+        },
+        "Mockito": {
+            "Top 1": 1,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Time": {
+            "Top 1": 0,
+            "Top 10": 2,
+            "Top 3": 1,
+            "Top 5": 1
+        }
+    },
+    "modifiedOchiai3.1.7": {
+        "Cli": {
+            "Top 1": 1,
+            "Top 10": 2,
+            "Top 3": 1,
+            "Top 5": 2
+        },
+        "Closure": {
+            "Top 1": 1,
+            "Top 10": 2,
+            "Top 3": 2,
+            "Top 5": 2
+        },
+        "Codec": {
+            "Top 1": 1,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Collections": {},
+        "Compress": {
+            "Top 1": 3,
+            "Top 10": 9,
+            "Top 3": 9,
+            "Top 5": 9
+        },
+        "Csv": {
+            "Top 1": 1,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Gson": {
+            "Top 1": 1,
+            "Top 10": 2,
+            "Top 3": 2,
+            "Top 5": 2
+        },
+        "JacksonCore": {
+            "Top 1": 0,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "JacksonDatabind": {
+            "Top 1": 1,
+            "Top 10": 3,
+            "Top 3": 3,
+            "Top 5": 3
+        },
+        "Jsoup": {
+            "Top 1": 3,
+            "Top 10": 4,
+            "Top 3": 4,
+            "Top 5": 4
+        },
+        "JxPath": {
+            "Top 1": 1,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Lang": {
+            "Top 1": 2,
+            "Top 10": 3,
+            "Top 3": 3,
+            "Top 5": 3
+        },
+        "Math": {
+            "Top 1": 2,
+            "Top 10": 2,
+            "Top 3": 2,
+            "Top 5": 2
+        },
+        "Mockito": {
+            "Top 1": 0,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Time": {
+            "Top 1": 0,
+            "Top 10": 2,
+            "Top 3": 1,
+            "Top 5": 1
+        }
+    },
+    "modifiedOchiai3.1.7woST": {
+        "Cli": {
+            "Top 1": 0,
+            "Top 10": 1,
+            "Top 3": 0,
+            "Top 5": 1
+        },
+        "Closure": {
+            "Top 1": 0,
+            "Top 10": 0,
+            "Top 3": 0,
+            "Top 5": 0
+        },
+        "Codec": {
+            "Top 1": 1,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Compress": {
+            "Top 1": 0,
+            "Top 10": 4,
+            "Top 3": 3,
+            "Top 5": 3
+        },
+        "Csv": {
+            "Top 1": 1,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Gson": {
+            "Top 1": 1,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "JacksonCore": {
+            "Top 1": 0,
+            "Top 10": 0,
+            "Top 3": 0,
+            "Top 5": 0
+        },
+        "JacksonDatabind": {
+            "Top 1": 0,
+            "Top 10": 2,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Jsoup": {
+            "Top 1": 0,
+            "Top 10": 1,
+            "Top 3": 0,
+            "Top 5": 0
+        },
+        "JxPath": {
+            "Top 1": 0,
+            "Top 10": 0,
+            "Top 3": 0,
+            "Top 5": 0
+        },
+        "Lang": {
+            "Top 1": 0,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Math": {
+            "Top 1": 0,
+            "Top 10": 0,
+            "Top 3": 0,
+            "Top 5": 0
+        },
+        "Mockito": {
+            "Top 1": 0,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Time": {
+            "Top 1": 1,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        }
+    },
+    "modifiedOchiai3.2": {
+        "Cli": {
+            "Top 1": 0,
+            "Top 10": 1,
+            "Top 3": 0,
+            "Top 5": 1
+        },
+        "Closure": {
+            "Top 1": 0,
+            "Top 10": 0,
+            "Top 3": 0,
+            "Top 5": 0
+        },
+        "Codec": {
+            "Top 1": 1,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Compress": {
+            "Top 1": 1,
+            "Top 10": 4,
+            "Top 3": 3,
+            "Top 5": 3
+        },
+        "Csv": {
+            "Top 1": 1,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Gson": {
+            "Top 1": 1,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "JacksonCore": {
+            "Top 1": 0,
+            "Top 10": 0,
+            "Top 3": 0,
+            "Top 5": 0
+        },
+        "JacksonDatabind": {
+            "Top 1": 0,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Jsoup": {
+            "Top 1": 0,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "JxPath": {
+            "Top 1": 0,
+            "Top 10": 0,
+            "Top 3": 0,
+            "Top 5": 0
+        },
+        "Lang": {
+            "Top 1": 0,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Math": {
+            "Top 1": 0,
+            "Top 10": 0,
+            "Top 3": 0,
+            "Top 5": 0
+        },
+        "Mockito": {
+            "Top 1": 0,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Time": {
+            "Top 1": 0,
+            "Top 10": 0,
+            "Top 3": 0,
+            "Top 5": 0
+        }
+    },
+    "modifiedOchiai4.0": {
+        "Cli": {
+            "Top 1": 0,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Closure": {
+            "Top 1": 1,
+            "Top 10": 2,
+            "Top 3": 1,
+            "Top 5": 2
+        },
+        "Codec": {
+            "Top 1": 0,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Collections": {},
+        "Compress": {
+            "Top 1": 1,
+            "Top 10": 3,
+            "Top 3": 3,
+            "Top 5": 3
+        },
+        "Csv": {
+            "Top 1": 1,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Gson": {
+            "Top 1": 1,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "JacksonCore": {
+            "Top 1": 0,
+            "Top 10": 1,
+            "Top 3": 0,
+            "Top 5": 0
+        },
+        "JacksonDatabind": {
+            "Top 1": 1,
+            "Top 10": 2,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Jsoup": {
+            "Top 1": 0,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "JxPath": {
+            "Top 1": 0,
+            "Top 10": 0,
+            "Top 3": 0,
+            "Top 5": 0
+        },
+        "Lang": {
+            "Top 1": 1,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Math": {
+            "Top 1": 0,
+            "Top 10": 0,
+            "Top 3": 0,
+            "Top 5": 0
+        },
+        "Mockito": {
+            "Top 1": 0,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Time": {
+            "Top 1": 0,
+            "Top 10": 0,
+            "Top 3": 0,
+            "Top 5": 0
+        }
+    },
+    "modifiedOchiai4.1": {
+        "Cli": {
+            "Top 1": 0,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Closure": {
+            "Top 1": 0,
+            "Top 10": 1,
+            "Top 3": 0,
+            "Top 5": 1
+        },
+        "Codec": {
+            "Top 1": 0,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Collections": {},
+        "Compress": {
+            "Top 1": 1,
+            "Top 10": 3,
+            "Top 3": 3,
+            "Top 5": 3
+        },
+        "Csv": {
+            "Top 1": 1,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Gson": {
+            "Top 1": 1,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "JacksonCore": {
+            "Top 1": 0,
+            "Top 10": 1,
+            "Top 3": 0,
+            "Top 5": 0
+        },
+        "JacksonDatabind": {
+            "Top 1": 1,
+            "Top 10": 3,
+            "Top 3": 1,
+            "Top 5": 2
+        },
+        "Jsoup": {
+            "Top 1": 0,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "JxPath": {
+            "Top 1": 0,
+            "Top 10": 1,
+            "Top 3": 0,
+            "Top 5": 0
+        },
+        "Lang": {
+            "Top 1": 1,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Math": {
+            "Top 1": 0,
+            "Top 10": 0,
+            "Top 3": 0,
+            "Top 5": 0
+        },
+        "Mockito": {
+            "Top 1": 0,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Time": {
+            "Top 1": 0,
+            "Top 10": 0,
+            "Top 3": 0,
+            "Top 5": 0
+        }
+    },
+    "modifiedOchiai4.2": {
+        "Cli": {
+            "Top 1": 0,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Closure": {
+            "Top 1": 0,
+            "Top 10": 1,
+            "Top 3": 0,
+            "Top 5": 1
+        },
+        "Codec": {
+            "Top 1": 0,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Collections": {},
+        "Compress": {
+            "Top 1": 1,
+            "Top 10": 3,
+            "Top 3": 3,
+            "Top 5": 3
+        },
+        "Csv": {
+            "Top 1": 1,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Gson": {
+            "Top 1": 1,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "JacksonCore": {
+            "Top 1": 0,
+            "Top 10": 1,
+            "Top 3": 0,
+            "Top 5": 0
+        },
+        "JacksonDatabind": {
+            "Top 1": 1,
+            "Top 10": 2,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Jsoup": {
+            "Top 1": 0,
+            "Top 10": 0,
+            "Top 3": 0,
+            "Top 5": 0
+        },
+        "JxPath": {
+            "Top 1": 0,
+            "Top 10": 1,
+            "Top 3": 0,
+            "Top 5": 0
+        },
+        "Lang": {
+            "Top 1": 1,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Math": {
+            "Top 1": 0,
+            "Top 10": 0,
+            "Top 3": 0,
+            "Top 5": 0
+        },
+        "Mockito": {
+            "Top 1": 0,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Time": {
+            "Top 1": 0,
+            "Top 10": 0,
+            "Top 3": 0,
+            "Top 5": 0
+        }
+    },
+    "modifiedOchiai5.0": {
+        "Cli": {
+            "Top 1": 0,
+            "Top 10": 2,
+            "Top 3": 2,
+            "Top 5": 2
+        },
+        "Closure": {
+            "Top 1": 0,
+            "Top 10": 1,
+            "Top 3": 0,
+            "Top 5": 0
+        },
+        "Codec": {
+            "Top 1": 1,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Compress": {
+            "Top 1": 0,
+            "Top 10": 2,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Csv": {
+            "Top 1": 1,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Gson": {
+            "Top 1": 1,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "JacksonCore": {
+            "Top 1": 0,
+            "Top 10": 2,
+            "Top 3": 0,
+            "Top 5": 0
+        },
+        "JacksonDatabind": {
+            "Top 1": 0,
+            "Top 10": 0,
+            "Top 3": 0,
+            "Top 5": 0
+        },
+        "Jsoup": {
+            "Top 1": 0,
+            "Top 10": 0,
+            "Top 3": 0,
+            "Top 5": 0
+        },
+        "JxPath": {
+            "Top 1": 0,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Lang": {
+            "Top 1": 1,
+            "Top 10": 2,
+            "Top 3": 2,
+            "Top 5": 2
+        },
+        "Math": {
+            "Top 1": 0,
+            "Top 10": 1,
+            "Top 3": 0,
+            "Top 5": 1
+        },
+        "Mockito": {
+            "Top 1": 0,
+            "Top 10": 1,
+            "Top 3": 0,
+            "Top 5": 0
+        },
+        "Time": {
+            "Top 1": 0,
+            "Top 10": 0,
+            "Top 3": 0,
+            "Top 5": 0
+        }
+    },
+    "modifiedOchiai5.1": {
+        "Cli": {
+            "Top 1": 1,
+            "Top 10": 2,
+            "Top 3": 1,
+            "Top 5": 2
+        },
+        "Closure": {
+            "Top 1": 1,
+            "Top 10": 3,
+            "Top 3": 2,
+            "Top 5": 3
+        },
+        "Codec": {
+            "Top 1": 1,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Collections": {},
+        "Compress": {
+            "Top 1": 1,
+            "Top 10": 5,
+            "Top 3": 5,
+            "Top 5": 5
+        },
+        "Csv": {
+            "Top 1": 1,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Gson": {
+            "Top 1": 1,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "JacksonCore": {
+            "Top 1": 0,
+            "Top 10": 3,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "JacksonDatabind": {
+            "Top 1": 1,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Jsoup": {
+            "Top 1": 0,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "JxPath": {
+            "Top 1": 1,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "Lang": {
+            "Top 1": 2,
+            "Top 10": 3,
+            "Top 3": 3,
+            "Top 5": 3
+        },
+        "Math": {
+            "Top 1": 1,
+            "Top 10": 2,
+            "Top 3": 2,
+            "Top 5": 2
+        },
+        "Mockito": {
+            "Top 1": 0,
+            "Top 10": 1,
+            "Top 3": 0,
+            "Top 5": 1
+        },
+        "Time": {
+            "Top 1": 0,
+            "Top 10": 0,
+            "Top 3": 0,
+            "Top 5": 0
+        }
+    },
+    "originalOchiai": {
+        "Cli": {
+            "Top 1": 0,
+            "Top 10": 0,
+            "Top 3": 0,
+            "Top 5": 0
+        },
+        "Closure": {
+            "Top 1": 0,
+            "Top 10": 0,
+            "Top 3": 0,
+            "Top 5": 0
+        },
+        "Codec": {},
+        "Compress": {
+            "Top 1": 0,
+            "Top 10": 1,
+            "Top 3": 0,
+            "Top 5": 1
+        },
+        "JacksonCore": {
+            "Top 1": 0,
+            "Top 10": 1,
+            "Top 3": 1,
+            "Top 5": 1
+        },
+        "JacksonDatabind": {
+            "Top 1": 0,
+            "Top 10": 0,
+            "Top 3": 0,
+            "Top 5": 0
+        },
+        "Jsoup": {
+            "Top 1": 0,
+            "Top 10": 0,
+            "Top 3": 0,
+            "Top 5": 0
+        },
+        "Lang": {
+            "Top 1": 0,
+            "Top 10": 0,
+            "Top 3": 0,
+            "Top 5": 0
+        },
+        "Math": {
+            "Top 1": 0,
+            "Top 10": 0,
+            "Top 3": 0,
+            "Top 5": 0
+        },
+        "Mockito": {
+            "Top 1": 0,
+            "Top 10": 0,
+            "Top 3": 0,
+            "Top 5": 0
+        },
+        "Time": {
+            "Top 1": 0,
+            "Top 10": 0,
+            "Top 3": 0,
+            "Top 5": 0
+        }
+    }
+}
